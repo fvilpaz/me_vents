@@ -1,0 +1,201 @@
+/* ==========================================================================
+   ME_VENTS - DAY TIMELINE, SEARCH & FILTERS
+   ========================================================================== */
+
+.day-timeline-section {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.timeline-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.timeline-arrows {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav-arrow-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-arrow-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--me-blue);
+  background: rgba(0, 128, 255, 0.1);
+}
+
+/* Horizontal Days Scroll */
+.days-slider {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.days-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.day-pill {
+  flex: 0 0 calc(14.28% - 0.6rem);
+  min-width: 82px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  user-select: none;
+}
+
+.day-pill:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.day-pill.active {
+  background: linear-gradient(180deg, rgba(0, 128, 255, 0.25) 0%, rgba(15, 20, 32, 0.9) 100%);
+  border-color: var(--me-blue);
+  box-shadow: 0 0 16px var(--me-blue-glow);
+}
+
+.day-pill .day-name {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.day-pill.active .day-name {
+  color: var(--me-cyan);
+}
+
+.day-pill .day-number {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0.2rem 0;
+  color: var(--text-primary);
+}
+
+.day-pill .event-indicator {
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.day-pill.active .event-indicator {
+  background: var(--me-blue);
+  color: white;
+}
+
+/* Controls Bar (Search & Filter) */
+.controls-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-box-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  border-color: var(--me-blue);
+  box-shadow: 0 0 14px var(--me-blue-glow);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  scrollbar-width: none;
+}
+
+.filter-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.filter-chip:hover {
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-chip.active {
+  background: rgba(0, 128, 255, 0.15);
+  border-color: var(--me-blue);
+  color: var(--me-cyan);
+}

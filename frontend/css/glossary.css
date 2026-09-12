@@ -1,0 +1,184 @@
+/* ==========================================================================
+   ME_VENTS - GLOSARIO & DICCIONARIO OPERATIVO
+   ========================================================================== */
+
+.modal-box-large {
+  max-width: 820px;
+  width: 95%;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.glossary-terms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  overflow-y: auto;
+  max-height: 48vh;
+  padding-right: 0.4rem;
+}
+
+.glossary-terms-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.glossary-terms-container::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.glossary-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.glossary-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(0, 128, 255, 0.3);
+  transform: translateX(3px);
+}
+
+.glossary-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.glossary-term-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.glossary-cat-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 128, 255, 0.12);
+  color: var(--me-cyan);
+  border: 1px solid rgba(0, 128, 255, 0.25);
+}
+
+.glossary-aliases-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.alias-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.alias-chip {
+  font-size: 0.68rem;
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--melia-gold);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.glossary-definition {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.glossary-tip-box {
+  background: rgba(0, 128, 255, 0.08);
+  border-left: 3px solid var(--me-blue);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.75rem;
+  color: #bae6fd;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+/* Formulario Añadir Término */
+.add-term-accordion {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.75rem;
+}
+
+.add-term-form {
+  display: none;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-top: 0.75rem;
+}
+
+.add-term-form.open {
+  display: flex;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 0.5rem;
+}
+
+.modal-input, .modal-select {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.modal-input:focus, .modal-select:focus {
+  outline: none;
+  border-color: var(--me-blue);
+}
+
+/* Responsive Mobile Rules */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+  }
+
+  .brand-divider, .melia-logo {
+    display: none;
+  }
+
+  .profile-role {
+    display: none;
+  }
+
+  .day-pill {
+    flex: 0 0 74px;
+    min-width: 74px;
+    padding: 0.6rem 0.3rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

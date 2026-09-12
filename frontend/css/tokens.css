@@ -1,0 +1,39 @@
+/* ==========================================================================
+   ME_VENTS - DESIGN TOKENS
+   Brand Identity: ME by Meliá Málaga & Meliá Hotels International
+   ========================================================================== */
+
+:root {
+  /* Color Tokens */
+  --bg-main: #080b11;
+  --bg-surface: #0f1420;
+  --bg-card: rgba(20, 27, 42, 0.85);
+  --bg-card-hover: rgba(26, 36, 56, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(0, 128, 255, 0.5);
+
+  /* ME by Meliá Vibrant Accents */
+  --me-blue: #0080ff;
+  --me-blue-glow: rgba(0, 128, 255, 0.35);
+  --me-cyan: #00d4ff;
+  --melia-gold: #d4af37;
+  --melia-gold-soft: rgba(212, 175, 55, 0.15);
+
+  /* Neutrals & Typography */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Elevation & Borders */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 25px var(--me-blue-glow);
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}

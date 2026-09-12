@@ -1,9 +1,22 @@
-const CACHE_NAME = 'me-vents-v2';
+const CACHE_NAME = 'me-vents-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/css/style.css',
+  '/css/tokens.css',
+  '/css/base.css',
+  '/css/header.css',
+  '/css/timeline.css',
+  '/css/cards.css',
+  '/css/modals.css',
+  '/css/glossary.css',
   '/js/app.js',
+  '/js/modules/state.js',
+  '/js/modules/timeline.js',
+  '/js/modules/cards.js',
+  '/js/modules/gestures.js',
+  '/js/modules/uploader.js',
+  '/js/modules/glossary.js',
   '/manifest.json',
   '/assets/images/Logo_Me_dark.png',
   '/assets/images/Logo_cañitas_dark.png',
@@ -31,7 +44,6 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
-  // Para llamadas a la API: network first con fallback
   if (e.request.url.includes('/api/')) {
     e.respondWith(
       fetch(e.request).catch(() => caches.match(e.request))
@@ -39,7 +51,6 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Para assets estáticos: cache first
   e.respondWith(
     caches.match(e.request).then((cached) => {
       return cached || fetch(e.request);
