@@ -24,4 +24,6 @@ temp/
 sources/ods/*.pdf
 sources/**/*.pdf
 *.pdf
-backend/test_ods.py
+backend/test_*.py
+backend/get_melia_logo.py
+frontend/assets/images/*_raw.*

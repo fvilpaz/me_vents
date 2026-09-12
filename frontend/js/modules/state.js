@@ -139,8 +139,13 @@ export function formatDateKey(dateObj) {
 }
 
 export function initDate() {
-  const now = new Date();
-  state.selectedDate = formatDateKey(now);
+  const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+  if (dates.length > 0) {
+    state.selectedDate = dates[0];
+  } else {
+    const now = new Date();
+    state.selectedDate = formatDateKey(now);
+  }
 }
 
 export function loadEventsFromStorage() {
@@ -168,6 +173,10 @@ export async function syncWithBackend() {
       if (Array.isArray(serverEvents)) {
         state.events = serverEvents;
         saveEventsToStorage();
+        const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+        if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
+          state.selectedDate = dates[0];
+        }
       }
     }
   } catch (err) {

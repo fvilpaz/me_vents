@@ -97,6 +97,12 @@ export function createEventCardHTML(evt) {
         <span class="time-badge">🕒 ${time}</span>
       </div>
 
+      ${evt.multi_day && evt.multi_day.is_multi_day ? `
+        <div class="multiday-badge">
+          <span>🗓️</span> <strong>${escapeHTML(evt.multi_day.day_label)}</strong> · ${escapeHTML(evt.multi_day.group_name)} (${escapeHTML(evt.multi_day.date_start)} al ${escapeHTML(evt.multi_day.date_end)})
+        </div>
+      ` : ''}
+
       <div class="event-title">${title}</div>
 
       <div class="badges-row">
@@ -148,6 +154,13 @@ export function createEventCardHTML(evt) {
             <div class="op-detail-block op-pisos">
               <div class="op-detail-header"><span>✨ Pisos, AURA & Timing</span></div>
               <div class="op-detail-content">${escapeHTML(pisosNotes)}</div>
+            </div>
+          ` : ''}
+
+          ${op.menu_notes ? `
+            <div class="op-detail-block op-menu">
+              <div class="op-detail-header"><span>🍽️ Gastronomía & Menú Completo (BEO)</span></div>
+              <div class="op-detail-content op-menu-content">${escapeHTML(op.menu_notes)}</div>
             </div>
           ` : ''}
 

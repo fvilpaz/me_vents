@@ -127,6 +127,26 @@
   white-space: nowrap;
 }
 
+.day-pill.has-multiday {
+  border-bottom: 2px solid rgba(56, 189, 248, 0.45);
+}
+
+.day-pill.has-multiday.active {
+  border-bottom: 2px solid var(--me-cyan);
+}
+
+.pill-multiday-badge {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
 .day-pill.active .event-indicator {
   background: var(--me-blue);
   color: white;
