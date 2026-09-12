@@ -58,9 +58,18 @@
       "location": "Planta 1"
     },
     {
+      "id": "estudio-all",
+      "name": "Estudios Combinados (1 a 5)",
+      "aliases": ["estudio 2 + 3 + 4 + 5", "estudios 2 + 3 + 4 + 5", "estudio 1 + 2 + 3 + 4 + 5", "estudio 1 + 2", "estudios plenarios", "plenaria estudios"],
+      "area_m2": 225,
+      "max_capacities": { "u_shape": 50, "escuela": 110, "teatro": 160, "banquete": 110, "coctel": 170, "imperial": 40 },
+      "color_tag": "#1d4ed8",
+      "location": "Planta 1 (Salón Plenario Panelable)"
+    },
+    {
       "id": "foyer",
       "name": "Foyer",
-      "aliases": ["foyer", "hall eventos", "zona de paso", "foyer central"],
+      "aliases": ["foyer", "hall eventos", "zona de paso", "foyer central", "acceso salones"],
       "area_m2": 95,
       "max_capacities": { "coctel": 100, "banquete": 50, "coffee_break_station": 120 },
       "color_tag": "#d4af37",
@@ -68,8 +77,8 @@
     },
     {
       "id": "multifuncional",
-      "name": "Multifuncional",
-      "aliases": ["multifuncional", "sala multifuncional", "salon multifuncional", "multi", "gran salon"],
+      "name": "Sala Multifuncional",
+      "aliases": ["multifuncional", "sala multifuncional", "salon multifuncional", "multi", "gran salon", "multifuntional"],
       "area_m2": 160,
       "max_capacities": { "u_shape": 36, "escuela": 90, "teatro": 140, "banquete": 100, "coctel": 150, "cabaret": 60, "imperial": 30 },
       "color_tag": "#7b2cbf",
@@ -78,29 +87,29 @@
     {
       "id": "canitas-al-fresco",
       "name": "Cañitas al Fresco",
-      "aliases": ["cañitas al fresco", "canitas al fresco", "cañitas maite", "canitas maite", "cañitas", "canitas"],
+      "aliases": ["cañitas al fresco", "canitas al fresco", "cañitas maite", "canitas maite", "cañitas", "canitas", "terraza caña by cañitas", "caña by cañitas", "restaurante cañitas", "restaurante"],
       "area_m2": 110,
-      "max_capacities": { "coctel": 90, "banquete": 60 },
+      "max_capacities": { "coctel": 90, "banquete": 60, "imperial": 22 },
       "color_tag": "#2ec4b6",
       "location": "Planta Baja Exterior"
     },
     {
-      "id": "terraza-rooftop",
-      "name": "Terraza / Rooftop",
-      "aliases": ["terraza", "rooftop", "terraza ático", "ático", "sky bar"],
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": ["terraza pool bar", "pool bar", "terraza", "rooftop", "zona pool bar", "sky bar", "ático"],
       "area_m2": 180,
-      "max_capacities": { "coctel": 140, "banquete": 70 },
+      "max_capacities": { "coctel": 140, "banquete": 70, "imperial": 20 },
       "color_tag": "#e76f51",
       "location": "Rooftop / Terraza Panorámica"
     },
     {
-      "id": "oficina-housekeeping",
-      "name": "Oficina Housekeeping",
-      "aliases": ["oficina housekeeping", "housekeeping", "oficina pisos"],
-      "area_m2": 30,
-      "max_capacities": { "banquete": 15, "coctel": 20 },
-      "color_tag": "#64748b",
-      "location": "Área de Personal"
+      "id": "pergola",
+      "name": "Pérgola (Zona Sofás)",
+      "aliases": ["pérgola", "pergola", "zona de los sofás", "zona sofas", "sofas de la pergola"],
+      "area_m2": 50,
+      "max_capacities": { "coctel": 30, "banquete": 16 },
+      "color_tag": "#ff9f1c",
+      "location": "Exterior / Anexo Terraza"
     }
   ]
 }

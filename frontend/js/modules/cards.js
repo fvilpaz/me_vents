@@ -1,9 +1,6 @@
-/**
- * ME_VENTS - Cards Rendering & Filtering Module
- */
-
 import { state, saveEventsToStorage } from './state.js';
 import { renderTimeline } from './timeline.js';
+import { escapeHTML } from './security.js';
 
 export function renderCards() {
   const container = document.getElementById('cardsContainer');
@@ -68,19 +65,27 @@ export function renderCards() {
 
 export function createEventCardHTML(evt) {
   const spaceColor = evt.space?.color_tag || '#0080ff';
-  const spaceName = evt.space?.name || 'Salón no asignado';
-  const setupLabel = evt.setup?.label || 'Estándar';
+  const spaceName = escapeHTML(evt.space?.name || 'Salón no asignado');
+  const setupLabel = escapeHTML(evt.setup?.label || 'Estándar');
   const setupIcon = evt.setup?.icon || '📋';
-  const pax = evt.pax || 0;
-  const time = `${evt.time_start || '09:00'} - ${evt.time_end || '14:00'}`;
+  const pax = parseInt(evt.pax, 10) || 0;
+  const time = escapeHTML(`${evt.time_start || '09:00'} - ${evt.time_end || '14:00'}`);
+  const title = escapeHTML(evt.title || 'Evento');
 
   const servicesHTML = (evt.services || []).map(s => {
     const isFb = s.type === 'fb';
-    return `<span class="badge ${isFb ? 'badge-fb' : 'badge-eq'}">${s.icon || '✨'} ${s.label}</span>`;
+    return `<span class="badge ${isFb ? 'badge-fb' : 'badge-eq'}">${s.icon || '✨'} ${escapeHTML(s.label)}</span>`;
   }).join('');
 
-  const furniture = evt.operational?.furniture || { mesas_rectangulares: 0, mesas_redondas: 0, mesas_altas: 0, sillas: pax };
-  const times = evt.operational?.times || { setup_minutes: 30, breakdown_minutes: 20 };
+  const op = evt.operational || {};
+  const furniture = op.furniture || { mesas_rectangulares: 0, mesas_redondas: 0, mesas_altas: 0, sillas: pax };
+  const times = op.times || { setup_minutes: 30, breakdown_minutes: 20 };
+  const layoutSummary = op.furniture_summary || '';
+  const montajeNotes = op.montaje_notes || '';
+  const ssttNotes = op.sstt_notes || '';
+  const fbNotes = op.fb_notes || '';
+  const pisosNotes = [op.timing_notes, op.pisos_notes].filter(Boolean).join('\n');
+  const warningAforo = op.warning_aforo || '';
 
   return `
     <div class="event-card">
@@ -92,7 +97,7 @@ export function createEventCardHTML(evt) {
         <span class="time-badge">🕒 ${time}</span>
       </div>
 
-      <div class="event-title">${evt.title}</div>
+      <div class="event-title">${title}</div>
 
       <div class="badges-row">
         <span class="badge badge-setup">${setupIcon} ${setupLabel}</span>
@@ -102,43 +107,60 @@ export function createEventCardHTML(evt) {
 
       <div class="operational-accordion">
         <button class="accordion-toggle" type="button">
-          <span>📦 Plan Operativo de Montaje</span>
+          <span>📋 Plan Operativo de Sala</span>
           <span class="acc-icon">▼</span>
         </button>
         <div class="accordion-body">
-          <div class="furniture-metrics">
-            ${furniture.mesas_rectangulares > 0 ? `
-              <div class="metric-box">
-                <span class="metric-val">${furniture.mesas_rectangulares}</span>
-                <span class="metric-label">Mesas Rectangulares</span>
-              </div>
-            ` : ''}
-            ${furniture.mesas_redondas > 0 ? `
-              <div class="metric-box">
-                <span class="metric-val">${furniture.mesas_redondas}</span>
-                <span class="metric-label">Mesas Redondas</span>
-              </div>
-            ` : ''}
-            ${furniture.mesas_altas > 0 ? `
-              <div class="metric-box">
-                <span class="metric-val">${furniture.mesas_altas}</span>
-                <span class="metric-label">Mesas Altas Cóctel</span>
-              </div>
-            ` : ''}
-            <div class="metric-box">
-              <span class="metric-val">${furniture.sillas}</span>
-              <span class="metric-label">Sillas Requeridas</span>
+          ${warningAforo ? `
+            <div style="font-size: 0.73rem; color: #f87171; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); padding: 0.45rem 0.65rem; border-radius: 4px;">
+              ${escapeHTML(warningAforo)}
             </div>
-          </div>
+          ` : ''}
+
+          ${layoutSummary ? `
+            <div class="op-layout-summary">
+              <span>📐</span> ${escapeHTML(layoutSummary)}
+            </div>
+          ` : ''}
+
+          ${montajeNotes ? `
+            <div class="op-detail-block op-montaje">
+              <div class="op-detail-header"><span>📐 Montaje & Distribución BEO</span></div>
+              <div class="op-detail-content">${escapeHTML(montajeNotes)}</div>
+            </div>
+          ` : ''}
+
+          ${ssttNotes ? `
+            <div class="op-detail-block op-sstt">
+              <div class="op-detail-header"><span>📺 SSTT & Audiovisuales</span></div>
+              <div class="op-detail-content">${escapeHTML(ssttNotes)}</div>
+            </div>
+          ` : ''}
+
+          ${fbNotes ? `
+            <div class="op-detail-block op-fb">
+              <div class="op-detail-header"><span>☕ Alimentos & Bebidas (F&B)</span></div>
+              <div class="op-detail-content">${escapeHTML(fbNotes)}</div>
+            </div>
+          ` : ''}
+
+          ${pisosNotes ? `
+            <div class="op-detail-block op-pisos">
+              <div class="op-detail-header"><span>✨ Pisos, AURA & Timing</span></div>
+              <div class="op-detail-content">${escapeHTML(pisosNotes)}</div>
+            </div>
+          ` : ''}
 
           <div class="timing-row">
-            <span>⏱️ Montaje: <strong>${times.setup_minutes} min</strong></span>
-            <span>🧹 Desmontaje: <strong>${times.breakdown_minutes} min</strong></span>
+            <span>⏱️ Montaje previsto: <strong>${parseInt(times.setup_minutes, 10)} min</strong></span>
+            <span>🧹 Desmontaje: <strong>${parseInt(times.breakdown_minutes, 10)} min</strong></span>
           </div>
 
-          ${evt.raw_snippet ? `
-            <div style="font-size: 0.72rem; color: var(--text-muted); background: rgba(0,0,0,0.2); padding: 0.4rem; border-radius: 4px;">
-              📄 <em>"${evt.raw_snippet}"</em>
+          ${(evt.manager || evt.block_id || evt.pm) ? `
+            <div class="op-meta-row">
+              ${evt.manager ? `<span class="op-tag">👤 Catering: <strong>${escapeHTML(evt.manager)}</strong></span>` : ''}
+              ${evt.block_id ? `<span class="op-tag">📋 BEO: <strong>${escapeHTML(evt.block_id)}</strong></span>` : ''}
+              ${evt.pm ? `<span class="op-tag">PM: <strong>${escapeHTML(evt.pm)}</strong></span>` : ''}
             </div>
           ` : ''}
         </div>
@@ -149,7 +171,7 @@ export function createEventCardHTML(evt) {
           <input type="checkbox" class="setup-check-input">
           <span>Montaje listo en sala</span>
         </label>
-        <button class="del-card-btn" data-id="${evt.id}" title="Eliminar orden">🗑️ Eliminar</button>
+        <button class="del-card-btn" data-id="${escapeHTML(evt.id)}" title="Eliminar orden">🗑️ Eliminar</button>
       </div>
     </div>
   `;

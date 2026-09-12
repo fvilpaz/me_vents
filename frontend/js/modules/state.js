@@ -33,16 +33,23 @@ export const SEED_EVENTS = [
     time_start: "09:00",
     time_end: "13:30",
     space: { id: "estudio-1", name: "Estudio 1", color_tag: "#0080ff" },
-    setup: { key: "u_shape", label: "Herradura / U-Shape", icon: "🧲" },
+    setup: { key: "forma_u", label: "Forma U (U-Shape)", icon: "🏛️" },
     pax: 12,
     services: [
       { type: "fb", key: "coffee_break", label: "Coffee Break", icon: "☕" },
       { type: "equipment", key: "audiovisuales", label: "Audiovisuales (AV)", icon: "🎥" }
     ],
     operational: {
+      furniture_summary: "Montaje en U (U-Shape) para 12 pax",
+      montaje_notes: "Mesas en U orientadas a pantalla TV.\nBlocs de notas ME y bolígrafo por persona.\nAgua mineral en cada puesto.",
+      sstt_notes: "TV 86 pulgadas encendida con HDMI y ClickShare preparado.\nCalefacción/AC regulado a 22ºC.",
+      fb_notes: "Coffee break permanente en el anexo con café, leche vegetal y fruta.",
+      pisos_notes: "Protocolo AURA aplicado 20 min antes. Sala perfumada.",
       furniture: { mesas_rectangulares: 7, mesas_redondas: 0, mesas_altas: 0, sillas: 12 },
       times: { setup_minutes: 25, breakdown_minutes: 15 }
     },
+    manager: "Marta Delange",
+    block_id: "681200",
     raw_snippet: "Salón Estudio 1 montaje U-shape 12 pax CB continuo y pantalla HDMI."
   },
   {

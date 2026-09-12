@@ -1,20 +1,38 @@
 {
   "categories": [
-    { "id": "montajes", "label": "Montajes de Sala", "icon": "🧲" },
+    { "id": "montajes", "label": "Montajes de Sala", "icon": "🏛️" },
     { "id": "fb", "label": "Alimentos & Bebidas (F&B)", "icon": "☕" },
-    { "id": "av_equipamiento", "label": "Audiovisuales & Técnica", "icon": "📺" },
+    { "id": "av_equipamiento", "label": "Audiovisuales & Técnica (SSTT)", "icon": "📺" },
     { "id": "mobiliario_menaje", "label": "Mobiliario & Material", "icon": "🪑" },
-    { "id": "protocolo_hotel", "label": "Protocolo & Términos Opera", "icon": "🏨" }
+    { "id": "protocolo_hotel", "label": "Protocolo, Pisos & Opera", "icon": "🏨" }
   ],
   "terms": [
     {
-      "id": "u-shape",
-      "term": "Herradura / U-Shape",
+      "id": "forma_u",
+      "term": "Forma U (U-Shape)",
       "category": "montajes",
-      "aliases": ["forma u", "forma de u", "u shape", "u-shape", "u_shape", "herradura", "en u", "mesa en u", "ushape"],
-      "definition": "Distribución en forma de U abierta hacia la pantalla o atril. Ideal para reuniones interactivas y presentaciones directivas.",
-      "operational_tip": "Calcular mesas: ceil(pax / 2) + 1. Sillas: 1 por persona. Dejar pasillo central despejado de al menos 1.5m.",
-      "icon": "🧲"
+      "aliases": ["forma u", "forma de u", "u shape", "u-shape", "u_shape", "en u", "mesa en u", "ushape"],
+      "definition": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas.",
+      "operational_tip": "Sillas mirando al centro/frente. Dejar pasillo central despejado de al menos 1.5m. Regletas de corriente y cables ocultos de forma discreta.",
+      "icon": "🏛️"
+    },
+    {
+      "id": "workshop",
+      "term": "Workshop (Mesas de Trabajo)",
+      "category": "montajes",
+      "aliases": ["workshop", "mesas workshop", "formato workshop", "grupos de trabajo", "mesas de trabajo"],
+      "definition": "Islas o estaciones de trabajo en equipo repartidas por la sala (típicamente 1 tablero + 1 silla presidiendo + 2-4 sillas enfrente).",
+      "operational_tip": "Permite circulación fluida de ponentes y dinamizadores entre mesas. Prever toma de corriente por mesa si usan portátiles.",
+      "icon": "🧩"
+    },
+    {
+      "id": "hospitality_desk",
+      "term": "Hospitality Desk / Acreditaciones",
+      "category": "montajes",
+      "aliases": ["hospitality desk", "mesa de acreditacion", "mesa acreditaciones", "mesa bienvenida", "secretaria", "mostrador foyer"],
+      "definition": "Tablero vestido con 2 sillas en el Foyer o acceso a salas para recepción de invitados, entrega de pasaportes, credenciales y bienvenida.",
+      "operational_tip": "Vestir con mantel corporativo impecable, aguas y material de apoyo. Prever espacio para guardarropa y etiquetas al lado.",
+      "icon": "💼"
     },
     {
       "id": "escuela",
@@ -22,7 +40,7 @@
       "category": "montajes",
       "aliases": ["escuela", "school", "classroom", "aulas", "mesas y sillas frente", "tipo colegio"],
       "definition": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas.",
-      "operational_tip": "Calcular mesas: ceil(pax / 2). Dejar 90 cm entre filas para permitir el paso de los asistentes.",
+      "operational_tip": "Dejar al menos 90 cm entre filas para permitir el paso de los asistentes y servicio.",
       "icon": "🎓"
     },
     {
@@ -30,8 +48,8 @@
       "term": "Teatro (Auditorio)",
       "category": "montajes",
       "aliases": ["teatro", "theater", "theatre", "auditorio", "filas de sillas", "solo sillas"],
-      "definition": "Filas de sillas alineadas orientadas al escenario o atril, sin mesas. Máxima capacidad de sala.",
-      "operational_tip": "Colocar siempre 2 o 4 sillas de reserva de cortesía al final. Dejar pasillo central de seguridad.",
+      "definition": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala.",
+      "operational_tip": "Colocar siempre 2 o 4 sillas de reserva al final. Dejar pasillo central de seguridad.",
       "icon": "🎭"
     },
     {
@@ -39,8 +57,8 @@
       "term": "Banquete (Mesas Redondas)",
       "category": "montajes",
       "aliases": ["banquete", "banquet", "mesas redondas", "cena sentada", "almuerzo sentado"],
-      "definition": "Mesas redondas de 1.80m vestidas con mantel y lino, con 8 a 10 comensales por mesa.",
-      "operational_tip": "Calcular mesas: ceil(pax / 8). Dejar mínimo 1.8m entre centros de mesa para el servicio de camareros.",
+      "definition": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa.",
+      "operational_tip": "Dejar mínimo 1.8m entre centros de mesa para el paso y servicio de camareros.",
       "icon": "🍽️"
     },
     {
@@ -49,25 +67,25 @@
       "category": "montajes",
       "aliases": ["coctel", "cóctel", "cocktail", "de pie", "copa de bienvenida", "standing", "cctel"],
       "definition": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida.",
-      "operational_tip": "Calcular 1 mesa alta por cada 8-10 personas. Añadir 2 taburetes por cada 3 mesas para personas mayores.",
+      "operational_tip": "Distribuir mesas altas con servilleteros. Prever sombrillas si es en exterior (terraza/pool bar).",
       "icon": "🍸"
     },
     {
       "id": "imperial",
       "term": "Mesa Imperial (Boardroom)",
       "category": "montajes",
-      "aliases": ["imperial", "boardroom", "mesa unica", "mesa única", "reunion directiva", "directorio"],
-      "definition": "Gran mesa central rectangular cerrada con los participantes sentados frente a frente. Típico de comités de dirección.",
-      "operational_tip": "Vestir con muletón y mantel continuo sin arrugas. Colocar blocs, bolis y aguas perfectamente alineados.",
-      "icon": "🏛️"
+      "aliases": ["imperial", "boardroom", "mesa imperial", "mesa unica", "mesa única", "reunion directiva", "directorio"],
+      "definition": "Mesa presidencial rectangular o combinada corrida con los participantes sentados frente a frente.",
+      "operational_tip": "Alineación milimétrica de minutas, cristalería, blocs y aguas de cortesía.",
+      "icon": "👑"
     },
     {
       "id": "cabaret",
       "term": "Cabaret (Crescent / Media Luna)",
       "category": "montajes",
       "aliases": ["cabaret", "crescent", "semicirculo", "semicírculo", "media luna"],
-      "definition": "Mesas redondas donde solo se montan sillas en la mitad que mira al escenario para evitar que nadie dé la espalda.",
-      "operational_tip": "Calcular 5 o 6 sillas por mesa redonda de 1.80m.",
+      "definition": "Mesas redondas donde solo se montan sillas en la mitad que mira al escenario para no dar la espalda.",
+      "operational_tip": "Calcular 5 o 6 sillas por mesa redonda.",
       "icon": "🎪"
     },
     {
@@ -75,126 +93,90 @@
       "term": "Coffee Break Permanente (Non-Stop)",
       "category": "fb",
       "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo", "estacion continua"],
-      "definition": "Estación de café y refrigerios abierta ininterrumpidamente en la sala o anexo durante toda la jornada.",
-      "operational_tip": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas de café cada 2 horas.",
+      "definition": "Estación de café y refrigerios abierta ininterrumpidamente en la sala o anexo durante la jornada.",
+      "operational_tip": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas.",
       "icon": "☕⚡"
     },
     {
-      "id": "cb-premium",
-      "term": "Coffee Break Premium",
-      "category": "fb",
-      "aliases": ["coffee break premium", "cb premium"],
-      "definition": "Servicio de pausa café de alta gama con surtido gourmet (açaí bowls, rolls de salmón, molletes Joselito, tarta payoyo).",
-      "operational_tip": "Montar exactamente 20 minutos antes de la hora pactada en la BEO. Presentar en bandejas de pizarra o madera noble.",
-      "icon": "☕⭐"
-    },
-    {
       "id": "cb-simple",
-      "term": "Coffee Break Simple",
+      "term": "Coffee Break Estándar",
       "category": "fb",
       "aliases": ["cb", "c.b", "c.b.", "coffee break", "pausa cafe", "pausa café", "cb simple"],
-      "definition": "Servicio estándar de café, té, leche (entera, desnatada, vegetal), zumos y bollería artesanal (croissants, pain au chocolat).",
-      "operational_tip": "Prever siempre alternativa de leche sin lactosa y leche vegetal (avena o soja).",
+      "definition": "Servicio de café, té, leches (entera, desnatada, avena/soja sin lactosa), zumos y bollería artesanal.",
+      "operational_tip": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO.",
       "icon": "☕"
-    },
-    {
-      "id": "finger-buffet",
-      "term": "Finger Buffet",
-      "category": "fb",
-      "aliases": ["finger buffet", "finger food", "pica pica", "buffet informal"],
-      "definition": "Almuerzo informal de bocados individuales servido en el Foyer o en la propia sala de reunión.",
-      "operational_tip": "Prever servilleteros abundantes, platos de apoyo y zona de desbarase rápido para menaje usado.",
-      "icon": "🍱"
     },
     {
       "id": "welcome-drink",
       "term": "Welcome Drink / Copa de Bienvenida",
       "category": "fb",
-      "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida"],
-      "definition": "Pase de copas de cava, cóctel sin alcohol o aguas infusionadas a la llegada de los asistentes.",
-      "operational_tip": "Tener las copas listas en bandejas de servicio 15 minutos antes de la hora de llegada prevista.",
+      "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida", "cañitas splitz"],
+      "definition": "Pase de copas de cava, cóctel o Cañitas Splitz a la llegada de los invitados.",
+      "operational_tip": "Tener bandejas listas 15 minutos antes de la hora de convocatoria.",
       "icon": "🥂"
     },
     {
-      "id": "tv-gran-formato",
-      "term": "Pantalla TV 86\" / 98\" (Videoconferencia)",
+      "id": "finger-buffet",
+      "term": "Almuerzo de Trabajo / Finger Buffet",
+      "category": "fb",
+      "aliases": ["finger buffet", "lunch", "almuerzo de trabajo", "almuerzo", "buffet de trabajo"],
+      "definition": "Almuerzo tipo buffet o platos al centro servido en Cañitas al Fresco o en terraza.",
+      "operational_tip": "Coordinar con cocina el timing exacto de pase de calientes.",
+      "icon": "🥪"
+    },
+    {
+      "id": "minutas",
+      "term": "Minutas Impresas de Menú",
+      "category": "fb",
+      "aliases": ["minuta", "minutas", "carta de menu"],
+      "definition": "Cartas impresas individuales con el menú del evento colocadas sobre cada plato o servilleta.",
+      "operational_tip": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas.",
+      "icon": "📜"
+    },
+    {
+      "id": "sstt-pantallas",
+      "term": "SSTT: Pantallas TV & Videoconferencia",
       "category": "av_equipamiento",
-      "aliases": ["tv 86", "tv 98", "tv 86 pulgadas", "tv 98 pulgadas", "tv de 86", "tv de 98", "video conferencia", "videoconferencia"],
-      "definition": "Pantallas de formato gigante instaladas en salones para presentaciones de alta definición y videollamadas corporativas.",
-      "operational_tip": "Comprobar encendido, volumen y cable de corriente 30 min antes. Verificar cámara para Teams/Zoom.",
+      "aliases": ["tv", "pantalla", "tvs", "pantallas", "tv 86", "tv 98", "pantalla hdmi"],
+      "definition": "Pantallas de gran formato instaladas o móviles para presentaciones y videollamadas.",
+      "operational_tip": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio.",
       "icon": "📺"
     },
     {
-      "id": "hdmi-inalambrico",
-      "term": "HDMI Inalámbrico / ClickShare",
+      "id": "sstt-sonido",
+      "term": "SSTT: Megafonía & Microfonía Inalámbrica",
       "category": "av_equipamiento",
-      "aliases": ["hdmi inalambrico", "hdmi inalámbrico", "clickshare", "barco", "dongle hdmi", "transmisor hdmi"],
-      "definition": "Dispositivo inalámbrico que permite al ponente proyectar la pantalla de su portátil sin tirar cables por el suelo.",
-      "operational_tip": "Dejar el dongle sobre la mesa presidencial junto con un cable HDMI físico de seguridad por si falla.",
-      "icon": "📡"
+      "aliases": ["megafonía", "megafonia", "microfono", "micrófono", "microfonia", "altavoces", "altavoz"],
+      "definition": "Sistemas de amplificación de voz para discursos, mesas redondas y presentaciones.",
+      "operational_tip": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples.",
+      "icon": "🎙️"
     },
     {
-      "id": "flipchart",
-      "term": "Flipchart (Rotafolios)",
+      "id": "sstt-climatizacion",
+      "term": "SSTT: Climatización / AC Previo (22ºC)",
       "category": "av_equipamiento",
-      "aliases": ["flip chart", "flipchart", "rotafolios", "pizarra de papel", "caballete"],
-      "definition": "Caballete con bloc de papel grande para anotaciones dinámicas de conferenciantes o dinámicas de grupo.",
-      "operational_tip": "Colocar siempre 4 rotuladores de colores variados (negro, azul, rojo, verde) recién probados y borrador.",
-      "icon": "📊"
-    },
-    {
-      "id": "material-escritorio",
-      "term": "Blocs de Notas, Bolígrafos y Aguas",
-      "category": "mobiliario_menaje",
-      "aliases": ["blocs", "boligrafos", "bolígrafos", "blocs de notas", "material de papeleria", "aguas"],
-      "definition": "Set de papelería corporativa ME y botella de agua individual colocado en cada puesto de trabajo.",
-      "operational_tip": "Alinear milimétricamente el bloc a 2 dedos del borde de la mesa, bolígrafo a la derecha con logo visible y agua delante.",
-      "icon": "📝"
-    },
-    {
-      "id": "taburete-ene",
-      "term": "Taburete Eñe",
-      "category": "mobiliario_menaje",
-      "aliases": ["taburete eñe", "taburete ene", "taburetes eñe", "taburetes de eñe"],
-      "definition": "Taburetes altos de diseño exclusivo de la marca utilizados en mesas de apoyo exteriores o estaciones.",
-      "operational_tip": "Revisar limpieza y estabilidad antes de situarlos en accesos de salas o Foyer.",
-      "icon": "🪑"
-    },
-    {
-      "id": "tablero-presentacion",
-      "term": "Tablero de Presentación al Fondo",
-      "category": "mobiliario_menaje",
-      "aliases": ["tablero al fondo", "mesa de apoyo al fondo", "mesa de producto"],
-      "definition": "Mesa rectangular vestida colocada junto a la pantalla TV para exponer productos de la marca (ej: Kevin Murphy).",
-      "operational_tip": "Vestir con mantel negro o corporativo impecable.",
-      "icon": "🪵"
+      "aliases": ["ac", "aire acondicionado", "calefaccion", "calefacción", "temperatura", "clima"],
+      "definition": "Regulación de temperatura y climatización de las salas con antelación suficiente.",
+      "operational_tip": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala.",
+      "icon": "❄️"
     },
     {
       "id": "protocolo-aura",
       "term": "Protocolo AURA (Perfumar Sala)",
       "category": "protocolo_hotel",
-      "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala", "fragancia me"],
-      "definition": "Estándar sensorial de ME by Meliá donde las salas deben ventilarse, regular temperatura (22ºC) y perfumarse con la fragancia icónica de la marca antes de que entre el cliente.",
-      "operational_tip": "Aplicar 15-20 minutos antes de la apertura de puertas. Comprobar que no haya olores residuales.",
+      "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala", "fragancia me", "pisos"],
+      "definition": "Estándar sensorial de ME by Meliá: salas ventiladas, impecables y perfumadas con la fragancia icónica de la marca.",
+      "operational_tip": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos.",
       "icon": "✨"
     },
     {
-      "id": "beo-ods",
-      "term": "BEO / ODS (Banquet Event Order)",
+      "id": "beo-control",
+      "term": "Catering Manager & Ficha BEO",
       "category": "protocolo_hotel",
-      "aliases": ["beo", "ods", "orden de servicio", "hoja de servicio"],
-      "definition": "Documento contractual emitido por Opera Sales & Catering que contiene todas las directrices operativas del evento.",
-      "operational_tip": "Es la biblia de sala. Cualquier cambio de última hora debe contrastarse con el Catering Manager.",
+      "aliases": ["beo", "catering manager", "sales manager", "block id", "pm", "orden de servicio"],
+      "definition": "Control operativo oficial emitido por Opera Sales & Catering con el contacto comercial asignado.",
+      "operational_tip": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager.",
       "icon": "📋"
-    },
-    {
-      "id": "pax",
-      "term": "PAX (Número de Asistentes)",
-      "category": "protocolo_hotel",
-      "aliases": ["pax", "personas", "comensales", "asistentes", "invitados"],
-      "definition": "Término hostelero internacional para indicar el número de comensales o personas confirmadas.",
-      "operational_tip": "Siempre montar para el número garantizado. Si hay margen, preparar un 5% de vajilla extra.",
-      "icon": "👥"
     }
   ]
 }

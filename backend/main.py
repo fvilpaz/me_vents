@@ -116,14 +116,19 @@ async def upload_beo(
 ):
     """
     Procesa una orden de servicio (BEO).
-    Soporta órdenes multi-día y multi-sesión de Opera.
+    Soporta órdenes multi-día y multi-sesión de Opera con validaciones de seguridad.
     """
     text_content = ""
     filename = None
     
     if file:
-        filename = file.filename
+        # Prevenir Path Traversal sanitizando el nombre del archivo
+        filename = Path(file.filename).name
+        # Limitar tamaño a 20MB para mitigar ataques DoS por agotamiento de memoria
         content = await file.read()
+        if len(content) > 20 * 1024 * 1024:
+            raise HTTPException(status_code=413, detail="El archivo excede el tamaño máximo permitido (20 MB).")
+            
         if filename.lower().endswith(".pdf"):
             text_content = extract_text_from_pdf(content)
         else:
@@ -132,8 +137,10 @@ async def upload_beo(
             except Exception:
                 text_content = ""
                 
-    if raw_text and len(raw_text.strip()) > 0:
-        text_content = (text_content + "\n" + raw_text).strip()
+    if isinstance(raw_text, str) and len(raw_text.strip()) > 0:
+        # Limitar longitud de texto
+        safe_raw = raw_text.strip()[:100000]
+        text_content = (text_content + "\n" + safe_raw).strip()
         
     if not text_content:
         raise HTTPException(

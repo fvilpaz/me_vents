@@ -18,6 +18,10 @@ node_modules/
 dist/
 .cache/
 
-# Uploads temporales
+# Uploads temporales y PDFs de órdenes (privacidad y tamaño)
 uploads/
 temp/
+sources/ods/*.pdf
+sources/**/*.pdf
+*.pdf
+backend/test_ods.py

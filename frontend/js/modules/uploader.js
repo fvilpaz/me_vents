@@ -123,8 +123,10 @@ export function parseOrderClientSide(text, filename) {
   }
 
   let setup = { key: "estandar", label: "Montaje Estándar", icon: "📋" };
-  if (tLower.includes('u shape') || tLower.includes('u-shape') || tLower.includes('herradura') || tLower.includes(' en u') || tLower.includes('forma u')) {
-    setup = { key: "u_shape", label: "Herradura / U-Shape", icon: "🧲" };
+  if (tLower.includes('u shape') || tLower.includes('u-shape') || tLower.includes('forma u') || tLower.includes('forma de u') || tLower.includes('en u') || tLower.includes('ushape')) {
+    setup = { key: "forma_u", label: "Forma U (U-Shape)", icon: "🏛️" };
+  } else if (tLower.includes('workshop') || tLower.includes('trabajo en equipo')) {
+    setup = { key: "workshop", label: "Workshop (Mesas de Trabajo)", icon: "🧩" };
   } else if (tLower.includes('escuela') || tLower.includes('classroom') || tLower.includes('aulas')) {
     setup = { key: "escuela", label: "Escuela (Classroom)", icon: "🎓" };
   } else if (tLower.includes('coctel') || tLower.includes('cóctel') || tLower.includes('cocktail') || tLower.includes('de pie')) {
@@ -164,11 +166,12 @@ export function parseOrderClientSide(text, filename) {
   }
 
   let mesasRect = 0, mesasRed = 0, mesasAltas = 0;
-  if (setup.key === 'u_shape') mesasRect = Math.ceil(pax / 2) + 1;
+  if (setup.key === 'forma_u' || setup.key === 'u_shape') mesasRect = Math.ceil(pax / 2) + 1;
   else if (setup.key === 'escuela') mesasRect = Math.ceil(pax / 2);
   else if (setup.key === 'banquete') mesasRed = Math.ceil(pax / 8);
   else if (setup.key === 'coctel') mesasAltas = Math.max(2, Math.ceil(pax / 10));
   else if (setup.key === 'imperial') mesasRect = Math.ceil(pax / 2);
+  else if (setup.key === 'workshop') mesasRect = Math.ceil(pax / 4);
 
   return {
     id: `evt-${Date.now()}`,

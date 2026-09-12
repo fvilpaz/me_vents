@@ -1,6 +1,4 @@
-/**
- * ME_VENTS - Operational Glossary Module
- */
+import { escapeHTML, sanitizeInput } from './security.js';
 
 export const glossaryState = {
   terms: [],
@@ -75,11 +73,11 @@ export function setupGlossaryListeners() {
   if (newTermForm) {
     newTermForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const termName = document.getElementById('newTermName')?.value.trim();
-      const category = document.getElementById('newTermCategory')?.value;
-      const aliasesStr = document.getElementById('newTermAliases')?.value.trim() || '';
-      const definition = document.getElementById('newTermDefinition')?.value.trim();
-      const tip = document.getElementById('newTermTip')?.value.trim();
+      const termName = sanitizeInput(document.getElementById('newTermName')?.value, 80);
+      const category = sanitizeInput(document.getElementById('newTermCategory')?.value, 30);
+      const aliasesStr = sanitizeInput(document.getElementById('newTermAliases')?.value, 200);
+      const definition = sanitizeInput(document.getElementById('newTermDefinition')?.value, 500);
+      const tip = sanitizeInput(document.getElementById('newTermTip')?.value, 300);
 
       if (!termName || !definition) return;
 
@@ -159,24 +157,24 @@ export function renderGlossaryTerms() {
     <div class="glossary-card">
       <div class="glossary-card-header">
         <div class="glossary-term-title">
-          <span>${t.icon || '✨'}</span> ${t.term}
+          <span>${t.icon || '✨'}</span> ${escapeHTML(t.term)}
         </div>
-        <span class="glossary-cat-badge">${categoryLabels[t.category] || t.category}</span>
+        <span class="glossary-cat-badge">${escapeHTML(categoryLabels[t.category] || t.category)}</span>
       </div>
 
       ${t.aliases && t.aliases.length > 0 ? `
         <div class="glossary-aliases-row">
           <span class="alias-label">Abreviaturas / Jerga:</span>
-          ${t.aliases.map(a => `<span class="alias-chip">${a}</span>`).join('')}
+          ${t.aliases.map(a => `<span class="alias-chip">${escapeHTML(a)}</span>`).join('')}
         </div>
       ` : ''}
 
-      <div class="glossary-definition">${t.definition}</div>
+      <div class="glossary-definition">${escapeHTML(t.definition)}</div>
 
       ${t.operational_tip ? `
         <div class="glossary-tip-box">
           <span>💡</span>
-          <span><strong>Regla de Sala:</strong> ${t.operational_tip}</span>
+          <span><strong>Regla de Sala:</strong> ${escapeHTML(t.operational_tip)}</span>
         </div>
       ` : ''}
     </div>

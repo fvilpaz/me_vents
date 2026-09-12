@@ -1,12 +1,12 @@
-# Me_vents — ME Málaga Operations & Banquets Suite
+# ME·VENTS — ME Málaga Banquets & Production
 
 [![Brand](https://img.shields.io/badge/Brand-ME_by_Meliá-0080ff.svg)](https://www.melia.com)
 [![Hotel](https://img.shields.io/badge/Hotel-ME_Málaga-blue.svg)]()
 [![PWA](https://img.shields.io/badge/PWA-Offline_Ready-success.svg)]()
 
-**Me_vents** es una aplicación Progressive Web App (PWA) de diseño vanguardista y alta fidelidad estética inspirada en el universo visual de **ME by Meliá** y **Meliá Hotels International**.
+**ME·VENTS** es una Progressive Web App (PWA) de diseño vanguardista inspirada en la identidad cultural y sofisticada de **ME by Meliá** y **Meliá Hotels International**.
 
-Diseñada para **Fai** y el equipo de operaciones/banquetes de ME Málaga para simplificar y automatizar la gestión y montaje de eventos a partir de órdenes de servicio (BEO) en PDF o fotografías.
+Diseñada para **Fai** y el equipo de banquetes y operaciones de ME Málaga para procesar con precisión órdenes de servicio (BEO) en PDF de Opera Sales & Catering, desglosando al instante las necesidades operativas de montaje, técnica (SSTT) y gastronomía (F&B).
 
 ---
 
@@ -15,18 +15,23 @@ Diseñada para **Fai** y el equipo de operaciones/banquetes de ME Málaga para s
 1. **Dashboard Táctil Deslizable por Días**:
    - Navegación horizontal fluida (*swipe gesture*) con el dedo en móviles o con flechas en PC.
    - Indicador de montajes diarios y cómputo de comensales (PAX).
-2. **Cards de Montaje de Alto Impacto Visual**:
-   - Salón oficial con código cromático exclusivo por espacio.
-   - Tipo de montaje (*Herradura / U-Shape, Escuela, Banquete, Cóctel, Teatro, Imperial*).
-   - Desglose operativo interactivo: cálculo exacto de mesas (rectangulares, redondas, altas), sillas a bajar de almacén y tiempos estimados de montaje y desmontaje.
-   - Checkbox interactivo de confirmación de montaje en sala.
+2. **Cards de Montaje con Desglose Operativo Completo (BEO)**:
+   - Salón oficial de ME Málaga con código cromático exclusivo por espacio.
+   - Tipo de montaje (*Forma U / U-Shape, Escuela, Banquete, Cóctel, Teatro, Imperial, Workshop*).
+   - Despliegue de ficha técnica con la flecha:
+     - 📐 **Montaje & Disposición BEO**: notas literales de distribución (mesas workshop, mesas altas, imperial, tableros).
+     - 📺 **SSTT & Audiovisuales**: TVs, HDMI, megafonía, microfonía, regletas y climatización (AC a 22ºC).
+     - ☕ **Alimentos & Bebidas (F&B)**: Coffee breaks, almuerzos, welcome drinks, minutas y horarios.
+     - ✨ **Pisos, AURA & Timing**: Perfumado sensorial de sala, guardarropa y tiempos límites de montaje.
+     - 👤 **Control BEO**: Catering Manager asignado, Block ID y PM.
 3. **Diccionario de Jerga Hotelera & Normalización**:
    - Comprensión automática de abreviaturas del sector:
      - `CB`, `c.b`, `coffee break`, `pausa café` &rarr; ☕ Coffee Break.
      - `lunch`, `almuerzo`, `finger buffet` &rarr; 🥪 Almuerzo de trabajo.
-     - `welcome drink`, `copa bienvenida`, `cava` &rarr; 🥂 Welcome Drink.
-     - `u-shape`, `herradura`, `en u` &rarr; 🧲 Montaje en U.
-     - `av`, `audiovisuales`, `pantalla`, `clicker` &rarr; 🎥 Audiovisuales.
+     - `welcome drink`, `copa bienvenida`, `cañitas splitz` &rarr; 🥂 Welcome Drink.
+     - `forma u`, `u-shape`, `en u` &rarr; 🏛️ Forma U (U-Shape).
+     - `sstt`, `audiovisuales`, `pantalla`, `tv`, `clicker` &rarr; 📺 Audiovisuales (SSTT).
+     - `workshop`, `grupos de trabajo` &rarr; 🧩 Workshop.
 4. **Catálogo de Salones de ME Málaga**:
    - Estudio 1, Estudio 2, Estudio 3, Estudio 4, Estudio 5.
    - Foyer.
