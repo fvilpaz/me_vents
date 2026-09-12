@@ -47,10 +47,12 @@ export function renderCards() {
 
   // Vincular eventos de acordeón
   container.querySelectorAll('.accordion-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const body = btn.nextElementSibling;
-      body.classList.toggle('open');
-      btn.querySelector('.acc-icon').textContent = body.classList.contains('open') ? '▲' : '▼';
+      const isOpen = body.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   });
 

@@ -318,7 +318,7 @@
    Arriba: ME Málaga y ME·VENTS
    Debajo: Meliá Hotels International a la izquierda y Fai con Lead a la derecha
    ========================================================================== */
-@media (max-width: 768px) and (orientation: portrait), (max-width: 640px) {
+@media (max-width: 768px) and (orientation: portrait) {
   .app-header {
     padding: 0.55rem 0.85rem;
   }
@@ -458,22 +458,43 @@
   }
 }
 
-/* Landscape Mode on Mobile */
-@media (max-height: 500px) and (orientation: landscape) {
+/* Landscape Mode on Mobile & Tablets */
+@media (max-height: 600px) and (orientation: landscape) {
   .app-header {
-    padding: 0.4rem 1rem;
+    position: relative; /* En landscape con poca altura, evita que el sticky tape la pantalla al desplegar tarjetas */
+    padding: 0.35rem 1rem;
+  }
+
+  .header-container {
+    flex-wrap: nowrap;
+    gap: 1rem;
   }
 
   .me-logo {
     height: 32px;
   }
 
+  .melia-corp-logo {
+    height: 20px;
+    max-width: 180px;
+  }
+
   .fai-avatar-wrap {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
   }
 
   .overview-bar {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.65rem;
+    padding: 0.5rem 0.85rem;
+  }
+
+  .stat-val {
+    font-size: 1.15rem;
+  }
+
+  .header-secondary-btn, .header-action-btn {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.78rem;
   }
 }
