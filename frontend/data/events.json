@@ -1,0 +1,476 @@
+[
+  {
+    "id": "evt-1",
+    "title": "Kevin Murphy · Llegadas & Alojamiento",
+    "date": "2026-09-18",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 91,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 1,
+      "total_days": 8,
+      "day_label": "Día 1 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (91 habs contratadas)",
+      "montaje_notes": "KEVIN.MURPHY es la exclusiva marca australiana de peluquería profesional presente en 60 países, y en\nmás de 150 shows de moda y fashion weeks internacionales. Se basa en la sostenibilidad, la moda y\nproductos de alta eficacia.\nSe hospedan con nosotros del 17-25.09 con llegadas escalonadas.\nTienen un total de 20 habitaciones contratadas.\nRECEPCIÓN Se alojan con nosotros del 17-25-09 con llegadas post.\nLlegan de manera escalonada.\nNo han solicitado express check in.\nEstán informados del depósito de 100€ por hab y noche.\nRouting hecho a la PM 9008.\nFacturación de habitaciones con desayuno incluido:\n- Superior ME DUI 420€",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación de habitaciones con desayuno incluido (Superior ME DUI 420€, Superior ME+ DUI 440€, Superior Vista Ciudad 430€)",
+      "menu_notes": null,
+      "pisos_notes": "AURA / PISOS: Pendiente confirmar VIPs y camas.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-2",
+    "title": "Kevin Murphy · Pérgola Terraza",
+    "date": "2026-09-19",
+    "time_start": "18:30",
+    "time_end": "20:30",
+    "space": {
+      "id": "pergola",
+      "name": "Pérgola Terraza",
+      "color_tag": "#ff9f1c",
+      "location": "Exterior / Anexo Terraza"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸"
+    },
+    "pax": 15,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 2,
+      "total_days": 8,
+      "day_label": "Día 2 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (15 pax)",
+      "montaje_notes": "F&B Se realizará una Welcome Drink para 14 personas en la zona de los sofás de la Pérgola.",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "F&B Se realizará una Welcome Drink para 14 personas en la zona de los sofás de la Pérgola.\nFacturación:",
+      "menu_notes": "🍴 18:30 a 20:30 - Welcome Drink - Top 60 Min - PÉRGOLA TERRAZA   15 Pax\nEUR 38.00\nSelección de vinos de la casa\nCervezas variadas\nRefrescos\nAgua mineral\nFrutos secos\nPatatas fritas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-3",
+    "title": "Kevin Murphy · Estudio 2 + 3",
+    "date": "2026-09-20",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "color_tag": "#0284c7",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️"
+    },
+    "pax": 13,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 3,
+      "total_days": 8,
+      "day_label": "Día 3 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 13 pax",
+      "montaje_notes": "Colocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart",
+      "sstt_notes": "AC\nHDMI inalámbrico\nTV\nAltavoces\nC. Victoria, 6, Distrito Centro\nMalaga, MA 29012, ES\n912764747\nCuenta KEVIN MURPHY  Block ID: 697386\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h. Prever servicio lo más rápido posible.\nReservar una mesa en la zona de la terraza del restaurante para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias",
+      "menu_notes": "🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado.\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Alcachofas confitadas y fritas en carbonara ibérica, pimienta fresca y lascasde\nqueso Payoyo curado\n- Langostino del sur a la parrilla con jugo de pollo asado\nPLATO PRINCIPAL\n- Corvina en adobo y salsa de tomate encominao\n- Falda de cordero de leche con su jugo a la hierbabuena\nPOSTRE\n- El flan de nata de oveja Cañitas Maite\n*Bodega de la casa\n08:00 a 17:30 - MEETING ROOM - Healthy - Estudio 2 + 3   13 Pax\nEUR 29.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "pisos_notes": "Reservar una mesa en la zona de la terraza del restaurante para 15 personas.\nPISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-4",
+    "title": "Kevin Murphy · Estudio 2 + 3",
+    "date": "2026-09-21",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "color_tag": "#0284c7",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️"
+    },
+    "pax": 13,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 4,
+      "total_days": 8,
+      "day_label": "Día 4 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 13 pax",
+      "montaje_notes": "Colocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart",
+      "sstt_notes": "AC\nHDMI inalámbrico\nAltavoz\nTV\nC. Victoria, 6, Distrito Centro\nMalaga, MA 29012, ES\n912764747\nCuenta KEVIN MURPHY  Block ID: 697386\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h\nReservar una mesa en la zona de la terraza para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias",
+      "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Non Stop - Estudio 2 + 3   13 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Ceviche\n- Torta de aceite\n- Berenjena asada con burrata aliñada\n- Atun rojo salvaje aliñado como si fuera una gilda\n- Navajas\nPRINCIPALES\n- Luvina a la brasa con su pil pil\n- Solomillo Joselito y salsa pimiento verde\nPOSTRE\n- Corte de tarta de queso\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-5",
+    "title": "Kevin Murphy · Estudio 2 + 3",
+    "date": "2026-09-22",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "color_tag": "#0284c7",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️"
+    },
+    "pax": 15,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 5,
+      "total_days": 8,
+      "day_label": "Día 5 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 15 pax",
+      "montaje_notes": "Colocar una U-shape para 15 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación\nFlip chart",
+      "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 49€ por persona\nPendiente recibir alergias e intolerancias",
+      "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n13:15 a 14:15 - Lunch - Finger - Cañitas al Fresco - Foyer   15 Pax\nEUR 49.00\nNuestra version de unas papas con mejillón escabechado\nMarinera de ensaladilla y anchoa\nGilda doble de boquerón y aceituna manzanilla\nRoll brioche de salmón y aguacate malagueño\n\n🍴 13:15 a 14:15Lunch - Clásico - Foyer  15 Pax  EUR 9.00\nAgua mineral\nAgua con gas\nRefresco\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "pisos_notes": "AURA Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-6",
+    "title": "Kevin Murphy · Sala Multifuncional",
+    "date": "2026-09-22",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸"
+    },
+    "pax": 5,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 5,
+      "total_days": 8,
+      "day_label": "Día 5 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (5 pax)",
+      "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrados y agua",
+      "sstt_notes": "AC\nTV 86 pulgadas ya que necesitarán hacer una videoconferencia\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Pendiente recibir alérgenos e intolerancias",
+      "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n13:15 a 14:15 - Lunch - Finger - Cañitas al Fresco - Foyer   15 Pax\nEUR 49.00\nNuestra version de unas papas con mejillón escabechado\nMarinera de ensaladilla y anchoa\nGilda doble de boquerón y aceituna manzanilla\nRoll brioche de salmón y aguacate malagueño\n\n🍴 13:15 a 14:15Lunch - Clásico - Foyer  15 Pax  EUR 9.00\nAgua mineral\nAgua con gas\nRefresco\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-7",
+    "title": "Kevin Murphy · Sala Multifuncional",
+    "date": "2026-09-23",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "reunion",
+      "label": "Reunión MICE",
+      "icon": "💼"
+    },
+    "pax": 5,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 6,
+      "total_days": 8,
+      "day_label": "Día 6 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según BEO para 5 pax",
+      "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrados y agua",
+      "sstt_notes": "AC\nAltavoz\nHDMI inalámbrico\nTV 86 pulgadas ya que necesitan hacer una video conferencia",
+      "fb_notes": "Montar coffee break permanente en sala 20 minutos antes del incio de la reunión",
+      "menu_notes": "🍴 08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - MEETING ROOM - Non Stop - Estudio 2 + 3   13 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n12:30 a 13:30 - Lunch - Finger - Eñe - Foyer   18 Pax\nEUR 59.00\nHomenaje a la matanza\nCogollo cesar de pollo escabechado\nCeviche cítrico de pescado de roca\nBollito preñao de atún rojo Fuentes",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-8",
+    "title": "Kevin Murphy · Estudio 2 + 3",
+    "date": "2026-09-23",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "color_tag": "#0284c7",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️"
+    },
+    "pax": 18,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 6,
+      "total_days": 8,
+      "day_label": "Día 6 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 18 pax",
+      "montaje_notes": "Colocar una U-shape para 15 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación\nFlip chart",
+      "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 59€ por persona\nPendiente recibir alergias e intolerancias",
+      "menu_notes": "🍴 08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - MEETING ROOM - Non Stop - Estudio 2 + 3   13 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n12:30 a 13:30 - Lunch - Finger - Eñe - Foyer   18 Pax\nEUR 59.00\nHomenaje a la matanza\nCogollo cesar de pollo escabechado\nCeviche cítrico de pescado de roca\nBollito preñao de atún rojo Fuentes",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-9",
+    "title": "Kevin Murphy · Estudio 2 + 3",
+    "date": "2026-09-24",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "color_tag": "#0284c7",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️"
+    },
+    "pax": 16,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 7,
+      "total_days": 8,
+      "day_label": "Día 7 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 16 pax",
+      "montaje_notes": "Colocar una U-shape para 16 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación\nFlip chart",
+      "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 69€ por persona\nPendiente recibir alergias e intolerancias",
+      "menu_notes": "🍴 08:00 a 17:30 - Meeting - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n12:30 a 13:30 - Lunch - Finger - Cañitas Maite - Foyer   15 Pax\nEUR 69.00\nLa mejor croqueta del mundo 2021\nPuerro asado en ascuas con burrata y tomate seco\nAtun rojo Fuentes aliñado como si fuera una gilda\nEnsaladilla de gamba blanca al ajillo",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-10",
+    "title": "Kevin Murphy · Sala Multifuncional",
+    "date": "2026-09-24",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "imperial",
+      "label": "Mesa Imperial",
+      "icon": "👑"
+    },
+    "pax": 5,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 7,
+      "total_days": 8,
+      "day_label": "Día 7 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Mesa Imperial única (5 pax)",
+      "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrafos y agua",
+      "sstt_notes": "AC\nTV de 86 pulgadas ya que se realizará una video conferencia\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Pendiente recibir alérgenos e intolerancias",
+      "menu_notes": "🍴 08:00 a 17:30 - Meeting - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:\n08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n12:30 a 13:30 - Lunch - Finger - Cañitas Maite - Foyer   15 Pax\nEUR 69.00\nLa mejor croqueta del mundo 2021\nPuerro asado en ascuas con burrata y tomate seco\nAtun rojo Fuentes aliñado como si fuera una gilda\nEnsaladilla de gamba blanca al ajillo",
+      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-11",
+    "title": "Kevin Murphy · Sala Multifuncional",
+    "date": "2026-09-25",
+    "time_start": "08:30",
+    "time_end": "17:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete",
+      "icon": "🍽️"
+    },
+    "pax": 5,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Kevin Murphy",
+      "date_start": "2026-09-18",
+      "date_end": "2026-09-25",
+      "day_index": 8,
+      "total_days": 8,
+      "day_label": "Día 8 de 8"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según BEO para 5 pax",
+      "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrafos y agua",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Pedirán a la carta\nPendiente recibir alérgenos e intolerancias",
+      "menu_notes": null,
+      "pisos_notes": "Después de la reunión en la sala accederán al restaurante Cañitas Maite 5 pax",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  }
+]

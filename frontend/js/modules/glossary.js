@@ -23,7 +23,18 @@ export async function loadGlossaryData() {
       return;
     }
   } catch (err) {
-    console.log('Cargando glosario desde backend no disponible.');
+    // Backend no disponible (GitHub Pages)
+  }
+
+  try {
+    const staticRes = await fetch('./data/jargon_dictionary.json');
+    if (staticRes.ok) {
+      const data = await staticRes.json();
+      glossaryState.terms = data.terms || [];
+      glossaryState.categories = data.categories || [];
+    }
+  } catch (e) {
+    console.log('Glosario offline no disponible');
   }
 }
 

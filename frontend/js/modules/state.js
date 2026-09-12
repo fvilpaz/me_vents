@@ -177,10 +177,31 @@ export async function syncWithBackend() {
         if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
           state.selectedDate = dates[0];
         }
+        return;
       }
     }
   } catch (err) {
-    console.log('Operando en modo local/offline.');
+    // Modo estático o backend no disponible (GitHub Pages)
+  }
+
+  // Fallback para GitHub Pages o modo offline si no hay eventos en memoria
+  if (!state.events || state.events.length === 0) {
+    try {
+      const staticRes = await fetch('./data/events.json');
+      if (staticRes.ok) {
+        const staticEvents = await staticRes.json();
+        if (Array.isArray(staticEvents) && staticEvents.length > 0) {
+          state.events = staticEvents;
+          saveEventsToStorage();
+          const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+          if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
+            state.selectedDate = dates[0];
+          }
+        }
+      }
+    } catch (e) {
+      console.log('Operando en modo local/offline.');
+    }
   }
 }
 
