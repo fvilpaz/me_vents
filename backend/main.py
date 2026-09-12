@@ -49,10 +49,44 @@ def save_stored_events(events: List[Dict[str, Any]]) -> None:
 @app.get("/api/config")
 def get_config():
     """Devuelve la configuración oficial de salones de ME Málaga y el diccionario de jerga."""
+    from backend.extractor import SPACES_CONFIG, JARGON_CONFIG, reload_config
+    reload_config()
     return {
         "spaces": SPACES_CONFIG.get("spaces", []),
         "jargon": JARGON_CONFIG
     }
+
+@app.get("/api/glossary")
+def get_glossary():
+    """Devuelve el glosario completo de términos, jerga y protocolos."""
+    from backend.extractor import JARGON_CONFIG, reload_config
+    reload_config()
+    return JARGON_CONFIG
+
+@app.post("/api/glossary")
+def add_glossary_term(term_data: Dict[str, Any]):
+    """Añade un nuevo término al glosario de jerga hotelera."""
+    config_file = Path(__file__).resolve().parent.parent / "config" / "jargon_dictionary.json"
+    with open(config_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    terms = data.get("terms", [])
+    # Generar ID
+    term_id = term_data.get("id") or term_data.get("term", "").lower().replace(" ", "-")
+    term_data["id"] = term_id
+    
+    # Reemplazar si ya existe o agregar
+    terms = [t for t in terms if t.get("id") != term_id]
+    terms.append(term_data)
+    data["terms"] = terms
+    
+    with open(config_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        
+    from backend.extractor import reload_config
+    reload_config()
+    return {"status": "success", "term": term_data}
+
 
 @app.get("/api/events")
 def get_events():

@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1.2">
 </head>
 <body>
 
@@ -67,9 +67,14 @@
         </div>
       </div>
 
-      <button class="header-action-btn" id="openModalBtn">
-        <span>+</span> Nueva Orden (BEO)
-      </button>
+      <div class="overview-actions">
+        <button class="header-secondary-btn" id="openGlossaryBtn">
+          <span>📖</span> Glosario de Sala
+        </button>
+        <button class="header-action-btn" id="openModalBtn">
+          <span>+</span> Nueva Orden (BEO)
+        </button>
+      </div>
     </section>
 
     <!-- Day Timeline & Touch Navigation -->
@@ -157,6 +162,65 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       MODAL: GLOSARIO Y DICCIONARIO OPERATIVO DE SALA
+       ========================================================================== -->
+  <div class="modal-overlay" id="glossaryModal">
+    <div class="modal-box modal-box-large">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📖</span> Glosario & Jerga de Eventos (ME Málaga)
+        </div>
+        <button class="modal-close-btn" id="closeGlossaryBtn" aria-label="Cerrar glosario">&times;</button>
+      </div>
+
+      <!-- Buscador interno del Glosario -->
+      <div class="search-box-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="glossarySearchInput" placeholder="Buscar término (ej: U-Shape, CB, AURA, Taburete, Flipchart...)">
+      </div>
+
+      <!-- Píldoras de Categoría del Glosario -->
+      <div class="filter-pills" id="glossaryCategoryPills">
+        <button class="filter-chip active" data-cat="all">Todos</button>
+        <button class="filter-chip" data-cat="montajes">🧲 Montajes</button>
+        <button class="filter-chip" data-cat="fb">☕ F&B (Alimentos y Bebidas)</button>
+        <button class="filter-chip" data-cat="av_equipamiento">📺 Audiovisuales</button>
+        <button class="filter-chip" data-cat="mobiliario_menaje">🪑 Mobiliario</button>
+        <button class="filter-chip" data-cat="protocolo_hotel">🏨 Protocolo Opera</button>
+      </div>
+
+      <!-- Lista de Términos -->
+      <div class="glossary-terms-container" id="glossaryTermsContainer">
+        <!-- Inyectado dinámicamente -->
+      </div>
+
+      <!-- Formulario para Añadir Nuevo Término -->
+      <div class="add-term-accordion">
+        <button class="accordion-toggle" id="toggleAddTermForm">
+          <span>➕ ¿Falta una palabra o abreviatura? Añadir nuevo término</span>
+          <span class="acc-icon">▼</span>
+        </button>
+        <form class="accordion-body add-term-form" id="newTermForm">
+          <div class="form-row">
+            <input type="text" id="newTermName" class="modal-input" placeholder="Nombre del término (ej: Coffee Break VIP)" required>
+            <select id="newTermCategory" class="modal-select" required>
+              <option value="montajes">🧲 Montajes</option>
+              <option value="fb">☕ F&B</option>
+              <option value="av_equipamiento">📺 Audiovisuales</option>
+              <option value="mobiliario_menaje">🪑 Mobiliario</option>
+              <option value="protocolo_hotel">🏨 Protocolo</option>
+            </select>
+          </div>
+          <input type="text" id="newTermAliases" class="modal-input" placeholder="Abreviaturas o sinónimos separados por coma (ej: cb vip, coffee vip, cbv)">
+          <textarea id="newTermDefinition" class="modal-input" placeholder="Definición o descripción de qué es..." rows="2" required></textarea>
+          <input type="text" id="newTermTip" class="modal-input" placeholder="Consejo operativo de montaje o regla de sala (opcional)">
+          <button type="submit" class="modal-submit-btn">💾 Guardar en el Glosario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="app-footer">
     <div class="footer-text">
@@ -165,7 +229,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="/js/app.js"></script>
+  <script src="/js/app.js?v=1.2"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

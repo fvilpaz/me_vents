@@ -1,162 +1,200 @@
 {
-  "montajes": [
+  "categories": [
+    { "id": "montajes", "label": "Montajes de Sala", "icon": "🧲" },
+    { "id": "fb", "label": "Alimentos & Bebidas (F&B)", "icon": "☕" },
+    { "id": "av_equipamiento", "label": "Audiovisuales & Técnica", "icon": "📺" },
+    { "id": "mobiliario_menaje", "label": "Mobiliario & Material", "icon": "🪑" },
+    { "id": "protocolo_hotel", "label": "Protocolo & Términos Opera", "icon": "🏨" }
+  ],
+  "terms": [
     {
-      "key": "u_shape",
-      "label": "Herradura / U-Shape",
+      "id": "u-shape",
+      "term": "Herradura / U-Shape",
+      "category": "montajes",
       "aliases": ["forma u", "forma de u", "u shape", "u-shape", "u_shape", "herradura", "en u", "mesa en u", "ushape"],
-      "icon": "🧲",
-      "formula": "mesas = ceil(pax / 2) + 1; sillas = pax",
-      "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
+      "definition": "Distribución en forma de U abierta hacia la pantalla o atril. Ideal para reuniones interactivas y presentaciones directivas.",
+      "operational_tip": "Calcular mesas: ceil(pax / 2) + 1. Sillas: 1 por persona. Dejar pasillo central despejado de al menos 1.5m.",
+      "icon": "🧲"
     },
     {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
+      "id": "escuela",
+      "term": "Escuela (Classroom)",
+      "category": "montajes",
       "aliases": ["escuela", "school", "classroom", "aulas", "mesas y sillas frente", "tipo colegio"],
-      "icon": "🎓",
-      "formula": "mesas = ceil(pax / 2); sillas = pax",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa"
+      "definition": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas.",
+      "operational_tip": "Calcular mesas: ceil(pax / 2). Dejar 90 cm entre filas para permitir el paso de los asistentes.",
+      "icon": "🎓"
     },
     {
-      "key": "teatro",
-      "label": "Teatro (Auditorio)",
+      "id": "teatro",
+      "term": "Teatro (Auditorio)",
+      "category": "montajes",
       "aliases": ["teatro", "theater", "theatre", "auditorio", "filas de sillas", "solo sillas"],
-      "icon": "🎭",
-      "formula": "mesas = 0; sillas = pax + 2 (reserva)",
-      "description": "Filas de sillas con pasillo central sin mesas"
+      "definition": "Filas de sillas alineadas orientadas al escenario o atril, sin mesas. Máxima capacidad de sala.",
+      "operational_tip": "Colocar siempre 2 o 4 sillas de reserva de cortesía al final. Dejar pasillo central de seguridad.",
+      "icon": "🎭"
     },
     {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
+      "id": "banquete",
+      "term": "Banquete (Mesas Redondas)",
+      "category": "montajes",
       "aliases": ["banquete", "banquet", "mesas redondas", "cena sentada", "almuerzo sentado"],
-      "icon": "🍽️",
-      "formula": "mesas_redondas = ceil(pax / 8); sillas = pax",
-      "description": "Mesas redondas vestidas con mantel y lino"
+      "definition": "Mesas redondas de 1.80m vestidas con mantel y lino, con 8 a 10 comensales por mesa.",
+      "operational_tip": "Calcular mesas: ceil(pax / 8). Dejar mínimo 1.8m entre centros de mesa para el servicio de camareros.",
+      "icon": "🍽️"
     },
     {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
+      "id": "coctel",
+      "term": "Cóctel (Cocktail)",
+      "category": "montajes",
       "aliases": ["coctel", "cóctel", "cocktail", "de pie", "copa de bienvenida", "standing", "cctel"],
-      "icon": "🍸",
-      "formula": "mesas_altas = ceil(pax / 10); taburetes = ceil(pax / 15)",
-      "description": "Mesas altas tipo bistró y zonas despejadas de circulación"
+      "definition": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida.",
+      "operational_tip": "Calcular 1 mesa alta por cada 8-10 personas. Añadir 2 taburetes por cada 3 mesas para personas mayores.",
+      "icon": "🍸"
     },
     {
-      "key": "imperial",
-      "label": "Mesa Imperial (Boardroom)",
+      "id": "imperial",
+      "term": "Mesa Imperial (Boardroom)",
+      "category": "montajes",
       "aliases": ["imperial", "boardroom", "mesa unica", "mesa única", "reunion directiva", "directorio"],
-      "icon": "🏛️",
-      "formula": "mesas = ceil(pax / 2); sillas = pax",
-      "description": "Gran mesa central cerrada con sillas alrededor"
+      "definition": "Gran mesa central rectangular cerrada con los participantes sentados frente a frente. Típico de comités de dirección.",
+      "operational_tip": "Vestir con muletón y mantel continuo sin arrugas. Colocar blocs, bolis y aguas perfectamente alineados.",
+      "icon": "🏛️"
     },
     {
-      "key": "cabaret",
-      "label": "Cabaret (Semicírculo)",
-      "aliases": ["cabaret", "crescent", "semicirculo", "semicírculo"],
-      "icon": "🎪",
-      "formula": "mesas_redondas = ceil(pax / 5); sillas = pax",
-      "description": "Mesas redondas con sillas sólo orientadas hacia la pantalla"
-    }
-  ],
-  "servicios_fb": [
+      "id": "cabaret",
+      "term": "Cabaret (Crescent / Media Luna)",
+      "category": "montajes",
+      "aliases": ["cabaret", "crescent", "semicirculo", "semicírculo", "media luna"],
+      "definition": "Mesas redondas donde solo se montan sillas en la mitad que mira al escenario para evitar que nadie dé la espalda.",
+      "operational_tip": "Calcular 5 o 6 sillas por mesa redonda de 1.80m.",
+      "icon": "🎪"
+    },
     {
-      "key": "coffee_break_permanente",
-      "label": "CB Permanente / Non-Stop",
-      "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo"],
-      "icon": "☕⚡",
+      "id": "cb-permanente",
+      "term": "Coffee Break Permanente (Non-Stop)",
       "category": "fb",
-      "elements_recommended": "Estación de café permanente en sala durante toda la jornada, reposición constante de zumos, leches y aguas"
+      "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo", "estacion continua"],
+      "definition": "Estación de café y refrigerios abierta ininterrumpidamente en la sala o anexo durante toda la jornada.",
+      "operational_tip": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas de café cada 2 horas.",
+      "icon": "☕⚡"
     },
     {
-      "key": "coffee_break_premium",
-      "label": "Coffee Break Premium",
+      "id": "cb-premium",
+      "term": "Coffee Break Premium",
+      "category": "fb",
       "aliases": ["coffee break premium", "cb premium"],
-      "icon": "☕⭐",
-      "category": "fb",
-      "elements_recommended": "Selección premium: açaí, banana bread, roll de salmón, molletes Joselito, tarta queso payoyo"
+      "definition": "Servicio de pausa café de alta gama con surtido gourmet (açaí bowls, rolls de salmón, molletes Joselito, tarta payoyo).",
+      "operational_tip": "Montar exactamente 20 minutos antes de la hora pactada en la BEO. Presentar en bandejas de pizarra o madera noble.",
+      "icon": "☕⭐"
     },
     {
-      "key": "coffee_break",
-      "label": "Coffee Break",
-      "aliases": ["cb", "c.b", "c.b.", "c break", "c.break", "coffee break", "pausa cafe", "pausa café", "estacion cafe"],
-      "icon": "☕",
+      "id": "cb-simple",
+      "term": "Coffee Break Simple",
       "category": "fb",
-      "elements_recommended": "Estación de café Nespresso/filtro, termos de leche, bollería, fruta y aguas"
+      "aliases": ["cb", "c.b", "c.b.", "coffee break", "pausa cafe", "pausa café", "cb simple"],
+      "definition": "Servicio estándar de café, té, leche (entera, desnatada, vegetal), zumos y bollería artesanal (croissants, pain au chocolat).",
+      "operational_tip": "Prever siempre alternativa de leche sin lactosa y leche vegetal (avena o soja).",
+      "icon": "☕"
     },
     {
-      "key": "welcome_drink",
-      "label": "Welcome Drink / Copa Bienvenida",
+      "id": "finger-buffet",
+      "term": "Finger Buffet",
+      "category": "fb",
+      "aliases": ["finger buffet", "finger food", "pica pica", "buffet informal"],
+      "definition": "Almuerzo informal de bocados individuales servido en el Foyer o en la propia sala de reunión.",
+      "operational_tip": "Prever servilleteros abundantes, platos de apoyo y zona de desbarase rápido para menaje usado.",
+      "icon": "🍱"
+    },
+    {
+      "id": "welcome-drink",
+      "term": "Welcome Drink / Copa de Bienvenida",
+      "category": "fb",
       "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida"],
-      "icon": "🥂",
-      "category": "fb",
-      "elements_recommended": "Pase de bandejas con copas de cava y aguas infusionadas"
+      "definition": "Pase de copas de cava, cóctel sin alcohol o aguas infusionadas a la llegada de los asistentes.",
+      "operational_tip": "Tener las copas listas en bandejas de servicio 15 minutos antes de la hora de llegada prevista.",
+      "icon": "🥂"
     },
     {
-      "key": "finger_buffet",
-      "label": "Finger Buffet en Sala/Foyer",
-      "aliases": ["finger buffet", "finger food", "pica pica"],
-      "icon": "🍱",
-      "category": "fb",
-      "elements_recommended": "Buffet frío/caliente informal en Foyer o sala de reunión"
-    },
-    {
-      "key": "almuerzo_trabajo",
-      "label": "Almuerzo de Trabajo",
-      "aliases": ["lunch", "almuerzo", "menu trabajo", "menú trabajo", "buffet almuerzo", "comida"],
-      "icon": "🥪",
-      "category": "fb",
-      "elements_recommended": "Servicio de almuerzo en sala o mesa reservada en restaurante/terraza"
-    },
-    {
-      "key": "cena_gala",
-      "label": "Cena de Gala / Restaurante",
-      "aliases": ["cena", "cena gala", "dinner", "gala dinner", "cena formal"],
-      "icon": "🍷",
-      "category": "fb",
-      "elements_recommended": "Menú servido en mesa con cubertería de gala y mantelería"
-    }
-  ],
-  "equipamiento": [
-    {
-      "key": "tv_gran_formato",
-      "label": "Pantalla TV 86\" / 98\"",
+      "id": "tv-gran-formato",
+      "term": "Pantalla TV 86\" / 98\" (Videoconferencia)",
+      "category": "av_equipamiento",
       "aliases": ["tv 86", "tv 98", "tv 86 pulgadas", "tv 98 pulgadas", "tv de 86", "tv de 98", "video conferencia", "videoconferencia"],
+      "definition": "Pantallas de formato gigante instaladas en salones para presentaciones de alta definición y videollamadas corporativas.",
+      "operational_tip": "Comprobar encendido, volumen y cable de corriente 30 min antes. Verificar cámara para Teams/Zoom.",
       "icon": "📺"
     },
     {
-      "key": "audiovisuales",
-      "label": "Audiovisuales (AV / HDMI / Altavoz)",
-      "aliases": ["av", "a/v", "audiovisuales", "hdmi", "hdmi inalambrico", "hdmi inalámbrico", "altavoz", "altavoces", "proyector", "pantalla"],
-      "icon": "🎥"
+      "id": "hdmi-inalambrico",
+      "term": "HDMI Inalámbrico / ClickShare",
+      "category": "av_equipamiento",
+      "aliases": ["hdmi inalambrico", "hdmi inalámbrico", "clickshare", "barco", "dongle hdmi", "transmisor hdmi"],
+      "definition": "Dispositivo inalámbrico que permite al ponente proyectar la pantalla de su portátil sin tirar cables por el suelo.",
+      "operational_tip": "Dejar el dongle sobre la mesa presidencial junto con un cable HDMI físico de seguridad por si falla.",
+      "icon": "📡"
     },
     {
-      "key": "material_escritorio",
-      "label": "Blocs de Notas & Bolígrafos",
-      "aliases": ["blocs", "boligrafos", "bolígrafos", "blocs de notas", "material de papeleria"],
-      "icon": "📝"
-    },
-    {
-      "key": "flipchart",
-      "label": "Flipchart / Rotafolios",
-      "aliases": ["flip chart", "flipchart", "rotafolios", "pizarra"],
+      "id": "flipchart",
+      "term": "Flipchart (Rotafolios)",
+      "category": "av_equipamiento",
+      "aliases": ["flip chart", "flipchart", "rotafolios", "pizarra de papel", "caballete"],
+      "definition": "Caballete con bloc de papel grande para anotaciones dinámicas de conferenciantes o dinámicas de grupo.",
+      "operational_tip": "Colocar siempre 4 rotuladores de colores variados (negro, azul, rojo, verde) recién probados y borrador.",
       "icon": "📊"
     },
     {
-      "key": "protocolo_aura",
-      "label": "Protocolo AURA (Perfumar Sala)",
-      "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala"],
+      "id": "material-escritorio",
+      "term": "Blocs de Notas, Bolígrafos y Aguas",
+      "category": "mobiliario_menaje",
+      "aliases": ["blocs", "boligrafos", "bolígrafos", "blocs de notas", "material de papeleria", "aguas"],
+      "definition": "Set de papelería corporativa ME y botella de agua individual colocado en cada puesto de trabajo.",
+      "operational_tip": "Alinear milimétricamente el bloc a 2 dedos del borde de la mesa, bolígrafo a la derecha con logo visible y agua delante.",
+      "icon": "📝"
+    },
+    {
+      "id": "taburete-ene",
+      "term": "Taburete Eñe",
+      "category": "mobiliario_menaje",
+      "aliases": ["taburete eñe", "taburete ene", "taburetes eñe", "taburetes de eñe"],
+      "definition": "Taburetes altos de diseño exclusivo de la marca utilizados en mesas de apoyo exteriores o estaciones.",
+      "operational_tip": "Revisar limpieza y estabilidad antes de situarlos en accesos de salas o Foyer.",
+      "icon": "🪑"
+    },
+    {
+      "id": "tablero-presentacion",
+      "term": "Tablero de Presentación al Fondo",
+      "category": "mobiliario_menaje",
+      "aliases": ["tablero al fondo", "mesa de apoyo al fondo", "mesa de producto"],
+      "definition": "Mesa rectangular vestida colocada junto a la pantalla TV para exponer productos de la marca (ej: Kevin Murphy).",
+      "operational_tip": "Vestir con mantel negro o corporativo impecable.",
+      "icon": "🪵"
+    },
+    {
+      "id": "protocolo-aura",
+      "term": "Protocolo AURA (Perfumar Sala)",
+      "category": "protocolo_hotel",
+      "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala", "fragancia me"],
+      "definition": "Estándar sensorial de ME by Meliá donde las salas deben ventilarse, regular temperatura (22ºC) y perfumarse con la fragancia icónica de la marca antes de que entre el cliente.",
+      "operational_tip": "Aplicar 15-20 minutos antes de la apertura de puertas. Comprobar que no haya olores residuales.",
       "icon": "✨"
     },
     {
-      "key": "microfonia",
-      "label": "Microfonía",
-      "aliases": ["micro", "microfono", "micrófono", "micros", "inalambrico", "de solapa", "diadema"],
-      "icon": "🎙️"
+      "id": "beo-ods",
+      "term": "BEO / ODS (Banquet Event Order)",
+      "category": "protocolo_hotel",
+      "aliases": ["beo", "ods", "orden de servicio", "hoja de servicio"],
+      "definition": "Documento contractual emitido por Opera Sales & Catering que contiene todas las directrices operativas del evento.",
+      "operational_tip": "Es la biblia de sala. Cualquier cambio de última hora debe contrastarse con el Catering Manager.",
+      "icon": "📋"
     },
     {
-      "key": "tarima_atril",
-      "label": "Tarima / Atril",
-      "aliases": ["tarima", "atril", "stage", "estrado", "podium"],
-      "icon": "🎤"
+      "id": "pax",
+      "term": "PAX (Número de Asistentes)",
+      "category": "protocolo_hotel",
+      "aliases": ["pax", "personas", "comensales", "asistentes", "invitados"],
+      "definition": "Término hostelero internacional para indicar el número de comensales o personas confirmadas.",
+      "operational_tip": "Siempre montar para el número garantizado. Si hay margen, preparar un 5% de vajilla extra.",
+      "icon": "👥"
     }
   ]
 }

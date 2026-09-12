@@ -73,16 +73,22 @@ def match_space(text: str) -> Optional[Dict[str, Any]]:
     return None
 
 def match_setup(text: str) -> Dict[str, Any]:
-    """Identifica el tipo de montaje según el diccionario de jerga."""
+    """Identifica el tipo de montaje según el glosario de jerga."""
     reload_config()
     text_lower = text.lower()
-    montajes = JARGON_CONFIG.get("montajes", [])
+    terms = JARGON_CONFIG.get("terms", [])
+    montajes = [t for t in terms if t.get("category") == "montajes"] or JARGON_CONFIG.get("montajes", [])
     
     for m in montajes:
         for alias in sorted(m.get("aliases", []), key=len, reverse=True):
             pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
             if re.search(pattern, text_lower):
-                return m
+                return {
+                    "key": m.get("id") or m.get("key", "estandar"),
+                    "label": m.get("term") or m.get("label", "Montaje"),
+                    "icon": m.get("icon", "🧲"),
+                    "description": m.get("definition") or m.get("description", "")
+                }
                 
     return {
         "key": "estandar",
@@ -92,35 +98,53 @@ def match_setup(text: str) -> Dict[str, Any]:
     }
 
 def match_services(text: str) -> List[Dict[str, Any]]:
-    """Detecta servicios de F&B y equipamiento especial (CB, AV, mic, etc.)."""
+    """Detecta servicios de F&B, equipamiento y protocolo según el glosario."""
     reload_config()
     text_lower = text.lower()
     services_found = []
+    terms = JARGON_CONFIG.get("terms", [])
     
-    for fb in JARGON_CONFIG.get("servicios_fb", []):
-        for alias in fb.get("aliases", []):
-            pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
-            if re.search(pattern, text_lower):
-                services_found.append({
-                    "type": "fb",
-                    "key": fb["key"],
-                    "label": fb["label"],
-                    "icon": fb["icon"],
-                    "details": fb.get("elements_recommended", "")
-                })
-                break
-                
-    for eq in JARGON_CONFIG.get("equipamiento", []):
-        for alias in eq.get("aliases", []):
-            pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
-            if re.search(pattern, text_lower):
-                services_found.append({
-                    "type": "equipment",
-                    "key": eq["key"],
-                    "label": eq["label"],
-                    "icon": eq["icon"]
-                })
-                break
+    if terms:
+        # Extraer servicios de F&B, AV, Mobiliario y Protocolo
+        for t in terms:
+            if t.get("category") == "montajes":
+                continue
+            for alias in t.get("aliases", []):
+                pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
+                if re.search(pattern, text_lower):
+                    services_found.append({
+                        "type": t.get("category"),
+                        "key": t.get("id"),
+                        "label": t.get("term"),
+                        "icon": t.get("icon", "✨"),
+                        "details": t.get("operational_tip") or t.get("definition", "")
+                    })
+                    break
+    else:
+        for fb in JARGON_CONFIG.get("servicios_fb", []):
+            for alias in fb.get("aliases", []):
+                pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
+                if re.search(pattern, text_lower):
+                    services_found.append({
+                        "type": "fb",
+                        "key": fb["key"],
+                        "label": fb["label"],
+                        "icon": fb["icon"],
+                        "details": fb.get("elements_recommended", "")
+                    })
+                    break
+                    
+        for eq in JARGON_CONFIG.get("equipamiento", []):
+            for alias in eq.get("aliases", []):
+                pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
+                if re.search(pattern, text_lower):
+                    services_found.append({
+                        "type": "equipment",
+                        "key": eq["key"],
+                        "label": eq["label"],
+                        "icon": eq["icon"]
+                    })
+                    break
                 
     return services_found
 
