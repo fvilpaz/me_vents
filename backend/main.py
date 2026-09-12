@@ -101,6 +101,13 @@ def create_event(event: Dict[str, Any]):
     save_stored_events(events)
     return {"status": "success", "event": event}
 
+@app.delete("/api/events")
+@app.post("/api/events/clear")
+def clear_events():
+    """Limpia todos los eventos almacenados."""
+    save_stored_events([])
+    return {"status": "success", "message": "Todos los eventos han sido eliminados"}
+
 @app.delete("/api/events/{event_id}")
 def delete_event(event_id: str):
     """Elimina un evento registrado."""

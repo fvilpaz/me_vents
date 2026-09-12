@@ -149,11 +149,10 @@ export function loadEventsFromStorage() {
     try {
       state.events = JSON.parse(saved);
     } catch (e) {
-      state.events = SEED_EVENTS;
+      state.events = [];
     }
   } else {
-    state.events = SEED_EVENTS;
-    saveEventsToStorage();
+    state.events = [];
   }
 }
 
@@ -166,7 +165,7 @@ export async function syncWithBackend() {
     const res = await fetch('/api/events');
     if (res.ok) {
       const serverEvents = await res.json();
-      if (serverEvents && serverEvents.length > 0) {
+      if (Array.isArray(serverEvents)) {
         state.events = serverEvents;
         saveEventsToStorage();
       }
@@ -175,3 +174,14 @@ export async function syncWithBackend() {
     console.log('Operando en modo local/offline.');
   }
 }
+
+export async function clearAllEvents() {
+  state.events = [];
+  saveEventsToStorage();
+  try {
+    await fetch('/api/events', { method: 'DELETE' });
+  } catch (err) {
+    console.log('Limpiado en local');
+  }
+}
+
