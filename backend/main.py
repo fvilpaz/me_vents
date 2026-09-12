@@ -9,7 +9,7 @@ from fastapi.responses import JSONResponse
 
 from backend.extractor import (
     extract_text_from_pdf,
-    parse_event_order,
+    parse_multi_session_opera,
     SPACES_CONFIG,
     JARGON_CONFIG
 )
@@ -17,7 +17,7 @@ from backend.extractor import (
 app = FastAPI(
     title="Me_vents API - ME Málaga",
     description="Motor de análisis y gestión operativa de montajes de eventos para ME by Meliá",
-    version="1.0.0"
+    version="1.1.0"
 )
 
 # CORS para desarrollo
@@ -82,7 +82,7 @@ async def upload_beo(
 ):
     """
     Procesa una orden de servicio (BEO).
-    Puede recibir un archivo PDF/imagen o texto plano directamente.
+    Soporta órdenes multi-día y multi-sesión de Opera.
     """
     text_content = ""
     filename = None
@@ -104,20 +104,22 @@ async def upload_beo(
     if not text_content:
         raise HTTPException(
             status_code=400,
-            detail="No se ha podido extraer texto del archivo ni se ha proporcionado texto descriptivo."
+            detail="No se ha podido extraer texto del documento."
         )
         
-    # Procesar con el motor de extracción
-    event_data = parse_event_order(text_content, filename=filename)
+    # Procesar con el motor multi-sesión de Opera
+    new_events = parse_multi_session_opera(text_content, filename=filename)
     
     # Guardar en almacenamiento
     events = get_stored_events()
-    events.append(event_data)
+    events.extend(new_events)
     save_stored_events(events)
     
     return {
         "status": "success",
-        "event": event_data
+        "events_count": len(new_events),
+        "events": new_events,
+        "first_event": new_events[0] if new_events else None
     }
 
 # Servir Frontend estático si existe

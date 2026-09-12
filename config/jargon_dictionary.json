@@ -3,7 +3,7 @@
     {
       "key": "u_shape",
       "label": "Herradura / U-Shape",
-      "aliases": ["u shape", "u-shape", "u_shape", "herradura", "forma de u", "en u", "mesa en u", "ushape"],
+      "aliases": ["forma u", "forma de u", "u shape", "u-shape", "u_shape", "herradura", "en u", "mesa en u", "ushape"],
       "icon": "🧲",
       "formula": "mesas = ceil(pax / 2) + 1; sillas = pax",
       "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
@@ -30,15 +30,15 @@
       "aliases": ["banquete", "banquet", "mesas redondas", "cena sentada", "almuerzo sentado"],
       "icon": "🍽️",
       "formula": "mesas_redondas = ceil(pax / 8); sillas = pax",
-      "description": "Mesas redondas de 8-10 comensales vestidas con mantel y lino"
+      "description": "Mesas redondas vestidas con mantel y lino"
     },
     {
       "key": "coctel",
       "label": "Cóctel (Cocktail)",
-      "aliases": ["coctel", "cóctel", "cocktail", "de pie", "copa de bienvenida", "standing"],
+      "aliases": ["coctel", "cóctel", "cocktail", "de pie", "copa de bienvenida", "standing", "cctel"],
       "icon": "🍸",
       "formula": "mesas_altas = ceil(pax / 10); taburetes = ceil(pax / 15)",
-      "description": "Mesas altas de apoyo tipo bistró y zonas despejadas de circulación"
+      "description": "Mesas altas tipo bistró y zonas despejadas de circulación"
     },
     {
       "key": "imperial",
@@ -54,10 +54,26 @@
       "aliases": ["cabaret", "crescent", "semicirculo", "semicírculo"],
       "icon": "🎪",
       "formula": "mesas_redondas = ceil(pax / 5); sillas = pax",
-      "description": "Mesas redondas con sillas sólo orientadas hacia el escenario"
+      "description": "Mesas redondas con sillas sólo orientadas hacia la pantalla"
     }
   ],
   "servicios_fb": [
+    {
+      "key": "coffee_break_permanente",
+      "label": "CB Permanente / Non-Stop",
+      "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo"],
+      "icon": "☕⚡",
+      "category": "fb",
+      "elements_recommended": "Estación de café permanente en sala durante toda la jornada, reposición constante de zumos, leches y aguas"
+    },
+    {
+      "key": "coffee_break_premium",
+      "label": "Coffee Break Premium",
+      "aliases": ["coffee break premium", "cb premium"],
+      "icon": "☕⭐",
+      "category": "fb",
+      "elements_recommended": "Selección premium: açaí, banana bread, roll de salmón, molletes Joselito, tarta queso payoyo"
+    },
     {
       "key": "coffee_break",
       "label": "Coffee Break",
@@ -72,31 +88,63 @@
       "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida"],
       "icon": "🥂",
       "category": "fb",
-      "elements_recommended": "Bandejas con copas de cava, cóctel sin alcohol y aguas infusionadas"
+      "elements_recommended": "Pase de bandejas con copas de cava y aguas infusionadas"
+    },
+    {
+      "key": "finger_buffet",
+      "label": "Finger Buffet en Sala/Foyer",
+      "aliases": ["finger buffet", "finger food", "pica pica"],
+      "icon": "🍱",
+      "category": "fb",
+      "elements_recommended": "Buffet frío/caliente informal en Foyer o sala de reunión"
     },
     {
       "key": "almuerzo_trabajo",
-      "label": "Almuerzo de Trabajo / Finger Buffet",
-      "aliases": ["lunch", "almuerzo", "menu trabajo", "menú trabajo", "finger buffet", "buffet almuerzo", "comida"],
+      "label": "Almuerzo de Trabajo",
+      "aliases": ["lunch", "almuerzo", "menu trabajo", "menú trabajo", "buffet almuerzo", "comida"],
       "icon": "🥪",
       "category": "fb",
-      "elements_recommended": "Buffet buffet frío/caliente, vajilla completa, cristalería de agua y vino"
+      "elements_recommended": "Servicio de almuerzo en sala o mesa reservada en restaurante/terraza"
     },
     {
       "key": "cena_gala",
-      "label": "Cena de Gala",
+      "label": "Cena de Gala / Restaurante",
       "aliases": ["cena", "cena gala", "dinner", "gala dinner", "cena formal"],
       "icon": "🍷",
       "category": "fb",
-      "elements_recommended": "Menú servido en mesa, cubertería de gala, mantelería de tela y centros florales"
+      "elements_recommended": "Menú servido en mesa con cubertería de gala y mantelería"
     }
   ],
   "equipamiento": [
     {
+      "key": "tv_gran_formato",
+      "label": "Pantalla TV 86\" / 98\"",
+      "aliases": ["tv 86", "tv 98", "tv 86 pulgadas", "tv 98 pulgadas", "tv de 86", "tv de 98", "video conferencia", "videoconferencia"],
+      "icon": "📺"
+    },
+    {
       "key": "audiovisuales",
-      "label": "Audiovisuales (AV)",
-      "aliases": ["av", "a/v", "audiovisuales", "pantalla", "proyector", "canon", "cañon", "clicker", "hdmi"],
+      "label": "Audiovisuales (AV / HDMI / Altavoz)",
+      "aliases": ["av", "a/v", "audiovisuales", "hdmi", "hdmi inalambrico", "hdmi inalámbrico", "altavoz", "altavoces", "proyector", "pantalla"],
       "icon": "🎥"
+    },
+    {
+      "key": "material_escritorio",
+      "label": "Blocs de Notas & Bolígrafos",
+      "aliases": ["blocs", "boligrafos", "bolígrafos", "blocs de notas", "material de papeleria"],
+      "icon": "📝"
+    },
+    {
+      "key": "flipchart",
+      "label": "Flipchart / Rotafolios",
+      "aliases": ["flip chart", "flipchart", "rotafolios", "pizarra"],
+      "icon": "📊"
+    },
+    {
+      "key": "protocolo_aura",
+      "label": "Protocolo AURA (Perfumar Sala)",
+      "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala"],
+      "icon": "✨"
     },
     {
       "key": "microfonia",
@@ -109,12 +157,6 @@
       "label": "Tarima / Atril",
       "aliases": ["tarima", "atril", "stage", "estrado", "podium"],
       "icon": "🎤"
-    },
-    {
-      "key": "rotafolios",
-      "label": "Rotafolios (Flipchart)",
-      "aliases": ["flipchart", "rotafolios", "pizarra", "rotuladores"],
-      "icon": "📝"
     }
   ]
 }

@@ -571,7 +571,7 @@ function setupEventListeners() {
 // ==========================================================================
 async function processAndAddOrder(file, rawText) {
   // 1. Intentar con el Backend si está disponible
-  let eventResult = null;
+  let newEvents = [];
   try {
     const formData = new FormData();
     if (file) formData.append('file', file);
@@ -583,23 +583,34 @@ async function processAndAddOrder(file, rawText) {
     });
     if (res.ok) {
       const data = await res.json();
-      eventResult = data.event;
+      if (data.events && data.events.length > 0) {
+        newEvents = data.events;
+      } else if (data.event) {
+        newEvents = [data.event];
+      }
     }
   } catch (err) {
     console.log('Backend no disponible, ejecutando extractor local de emergencia...');
   }
 
   // 2. Extracción Local en JS si el backend está offline
-  if (!eventResult) {
-    eventResult = parseOrderClientSide(rawText, file ? file.name : null);
+  if (newEvents.length === 0) {
+    const single = parseOrderClientSide(rawText, file ? file.name : null);
+    newEvents = [single];
   }
 
-  // Agregar al estado y guardar
-  state.events.push(eventResult);
-  state.selectedDate = eventResult.date || state.selectedDate;
+  // Agregar todos los eventos al estado y guardar
+  state.events.push(...newEvents);
+  if (newEvents[0]?.date) {
+    state.selectedDate = newEvents[0].date;
+  }
   saveEventsToStorage();
   renderTimeline();
   renderCards();
+  
+  if (newEvents.length > 1) {
+    alert(`✨ Se han identificado e integrado ${newEvents.length} montajes y sesiones para diferentes días.`);
+  }
 }
 
 function parseOrderClientSide(text, filename) {
