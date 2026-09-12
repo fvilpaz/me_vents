@@ -1,0 +1,372 @@
+[
+  {
+    "id": "evt-seed-1",
+    "title": "Junta Ejecutiva Telefónica Tech",
+    "date": "2026-09-12",
+    "time_start": "09:00",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-1",
+      "name": "Estudio 1",
+      "color_tag": "#0080ff",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "u_shape",
+      "label": "Herradura / U-Shape",
+      "icon": "🧲",
+      "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "fb",
+        "key": "coffee_break",
+        "label": "Coffee Break",
+        "icon": "☕",
+        "details": "Estación de café Nespresso/filtro, termos de leche, bollería y fruta"
+      },
+      {
+        "type": "equipment",
+        "key": "audiovisuales",
+        "label": "Audiovisuales (AV)",
+        "icon": "🎥"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 7,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Reunión estratégica directiva. Salón Estudio 1 montaje U-shape 12 pax CB continuo y pantalla HDMI."
+  },
+  {
+    "id": "evt-seed-2",
+    "title": "Workshop Innovación & Liderazgo Meliá",
+    "date": "2026-09-12",
+    "time_start": "10:00",
+    "time_end": "18:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa"
+    },
+    "pax": 38,
+    "services": [
+      {
+        "type": "fb",
+        "key": "coffee_break",
+        "label": "Coffee Break",
+        "icon": "☕",
+        "details": "Pausa café mañana 11:30h y tarde 16:30h"
+      },
+      {
+        "type": "fb",
+        "key": "almuerzo_trabajo",
+        "label": "Almuerzo de Trabajo",
+        "icon": "🥪",
+        "details": "Finger buffet frío/caliente a las 14:00h"
+      },
+      {
+        "type": "equipment",
+        "key": "audiovisuales",
+        "label": "Audiovisuales (AV)",
+        "icon": "🎥"
+      },
+      {
+        "type": "equipment",
+        "key": "microfonia",
+        "label": "Microfonía",
+        "icon": "🎙️"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 19,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 38
+      },
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Jornada formativa Meliá. Sala Multifuncional montaje escuela 38 pax, CB mañana y tarde + almuerzo buffet."
+  },
+  {
+    "id": "evt-seed-3",
+    "title": "Sunset Cocktail & Art Gallery Opening",
+    "date": "2026-09-12",
+    "time_start": "19:30",
+    "time_end": "22:30",
+    "space": {
+      "id": "foyer",
+      "name": "Foyer",
+      "color_tag": "#d4af37",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Mesas altas de apoyo tipo bistró y zonas despejadas de circulación"
+    },
+    "pax": 70,
+    "services": [
+      {
+        "type": "fb",
+        "key": "welcome_drink",
+        "label": "Welcome Drink / Cava",
+        "icon": "🥂",
+        "details": "Pase de copas de bienvenida a la llegada de invitados"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 7,
+        "sillas": 5
+      },
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Inauguración exposición ME Gallery en el Foyer. Formato cóctel 70 pax welcome drink cava."
+  },
+  {
+    "id": "evt-seed-4",
+    "title": "Comité Financiero Banco Santander",
+    "date": "2026-09-13",
+    "time_start": "09:30",
+    "time_end": "14:00",
+    "space": {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "imperial",
+      "label": "Mesa Imperial (Boardroom)",
+      "icon": "🏛️",
+      "description": "Gran mesa central cerrada con sillas alrededor"
+    },
+    "pax": 14,
+    "services": [
+      {
+        "type": "fb",
+        "key": "coffee_break",
+        "label": "Coffee Break",
+        "icon": "☕",
+        "details": "CB continuo en mesa de apoyo lateral"
+      },
+      {
+        "type": "equipment",
+        "key": "audiovisuales",
+        "label": "Audiovisuales (AV)",
+        "icon": "🎥"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 7,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 14
+      },
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Estudio 3 mesa imperial 14 pax CB continuo aguas y pantalla proyector."
+  },
+  {
+    "id": "evt-seed-5",
+    "title": "Lanzamiento Colección L'Oréal Professionnel",
+    "date": "2026-09-13",
+    "time_start": "16:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "estudio-5",
+      "name": "Estudio 5",
+      "color_tag": "#0077b6",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas con pasillo central sin mesas"
+    },
+    "pax": 40,
+    "services": [
+      {
+        "type": "equipment",
+        "key": "tarima_atril",
+        "label": "Tarima / Atril",
+        "icon": "🎤"
+      },
+      {
+        "type": "equipment",
+        "key": "microfonia",
+        "label": "Microfonía",
+        "icon": "🎙️"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 42
+      },
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Estudio 5 montaje teatro 40 pax con micro inalámbrico y atril central."
+  },
+  {
+    "id": "evt-seed-6",
+    "title": "Simposio QuirónSalud Málaga",
+    "date": "2026-09-14",
+    "time_start": "08:30",
+    "time_end": "15:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Multifuncional",
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "u_shape",
+      "label": "Herradura / U-Shape",
+      "icon": "🧲",
+      "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
+    },
+    "pax": 24,
+    "services": [
+      {
+        "type": "fb",
+        "key": "coffee_break",
+        "label": "Coffee Break",
+        "icon": "☕",
+        "details": "Estación de café y zumos naturales"
+      },
+      {
+        "type": "equipment",
+        "key": "audiovisuales",
+        "label": "Audiovisuales (AV)",
+        "icon": "🎥"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 13,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 24
+      },
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Sala Multifuncional U-Shape 24 pax CB mañana y AV."
+  },
+  {
+    "id": "evt-1789250264818",
+    "title": "Estudio 4 montaje en U shape 10 pax CB de 11:00 a 16:00",
+    "date": "2026-09-12",
+    "time_start": "11:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "estudio-4",
+      "name": "Estudio 4",
+      "aliases": [
+        "estudio 4",
+        "estudio4",
+        "study 4",
+        "sala estudio 4",
+        "e4"
+      ],
+      "area_m2": 35,
+      "max_capacities": {
+        "u_shape": 12,
+        "escuela": 16,
+        "teatro": 25,
+        "banquete": 16,
+        "coctel": 25,
+        "imperial": 10
+      },
+      "color_tag": "#90e0ef",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "u_shape",
+      "label": "Herradura / U-Shape",
+      "aliases": [
+        "u shape",
+        "u-shape",
+        "u_shape",
+        "herradura",
+        "forma de u",
+        "en u",
+        "mesa en u",
+        "ushape"
+      ],
+      "icon": "🧲",
+      "formula": "mesas = ceil(pax / 2) + 1; sillas = pax",
+      "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
+    },
+    "pax": 10,
+    "services": [
+      {
+        "type": "fb",
+        "key": "coffee_break",
+        "label": "Coffee Break",
+        "icon": "☕",
+        "details": "Estación de café Nespresso/filtro, termos de leche, bollería, fruta y aguas"
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 6,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 10
+      },
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null
+    },
+    "raw_snippet": "Estudio 4 montaje en U shape 10 pax CB de 11:00 a 16:00"
+  }
+]

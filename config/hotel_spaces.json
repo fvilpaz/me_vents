@@ -1,0 +1,141 @@
+{
+  "hotel_name": "ME Málaga",
+  "brand": "ME by Meliá",
+  "company": "Meliá Hotels International",
+  "spaces": [
+    {
+      "id": "estudio-1",
+      "name": "Estudio 1",
+      "aliases": ["estudio 1", "estudio1", "study 1", "sala estudio 1", "e1"],
+      "area_m2": 45,
+      "max_capacities": {
+        "u_shape": 16,
+        "escuela": 24,
+        "teatro": 35,
+        "banquete": 20,
+        "coctel": 35,
+        "imperial": 14
+      },
+      "color_tag": "#0080ff",
+      "location": "Planta 1"
+    },
+    {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": ["estudio 2", "estudio2", "study 2", "sala estudio 2", "e2"],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "aliases": ["estudio 3", "estudio3", "study 3", "sala estudio 3", "e3"],
+      "area_m2": 50,
+      "max_capacities": {
+        "u_shape": 18,
+        "escuela": 28,
+        "teatro": 40,
+        "banquete": 24,
+        "coctel": 40,
+        "imperial": 16
+      },
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    {
+      "id": "estudio-4",
+      "name": "Estudio 4",
+      "aliases": ["estudio 4", "estudio4", "study 4", "sala estudio 4", "e4"],
+      "area_m2": 35,
+      "max_capacities": {
+        "u_shape": 12,
+        "escuela": 16,
+        "teatro": 25,
+        "banquete": 16,
+        "coctel": 25,
+        "imperial": 10
+      },
+      "color_tag": "#90e0ef",
+      "location": "Planta 1"
+    },
+    {
+      "id": "estudio-5",
+      "name": "Estudio 5",
+      "aliases": ["estudio 5", "estudio5", "study 5", "sala estudio 5", "e5"],
+      "area_m2": 55,
+      "max_capacities": {
+        "u_shape": 20,
+        "escuela": 32,
+        "teatro": 45,
+        "banquete": 30,
+        "coctel": 50,
+        "imperial": 18
+      },
+      "color_tag": "#0077b6",
+      "location": "Planta 1"
+    },
+    {
+      "id": "foyer",
+      "name": "Foyer",
+      "aliases": ["foyer", "hall eventos", "zona de paso", "foyer central"],
+      "area_m2": 95,
+      "max_capacities": {
+        "coctel": 100,
+        "banquete": 50,
+        "coffee_break_station": 120
+      },
+      "color_tag": "#d4af37",
+      "location": "Planta 1 - Acceso Salones"
+    },
+    {
+      "id": "multifuncional",
+      "name": "Multifuncional",
+      "aliases": ["multifuncional", "sala multifuncional", "multi", "gran salon", "salon multifuncional"],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": ["cañitas al fresco", "canitas al fresco", "cañitas", "canitas", "patio cañitas"],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    {
+      "id": "terraza-rooftop",
+      "name": "Terraza / Rooftop",
+      "aliases": ["terraza", "rooftop", "terraza ático", "ático", "sky bar"],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "montajes": [
+    {
+      "key": "u_shape",
+      "label": "Herradura / U-Shape",
+      "aliases": ["u shape", "u-shape", "u_shape", "herradura", "forma de u", "en u", "mesa en u", "ushape"],
+      "icon": "🧲",
+      "formula": "mesas = ceil(pax / 2) + 1; sillas = pax",
+      "description": "Mesas rectangulares abiertas al fondo hacia la pantalla o atril"
+    },
+    {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "aliases": ["escuela", "school", "classroom", "aulas", "mesas y sillas frente", "tipo colegio"],
+      "icon": "🎓",
+      "formula": "mesas = ceil(pax / 2); sillas = pax",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa"
+    },
+    {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "aliases": ["teatro", "theater", "theatre", "auditorio", "filas de sillas", "solo sillas"],
+      "icon": "🎭",
+      "formula": "mesas = 0; sillas = pax + 2 (reserva)",
+      "description": "Filas de sillas con pasillo central sin mesas"
+    },
+    {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "aliases": ["banquete", "banquet", "mesas redondas", "cena sentada", "almuerzo sentado"],
+      "icon": "🍽️",
+      "formula": "mesas_redondas = ceil(pax / 8); sillas = pax",
+      "description": "Mesas redondas de 8-10 comensales vestidas con mantel y lino"
+    },
+    {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "aliases": ["coctel", "cóctel", "cocktail", "de pie", "copa de bienvenida", "standing"],
+      "icon": "🍸",
+      "formula": "mesas_altas = ceil(pax / 10); taburetes = ceil(pax / 15)",
+      "description": "Mesas altas de apoyo tipo bistró y zonas despejadas de circulación"
+    },
+    {
+      "key": "imperial",
+      "label": "Mesa Imperial (Boardroom)",
+      "aliases": ["imperial", "boardroom", "mesa unica", "mesa única", "reunion directiva", "directorio"],
+      "icon": "🏛️",
+      "formula": "mesas = ceil(pax / 2); sillas = pax",
+      "description": "Gran mesa central cerrada con sillas alrededor"
+    },
+    {
+      "key": "cabaret",
+      "label": "Cabaret (Semicírculo)",
+      "aliases": ["cabaret", "crescent", "semicirculo", "semicírculo"],
+      "icon": "🎪",
+      "formula": "mesas_redondas = ceil(pax / 5); sillas = pax",
+      "description": "Mesas redondas con sillas sólo orientadas hacia el escenario"
+    }
+  ],
+  "servicios_fb": [
+    {
+      "key": "coffee_break",
+      "label": "Coffee Break",
+      "aliases": ["cb", "c.b", "c.b.", "c break", "c.break", "coffee break", "pausa cafe", "pausa café", "estacion cafe"],
+      "icon": "☕",
+      "category": "fb",
+      "elements_recommended": "Estación de café Nespresso/filtro, termos de leche, bollería, fruta y aguas"
+    },
+    {
+      "key": "welcome_drink",
+      "label": "Welcome Drink / Copa Bienvenida",
+      "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida"],
+      "icon": "🥂",
+      "category": "fb",
+      "elements_recommended": "Bandejas con copas de cava, cóctel sin alcohol y aguas infusionadas"
+    },
+    {
+      "key": "almuerzo_trabajo",
+      "label": "Almuerzo de Trabajo / Finger Buffet",
+      "aliases": ["lunch", "almuerzo", "menu trabajo", "menú trabajo", "finger buffet", "buffet almuerzo", "comida"],
+      "icon": "🥪",
+      "category": "fb",
+      "elements_recommended": "Buffet buffet frío/caliente, vajilla completa, cristalería de agua y vino"
+    },
+    {
+      "key": "cena_gala",
+      "label": "Cena de Gala",
+      "aliases": ["cena", "cena gala", "dinner", "gala dinner", "cena formal"],
+      "icon": "🍷",
+      "category": "fb",
+      "elements_recommended": "Menú servido en mesa, cubertería de gala, mantelería de tela y centros florales"
+    }
+  ],
+  "equipamiento": [
+    {
+      "key": "audiovisuales",
+      "label": "Audiovisuales (AV)",
+      "aliases": ["av", "a/v", "audiovisuales", "pantalla", "proyector", "canon", "cañon", "clicker", "hdmi"],
+      "icon": "🎥"
+    },
+    {
+      "key": "microfonia",
+      "label": "Microfonía",
+      "aliases": ["micro", "microfono", "micrófono", "micros", "inalambrico", "de solapa", "diadema"],
+      "icon": "🎙️"
+    },
+    {
+      "key": "tarima_atril",
+      "label": "Tarima / Atril",
+      "aliases": ["tarima", "atril", "stage", "estrado", "podium"],
+      "icon": "🎤"
+    },
+    {
+      "key": "rotafolios",
+      "label": "Rotafolios (Flipchart)",
+      "aliases": ["flipchart", "rotafolios", "pizarra", "rotuladores"],
+      "icon": "📝"
+    }
+  ]
+}
