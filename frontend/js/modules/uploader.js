@@ -244,10 +244,18 @@ export async function processAndAddOrder(file, rawText) {
     if (file) formData.append('file', file);
     if (rawText) formData.append('raw_text', rawText);
 
-    const res = await fetch('/api/upload-beo', {
-      method: 'POST',
-      body: formData
-    });
+    let res;
+    try {
+      res = await fetch('/api/upload-os', {
+        method: 'POST',
+        body: formData
+      });
+    } catch (e) {
+      res = await fetch('/api/upload-beo', {
+        method: 'POST',
+        body: formData
+      });
+    }
     if (res.ok) {
       const data = await res.json();
       if (data.events && Array.isArray(data.events)) {
@@ -387,7 +395,7 @@ export function parseOrderClientSide(text, filename) {
       times: { setup_minutes: 30, breakdown_minutes: 20 }
     },
     source_file: filename || null,
-    source_pdf_url: (filename && filename.toLowerCase().endsWith('.pdf')) ? `/api/beos/${filename}` : null,
+    source_pdf_url: (filename && filename.toLowerCase().endsWith('.pdf')) ? `/api/os/${filename}` : null,
     raw_snippet: text.substring(0, 150)
   };
 }

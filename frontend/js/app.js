@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await syncWithBackend();
   
   // Inicializar componentes modulares
+  setupThemeToggle();
   setupTimelineControls();
   setupFilterControls();
   setupTouchGestures();
@@ -41,3 +42,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Inicializar Glosario
   await initGlossary();
 });
+
+/**
+ * Control del selector de tema (Claro / Oscuro)
+ * Oscuro por defecto; persiste la elección en localStorage
+ */
+function setupThemeToggle() {
+  const toggleBtn = document.getElementById('themeToggleBtn');
+  if (!toggleBtn) return;
+
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('me_vents_theme', newTheme);
+  });
+}

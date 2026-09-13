@@ -72,12 +72,12 @@
 
 .day-pill {
   flex: 0 0 auto;
-  min-width: 76px;
+  min-width: 112px;
   scroll-snap-align: start;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 0.65rem 0.45rem;
+  padding: 0.75rem 0.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,11 +99,12 @@
 }
 
 .day-pill .day-name {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: var(--text-secondary);
-  font-weight: 600;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .day-pill.active .day-name {
@@ -111,9 +112,9 @@
 }
 
 .day-pill .day-number {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 800;
-  margin: 0.15rem 0;
+  margin: 0.2rem 0;
   color: var(--text-primary);
 }
 
@@ -238,4 +239,17 @@
   background: rgba(0, 128, 255, 0.15);
   border-color: var(--me-blue);
   color: var(--me-cyan);
+}
+
+@media (max-width: 480px) {
+  .day-pill {
+    min-width: 92px;
+    padding: 0.6rem 0.5rem;
+  }
+  .day-pill .day-name {
+    font-size: 0.68rem;
+  }
+  .day-pill .day-number {
+    font-size: 1.25rem;
+  }
 }

@@ -127,7 +127,15 @@ export function createEventCardHTML(evt) {
 
       ${evt.multi_day && evt.multi_day.is_multi_day ? `
         <div class="multiday-badge">
-          <span>🗓️</span> <strong>${escapeHTML(evt.multi_day.day_label)}</strong> · ${escapeHTML(evt.multi_day.group_name)} (${escapeHTML(evt.multi_day.date_start)} al ${escapeHTML(evt.multi_day.date_end)})
+          <span class="multiday-pill">
+            <span class="multiday-icon">🗓️</span>
+            <span class="multiday-day">${escapeHTML(evt.multi_day.day_label)}</span>
+          </span>
+          <span class="multiday-detail">
+            <span class="multiday-sep">·</span>
+            <span class="multiday-name">${escapeHTML(evt.multi_day.group_name)}</span>
+            <span class="multiday-dates">(${escapeHTML(evt.multi_day.date_start)} al ${escapeHTML(evt.multi_day.date_end)})</span>
+          </span>
         </div>
       ` : ''}
 

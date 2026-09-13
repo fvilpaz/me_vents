@@ -37,3 +37,36 @@
   --shadow-glow: 0 0 25px var(--me-blue-glow);
   --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* ==========================================================================
+   TEMA CLARO (LUXURY LIGHT / ALABASTER & PLATINUM)
+   ========================================================================== */
+[data-theme="light"] {
+  /* Color Tokens */
+  --bg-main: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-glass: rgba(15, 23, 42, 0.03);
+  --border-subtle: rgba(15, 23, 42, 0.09);
+  --border-active: rgba(2, 132, 199, 0.55);
+
+  /* ME by Meliá Vibrant Accents */
+  --me-blue: #0284c7;
+  --me-blue-glow: rgba(2, 132, 199, 0.2);
+  --me-cyan: #0284c7;
+  --melia-gold: #b48c26;
+  --melia-gold-soft: rgba(180, 140, 38, 0.12);
+
+  /* Neutrals & Typography */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 4px 18px rgba(15, 23, 42, 0.06);
+  --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.18);
+}

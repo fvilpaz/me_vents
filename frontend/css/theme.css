@@ -1,0 +1,461 @@
+/* ==========================================================================
+   ME_VENTS - THEME TOGGLE & LIGHT MODE OVERRIDES
+   Brand Identity: ME by Meliá Málaga & Meliá Hotels International
+   ========================================================================== */
+
+/* ==========================================================================
+   EXECUTIVE THEME TOGGLE PILL (ME BY MELIÁ BLUE ACCENT)
+   ========================================================================== */
+
+.theme-toggle-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+  height: 28px;
+  padding: 2px;
+  border-radius: 9999px;
+  background: rgba(0, 128, 255, 0.08);
+  border: 1px solid rgba(0, 128, 255, 0.38);
+  box-shadow: 0 0 14px rgba(0, 128, 255, 0.16), inset 0 1px 2px rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  outline: none;
+}
+
+.theme-toggle-pill:hover {
+  border-color: #00d4ff;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.theme-pill-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 22px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #0080ff 0%, #00d4ff 100%);
+  box-shadow: 0 0 12px rgba(0, 128, 255, 0.6);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, box-shadow 0.3s ease;
+  pointer-events: none;
+}
+
+/* Dark Mode (Default): Slider on Left (Moon Active) */
+.theme-pill-opt {
+  position: relative;
+  z-index: 2;
+  width: 26px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.25s ease;
+  pointer-events: none;
+}
+
+.opt-dark {
+  color: #ffffff;
+}
+
+.opt-light {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================================================
+   LIGHT THEME LUXURY OVERRIDES
+   ========================================================================== */
+
+[data-theme="light"] body {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(circle at 15% 10%, rgba(2, 132, 199, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(180, 140, 38, 0.06) 0%, transparent 50%);
+}
+
+[data-theme="light"] .app-header {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.28);
+}
+
+[data-theme="light"] .brand-app-title {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+}
+
+[data-theme="light"] .brand-tagline {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 600;
+}
+
+[data-theme="light"] .me-logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  height: 48px;
+}
+
+[data-theme="light"] .me-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+[data-theme="light"] .brand-divider {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+[data-theme="light"] .melia-corp-logo {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+[data-theme="light"] .header-brand-divider {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="light"] .theme-toggle-pill {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .theme-toggle-pill:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .theme-pill-slider {
+  transform: translateX(30px);
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="light"] .opt-dark {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="light"] .opt-light {
+  color: #0284c7;
+}
+
+[data-theme="light"] .overview-bar {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.03);
+}
+
+[data-theme="light"] .header-secondary-btn {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #334155;
+}
+
+[data-theme="light"] .header-secondary-btn:hover {
+  background: #f1f5f9;
+  border-color: rgba(15, 23, 42, 0.2);
+  color: #0f172a;
+}
+
+[data-theme="light"] .nav-arrow-btn {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  color: #475569;
+}
+
+[data-theme="light"] .nav-arrow-btn:hover {
+  background: #f1f5f9;
+  color: #0284c7;
+  border-color: #0284c7;
+}
+
+[data-theme="light"] .day-pill {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+[data-theme="light"] .day-pill:hover {
+  background: #f8fafc;
+  border-color: rgba(2, 132, 199, 0.35);
+}
+
+[data-theme="light"] .day-pill.active {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: #0284c7;
+  box-shadow: 0 0 16px rgba(2, 132, 199, 0.2);
+}
+
+[data-theme="light"] .day-pill .day-name {
+  color: #475569;
+}
+
+[data-theme="light"] .day-pill.active .day-name {
+  color: #0284c7;
+}
+
+[data-theme="light"] .day-pill .day-number {
+  color: #0f172a;
+}
+
+[data-theme="light"] .day-pill .event-indicator {
+  background: rgba(15, 23, 42, 0.06);
+  color: #475569;
+}
+
+[data-theme="light"] .day-pill.active .event-indicator {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+[data-theme="light"] .pill-multiday-badge {
+  background: rgba(2, 132, 199, 0.1);
+  border-color: rgba(2, 132, 199, 0.3);
+  color: #0284c7;
+}
+
+[data-theme="light"] .search-input {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+}
+
+[data-theme="light"] .search-input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 15px rgba(2, 132, 199, 0.15);
+}
+
+[data-theme="light"] .space-chip {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  color: #475569;
+}
+
+[data-theme="light"] .space-chip:hover {
+  background: #f8fafc;
+  border-color: #0284c7;
+  color: #0284c7;
+}
+
+[data-theme="light"] .space-chip.active {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+
+[data-theme="light"] .event-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+
+[data-theme="light"] .event-card:hover {
+  border-color: rgba(2, 132, 199, 0.35);
+  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.12);
+}
+
+[data-theme="light"] .event-title {
+  color: #0f172a;
+}
+
+[data-theme="light"] .time-badge {
+  background: rgba(15, 23, 42, 0.04);
+  color: #334155;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .btn-view-pdf {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.25);
+  color: #0284c7;
+}
+
+[data-theme="light"] .btn-view-pdf:hover {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+[data-theme="light"] .salon-tag {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .dietary-alert-banner {
+  background: #fffbeb;
+  border-color: #fde68a;
+  border-left-color: #d97706;
+}
+
+[data-theme="light"] .dietary-alert-title {
+  color: #b45309;
+}
+
+[data-theme="light"] .dietary-alert-content {
+  color: #92400e;
+}
+
+[data-theme="light"] .badge-setup {
+  background: rgba(15, 23, 42, 0.05);
+  border-color: rgba(15, 23, 42, 0.1);
+  color: #334155;
+}
+
+[data-theme="light"] .badge-pax {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.2);
+  color: #0369a1;
+}
+
+[data-theme="light"] .badge-fb {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+[data-theme="light"] .badge-eq {
+  background: rgba(139, 92, 246, 0.08);
+  color: #6d28d9;
+  border-color: rgba(139, 92, 246, 0.22);
+}
+
+[data-theme="light"] .btn-view-pdf.no-pdf {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #64748b;
+}
+
+[data-theme="light"] .accordion-toggle {
+  background: rgba(15, 23, 42, 0.02);
+  color: #334155;
+}
+
+[data-theme="light"] .accordion-toggle:hover {
+  background: rgba(15, 23, 42, 0.05);
+  color: #0f172a;
+}
+
+[data-theme="light"] .accordion-body {
+  background: #f8fafc;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .op-detail-box {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .op-detail-content {
+  color: #334155;
+}
+
+[data-theme="light"] .op-menu-content {
+  background: #ffffff;
+  border-color: rgba(245, 158, 11, 0.25);
+  color: #1e293b;
+}
+
+[data-theme="light"] .furniture-item {
+  background: #f1f5f9;
+  border-color: rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .furniture-val {
+  color: #0f172a;
+}
+
+[data-theme="light"] .furniture-label {
+  color: #64748b;
+}
+
+[data-theme="light"] .multiday-badge {
+  background: rgba(2, 132, 199, 0.06);
+  border-color: rgba(2, 132, 199, 0.2);
+}
+
+[data-theme="light"] .multiday-pill {
+  background: rgba(2, 132, 199, 0.12);
+  border-color: rgba(2, 132, 199, 0.3);
+  color: #0369a1;
+}
+
+[data-theme="light"] .multiday-name {
+  color: #0f172a;
+}
+
+[data-theme="light"] .multiday-detail {
+  color: #334155;
+}
+
+[data-theme="light"] .multiday-dates {
+  color: #0284c7;
+}
+
+[data-theme="light"] .modal-dialog {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.18);
+}
+
+[data-theme="light"] .modal-header {
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .modal-title {
+  color: #0f172a;
+}
+
+[data-theme="light"] .modal-footer {
+  border-top-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .glossary-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .glossary-card:hover {
+  border-color: rgba(2, 132, 199, 0.4);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.08);
+}
+
+[data-theme="light"] .glossary-term-title {
+  color: #0f172a;
+}
+
+[data-theme="light"] .app-footer {
+  background: #ffffff;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .footer-author-pill {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(180, 140, 38, 0.06) 100%);
+  border-color: rgba(2, 132, 199, 0.25);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .author-name {
+  color: #0f172a;
+}
+
+[data-theme="light"] .footer-link {
+  background: #f8fafc;
+  border-color: rgba(15, 23, 42, 0.08);
+  color: #475569;
+}
+
+[data-theme="light"] .footer-link:hover {
+  background: rgba(2, 132, 199, 0.1);
+  border-color: #0284c7;
+  color: #0284c7;
+}

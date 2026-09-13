@@ -10,7 +10,7 @@ export function renderTimeline() {
   if (!slider) return;
   slider.innerHTML = '';
 
-  const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+  const dayNames = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
   const daysToShow = [];
 
   // Recoger todas las fechas de eventos registrados

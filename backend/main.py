@@ -1,11 +1,10 @@
-import os
 import json
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import FileResponse
 
 from backend.extractor import (
     extract_text_from_pdf,
@@ -15,9 +14,9 @@ from backend.extractor import (
 )
 
 app = FastAPI(
-    title="Me_vents API - ME Málaga",
-    description="Motor de análisis y gestión operativa de montajes de eventos para ME by Meliá",
-    version="1.1.0"
+    title="ME·VENTS API — ME Málaga MICE & Events Production",
+    description="Motor de análisis, extracción y gestión operativa de órdenes de servicio (OS) para ME by Meliá",
+    version="2.0.0"
 )
 
 # CORS para desarrollo
@@ -95,6 +94,15 @@ def add_glossary_term(term_data: Dict[str, Any]):
     with open(config_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         
+    # Sincronizar automáticamente con frontend/data/jargon_dictionary.json para GitHub Pages
+    frontend_jargon = Path(__file__).resolve().parent.parent / "frontend" / "data" / "jargon_dictionary.json"
+    if frontend_jargon.parent.exists():
+        try:
+            with open(frontend_jargon, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+
     from backend.extractor import reload_config
     reload_config()
     return {"status": "success", "term": term_data}
@@ -128,13 +136,14 @@ def delete_event(event_id: str):
     save_stored_events(new_events)
     return {"status": "success", "deleted": event_id}
 
+@app.post("/api/upload-os")
 @app.post("/api/upload-beo")
-async def upload_beo(
+async def upload_order(
     file: Optional[UploadFile] = File(None),
     raw_text: Optional[str] = Form(None)
 ):
     """
-    Procesa una orden de servicio (BEO).
+    Procesa una orden de servicio (OS / BEO).
     Soporta órdenes multi-día y multi-sesión de Opera con validaciones de seguridad.
     """
     text_content = ""
@@ -211,9 +220,10 @@ async def upload_beo(
         "first_event": new_events[0] if new_events else None
     }
 
+@app.get("/api/os/{filename}")
 @app.get("/api/beos/{filename}")
-def get_beo_pdf(filename: str):
-    """Sirve un archivo PDF de BEO original para visualización."""
+def get_order_pdf(filename: str):
+    """Sirve un archivo PDF de OS original para visualización."""
     safe_name = Path(filename).name
     
     # 1. Buscar en data/beos
@@ -231,7 +241,7 @@ def get_beo_pdf(filename: str):
     if sources_ods.exists() and sources_ods.is_file():
         return FileResponse(sources_ods, media_type="application/pdf", filename=safe_name)
 
-    raise HTTPException(status_code=404, detail=f"Documento BEO '{safe_name}' no encontrado")
+    raise HTTPException(status_code=404, detail=f"Documento de orden de servicio '{safe_name}' no encontrado")
 
 # Servir Frontend estático si existe
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"

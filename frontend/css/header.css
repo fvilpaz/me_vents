@@ -9,6 +9,7 @@
   background: rgba(8, 11, 17, 0.92);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   padding: 0.65rem 1.25rem;
   padding-top: calc(0.65rem + env(safe-area-inset-top, 0px));
 }
@@ -44,6 +45,13 @@
   transform: scale(1.05);
 }
 
+.brand-divider {
+  width: 1px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.16);
+  flex-shrink: 0;
+}
+
 .brand-title-group {
   display: flex;
   flex-direction: column;
@@ -70,22 +78,30 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: #94a3b8;
+  color: #38bdf8;
   white-space: nowrap;
 }
 
-/* Centro (en Pantalla Grande): Logo Oficial Meliá Hotels International */
+/* Derecha: Logo Oficial Meliá Hotels International */
+.header-right-brand,
 .header-center-brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 1;
-  text-align: center;
-  min-width: 0;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  margin-left: auto;
+  gap: 0.85rem;
+}
+
+.header-brand-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
 }
 
 .melia-corp-logo {
-  height: 26px;
+  height: 28px;
   width: auto;
   max-width: 250px;
   opacity: 0.95;
@@ -96,75 +112,6 @@
 .melia-corp-logo:hover {
   opacity: 1;
   transform: scale(1.04);
-}
-
-/* Derecha (en Pantalla Grande): Fai Profile Greeting */
-.user-profile-widget {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.35rem 0.85rem 0.35rem 0.4rem;
-  border-radius: var(--radius-full);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  flex: 0 0 auto;
-  transition: var(--transition);
-}
-
-.user-profile-widget:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(0, 128, 255, 0.35);
-}
-
-.fai-avatar-wrap {
-  position: relative;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid var(--me-blue);
-  box-shadow: 0 0 10px var(--me-blue-glow);
-  flex-shrink: 0;
-}
-
-.fai-avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.online-dot {
-  position: absolute;
-  bottom: 1px;
-  right: 1px;
-  width: 9px;
-  height: 9px;
-  background: var(--me-green);
-  border: 2px solid var(--bg-dark);
-  border-radius: 50%;
-  box-shadow: 0 0 6px var(--me-green);
-}
-
-.profile-meta {
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-name {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.profile-role {
-  font-size: 0.64rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -314,82 +261,84 @@
 }
 
 /* ==========================================================================
-   SOLO EN MODO RETRATO (PORTRAIT & SMALL MOBILE):
-   Arriba: ME Málaga y ME·VENTS
-   Debajo: Meliá Hotels International a la izquierda y Fai con Lead a la derecha
+   MOBILE & TABLET RESPONSIVE HEADER (< 768px):
    ========================================================================== */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
   .app-header {
-    padding: 0.55rem 0.85rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .header-container {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    gap: 0.45rem 0.75rem;
-  }
-
-  /* ARRIBA: Icono de ME Málaga y lo de ME·VENTS */
-  .brand-wrapper {
-    order: 1;
-    width: 100%;
-    flex: 1 0 100%;
-    justify-content: flex-start;
-    gap: 0.75rem;
-  }
-
-  .me-logo {
-    height: 42px;
-  }
-
-  .brand-app-title {
-    font-size: 1.2rem;
-    letter-spacing: 0.06em;
-  }
-
-  .brand-tagline {
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-  }
-
-  /* DEBAJO: Meliá Hotels International a la izquierda */
-  .header-center-brand {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 0.4rem;
-  }
-
-  .melia-corp-logo {
-    height: 19px;
-    width: auto;
-    max-width: 170px;
-  }
-
-  /* DEBAJO: Fai con lo de Lead a la derecha */
-  .user-profile-widget {
-    order: 3;
-    flex: 0 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 0.4rem;
-    padding-left: 0.5rem;
     gap: 0.5rem;
   }
 
-  .fai-avatar-wrap {
-    width: 32px;
-    height: 32px;
+  .brand-wrapper {
+    flex: 0 1 auto;
+    min-width: 0;
+    gap: 0.55rem;
   }
 
-  .profile-name {
-    font-size: 0.82rem;
+  .me-logo {
+    height: 36px;
   }
 
-  .profile-role {
-    font-size: 0.6rem;
-    display: block; /* MICE Operations Lead siempre visible */
+  .brand-title-group {
+    min-width: 0;
+  }
+
+  .brand-app-title {
+    font-size: 1.12rem;
+    letter-spacing: 0.05em;
+  }
+
+  .brand-tagline {
+    font-size: 0.52rem;
+    letter-spacing: 0.06em;
+  }
+
+  .header-right-brand,
+  .header-center-brand {
+    flex: 0 0 auto;
+    margin-left: auto;
+    gap: 0.55rem;
+  }
+
+  .melia-corp-logo {
+    height: 18px;
+    width: auto;
+    max-width: 125px;
+  }
+
+  .header-brand-divider {
+    height: 16px;
+  }
+
+  .theme-toggle-pill {
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+  }
+
+  .theme-pill-slider {
+    width: 21px;
+    height: 19px;
+  }
+
+  [data-theme="light"] .theme-pill-slider {
+    transform: translateX(23px);
+  }
+
+  .theme-pill-opt {
+    width: 21px;
+    height: 19px;
+  }
+
+  .theme-pill-opt svg {
+    width: 11px;
+    height: 11px;
   }
 
   .overview-bar {
@@ -417,44 +366,100 @@
   }
 }
 
-@media (max-width: 440px) {
+/* Pantallas pequeñas de móvil (< 480px) */
+@media (max-width: 480px) {
   .app-header {
-    padding: 0.45rem 0.65rem;
+    padding: 0.45rem 0.55rem;
+  }
+
+  .brand-wrapper {
+    gap: 0.45rem;
   }
 
   .me-logo {
-    height: 38px;
+    height: 32px;
+  }
+
+  .brand-divider {
+    height: 18px;
   }
 
   .brand-app-title {
-    font-size: 1.1rem;
+    font-size: 1.02rem;
   }
 
+  /* Ocultar el tagline largo en móviles para evitar cualquier solapamiento */
   .brand-tagline {
-    font-size: 0.54rem;
+    display: none;
+  }
+
+  .header-right-brand {
+    gap: 0.45rem;
   }
 
   .melia-corp-logo {
     height: 16px;
-    max-width: 140px;
+    max-width: 105px;
   }
 
-  .user-profile-widget {
-    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
-    gap: 0.4rem;
+  .header-brand-divider {
+    height: 14px;
   }
 
-  .fai-avatar-wrap {
-    width: 28px;
-    height: 28px;
+  .theme-toggle-pill {
+    width: 46px;
+    height: 24px;
   }
 
-  .profile-name {
-    font-size: 0.78rem;
+  .theme-pill-slider {
+    width: 19px;
+    height: 18px;
   }
 
-  .profile-role {
-    font-size: 0.55rem;
+  [data-theme="light"] .theme-pill-slider {
+    transform: translateX(21px);
+  }
+
+  .theme-pill-opt {
+    width: 19px;
+    height: 18px;
+  }
+
+  .theme-pill-opt svg {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+/* Móviles ultra-estrechos (< 360px) */
+@media (max-width: 360px) {
+  .melia-corp-logo {
+    height: 14px;
+    max-width: 88px;
+  }
+
+  .theme-toggle-pill {
+    width: 42px;
+    height: 22px;
+  }
+
+  .theme-pill-slider {
+    width: 17px;
+    height: 16px;
+  }
+
+  [data-theme="light"] .theme-pill-slider {
+    transform: translateX(19px);
+  }
+
+  .theme-pill-opt {
+    width: 17px;
+    height: 16px;
+  }
+
+  .theme-pill-opt svg {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -477,11 +482,6 @@
   .melia-corp-logo {
     height: 20px;
     max-width: 180px;
-  }
-
-  .fai-avatar-wrap {
-    width: 28px;
-    height: 28px;
   }
 
   .overview-bar {
