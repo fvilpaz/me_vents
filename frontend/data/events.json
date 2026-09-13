@@ -31,9 +31,9 @@
       "furniture_summary": "Llegada de grupo (91 habs contratadas)",
       "montaje_notes": "KEVIN.MURPHY es la exclusiva marca australiana de peluquería profesional presente en 60 países, y en\nmás de 150 shows de moda y fashion weeks internacionales. Se basa en la sostenibilidad, la moda y\nproductos de alta eficacia.\nSe hospedan con nosotros del 17-25.09 con llegadas escalonadas.\nTienen un total de 20 habitaciones contratadas.\nRECEPCIÓN Se alojan con nosotros del 17-25-09 con llegadas post.\nLlegan de manera escalonada.\nNo han solicitado express check in.\nEstán informados del depósito de 100€ por hab y noche.\nRouting hecho a la PM 9008.\nFacturación de habitaciones con desayuno incluido:\n- Superior ME DUI 420€",
       "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-      "fb_notes": "Facturación de habitaciones con desayuno incluido (Superior ME DUI 420€, Superior ME+ DUI 440€, Superior Vista Ciudad 430€)",
+      "fb_notes": "Facturación y régimen según BEO",
       "menu_notes": null,
-      "pisos_notes": "AURA / PISOS: Pendiente confirmar VIPs y camas.",
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
       "times": {
         "setup_minutes": 15,
         "breakdown_minutes": 0
@@ -52,13 +52,28 @@
     "space": {
       "id": "pergola",
       "name": "Pérgola Terraza",
+      "aliases": [
+        "pérgola terraza",
+        "pergola terraza",
+        "pérgola",
+        "pergola",
+        "zona de los sofás",
+        "zona sofas",
+        "sofas de la pergola"
+      ],
+      "area_m2": 50,
+      "max_capacities": {
+        "coctel": 30,
+        "banquete": 16
+      },
       "color_tag": "#ff9f1c",
       "location": "Exterior / Anexo Terraza"
     },
     "setup": {
       "key": "coctel",
       "label": "Cóctel (Cocktail)",
-      "icon": "🍸"
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
     },
     "pax": 15,
     "multi_day": {
@@ -95,13 +110,30 @@
     "space": {
       "id": "estudio-2-3",
       "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
       "color_tag": "#0284c7",
-      "location": "Planta 1"
+      "location": "Planta 1 (Panelable)"
     },
     "setup": {
       "key": "forma_u",
       "label": "Forma U (U-Shape)",
-      "icon": "🏛️"
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 13,
     "multi_day": {
@@ -138,13 +170,30 @@
     "space": {
       "id": "estudio-2-3",
       "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
       "color_tag": "#0284c7",
-      "location": "Planta 1"
+      "location": "Planta 1 (Panelable)"
     },
     "setup": {
       "key": "forma_u",
       "label": "Forma U (U-Shape)",
-      "icon": "🏛️"
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 13,
     "multi_day": {
@@ -181,13 +230,30 @@
     "space": {
       "id": "estudio-2-3",
       "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
       "color_tag": "#0284c7",
-      "location": "Planta 1"
+      "location": "Planta 1 (Panelable)"
     },
     "setup": {
       "key": "forma_u",
       "label": "Forma U (U-Shape)",
-      "icon": "🏛️"
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 15,
     "multi_day": {
@@ -224,13 +290,32 @@
     "space": {
       "id": "multifuncional",
       "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
       "color_tag": "#7b2cbf",
-      "location": "Planta Baja"
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
       "key": "coctel",
       "label": "Cóctel (Cocktail)",
-      "icon": "🍸"
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
     },
     "pax": 5,
     "multi_day": {
@@ -267,13 +352,32 @@
     "space": {
       "id": "multifuncional",
       "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
       "color_tag": "#7b2cbf",
-      "location": "Planta Baja"
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
-      "key": "reunion",
-      "label": "Reunión MICE",
-      "icon": "💼"
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
     },
     "pax": 5,
     "multi_day": {
@@ -310,13 +414,30 @@
     "space": {
       "id": "estudio-2-3",
       "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
       "color_tag": "#0284c7",
-      "location": "Planta 1"
+      "location": "Planta 1 (Panelable)"
     },
     "setup": {
       "key": "forma_u",
       "label": "Forma U (U-Shape)",
-      "icon": "🏛️"
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 18,
     "multi_day": {
@@ -353,13 +474,30 @@
     "space": {
       "id": "estudio-2-3",
       "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
       "color_tag": "#0284c7",
-      "location": "Planta 1"
+      "location": "Planta 1 (Panelable)"
     },
     "setup": {
       "key": "forma_u",
       "label": "Forma U (U-Shape)",
-      "icon": "🏛️"
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 16,
     "multi_day": {
@@ -396,13 +534,32 @@
     "space": {
       "id": "multifuncional",
       "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
       "color_tag": "#7b2cbf",
-      "location": "Planta Baja"
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
       "key": "imperial",
-      "label": "Mesa Imperial",
-      "icon": "👑"
+      "label": "Mesa Imperial (Boardroom)",
+      "icon": "👑",
+      "description": "Mesa presidencial rectangular o combinada corrida con los participantes sentados frente a frente."
     },
     "pax": 5,
     "multi_day": {
@@ -439,13 +596,32 @@
     "space": {
       "id": "multifuncional",
       "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
       "color_tag": "#7b2cbf",
-      "location": "Planta Baja"
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
       "key": "banquete",
-      "label": "Banquete",
-      "icon": "🍽️"
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
     },
     "pax": 5,
     "multi_day": {

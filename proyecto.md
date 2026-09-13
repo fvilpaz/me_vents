@@ -406,3 +406,4 @@ Sí
 
 Gemini es una IA y puede cometer errores, incluso sobre personas. Tu privacidad y GeminiSe abre en una ventana nueva
 
+OK 

@@ -32,7 +32,7 @@
     },
     {
       "id": "estudio-2-3",
-      "name": "Estudio 2 + 3 (Combinado)",
+      "name": "Estudio 2 + 3",
       "aliases": ["estudio 2 + 3", "estudios 2 + 3", "estudio 2+3", "estudios 2+3", "estudio 2 y 3"],
       "area_m2": 90,
       "max_capacities": { "u_shape": 26, "escuela": 45, "teatro": 65, "banquete": 40, "coctel": 65, "imperial": 24 },
@@ -104,8 +104,8 @@
     },
     {
       "id": "pergola",
-      "name": "Pérgola (Zona Sofás)",
-      "aliases": ["pérgola", "pergola", "zona de los sofás", "zona sofas", "sofas de la pergola"],
+      "name": "Pérgola Terraza",
+      "aliases": ["pérgola terraza", "pergola terraza", "pérgola", "pergola", "zona de los sofás", "zona sofas", "sofas de la pergola"],
       "area_m2": 50,
       "max_capacities": { "coctel": 30, "banquete": 16 },
       "color_tag": "#ff9f1c",

@@ -56,20 +56,21 @@ def match_space(text: str) -> Optional[Dict[str, Any]]:
     text_lower = text.lower()
     spaces = SPACES_CONFIG.get("spaces", [])
     
-    # Prioridad 1: combinados o multi-estudios (ej: Estudio 2 + 3 + 4 + 5, Estudio 2 + 3)
+    # Lista plana de (alias, space), ordenada por longitud de alias DESCENDENTE
+    # De este modo, combinados largos (ej: 'estudio 2 + 3', 'pérgola terraza')
+    # SIEMPRE se evalúan antes que componentes cortos ('estudio 2', 'terraza')
+    all_alias_pairs = []
     for space in spaces:
-        if "+" in space.get("id", "") or "all" in space.get("id", ""):
-            for alias in sorted(space.get("aliases", []), key=len, reverse=True):
-                pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
-                if re.search(pattern, text_lower):
-                    return space
-
-    # Prioridad 2: espacios individuales (Estudio 1..5, Multifuncional, Cañitas, Terraza, etc.)
-    for space in spaces:
-        for alias in sorted(space.get("aliases", []), key=len, reverse=True):
-            pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
-            if re.search(pattern, text_lower):
-                return space
+        for alias in space.get("aliases", []):
+            all_alias_pairs.append((alias.lower().strip(), space))
+            
+    all_alias_pairs.sort(key=lambda x: len(x[0]), reverse=True)
+    
+    for alias, space in all_alias_pairs:
+        pattern = r'(?<![a-záéíóúñ0-9])' + re.escape(alias) + r'(?![a-záéíóúñ0-9])'
+        if re.search(pattern, text_lower):
+            return space
+            
     return None
 
 def match_setup(text: str) -> Dict[str, Any]:
@@ -379,21 +380,22 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
     Soporta eventos multi-día y conserva el menú gastronómico íntegro.
     """
     # 1. Metadatos generales del BEO
+    client_name = "Evento MICE"
     client_match = re.search(r'Cuenta\s+([^\n\r]+?)(?=\s*Block ID|\s*Nombre|\s*Direcci|\n)', raw_text)
     if client_match:
-        client_name = client_match.group(1).strip().title()
-        if client_name.lower().startswith("kevin"): client_name = "Kevin Murphy"
+        client_name = client_match.group(1).strip()
+        client_name = re.sub(r'\s+(?:SL|SA|S\.L\.|S\.A\.|LTD|INC|GMBH)\b', '', client_name, flags=re.I).strip().title()
     else:
         block_match = re.search(r'Block Name:\s*([^\n\r]+)', raw_text)
         if block_match:
             clean_bn = re.sub(r'^\d+\s*[-_]\s*', '', block_match.group(1).strip())
+            clean_bn = re.sub(r'\s*\d{1,2}\s*[-–]\s*\d{1,2}[_/\.-]\d{2}[_/\.-]\d{2,4}', '', clean_bn).strip()
             client_name = clean_bn.replace("_", " ").strip().title()
         elif filename:
             clean_fn = re.sub(r'^(?:V\.\d+\s+)?(?:OS\s+)?', '', filename, flags=re.IGNORECASE)
             clean_fn = re.sub(r'\.(pdf|png|jpg|jpeg)$', '', clean_fn, flags=re.IGNORECASE)
-            client_name = clean_fn.replace("_", " ").title()
-        else:
-            client_name = "ME Evento"
+            clean_fn = re.sub(r'\s*\d{1,2}\s*[-–_]\s*\d{1,2}[_/\.-]\d{2}[_/\.-]\d{2,4}', '', clean_fn).strip()
+            client_name = clean_fn.replace("_", " ").strip().title()
 
     cat_mgr_match = re.search(r'Catering Manager:\s*([^\n\r]+)', raw_text)
     catering_manager = cat_mgr_match.group(1).strip() if cat_mgr_match else "Default Owner SPAIN"
@@ -491,12 +493,16 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
         raw_session_matches = list(re.finditer(session_line_regex, combined_ops_text, re.I))
         session_matches = []
         for sm in raw_session_matches:
-            line_txt = sm.group(0).lower()
-            if any(k in line_txt for k in ['non stop', 'lunch - finger', 'lunch - clasico', 'lunch - clásico', 'top 60 min', 'healthy - estudio', 'restaurante – cañitas', 'lunch - clásico - foyer']):
+            rest = sm.group(2).strip()
+            # En Opera los servicios F&B tienen el formato '- Item -' o empiezan por '-'
+            starts_with_dash = rest.startswith('-')
+            has_dash_service = bool(re.search(r'\s-\s', rest))
+            is_food = starts_with_dash or (has_dash_service and any(k in rest.lower() for k in ['lunch', 'almuerzo', 'buffet', 'coffee', 'non stop', 'finger', 'desayuno', 'breakfast', 'cena', 'dinner', 'pausa', 'simple', 'premium', 'healthy']))
+            if is_food:
                 continue
             session_matches.append(sm)
 
-        # Caso Llegadas / Alojamiento (ej: Viernes 18/09)
+        # Caso Llegadas / Alojamiento (ej: grupo en hotel sin sala el primer día)
         if not session_matches:
             if "INFO GENERAL" in combined_day_text or "RECEPCI" in combined_day_text or "habitaciones" in combined_day_text.lower():
                 ig_match = re.search(r'(?:INFO GENERAL|RECEPCI[OÓ]N)(.*?)(?=(?:AURA|PISOS|SSTT|F&B|Servicio|Page|\Z))', combined_day_text, re.I | re.DOTALL)
@@ -527,11 +533,11 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                     "multi_day": multi_day_info,
                     "operational": {
                         "furniture_summary": f"Llegada de grupo ({total_habs or 20} habs contratadas)",
-                        "montaje_notes": info_text or "Llegadas escalonadas del grupo. Routing a PM 9008.",
+                        "montaje_notes": info_text or "Llegadas escalonadas del grupo. Gestión de habitaciones Opera PMS.",
                         "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-                        "fb_notes": "Facturación de habitaciones con desayuno incluido (Superior ME DUI 420€, Superior ME+ DUI 440€, Superior Vista Ciudad 430€)",
+                        "fb_notes": "Facturación y régimen según BEO",
                         "menu_notes": None,
-                        "pisos_notes": "AURA / PISOS: Pendiente confirmar VIPs y camas.",
+                        "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
                         "times": { "setup_minutes": 15, "breakdown_minutes": 0 }
                     },
                     "manager": catering_manager or sales_manager or "Default Owner SPAIN",
@@ -540,7 +546,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 })
             continue
 
-        # Procesar sesiones operativas
+        # Procesar sesiones operativas con resolución GENÉRICA de espacios y montajes
         for s_idx, sm in enumerate(session_matches):
             time_str = sm.group(1).strip()
             rest_line = sm.group(2).strip()
@@ -556,31 +562,15 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
             pax_m = re.search(r'(\d+)\s*Pax', rest_line, re.I)
             pax_val = int(pax_m.group(1)) if pax_m else 15
 
-            rest_lower = rest_line.lower()
-            if "pérgola" in rest_lower or "pergola" in rest_lower:
-                space_obj = { "id": "pergola", "name": "Pérgola Terraza", "color_tag": "#ff9f1c", "location": "Exterior / Anexo Terraza" }
-            elif "multifuncional" in rest_lower or "multi" in rest_lower:
-                space_obj = { "id": "multifuncional", "name": "Sala Multifuncional", "color_tag": "#7b2cbf", "location": "Planta Baja" }
-            elif "estudio 2 + 3" in rest_lower or "estudio 2+3" in rest_lower:
-                space_obj = { "id": "estudio-2-3", "name": "Estudio 2 + 3", "color_tag": "#0284c7", "location": "Planta 1" }
-            elif "estudio 1" in rest_lower:
-                space_obj = { "id": "estudio-1", "name": "Estudio 1", "color_tag": "#0080ff", "location": "Planta 1" }
-            elif "cañitas" in rest_lower:
-                space_obj = { "id": "canitas-al-fresco", "name": "Cañitas al Fresco", "color_tag": "#2ec4b6", "location": "Planta Baja" }
-            else:
+            # Resolución dinámica del Salón según catálogo oficial de ME Málaga
+            space_obj = match_space(rest_line) or match_space(session_block)
+            if not space_obj:
                 space_obj = { "id": "multifuncional", "name": "Sala Multifuncional", "color_tag": "#7b2cbf", "location": "Planta Baja" }
 
-            setup_search = (rest_line + " " + session_block).lower()
-            if "u-shape" in setup_search or "forma u" in setup_search:
-                setup_obj = { "key": "forma_u", "label": "Forma U (U-Shape)", "icon": "🏛️" }
-            elif "cctel" in setup_search or "cóctel" in setup_search or "cocktail" in setup_search or "welcome drink" in setup_search:
-                setup_obj = { "key": "coctel", "label": "Cóctel (Cocktail)", "icon": "🍸" }
-            elif "imperial" in setup_search:
-                setup_obj = { "key": "imperial", "label": "Mesa Imperial", "icon": "👑" }
-            elif "banquete" in setup_search:
-                setup_obj = { "key": "banquete", "label": "Banquete", "icon": "🍽️" }
-            else:
-                setup_obj = { "key": "reunion", "label": "Reunión MICE", "icon": "💼" }
+            # Resolución dinámica del Montaje según diccionario oficial de sala
+            setup_obj = match_setup(rest_line) or match_setup(session_block)
+            if not setup_obj:
+                setup_obj = { "key": "reunion", "label": "Reunión MICE", "icon": "💼", "description": "Montaje de sala para reunión" }
 
             montaje_lines = []
             for l in session_block.split("\n"):

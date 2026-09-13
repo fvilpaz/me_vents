@@ -166,10 +166,22 @@ async def upload_beo(
     # Procesar con el motor multi-sesión de Opera
     new_events = parse_multi_session_opera(text_content, filename=filename)
     
-    # Guardar en almacenamiento
-    events = get_stored_events()
-    events.extend(new_events)
-    save_stored_events(events)
+    # Deduplicación inteligente: si ya existen eventos para la misma fecha, hora y salón, se actualizan limpiamente
+    existing_events = get_stored_events()
+    event_map = {}
+    for e in existing_events:
+        sp_id = e.get("space", {}).get("id", "default")
+        key = f"{e.get('date')}_{e.get('time_start')}_{sp_id}"
+        event_map[key] = e
+
+    for ne in new_events:
+        sp_id = ne.get("space", {}).get("id", "default")
+        key = f"{ne.get('date')}_{ne.get('time_start')}_{sp_id}"
+        event_map[key] = ne
+
+    # Reordenar cronológicamente por fecha y hora
+    updated_events = sorted(list(event_map.values()), key=lambda x: (x.get("date", ""), x.get("time_start", "")))
+    save_stored_events(updated_events)
     
     return {
         "status": "success",
