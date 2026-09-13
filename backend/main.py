@@ -45,6 +45,14 @@ def get_stored_events() -> List[Dict[str, Any]]:
 def save_stored_events(events: List[Dict[str, Any]]) -> None:
     with open(EVENTS_FILE, "w", encoding="utf-8") as f:
         json.dump(events, f, ensure_ascii=False, indent=2)
+    # Sincronizar automáticamente con frontend/data/events.json para GitHub Pages
+    frontend_events = Path(__file__).resolve().parent.parent / "frontend" / "data" / "events.json"
+    if frontend_events.parent.exists():
+        try:
+            with open(frontend_events, "w", encoding="utf-8") as f:
+                json.dump(events, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
 
 @app.get("/api/config")
 def get_config():

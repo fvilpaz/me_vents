@@ -472,5 +472,1506 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008"
+  },
+  {
+    "id": "evt-1789259096638",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-16",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Se reunirán en la sala multifuncional los días 17 y 18 de septiembre\nSon 12 personas y se reunirán de 09:00 a 13:00h\nColocar blocs de notas, bolígrafos y agua\nMontar Coffee break Simple en la sala 20 minutos antes de la reunión\nMontar Coffee break Premium en la sala a las 12 :00h\nVer con comercial los ítems del CB premium del día 18.09",
+      "pisos_notes": "AURA VIPS:\n- Elliott Kennedy\n- Alex Williamson\n- Mayuri Parmar",
+      "timing_notes": null
+    },
+    "raw_snippet": "1 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259096638",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-17",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": "09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral",
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "2 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259096653",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-18",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": "09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral",
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "3 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259179630",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-16",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Se reunirán en la sala multifuncional los días 17 y 18 de septiembre\nSon 12 personas y se reunirán de 09:00 a 13:00h\nColocar blocs de notas, bolígrafos y agua\nMontar Coffee break Simple en la sala 20 minutos antes de la reunión\nMontar Coffee break Premium en la sala a las 12 :00h\nVer con comercial los ítems del CB premium del día 18.09",
+      "pisos_notes": "AURA VIPS:\n- Elliott Kennedy\n- Alex Williamson\n- Mayuri Parmar",
+      "timing_notes": null
+    },
+    "raw_snippet": "1 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259179642",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-17",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": "09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral",
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "2 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259179652",
+    "title": "Juliet And Paul Taplin 17 - 18 09 2026",
+    "date": "2026-09-18",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 12
+      },
+      "furniture_summary": "Distribución oficial según BEO para 12 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": "09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral",
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "3 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747           Block ID: 743363  Nombre Contacto  Catering Manager: Marta Delange Fernandez  Dirección:  Sales Manager: Marta Delange Fernandez    Tipo Reserva: Meeting ",
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null
+  },
+  {
+    "id": "evt-1789259207981",
+    "title": "Kevin Murphy",
+    "date": "2026-09-18",
+    "time_start": "09:00",
+    "time_end": "14:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 15,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 15
+      },
+      "furniture_summary": "Distribución oficial según BEO para 15 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": null,
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "1 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva",
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-1789259207991",
+    "title": "Kevin Murphy",
+    "date": "2026-09-19",
+    "time_start": "18:30",
+    "time_end": "20:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 15,
+    "services": [
+      {
+        "type": "fb",
+        "key": "welcome-drink",
+        "label": "Welcome Drink / Copa de Bienvenida",
+        "icon": "🥂",
+        "details": "Tener bandejas listas 15 minutos antes de la hora de convocatoria."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 4,
+        "sillas": 15
+      },
+      "furniture_summary": "4 mesas altas de cóctel de apoyo",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": null,
+      "sstt_notes": null,
+      "fb_notes": "Se realizará una Welcome Drink para 14 personas en la zona de los sofás de la Pérgola.\nReservar dos sofás en la zonas del final de la Pérgola (lo más cercano a la zona de de Cañitas al Fresco).\nFacturación:\n80€ por persona durante 2 horas de servicios\n18:30 a 20:30 - Welcome Drink - Top 60 Min - PÉRGOLA TERRAZA   15 Pax\nEUR 38.00",
+      "pisos_notes": null,
+      "timing_notes": null
+    },
+    "raw_snippet": "3 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva",
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008"
+  },
+  {
+    "id": "evt-1789259207992-2",
+    "title": "Kevin Murphy · 3 Meeting Room",
+    "date": "2026-09-20",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 13,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 13
+      },
+      "furniture_summary": "Montaje en U (U-Shape) para 13 pax mirando a pantalla/atril",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 13 Pax EUR 1,000.00\nColocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación:",
+      "sstt_notes": "AC\nHDMI inalámbrico\nTV\nAltavoces",
+      "fb_notes": "Tienen reservados los estudios 2+3.\nUtilizan la sala de 08:00 a 17:30h.",
+      "pisos_notes": "Reservar una mesa en la zona de la terraza del restaurante para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias\nFacturación:",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "4 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva"
+  },
+  {
+    "id": "evt-1789259207998-3",
+    "title": "Kevin Murphy · 3 Meeting Room",
+    "date": "2026-09-21",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 13,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 13
+      },
+      "furniture_summary": "Montaje en U (U-Shape) para 13 pax mirando a pantalla/atril",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 13 Pax EUR 1,000.00\nColocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación:",
+      "sstt_notes": "AC\nHDMI inalámbrico\nAltavoz\nTV",
+      "fb_notes": "Tienen reservados los estudios 2+3.\nUtilizan la sala de 08:00 a 17:30h.",
+      "pisos_notes": "AURA Pendiente confirmar vips\nPendiente confirmar camas\nDate Last Printed:\nReservar una mesa en la zona de la terraza del restaurante para 15 personas.",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "6 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva"
+  },
+  {
+    "id": "evt-1789259207998-4",
+    "title": "Kevin Murphy · 3 Meeting Room",
+    "date": "2026-09-22",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 15,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 15
+      },
+      "furniture_summary": "Montaje en U (U-Shape) para 15 pax mirando a pantalla/atril",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 15 Pax EUR 1,000.00\nColocar una U-shape para 15 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación CB:",
+      "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
+      "fb_notes": "Tienen reservados los estudios 2+3.\nUtilizan la sala de 08:00 a 17:30h.",
+      "pisos_notes": "AURA Revisar y perfumar la sala antes del inicio de la reunión",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "8 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva"
+  },
+  {
+    "id": "evt-1789259208003-5",
+    "title": "Kevin Murphy · Multifuncional Multifuntional Meeting \nRoom",
+    "date": "2026-09-22",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 4,
+        "sillas": 5
+      },
+      "furniture_summary": "4 mesas altas de cóctel de apoyo",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 13 Pax EUR 1,000.00\nColocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación:",
+      "sstt_notes": "AC\nTV 86 pulgadas ya que necesitarán hacer una videoconferencia\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Montaje:\nMontar para 5 personas\nColocar blocs de notas, bolígrados y agua\nHorario:\n08:30 a 18:00h\nMontar coffee break permanente en sala 20 minutos antes del incio de la reunión",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "9 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserva"
+  },
+  {
+    "id": "evt-1789259208003-6",
+    "title": "Kevin Murphy · 3 Meeting Room",
+    "date": "2026-09-23",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 18,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 18
+      },
+      "furniture_summary": "Montaje en U (U-Shape) para 18 pax mirando a pantalla/atril",
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:30 - 18:00 Estudio 2 + 3 MEETING ROOM Forma U 18 Pax EUR 1,000.00\nColocar una U-shape para 15 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación",
+      "sstt_notes": "AC\nAltavoz\nHDMI inalámbrico\nTV 86 pulgadas ya que necesitan hacer una video conferencia",
+      "fb_notes": "Montaje:\nMontar para 5 personas\nColocar blocs de notas, bolígrados y agua\nHorario:\n08:30 a 18:00h\nPendiente recibir alérgenos e intolerancias",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión\n08:30 - 18:00 Estudio 2 + 3 MEETING ROOM Forma U 18 Pax EUR 1,000.00",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "12 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserv"
+  },
+  {
+    "id": "evt-1789259208009-7",
+    "title": "Kevin Murphy · 3 Meeting",
+    "date": "2026-09-24",
+    "time_start": "08:00",
+    "time_end": "17:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 16,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 16
+      },
+      "furniture_summary": "Montaje en U (U-Shape) para 16 pax mirando a pantalla/atril",
+      "times": {
+        "setup_minutes": 45,
+        "breakdown_minutes": 25
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 Meeting Forma U 16 Pax\nColocar una U-shape para 16 personas\nUn tablero al fondo de la sala (al lado de la TV) para la presentación\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación CB:",
+      "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
+      "fb_notes": "Tienen reservados los estudios 2+3.\nUtilizan la sala de 08:00 a 17:30h.",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "15 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserv"
+  },
+  {
+    "id": "evt-1789259208009-8",
+    "title": "Kevin Murphy · Multifuncional Multifuntional Meeting \nRoom",
+    "date": "2026-09-24",
+    "time_start": "08:30",
+    "time_end": "18:00",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "imperial",
+      "label": "Mesa Imperial (Boardroom)",
+      "icon": "👑",
+      "description": "Mesa presidencial rectangular o combinada corrida con los participantes sentados frente a frente."
+    },
+    "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 0,
+        "mesas_altas": 0,
+        "sillas": 5
+      },
+      "furniture_summary": "Mesa imperial única para 5 pax",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 13 Pax EUR 1,000.00\nColocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación:",
+      "sstt_notes": "AC\nTV de 86 pulgadas ya que se realizará una video conferencia\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Montaje:\nMontar para 5 personas\nColocar blocs de notas, bolígrafos y agua\nHorario:\n08:30 a 18:00h\nMontar coffee break permanente en sala 20 minutos antes del incio de la reunión",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "16 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserv"
+  },
+  {
+    "id": "evt-1789259208014-9",
+    "title": "Kevin Murphy · Multifuncional Meeting",
+    "date": "2026-09-25",
+    "time_start": "08:30",
+    "time_end": "17:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha BEO",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "operational": {
+      "furniture": {
+        "mesas_rectangulares": 0,
+        "mesas_redondas": 1,
+        "mesas_altas": 0,
+        "sillas": 5
+      },
+      "furniture_summary": "1 mesas redondas de banquete (8-10 pax)",
+      "times": {
+        "setup_minutes": 25,
+        "breakdown_minutes": 15
+      },
+      "warning_aforo": null,
+      "montaje_notes": "08:00 - 17:30 Estudio 2 + 3 MEETING ROOM Forma U 13 Pax EUR 1,000.00\nColocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart\nCoffee break permanente en sala desde el inicio de la reunión\nFacturación:",
+      "sstt_notes": "AC\nHDMI inalámbrico\nTV\nAltavoces\nAC\nAltavoz",
+      "fb_notes": "Montaje:\nMontar para 5 personas\nColocar blocs de notas, bolígrafos y agua\nHorario:\n08:30 a 18:00h\nMontar coffee break permanente en sala 20 minutos antes del incio de la reunión",
+      "pisos_notes": "Después de la reunión en la sala accederán al restaurante Cañitas Maite 5 pax\nPedirán a la carta\nPendiente recibir alérgenos e intolerancias",
+      "timing_notes": null
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "697386",
+    "pm": "9008",
+    "raw_snippet": "18 ---   ME Malaga  C. Victoria, 6, Distrito Centro    Malaga, MA 29012, ES  912764747        Cuenta KEVIN MURPHY  Block ID: 697386  Nombre Contacto  Catering Manager: Default Owner SPAIN  Dirección:  Sales Manager: Default Owner SPAIN    Tipo Reserv"
   }
 ]
