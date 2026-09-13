@@ -166,27 +166,37 @@ async def upload_beo(
     # Procesar con el motor multi-sesión de Opera
     new_events = parse_multi_session_opera(text_content, filename=filename)
     
-    # Deduplicación inteligente: si ya existen eventos para la misma fecha, hora y salón, se actualizan limpiamente
+    # Deduplicación inteligente:
     existing_events = get_stored_events()
-    event_map = {}
+    
+    # Si la orden entrante es un evento multi-día o de un grupo específico,
+    # sustituimos cualquier versión anterior de ese mismo grupo o fechas para evitar duplicados
+    new_block_id = new_events[0].get("block_id") if new_events else None
+    new_group = new_events[0].get("multi_day", {}).get("group_name") if new_events else None
+    new_dates = set(ne.get("date") for ne in new_events if ne.get("date"))
+    
+    kept_events = []
     for e in existing_events:
-        sp_id = e.get("space", {}).get("id", "default")
-        key = f"{e.get('date')}_{e.get('time_start')}_{sp_id}"
-        event_map[key] = e
+        e_block = e.get("block_id")
+        e_group = e.get("multi_day", {}).get("group_name")
+        e_date = e.get("date")
+        
+        # Si es del mismo Block ID o del mismo grupo en las mismas fechas, se sustituye
+        if new_block_id and e_block and e_block == new_block_id:
+            continue
+        if new_group and e_group and e_group.lower() == new_group.lower() and e_date in new_dates:
+            continue
+        kept_events.append(e)
 
-    for ne in new_events:
-        sp_id = ne.get("space", {}).get("id", "default")
-        key = f"{ne.get('date')}_{ne.get('time_start')}_{sp_id}"
-        event_map[key] = ne
-
-    # Reordenar cronológicamente por fecha y hora
-    updated_events = sorted(list(event_map.values()), key=lambda x: (x.get("date", ""), x.get("time_start", "")))
-    save_stored_events(updated_events)
+    all_events = kept_events + new_events
+    all_events = sorted(all_events, key=lambda x: (x.get("date", ""), x.get("time_start", "")))
+    save_stored_events(all_events)
     
     return {
         "status": "success",
-        "events_count": len(new_events),
-        "events": new_events,
+        "events_count": len(all_events),
+        "events": all_events,
+        "new_count": len(new_events),
         "first_event": new_events[0] if new_events else None
     }
 

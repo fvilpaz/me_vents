@@ -148,12 +148,13 @@ export function initDate() {
   }
 }
 
-const DATA_VERSION = 'v1.2-clean-rooms';
+const DATA_VERSION = 'v2.0-clean';
 
 export function loadEventsFromStorage() {
   const version = localStorage.getItem('me_vents_version');
   if (version !== DATA_VERSION) {
     localStorage.removeItem('me_vents_data');
+    localStorage.removeItem('me_vents_cleared_by_user');
     localStorage.setItem('me_vents_version', DATA_VERSION);
     state.events = [];
     return;
@@ -163,10 +164,10 @@ export function loadEventsFromStorage() {
   if (saved) {
     try {
       state.events = JSON.parse(saved);
-      // Detección proactiva: si hay eventos con formato desactualizado (ej: '3 Meeting Room' en Estudio 2)
+      // Purgado proactivo de eventos viejos con Estudio 2 o 3 Meeting
       const isStale = state.events.some(e => 
-        (e.title && e.title.includes('3 Meeting Room')) || 
-        (e.space && e.space.name === 'Estudio 2' && e.title && e.title.toLowerCase().includes('kevin'))
+        (e.title && (e.title.includes('3 Meeting') || e.title.includes('Multifuncional Multifuntional'))) || 
+        (e.space && e.space.id === 'estudio-2' && e.title && e.title.toLowerCase().includes('kevin'))
       );
       if (isStale) {
         state.events = [];

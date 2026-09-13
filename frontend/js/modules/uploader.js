@@ -69,7 +69,6 @@ export function setupUploaderListeners() {
 }
 
 export async function processAndAddOrder(file, rawText) {
-  let newEvents = [];
   try {
     const formData = new FormData();
     if (file) formData.append('file', file);
@@ -81,34 +80,38 @@ export async function processAndAddOrder(file, rawText) {
     });
     if (res.ok) {
       const data = await res.json();
-      if (data.events && data.events.length > 0) {
-        newEvents = data.events;
-      } else if (data.event) {
-        newEvents = [data.event];
+      if (data.events && Array.isArray(data.events)) {
+        localStorage.removeItem('me_vents_cleared_by_user');
+        state.events = data.events;
+        if (data.first_event?.date) {
+          state.selectedDate = data.first_event.date;
+        }
+        saveEventsToStorage();
+        renderTimeline();
+        renderCards();
+        alert(`✨ Se han identificado e integrado ${data.new_count || data.events.length} montajes y sesiones en la agenda.`);
+        return;
       }
     }
   } catch (err) {
     console.log('Backend no disponible, ejecutando extractor local de emergencia...');
   }
 
-  // Extracción local si el backend está offline
-  if (newEvents.length === 0) {
-    const single = parseOrderClientSide(rawText, file ? file.name : null);
-    newEvents = [single];
-  }
-
+  // Fallback local si el backend está offline
+  const single = parseOrderClientSide(rawText, file ? file.name : null);
   localStorage.removeItem('me_vents_cleared_by_user');
-  state.events.push(...newEvents);
-  if (newEvents[0]?.date) {
-    state.selectedDate = newEvents[0].date;
+  
+  // Reemplazar o añadir sin duplicar por fecha, hora y sala
+  const spId = single.space?.id || 'default';
+  const key = `${single.date}_${single.time_start}_${spId}`;
+  state.events = state.events.filter(e => `${e.date}_${e.time_start}_${e.space?.id || 'default'}` !== key);
+  state.events.push(single);
+  if (single.date) {
+    state.selectedDate = single.date;
   }
   saveEventsToStorage();
   renderTimeline();
   renderCards();
-
-  if (newEvents.length > 1) {
-    alert(`✨ Se han identificado e integrado ${newEvents.length} montajes y sesiones para diferentes días.`);
-  }
 }
 
 export function parseOrderClientSide(text, filename) {
