@@ -148,11 +148,30 @@ export function initDate() {
   }
 }
 
+const DATA_VERSION = 'v1.2-clean-rooms';
+
 export function loadEventsFromStorage() {
+  const version = localStorage.getItem('me_vents_version');
+  if (version !== DATA_VERSION) {
+    localStorage.removeItem('me_vents_data');
+    localStorage.setItem('me_vents_version', DATA_VERSION);
+    state.events = [];
+    return;
+  }
+  
   const saved = localStorage.getItem('me_vents_data');
   if (saved) {
     try {
       state.events = JSON.parse(saved);
+      // Detección proactiva: si hay eventos con formato desactualizado (ej: '3 Meeting Room' en Estudio 2)
+      const isStale = state.events.some(e => 
+        (e.title && e.title.includes('3 Meeting Room')) || 
+        (e.space && e.space.name === 'Estudio 2' && e.title && e.title.toLowerCase().includes('kevin'))
+      );
+      if (isStale) {
+        state.events = [];
+        localStorage.removeItem('me_vents_data');
+      }
     } catch (e) {
       state.events = [];
     }
@@ -163,6 +182,7 @@ export function loadEventsFromStorage() {
 
 export function saveEventsToStorage() {
   localStorage.setItem('me_vents_data', JSON.stringify(state.events));
+  localStorage.setItem('me_vents_version', DATA_VERSION);
 }
 
 export async function syncWithBackend() {
@@ -170,7 +190,7 @@ export async function syncWithBackend() {
     const res = await fetch('/api/events');
     if (res.ok) {
       const serverEvents = await res.json();
-      if (Array.isArray(serverEvents)) {
+      if (Array.isArray(serverEvents) && serverEvents.length > 0) {
         state.events = serverEvents;
         saveEventsToStorage();
         const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
@@ -181,27 +201,26 @@ export async function syncWithBackend() {
       }
     }
   } catch (err) {
-    // Modo estático o backend no disponible (GitHub Pages)
+    // Backend no disponible (ej. GitHub Pages estático)
   }
 
-  // Fallback para GitHub Pages o modo offline si no hay eventos en memoria
-  if (!state.events || state.events.length === 0) {
-    try {
-      const staticRes = await fetch('./data/events.json');
-      if (staticRes.ok) {
-        const staticEvents = await staticRes.json();
-        if (Array.isArray(staticEvents) && staticEvents.length > 0) {
-          state.events = staticEvents;
-          saveEventsToStorage();
-          const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
-          if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
-            state.selectedDate = dates[0];
-          }
+  // Sincronización fresca para GitHub Pages o modo estático con cache-buster
+  try {
+    const cacheBuster = `t=${Date.now()}`;
+    const staticRes = await fetch(`./data/events.json?${cacheBuster}`, { cache: 'no-store' });
+    if (staticRes.ok) {
+      const staticEvents = await staticRes.json();
+      if (Array.isArray(staticEvents) && staticEvents.length > 0) {
+        state.events = staticEvents;
+        saveEventsToStorage();
+        const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+        if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
+          state.selectedDate = dates[0];
         }
       }
-    } catch (e) {
-      console.log('Operando en modo local/offline.');
     }
+  } catch (e) {
+    console.log('Operando en modo offline/cache.');
   }
 }
 

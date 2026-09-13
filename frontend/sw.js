@@ -1,4 +1,4 @@
-const CACHE_NAME = 'me-vents-v3';
+const CACHE_NAME = 'me-vents-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
