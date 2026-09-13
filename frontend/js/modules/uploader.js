@@ -159,10 +159,13 @@ export function setupUploaderListeners() {
     noPdfModal.classList.add('open');
   };
 
+  const pdfMobileOpenBtn = document.getElementById('pdfMobileOpenBtn');
+
   const openPdfViewer = (url, filename) => {
     if (!pdfModal || !pdfFrame) return;
     pdfFrame.src = url;
     if (pdfOpenNewTab) pdfOpenNewTab.href = url;
+    if (pdfMobileOpenBtn) pdfMobileOpenBtn.href = url;
     if (pdfTitle) pdfTitle.innerHTML = `<span>📄🔍</span> OS: ${escapeHTML(filename || 'Orden de Servicio')}`;
     pdfModal.classList.add('open');
   };

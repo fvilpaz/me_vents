@@ -321,11 +321,51 @@
   overflow: hidden;
   position: relative;
   border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-mobile-hint {
+  display: none;
+  background: rgba(0, 128, 255, 0.12);
+  border-bottom: 1px solid rgba(0, 128, 255, 0.25);
+  padding: 0.5rem 0.85rem;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pdf-mobile-link {
+  color: #fff;
+  background: var(--me-blue);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.72rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: var(--transition);
+}
+
+.pdf-mobile-link:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .pdf-mobile-hint {
+    display: flex;
+  }
 }
 
 .pdf-viewer-container iframe {
   width: 100%;
   height: 100%;
+  flex: 1;
   border: none;
   background: #2a2e3d;
 }

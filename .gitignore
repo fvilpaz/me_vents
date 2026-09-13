@@ -18,12 +18,18 @@ node_modules/
 dist/
 .cache/
 
-# Uploads temporales y PDFs de órdenes (privacidad y tamaño)
+# Uploads temporales y PDFs de fuentes crudas
 uploads/
 temp/
-sources/ods/*.pdf
-sources/**/*.pdf
+sources/
+
+# Ignorar PDFs generales pero permitir los PDFs de muestra de la app en data/beos y frontend/data/beos
 *.pdf
+!frontend/data/beos/*.pdf
+!frontend/data/beos/**
+!data/beos/*.pdf
+!data/beos/**
+
 backend/test_*.py
 backend/get_melia_logo.py
 frontend/assets/images/*_raw.*
