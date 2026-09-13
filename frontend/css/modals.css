@@ -229,3 +229,184 @@
     height: 50px;
   }
 }
+
+/* Modal Tabs (PDF vs Texto Plano) */
+.modal-tabs {
+  display: flex;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 3px;
+  gap: 4px;
+}
+
+.modal-tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.modal-tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.modal-tab-btn.active {
+  background: var(--me-blue);
+  color: #fff;
+  box-shadow: 0 2px 10px var(--me-blue-glow);
+}
+
+.upload-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Box PDF Viewer */
+.modal-box-pdf {
+  max-width: 1050px;
+  width: min(96vw, 1050px);
+  height: 90vh;
+  height: 90dvh;
+  max-height: 92vh;
+  padding: 1.15rem;
+  gap: 0.85rem;
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.modal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.65rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.modal-action-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--me-blue);
+}
+
+.pdf-viewer-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  background: #1e2433;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border-subtle);
+}
+
+.pdf-viewer-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #2a2e3d;
+}
+
+/* Modal Box Pequeño para Avisos (ej: BEO no subido) */
+.modal-box-small {
+  max-width: 450px;
+  width: min(92vw, 450px);
+  padding: 1.4rem 1.25rem;
+  gap: 1.1rem;
+}
+
+.notice-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  line-height: 1.5;
+}
+
+.notice-main-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.notice-main-text strong {
+  color: #60a5fa;
+}
+
+.notice-sub-text {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.modal-actions-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.modal-secondary-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.modal-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.modal-primary-btn {
+  background: linear-gradient(135deg, var(--me-blue), #0056b3);
+  border: none;
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 128, 255, 0.25);
+}
+
+.modal-primary-btn:hover {
+  box-shadow: 0 6px 20px var(--me-blue-glow);
+  transform: translateY(-1px);
+}
+

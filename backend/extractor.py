@@ -373,6 +373,71 @@ def unwrap_opera_table_lines(text: str) -> str:
             i += 1
     return "\n".join(out)
 
+def extract_dietary_notes(text: str) -> Optional[str]:
+    """
+    Extrae bloques completos de alérgenos, intolerancias y dietas especiales.
+    Captura párrafos explicativos, viñetas de restricciones alimentarias,
+    personas veganas/vegetarianas y notas médicas de clientes (ej: Alex Gold).
+    """
+    if not text:
+        return None
+
+    lines = text.split('\n')
+    dietary_blocks = []
+    i = 0
+    trigger_keywords = [
+        'restricciones alimentarias', 'alérgenos', 'alergenos', 'alergias', 
+        'alergia:', 'alérgica', 'alérgico', 'intolerancia', 'intolerancias', 
+        'no consume cerdo', 'no comen cerdo', 'celiaco', 'celíaco', 'sin gluten', 
+        'sin lactosa', 'vegetariano', 'vegetariana', 'vegano', 'vegana', 
+        'frutos secos', 'marisco y nueces'
+    ]
+    
+    stop_headers = [
+        'Facturación', 'SSTT', 'PISOS', 'AURA', 'MONTAJE', 'Hora Sala', 
+        'Servicio Comida', 'Servicio Bebida', 'Page ', 'ME Malaga', 'Cuenta',
+        'RECEPCIÓN', 'RECEPCION'
+    ]
+
+    while i < len(lines):
+        l = lines[i].strip()
+        l_low = l.lower()
+        if any(k in l_low for k in trigger_keywords):
+            # Si es solo una indicación rápida de no alergias o pendiente, capturar solo esa línea
+            if any(k in l_low for k in ['no hay alergias', 'no alergias', 'pendiente recibir alérgenos', 'pendiente recibir alergias', 'pdte recibir']):
+                clean_single = re.sub(r'^[•\-\*]\s*', '', l).strip()
+                if clean_single and not any(clean_single in b for b in dietary_blocks):
+                    dietary_blocks.append(clean_single)
+                i += 1
+                continue
+
+            block = [l]
+            j = i + 1
+            while j < len(lines) and j < i + 8:
+                nl = lines[j].strip()
+                if not nl:
+                    j += 1
+                    continue
+                if any(nl.startswith(k) for k in stop_headers):
+                    break
+                # Es viñeta o continuación con palabras alimentarias o texto relevante
+                if nl.startswith('•') or nl.startswith('-') or nl.startswith('*') or any(k in nl.lower() for k in ['lactosa', 'marisco', 'nueces', 'cacahuete', 'soja', 'gluten', 'huevo', 'pescado', 'grave', 'permitidos', 'lácteos', 'vegetar', 'vegan', 'blanco', 'vísceras', 'setas', 'cerdo', 'salmón']):
+                    block.append(nl)
+                    j += 1
+                elif len(nl) > 3 and not re.search(r'^\d{1,2}:\d{2}', nl) and not any(k in nl for k in ["ME Malaga", "Total Habs", "Block ID", "C. Victoria"]):
+                    block.append(nl)
+                    j += 1
+                else:
+                    break
+            block_text = "\n".join(block).strip()
+            if block_text and not any(block_text in b or b in block_text for b in dietary_blocks):
+                dietary_blocks.append(block_text)
+            i = j
+        else:
+            i += 1
+
+    return "\n\n".join(dietary_blocks) if dietary_blocks else None
+
 def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Parsea órdenes completas de Opera Sales & Catering extrayendo sesiones múltiples
@@ -414,6 +479,29 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
 
     # Pre-procesado de líneas rotas
     unwrapped_text = unwrap_opera_table_lines(raw_text)
+
+    # Notas operativas generales si el BEO las define de forma centralizada en narrativa
+    gen_sstt = ""
+    sstt_m = re.search(r'SSTT\s*(.*?)(?=(?:PISOS|AURA|F&B|Servicio|Page|\Z))', unwrapped_text, re.S)
+    if sstt_m:
+        gen_sstt = "\n".join([l.strip() for l in sstt_m.group(1).split("\n") if l.strip() and not any(k in l for k in ["ME Malaga", "Page ", "Block ID", "Total Habs", "C. Victoria"])][:8])
+
+    gen_pisos = ""
+    pisos_m = re.search(r'PISOS\s*(.*?)(?=(?:SSTT|AURA|F&B|Servicio|Page|\Z))', unwrapped_text, re.S)
+    if pisos_m:
+        gen_pisos = "\n".join([l.strip() for l in pisos_m.group(1).split("\n") if l.strip() and not any(k in l for k in ["ME Malaga", "Page ", "Block ID", "Total Habs", "C. Victoria"])][:4])
+
+    gen_montaje = ""
+    fb_m = re.search(r'F&B\s*(.*?)(?=(?:SSTT|PISOS|AURA|RECEPCI|Servicio|Page|\Z))', unwrapped_text, re.S)
+    if fb_m:
+        lines = []
+        for l in fb_m.group(1).split("\n"):
+            l_s = l.strip()
+            if any(k in l_s.lower() for k in ["blocs de notas", "bolígra", "u-shape", "mesa", "tablero", "flip chart", "vegetariana", "vegana", "montar para"]):
+                lines.append(l_s)
+        gen_montaje = "\n".join(lines[:8])
+
+    gen_dietary = extract_dietary_notes(unwrapped_text)
 
     # 2. Agrupación por días de calendario
     day_regex = r'(?:Lunes|Martes|Mi[ée]rcoles|Jueves|Viernes|S[aá]bado|Domingo),\s*(\d{1,2}[\/\.-]\d{1,2}[\/\.-]\d{2,4})'
@@ -458,6 +546,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
         d_info = days_blocks[d_key]
         d_val = all_dates_iso[day_idx]
         combined_day_text = "\n".join(d_info["pages"])
+        day_dietary = extract_dietary_notes(combined_day_text) or gen_dietary
 
         multi_day_info = {
             "is_multi_day": total_event_days > 1,
@@ -515,9 +604,56 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 continue
             session_matches.append(sm)
 
-        # Caso Llegadas / Alojamiento (ej: grupo en hotel sin sala el primer día)
+        # Caso sin filas de tabla formal de sala (ej: Paul Taplin o Llegadas/Alojamiento)
         if not session_matches:
+            # Sub-caso 1: Hay servicio de reunión/catering en un salón del hotel (ej: Salon Multifuncional)
+            meeting_menus = [mb for mb in day_menu_blocks if mb.get("space") and mb["space"].get("id") not in ["foyer", "canitas-al-fresco", "restaurante", "pergola", "rooftop"]]
+            if meeting_menus:
+                primary_mb = meeting_menus[0]
+                sp_obj = primary_mb["space"]
+                pax_val = primary_mb["pax"] or 12
+                time_m = re.search(r'(\d{1,2}[:.]\d{2})\s*(?:-|a)\s*(\d{1,2}[:.]\d{2})', primary_mb["header"])
+                t_start = time_m.group(1).replace(".", ":").zfill(5) if time_m else "09:00"
+                t_end = time_m.group(2).replace(".", ":").zfill(5) if time_m else "13:00"
+                setup_obj = match_setup(combined_day_text) or {"key": "reunion", "label": "Reunión MICE", "icon": "💼", "description": "Montaje de sala para reunión ejecutiva"}
+                
+                m_notes = gen_montaje or f"Montaje {setup_obj['label']} para {pax_val} pax según OS"
+                s_notes = gen_sstt or "AC, conectividad y soporte técnico de sala"
+                p_notes = gen_pisos or "Revisar y perfumar sala (Protocolo AURA)"
+                all_day_menus = "\n\n".join([f"🍴 {mb['text']}" for mb in day_menu_blocks]) if day_menu_blocks else None
+
+                events.append({
+                    "id": f"evt-{len(events)+1}",
+                    "title": f"{client_name} · {sp_obj['name']}",
+                    "date": d_val,
+                    "time_start": t_start,
+                    "time_end": t_end,
+                    "space": sp_obj,
+                    "setup": setup_obj,
+                    "pax": pax_val,
+                    "multi_day": multi_day_info,
+                    "operational": {
+                        "furniture_summary": f"Montaje de sala para {pax_val} pax",
+                        "montaje_notes": m_notes,
+                        "sstt_notes": s_notes,
+                        "fb_notes": "Servicio F&B según desglose OS",
+                        "menu_notes": all_day_menus,
+                        "dietary_notes": day_dietary,
+                        "pisos_notes": p_notes,
+                        "times": { "setup_minutes": 30, "breakdown_minutes": 20 }
+                    },
+                    "manager": catering_manager or sales_manager or "Default Owner SPAIN",
+                    "block_id": block_id,
+                    "pm": pm,
+                    "source_file": filename,
+                    "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None
+                })
+                continue
+
+            # Sub-caso 2: Llegadas / Alojamiento (ej: grupo en hotel sin sala el primer día)
             if "INFO GENERAL" in combined_day_text or "RECEPCI" in combined_day_text or "habitaciones" in combined_day_text.lower():
+                habs_m = re.search(r'(\d+)\s*habitaciones', combined_day_text, re.I)
+                habs_count = int(habs_m.group(1)) if habs_m else (int(total_habs) if total_habs else 12)
                 ig_match = re.search(r'(?:INFO GENERAL|RECEPCI[OÓ]N)(.*?)(?=(?:AURA|PISOS|SSTT|F&B|Servicio|Page|\Z))', combined_day_text, re.I | re.DOTALL)
                 info_text = ""
                 if ig_match:
@@ -542,20 +678,23 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                         "icon": "🏨",
                         "description": "Recepción escalonada del grupo y gestión de habitaciones"
                     },
-                    "pax": int(total_habs) if total_habs else 20,
+                    "pax": habs_count,
                     "multi_day": multi_day_info,
                     "operational": {
-                        "furniture_summary": f"Llegada de grupo ({total_habs or 20} habs contratadas)",
+                        "furniture_summary": f"Llegada de grupo ({habs_count} habs contratadas)",
                         "montaje_notes": info_text or "Llegadas escalonadas del grupo. Gestión de habitaciones Opera PMS.",
                         "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-                        "fb_notes": "Facturación y régimen según BEO",
+                        "fb_notes": "Facturación y régimen según OS",
                         "menu_notes": None,
+                        "dietary_notes": day_dietary,
                         "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
                         "times": { "setup_minutes": 15, "breakdown_minutes": 0 }
                     },
                     "manager": catering_manager or sales_manager or "Default Owner SPAIN",
                     "block_id": block_id,
-                    "pm": pm
+                    "pm": pm,
+                    "source_file": filename,
+                    "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None
                 })
             continue
 
@@ -576,12 +715,21 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
             pax_val = int(pax_m.group(1)) if pax_m else 15
 
             # Resolución dinámica del Salón según catálogo oficial de ME Málaga
-            space_obj = match_space(rest_line) or match_space(session_block)
+            space_obj = match_space(rest_line)
+            if not space_obj:
+                space_obj = match_space(session_block)
+            if not space_obj:
+                # Búsqueda semántica en el BEO de la jornada
+                space_obj = match_space(combined_day_text)
             if not space_obj:
                 space_obj = { "id": "multifuncional", "name": "Sala Multifuncional", "color_tag": "#7b2cbf", "location": "Planta Baja" }
 
-            # Resolución dinámica del Montaje según diccionario oficial de sala
-            setup_obj = match_setup(rest_line) or match_setup(session_block)
+            # Resolución del Montaje
+            setup_obj = match_setup(rest_line)
+            if not setup_obj:
+                setup_obj = match_setup(session_block)
+            if not setup_obj:
+                setup_obj = match_setup(combined_day_text)
             if not setup_obj:
                 setup_obj = { "key": "reunion", "label": "Reunión MICE", "icon": "💼", "description": "Montaje de sala para reunión" }
 
@@ -615,13 +763,46 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
 
             pisos_lines = [l.strip() for l in session_block.split("\n") if any(k in l.lower() for k in ["perfumar la sala", "revisar y perfumar", "aura", "pisos"])]
 
-            furniture_sum = f"Montaje oficial según BEO para {pax_val} pax"
+            # Anti-falso cóctel: En Opera los coordinadores a veces marcan "Cóctel" erróneamente
+            # para reuniones de trabajo de jornada completa con papelería y medios técnicos.
+            if setup_obj.get("key") == "coctel":
+                is_long_duration = False
+                try:
+                    hs, ms = map(int, t_start.split(":"))
+                    he, me = map(int, t_end.split(":"))
+                    if (he * 60 + me) - (hs * 60 + ms) >= 180: # >= 3 horas
+                        is_long_duration = True
+                except Exception:
+                    pass
+
+                meeting_cues = ["blocs de notas", "bolígra", "videoconferencia", "audiovisual", "pantalla", "proyector", "tv", "hdmi", "reunión", "reunion"]
+                has_meeting_cues = any(k in session_block.lower() for k in meeting_cues) or any(k in combined_day_text.lower() for k in ["videoconferencia", "blocs de notas", "bolígra"])
+
+                if is_long_duration or has_meeting_cues:
+                    if pax_val <= 14:
+                        setup_obj = {
+                            "key": "imperial",
+                            "label": "Mesa de Reunión (Imperial)",
+                            "icon": "🏛️",
+                            "description": "Mesa ejecutiva única con papelería, conectividad y medios audiovisuales"
+                        }
+                    else:
+                        setup_obj = {
+                            "key": "reunion",
+                            "label": "Reunión MICE",
+                            "icon": "💼",
+                            "description": "Montaje de sala ejecutiva para reunión de trabajo"
+                        }
+
+            furniture_sum = f"Montaje oficial según OS para {pax_val} pax"
             if "u-shape" in setup_obj["key"] or "forma_u" in setup_obj["key"]:
                 furniture_sum = f"Montaje en U (U-Shape) para {pax_val} pax"
+            elif "imperial" in setup_obj["key"]:
+                furniture_sum = f"Mesa Imperial única ({pax_val} pax) con soporte AV y papelería"
+            elif "reunion" in setup_obj["key"]:
+                furniture_sum = f"Montaje de sala ejecutiva ({pax_val} pax)"
             elif "coctel" in setup_obj["key"]:
                 furniture_sum = f"Formato Cóctel / Welcome Drink ({pax_val} pax)"
-            elif "imperial" in setup_obj["key"]:
-                furniture_sum = f"Mesa Imperial única ({pax_val} pax)"
 
             # Asignación de menús estrictamente aislada por salón y comensales
             session_menus = []
@@ -642,6 +823,20 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                     session_menus.append(mb["text"])
                     
             session_menu_text = "\n\n".join([f"🍴 {m}" for m in session_menus]) if session_menus else None
+            session_dietary = extract_dietary_notes(session_block) or day_dietary
+
+            # Detección inteligente de servicios de F&B y SSTT
+            session_services = match_services(session_block + "\n" + (session_menu_text or ""))
+            combined_fb_cue = (session_block + "\n" + (session_menu_text or "")).lower()
+            if any(k in combined_fb_cue for k in ["non stop", "non-stop", "café con leche", "leche entera", "infusiones", "zumo natural", "leche cafe", "leche, café"]):
+                if not any(s.get("key") in ["cb-permanente", "cb-simple"] for s in session_services):
+                    session_services.append({
+                        "type": "fb",
+                        "key": "cb-permanente",
+                        "label": "Coffee Break Permanente (Non-Stop)",
+                        "icon": "☕",
+                        "details": "Estación continua de café, leche, infusiones y zumos en sala"
+                    })
 
             events.append({
                 "id": f"evt-{len(events)+1}",
@@ -652,22 +847,61 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 "space": space_obj,
                 "setup": setup_obj,
                 "pax": pax_val,
+                "services": session_services,
                 "multi_day": multi_day_info,
                 "operational": {
                     "furniture_summary": furniture_sum,
-                    "montaje_notes": "\n".join(montaje_lines) if montaje_lines else f"Montaje {setup_obj['label']} para {pax_val} pax según BEO",
+                    "montaje_notes": "\n".join(montaje_lines) if montaje_lines else f"Montaje {setup_obj['label']} para {pax_val} pax según OS",
                     "sstt_notes": "\n".join(sstt_lines) if sstt_lines else "AC, conectividad y soporte técnico de sala",
                     "fb_notes": "\n".join(fb_lines) if fb_lines else None,
                     "menu_notes": session_menu_text,
+                    "dietary_notes": session_dietary,
                     "pisos_notes": "\n".join(pisos_lines) if pisos_lines else "Revisar y perfumar sala (Protocolo AURA)",
                     "times": { "setup_minutes": 30, "breakdown_minutes": 20 }
                 },
                 "manager": catering_manager or sales_manager or "Default Owner SPAIN",
                 "block_id": block_id,
-                "pm": pm
+                "pm": pm,
+                "source_file": filename,
+                "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None
             })
 
-    return events
+    # =========================================================================
+    # DEDUPLICACIÓN ATÓMICA DE SESIONES (EVITA DUPLICADOS PDF + TEXTO)
+    # Si se pasa PDF y texto simultáneamente, fusiona datos sin duplicar sesiones.
+    # =========================================================================
+    unique_events = []
+    seen_session_keys = {}
+    for evt in events:
+        s_key = (evt.get("date"), evt.get("time_start"), evt.get("space", {}).get("id"))
+        if s_key not in seen_session_keys:
+            seen_session_keys[s_key] = evt
+            unique_events.append(evt)
+        else:
+            # Sesión duplicada detectada: fusionar inteligentemente sin duplicar líneas
+            existing = seen_session_keys[s_key]
+            op_exist = existing.setdefault("operational", {})
+            op_new = evt.get("operational", {})
+            for field in ["montaje_notes", "sstt_notes", "fb_notes", "menu_notes", "dietary_notes", "pisos_notes"]:
+                val_new = op_new.get(field)
+                val_exist = op_exist.get(field)
+                if val_new and val_new != val_exist:
+                    if not val_exist:
+                        op_exist[field] = val_new
+                    elif val_new not in val_exist:
+                        op_exist[field] = f"{val_exist}\n{val_new}".strip()
+
+            if evt.get("pax", 0) > existing.get("pax", 0):
+                existing["pax"] = evt.get("pax")
+
+            for s in evt.get("services", []):
+                if not any(ex_s.get("key") == s.get("key") for ex_s in existing.get("services", [])):
+                    existing.setdefault("services", []).append(s)
+
+    for idx, e in enumerate(unique_events):
+        e["id"] = f"evt-{idx+1}"
+
+    return unique_events
 
 def parse_single_session_narrative(raw_text: str, current_date: str, client_name: str, filename: Optional[str] = None) -> Dict[str, Any]:
     """Parsea una sesión descrita en texto narrativo (sin tabla Opera)."""
@@ -688,6 +922,7 @@ def parse_single_session_narrative(raw_text: str, current_date: str, client_name
     operational["fb_notes"] = notes["fb_notes"]
     operational["pisos_notes"] = notes["pisos_notes"]
     operational["timing_notes"] = notes["timing_notes"]
+    operational["dietary_notes"] = extract_dietary_notes(raw_text)
 
     return {
         "id": f"evt-{int(datetime.now().timestamp() * 1000)}",
@@ -700,6 +935,8 @@ def parse_single_session_narrative(raw_text: str, current_date: str, client_name
         "pax": pax,
         "services": services,
         "operational": operational,
+        "source_file": filename,
+        "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None,
         "raw_snippet": raw_text[:250].replace('\n', ' ')
     }
 
@@ -733,6 +970,7 @@ def parse_event_order(raw_text: str, filename: Optional[str] = None) -> Dict[str
     operational["fb_notes"] = notes["fb_notes"]
     operational["pisos_notes"] = notes["pisos_notes"]
     operational["timing_notes"] = notes["timing_notes"]
+    operational["dietary_notes"] = extract_dietary_notes(raw_text)
     
     cat_match = re.search(r'Catering Manager:\s*([^\n\r]+)', raw_text)
     manager = cat_match.group(1).strip() if cat_match else "Marta Delange"
@@ -749,5 +987,7 @@ def parse_event_order(raw_text: str, filename: Optional[str] = None) -> Dict[str
         "services": services,
         "operational": operational,
         "manager": manager,
+        "source_file": filename,
+        "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None,
         "raw_snippet": raw_text[:250].replace('\n', ' ')
     }

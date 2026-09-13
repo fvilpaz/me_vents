@@ -1,4 +1,4 @@
-const CACHE_NAME = 'me-vents-v7';
+const CACHE_NAME = 'me-vents-v14';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -24,12 +24,12 @@ const STATIC_ASSETS = [
 ];
 
 self.addEventListener('install', (e) => {
+  self.skipWaiting();
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS);
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {
@@ -38,12 +38,12 @@ self.addEventListener('activate', (e) => {
       return Promise.all(
         keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
       );
-    })
+    }).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
 self.addEventListener('fetch', (e) => {
+  // 1. API: Red siempre primero
   if (e.request.url.includes('/api/')) {
     e.respondWith(
       fetch(e.request).catch(() => caches.match(e.request))
@@ -51,9 +51,17 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
+  // 2. Todos los recursos: Network-First con fallback a Caché offline
   e.respondWith(
-    caches.match(e.request).then((cached) => {
-      return cached || fetch(e.request);
-    })
+    fetch(e.request)
+      .then((networkRes) => {
+        if (networkRes && networkRes.status === 200) {
+          const clone = networkRes.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
+        }
+        return networkRes;
+      })
+      .catch(() => caches.match(e.request))
   );
 });
+

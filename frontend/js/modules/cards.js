@@ -38,7 +38,7 @@ export function renderCards() {
         <div class="empty-state">
           <div class="empty-icon">📋</div>
           <div class="empty-title">No hay órdenes de servicio activas</div>
-          <div class="empty-desc">Pulsa en <strong>+ Nueva Orden (BEO)</strong> para procesar una orden en PDF.</div>
+          <div class="empty-desc">Pulsa en <strong>+ Nueva Orden (OS)</strong> para procesar una orden en PDF.</div>
         </div>
       `;
       return;
@@ -100,6 +100,10 @@ export function createEventCardHTML(evt) {
   const pisosNotes = [op.timing_notes, op.pisos_notes].filter(Boolean).join('\n');
   const warningAforo = op.warning_aforo || '';
 
+  const pdfFileName = evt.source_file || (evt.source_pdf_url ? evt.source_pdf_url.split('/').pop() : '');
+  const hasPdf = Boolean(pdfFileName || evt.source_pdf_url);
+  const pdfUrl = evt.source_pdf_url || (pdfFileName ? `./data/beos/${encodeURIComponent(pdfFileName)}` : '');
+
   return `
     <div class="event-card">
       <div class="card-top">
@@ -107,7 +111,18 @@ export function createEventCardHTML(evt) {
           <span style="width: 7px; height: 7px; border-radius: 50%; background: ${spaceColor};"></span>
           ${spaceName}
         </span>
-        <span class="time-badge">🕒 ${time}</span>
+        <div class="card-top-right">
+          <span class="time-badge">🕒 ${time}</span>
+          <button class="btn-view-pdf ${hasPdf ? 'has-pdf' : 'no-pdf'}" 
+                  type="button" 
+                  data-has-pdf="${hasPdf ? 'true' : 'false'}"
+                  data-pdf="${escapeHTML(pdfUrl)}" 
+                  data-filename="${escapeHTML(pdfFileName)}" 
+                  data-title="${escapeHTML(title)}"
+                  title="${hasPdf ? 'Ver documento PDF original en visor' : 'Sin PDF adjunto'}">
+            <span>📄🔍</span> Ver OS
+          </button>
+        </div>
       </div>
 
       ${evt.multi_day && evt.multi_day.is_multi_day ? `
@@ -123,6 +138,16 @@ export function createEventCardHTML(evt) {
         <span class="badge badge-pax">👥 ${pax} PAX</span>
         ${servicesHTML}
       </div>
+
+      ${op.dietary_notes ? `
+        <div class="dietary-alert-banner">
+          <div class="dietary-alert-header">
+            <span class="dietary-alert-icon">⚠️</span>
+            <span class="dietary-alert-title">ALÉRGENOS & DIETAS ESPECIALES</span>
+          </div>
+          <div class="dietary-alert-content">${escapeHTML(op.dietary_notes)}</div>
+        </div>
+      ` : ''}
 
       <div class="operational-accordion">
         <button class="accordion-toggle" type="button">
@@ -144,7 +169,7 @@ export function createEventCardHTML(evt) {
 
           ${montajeNotes ? `
             <div class="op-detail-block op-montaje">
-              <div class="op-detail-header"><span>📐 Montaje & Distribución BEO</span></div>
+              <div class="op-detail-header"><span>📐 Montaje & Distribución OS</span></div>
               <div class="op-detail-content">${escapeHTML(montajeNotes)}</div>
             </div>
           ` : ''}
@@ -172,7 +197,7 @@ export function createEventCardHTML(evt) {
 
           ${op.menu_notes ? `
             <div class="op-detail-block op-menu">
-              <div class="op-detail-header"><span>🍽️ Gastronomía & Menú Completo (BEO)</span></div>
+              <div class="op-detail-header"><span>🍽️ Gastronomía & Menú Completo (OS)</span></div>
               <div class="op-detail-content op-menu-content">${escapeHTML(op.menu_notes)}</div>
             </div>
           ` : ''}
@@ -185,7 +210,7 @@ export function createEventCardHTML(evt) {
           ${(evt.manager || evt.block_id || evt.pm) ? `
             <div class="op-meta-row">
               ${evt.manager ? `<span class="op-tag">👤 Catering: <strong>${escapeHTML(evt.manager)}</strong></span>` : ''}
-              ${evt.block_id ? `<span class="op-tag">📋 BEO: <strong>${escapeHTML(evt.block_id)}</strong></span>` : ''}
+              ${evt.block_id ? `<span class="op-tag">📋 OS: <strong>${escapeHTML(evt.block_id)}</strong></span>` : ''}
               ${evt.pm ? `<span class="op-tag">PM: <strong>${escapeHTML(evt.pm)}</strong></span>` : ''}
             </div>
           ` : ''}

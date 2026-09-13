@@ -1,6 +1,183 @@
 [
   {
     "id": "evt-1",
+    "title": "Juliet And Paul Taplin · Llegadas & Alojamiento",
+    "date": "2026-09-16",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Juliet And Paul Taplin",
+      "date_start": "2026-09-16",
+      "date_end": "2026-09-18",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
+      "montaje_notes": "Se alojarán con nosotros 12 habitaciones de 16-20.09.\nRECEPCIÓN Este grupo tiene contratadas 12 habitaciones\nSe alojan del 16-20.09\nSe les ha solicitado los datos para el express check in\nFacturación hab DUI con desayuno:\n285,95€",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null,
+    "source_file": "V.1 OS PAUL TAPLIN 16-20_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS PAUL TAPLIN 16-20_09_2026.pdf"
+  },
+  {
+    "id": "evt-2",
+    "title": "Juliet And Paul Taplin · Sala Multifuncional",
+    "date": "2026-09-17",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Juliet And Paul Taplin",
+      "date_start": "2026-09-16",
+      "date_end": "2026-09-18",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje de sala para 12 pax",
+      "montaje_notes": "Colocar blocs de notas, bolígrafos y agua\n1 persona vegetariana y 1 persona vegana",
+      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Servicio F&B según desglose OS",
+      "menu_notes": "🍴 09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nPain au chocolat\nCroissant de mantequilla\n\n🍴 12:00 a 13:00 - Meeting - Premium - Salon Multifuncional   10 Pax\nEUR 39.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nBanana bread\nBrocheta de fruta fresca\nYogurt con fruta de temporada\nRoll de salmón ahumado y aguacate\nMollete máximo de Coppa Joselito y tomate\nTarta cremosa de queso payoyo\nTorrija tostada de mantequilla y nata fresca\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Marta Delange Fernandez\nDirección:  Sales Manager: Marta Delange Fernandez\nTipo Reserva: Meeting\nBlock Name: Juliet and Paul Taplin 17 - 18_09_2026\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión\n---",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null,
+    "source_file": "V.1 OS PAUL TAPLIN 16-20_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS PAUL TAPLIN 16-20_09_2026.pdf"
+  },
+  {
+    "id": "evt-3",
+    "title": "Juliet And Paul Taplin · Sala Multifuncional",
+    "date": "2026-09-18",
+    "time_start": "09:00",
+    "time_end": "13:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Juliet And Paul Taplin",
+      "date_start": "2026-09-16",
+      "date_end": "2026-09-18",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje de sala para 12 pax",
+      "montaje_notes": "Colocar blocs de notas, bolígrafos y agua\n1 persona vegetariana y 1 persona vegana",
+      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
+      "fb_notes": "Servicio F&B según desglose OS",
+      "menu_notes": "🍴 09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nPain au chocolat\nCroissant de mantequilla\n\n🍴 12:00 a 13:00 - Meeting - Premium - Salon Multifuncional   10 Pax\nEUR 39.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nBizcocho de manzana\nBrocheta de fruta fresca\nAçai\nBikini trufado\nBagel vegetal\nTarta cremosa de queso payoyo\nPancakes de frutos rojos y sirope de arce",
+      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
+      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión\n---",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Marta Delange Fernandez",
+    "block_id": "743363",
+    "pm": null,
+    "source_file": "V.1 OS PAUL TAPLIN 16-20_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS PAUL TAPLIN 16-20_09_2026.pdf"
+  },
+  {
+    "id": "evt-1",
     "title": "Kevin Murphy · Llegadas & Alojamiento",
     "date": "2026-09-18",
     "time_start": "12:00",
@@ -17,7 +194,7 @@
       "icon": "🏨",
       "description": "Recepción escalonada del grupo y gestión de habitaciones"
     },
-    "pax": 91,
+    "pax": 20,
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -28,11 +205,12 @@
       "day_label": "Día 1 de 8"
     },
     "operational": {
-      "furniture_summary": "Llegada de grupo (91 habs contratadas)",
+      "furniture_summary": "Llegada de grupo (20 habs contratadas)",
       "montaje_notes": "KEVIN.MURPHY es la exclusiva marca australiana de peluquería profesional presente en 60 países, y en\nmás de 150 shows de moda y fashion weeks internacionales. Se basa en la sostenibilidad, la moda y\nproductos de alta eficacia.\nSe hospedan con nosotros del 17-25.09 con llegadas escalonadas.\nTienen un total de 20 habitaciones contratadas.\nRECEPCIÓN Se alojan con nosotros del 17-25-09 con llegadas post.\nLlegan de manera escalonada.\nNo han solicitado express check in.\nEstán informados del depósito de 100€ por hab y noche.\nRouting hecho a la PM 9008.\nFacturación de habitaciones con desayuno incluido:\n- Superior ME DUI 420€",
       "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-      "fb_notes": "Facturación y régimen según BEO",
+      "fb_notes": "Facturación y régimen según OS",
       "menu_notes": null,
+      "dietary_notes": "Frutos secos\nPatatas fritas\n\nPendiente recibir alérgenos e intolerancias\n\nPendiente recibir alergias e intolerancias\n\n08:30 a 18:00h  Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
       "times": {
         "setup_minutes": 15,
@@ -41,7 +219,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-2",
@@ -76,6 +256,22 @@
       "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
     },
     "pax": 15,
+    "services": [
+      {
+        "type": "fb",
+        "key": "welcome-drink",
+        "label": "Welcome Drink / Copa de Bienvenida",
+        "icon": "🥂",
+        "details": "Tener bandejas listas 15 minutos antes de la hora de convocatoria."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -91,6 +287,7 @@
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": "F&B Se realizará una Welcome Drink para 14 personas en la zona de los sofás de la Pérgola.\nFacturación:",
       "menu_notes": "🍴 18:30 a 20:30 - Welcome Drink - Top 60 Min - PÉRGOLA TERRAZA   15 Pax\nEUR 38.00\nSelección de vinos de la casa\nCervezas variadas\nRefrescos\nAgua mineral\nFrutos secos\nPatatas fritas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Frutos secos\nPatatas fritas",
       "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
       "times": {
         "setup_minutes": 30,
@@ -99,7 +296,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-3",
@@ -136,6 +335,71 @@
       "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 13,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -151,6 +415,7 @@
       "sstt_notes": "AC\nHDMI inalámbrico\nTV\nAltavoces\nC. Victoria, 6, Distrito Centro\nMalaga, MA 29012, ES\n912764747\nCuenta KEVIN MURPHY  Block ID: 697386\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h. Prever servicio lo más rápido posible.\nReservar una mesa en la zona de la terraza del restaurante para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias",
       "menu_notes": "🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado.\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Alcachofas confitadas y fritas en carbonara ibérica, pimienta fresca y lascasde\nqueso Payoyo curado\n- Langostino del sur a la parrilla con jugo de pollo asado\nPLATO PRINCIPAL\n- Corvina en adobo y salsa de tomate encominao\n- Falda de cordero de leche con su jugo a la hierbabuena\nPOSTRE\n- El flan de nata de oveja Cañitas Maite\n*Bodega de la casa\n\n🍴 08:00 a 17:30 - MEETING ROOM - Healthy - Estudio 2 + 3   13 Pax\nEUR 29.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "Reservar una mesa en la zona de la terraza del restaurante para 15 personas.\nPISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -159,7 +424,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-4",
@@ -196,6 +463,71 @@
       "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 13,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -211,6 +543,7 @@
       "sstt_notes": "AC\nHDMI inalámbrico\nAltavoz\nTV\nC. Victoria, 6, Distrito Centro\nMalaga, MA 29012, ES\n912764747\nCuenta KEVIN MURPHY  Block ID: 697386\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h\nReservar una mesa en la zona de la terraza para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias",
       "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Non Stop - Estudio 2 + 3   13 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n\n🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Ceviche\n- Torta de aceite\n- Berenjena asada con burrata aliñada\n- Atun rojo salvaje aliñado como si fuera una gilda\n- Navajas\nPRINCIPALES\n- Luvina a la brasa con su pil pil\n- Solomillo Joselito y salsa pimiento verde\nPOSTRE\n- Corte de tarta de queso\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -219,7 +552,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-5",
@@ -256,6 +591,64 @@
       "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 15,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -271,6 +664,7 @@
       "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 49€ por persona\nPendiente recibir alergias e intolerancias",
       "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\n\n🍴 13:15 a 14:15 - Lunch - Finger - Cañitas al Fresco - Foyer   15 Pax\nEUR 49.00\nNuestra version de unas papas con mejillón escabechado\nMarinera de ensaladilla y anchoa\nGilda doble de boquerón y aceituna manzanilla\nRoll brioche de salmón y aguacate malagueño\nMollete máximo de atún rojo en escabeche\nBikini mixto trufado de jamón cocido y comté\nMini burger de carne de vaca madurada LYO y yema curada\nCoulant frio de caramelo salado\n\n🍴 13:15 a 14:15Lunch - Clásico - Foyer  15 Pax  EUR 9.00\nAgua mineral\nAgua con gas\nRefresco\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Pendiente recibir alergias e intolerancias",
       "pisos_notes": "AURA Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -279,7 +673,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-6",
@@ -312,12 +708,70 @@
       "location": "Planta Baja / Salón Principal"
     },
     "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+      "key": "imperial",
+      "label": "Mesa de Reunión (Imperial)",
+      "icon": "🏛️",
+      "description": "Mesa ejecutiva única con papelería, conectividad y medios audiovisuales"
     },
     "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -328,11 +782,12 @@
       "day_label": "Día 5 de 8"
     },
     "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (5 pax)",
+      "furniture_summary": "Mesa Imperial única (5 pax) con soporte AV y papelería",
       "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrados y agua",
       "sstt_notes": "AC\nTV 86 pulgadas ya que necesitarán hacer una videoconferencia\nAltavoz\nHDMI inalámbrico",
       "fb_notes": "Pendiente recibir alérgenos e intolerancias",
       "menu_notes": "🍴 08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas",
+      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -341,7 +796,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-7",
@@ -380,6 +837,57 @@
       "description": "Distribución a confirmar según orden de servicio"
     },
     "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -390,11 +898,12 @@
       "day_label": "Día 6 de 8"
     },
     "operational": {
-      "furniture_summary": "Montaje oficial según BEO para 5 pax",
+      "furniture_summary": "Montaje oficial según OS para 5 pax",
       "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrados y agua",
       "sstt_notes": "AC\nAltavoz\nHDMI inalámbrico\nTV 86 pulgadas ya que necesitan hacer una video conferencia",
       "fb_notes": "Montar coffee break permanente en sala 20 minutos antes del incio de la reunión",
       "menu_notes": "🍴 08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "08:30 a 18:00h  Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -403,7 +912,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-8",
@@ -440,6 +951,64 @@
       "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 18,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -455,6 +1024,7 @@
       "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 59€ por persona\nPendiente recibir alergias e intolerancias",
       "menu_notes": "🍴 08:30 a 18:00 - MEETING ROOM - Non Stop - Estudio 2 + 3   13 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\n\n🍴 12:30 a 13:30 - Lunch - Finger - Eñe - Foyer   18 Pax\nEUR 59.00\nHomenaje a la matanza\nCogollo cesar de pollo escabechado\nCeviche cítrico de pescado de roca\nBollito preñao de atún rojo Fuentes\nBuñuelo cremoso de queso trufado\nNuestra versión de unas patatas brevas\nEl bocata de calamares de Cañitas\nDonut de guiso de rabo de toro y parmesano\nCañickers\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Pendiente recibir alergias e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -463,7 +1033,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-9",
@@ -500,6 +1072,64 @@
       "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
     },
     "pax": 16,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -515,6 +1145,7 @@
       "sstt_notes": "AC\nTV 98 pulgadas\nHDMI inalámbrico\nAltavoz",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación CB:\nFinger buffet en el foyer 69€ por persona\nPendiente recibir alergias e intolerancias",
       "menu_notes": "🍴 08:00 a 17:30 - Meeting - Non Stop - Estudio 2 + 3   15 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\n\n🍴 12:30 a 13:30 - Lunch - Finger - Cañitas Maite - Foyer   15 Pax\nEUR 69.00\nLa mejor croqueta del mundo 2021\nPuerro asado en ascuas con burrata y tomate seco\nAtun rojo Fuentes aliñado como si fuera una gilda\nEnsaladilla de gamba blanca al ajillo\nAlcachofa en carbonara ibérica Joselito\nGamba roja en versión frito con patatas y huevo\nLubina salvaje con pil pil montado y aceite verde\nMolleja de ternera lechal con parmentier ahumado y setas\nTartaleta de mango pie\nEl fan de cañitas desestructurado\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "Pendiente recibir alergias e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -523,7 +1154,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-10",
@@ -562,6 +1195,64 @@
       "description": "Mesa presidencial rectangular o combinada corrida con los participantes sentados frente a frente."
     },
     "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-sonido",
+        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
+        "icon": "🎙️",
+        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -572,11 +1263,12 @@
       "day_label": "Día 7 de 8"
     },
     "operational": {
-      "furniture_summary": "Mesa Imperial única (5 pax)",
+      "furniture_summary": "Mesa Imperial única (5 pax) con soporte AV y papelería",
       "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrafos y agua",
       "sstt_notes": "AC\nTV de 86 pulgadas ya que se realizará una video conferencia\nAltavoz\nHDMI inalámbrico",
       "fb_notes": "Pendiente recibir alérgenos e intolerancias",
       "menu_notes": "🍴 08:30 a 18:00 - Multifuntional Meeting Room - Non Stop - Salon Multifuncional   5 Pax\nEUR 12.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas",
+      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -585,7 +1277,9 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
     "id": "evt-11",
@@ -624,6 +1318,22 @@
       "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
     },
     "pax": 5,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
     "multi_day": {
       "is_multi_day": true,
       "group_name": "Kevin Murphy",
@@ -634,11 +1344,12 @@
       "day_label": "Día 8 de 8"
     },
     "operational": {
-      "furniture_summary": "Montaje oficial según BEO para 5 pax",
+      "furniture_summary": "Montaje oficial según OS para 5 pax",
       "montaje_notes": "Montar para 5 personas\nColocar blocs de notas, bolígrafos y agua",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": "Pedirán a la carta\nPendiente recibir alérgenos e intolerancias",
       "menu_notes": null,
+      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "Después de la reunión en la sala accederán al restaurante Cañitas Maite 5 pax",
       "times": {
         "setup_minutes": 30,
@@ -647,6 +1358,8 @@
     },
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
-    "pm": "9008"
+    "pm": "9008",
+    "source_file": "OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS KEVIN MURPHY 19-25_09_2026.pdf"
   }
 ]

@@ -85,6 +85,89 @@
   white-space: nowrap;
 }
 
+.card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.btn-view-pdf {
+  background: rgba(0, 128, 255, 0.08);
+  border: 1px solid rgba(0, 128, 255, 0.28);
+  border-radius: var(--radius-sm);
+  color: #60a5fa;
+  font-size: 0.73rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-view-pdf:hover {
+  background: rgba(0, 128, 255, 0.2);
+  border-color: #3b82f6;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 128, 255, 0.35);
+}
+
+.btn-view-pdf.no-pdf {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: var(--text-secondary);
+}
+
+.btn-view-pdf.no-pdf:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Banner Destacado de Alérgenos & Intolerancias */
+.dietary-alert-banner {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(239, 68, 68, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  border-left: 4px solid #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.08);
+}
+
+.dietary-alert-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dietary-alert-icon {
+  font-size: 0.95rem;
+}
+
+.dietary-alert-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fbbf24;
+}
+
+.dietary-alert-content {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #fef3c7;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
 .event-title {
   font-size: 1.1rem;
   font-weight: 700;

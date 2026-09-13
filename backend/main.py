@@ -5,7 +5,7 @@ from typing import List, Dict, Any, Optional
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 
 from backend.extractor import (
     extract_text_from_pdf,
@@ -31,6 +31,10 @@ app.add_middleware(
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
+BEOS_DIR = DATA_DIR / "beos"
+BEOS_DIR.mkdir(exist_ok=True)
+FRONTEND_BEOS_DIR = Path(__file__).resolve().parent.parent / "frontend" / "data" / "beos"
+FRONTEND_BEOS_DIR.mkdir(parents=True, exist_ok=True)
 EVENTS_FILE = DATA_DIR / "events.json"
 
 def get_stored_events() -> List[Dict[str, Any]]:
@@ -146,6 +150,13 @@ async def upload_beo(
             
         if filename.lower().endswith(".pdf"):
             text_content = extract_text_from_pdf(content)
+            try:
+                with open(BEOS_DIR / filename, "wb") as f_out:
+                    f_out.write(content)
+                with open(FRONTEND_BEOS_DIR / filename, "wb") as f_front:
+                    f_front.write(content)
+            except Exception as e:
+                print(f"Aviso guardando copia PDF: {e}")
         else:
             try:
                 text_content = content.decode("utf-8", errors="ignore")
@@ -199,6 +210,28 @@ async def upload_beo(
         "new_count": len(new_events),
         "first_event": new_events[0] if new_events else None
     }
+
+@app.get("/api/beos/{filename}")
+def get_beo_pdf(filename: str):
+    """Sirve un archivo PDF de BEO original para visualización."""
+    safe_name = Path(filename).name
+    
+    # 1. Buscar en data/beos
+    p1 = BEOS_DIR / safe_name
+    if p1.exists() and p1.is_file():
+        return FileResponse(p1, media_type="application/pdf", filename=safe_name)
+        
+    # 2. Buscar en frontend/data/beos
+    p2 = FRONTEND_BEOS_DIR / safe_name
+    if p2.exists() and p2.is_file():
+        return FileResponse(p2, media_type="application/pdf", filename=safe_name)
+
+    # 3. Buscar en sources/ods
+    sources_ods = Path(__file__).resolve().parent.parent / "sources" / "ods" / safe_name
+    if sources_ods.exists() and sources_ods.is_file():
+        return FileResponse(sources_ods, media_type="application/pdf", filename=safe_name)
+
+    raise HTTPException(status_code=404, detail=f"Documento BEO '{safe_name}' no encontrado")
 
 # Servir Frontend estático si existe
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"

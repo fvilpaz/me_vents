@@ -92,7 +92,7 @@
       "id": "cb-permanente",
       "term": "Coffee Break Permanente (Non-Stop)",
       "category": "fb",
-      "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo", "estacion continua"],
+      "aliases": ["coffee break permanente", "cb permanente", "non stop", "non-stop", "cb continuo", "estacion continua", "leche cafe", "leche, café", "café con leche", "café y zumos", "leche, café y zumos", "café continuo", "estacion de cafe", "estación de café", "infusiones y zumos"],
       "definition": "Estación de café y refrigerios abierta ininterrumpidamente en la sala o anexo durante la jornada.",
       "operational_tip": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas.",
       "icon": "☕⚡"
@@ -103,7 +103,7 @@
       "category": "fb",
       "aliases": ["cb", "c.b", "c.b.", "coffee break", "pausa cafe", "pausa café", "cb simple"],
       "definition": "Servicio de café, té, leches (entera, desnatada, avena/soja sin lactosa), zumos y bollería artesanal.",
-      "operational_tip": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la BEO.",
+      "operational_tip": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS.",
       "icon": "☕"
     },
     {
@@ -171,7 +171,7 @@
     },
     {
       "id": "beo-control",
-      "term": "Catering Manager & Ficha BEO",
+      "term": "Catering Manager & Ficha OS",
       "category": "protocolo_hotel",
       "aliases": ["beo", "catering manager", "sales manager", "block id", "pm", "orden de servicio"],
       "definition": "Control operativo oficial emitido por Opera Sales & Catering con el contacto comercial asignado.",

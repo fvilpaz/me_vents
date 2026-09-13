@@ -1,4 +1,4 @@
-# ME·VENTS — ME Málaga Banquets & Production
+# ME·VENTS — ME Málaga MICE & Events Production
 
 [![Brand](https://img.shields.io/badge/Brand-ME_by_Meliá-0080ff.svg)](https://www.melia.com)
 [![Hotel](https://img.shields.io/badge/Hotel-ME_Málaga-blue.svg)]()
@@ -6,7 +6,7 @@
 
 **ME·VENTS** es una Progressive Web App (PWA) de diseño vanguardista inspirada en la identidad cultural y sofisticada de **ME by Meliá** y **Meliá Hotels International**.
 
-Diseñada para **Fai** y el equipo de banquetes y operaciones de ME Málaga para procesar con precisión órdenes de servicio (BEO) en PDF de Opera Sales & Catering, desglosando al instante las necesidades operativas de montaje, técnica (SSTT) y gastronomía (F&B).
+Diseñada para **Fai** y el equipo de operaciones MICE de ME Málaga para procesar con precisión órdenes de servicio (OS) en PDF de Opera Sales & Catering, desglosando al instante las necesidades operativas de montaje, técnica (SSTT) y gastronomía (F&B).
 
 ---
 

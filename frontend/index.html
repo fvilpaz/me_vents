@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="./css/style.css?v=1.4">
+  <link rel="stylesheet" href="./css/style.css?v=1.7">
 </head>
 <body>
 
@@ -94,7 +94,7 @@
             <line x1="12" y1="5" x2="12" y2="19"/>
             <line x1="5" y1="12" x2="19" y2="12"/>
           </svg>
-          <span>Nueva Orden (BEO)</span>
+          <span>Nueva Orden (OS)</span>
         </button>
       </div>
     </section>
@@ -146,37 +146,104 @@
   </main>
 
   <!-- Floating Action Button (Mobile) -->
-  <button class="fab-btn" id="fabBtn" title="Añadir Orden BEO" aria-label="Añadir Orden BEO">+</button>
+  <button class="fab-btn" id="fabBtn" title="Añadir Orden de Servicio (OS)" aria-label="Añadir Orden de Servicio (OS)">+</button>
 
   <!-- ==========================================================================
-       MODAL: SUBIR BEO / PROCESAR CON INTELIGENCIA ARTIFICIAL
+       MODAL: SUBIR OS / PROCESAR CON INTELIGENCIA ARTIFICIAL (DUAL: PDF + TEXTO)
        ========================================================================== -->
   <div class="modal-overlay" id="uploadModal">
-    <div class="modal-box">
+    <div class="modal-box modal-box-medium">
       <div class="modal-header">
         <div class="modal-title">
-          <span>⚡</span> Nueva Orden de Servicio (BEO)
+          <span>⚡</span> Cargar Orden de Servicio (OS)
         </div>
         <button class="modal-close-btn" id="closeModalBtn" aria-label="Cerrar modal">&times;</button>
       </div>
 
-      <!-- Dropzone Archivos -->
-      <div class="dropzone" id="dropzone">
-        <div class="dropzone-icon">📥</div>
-        <div class="dropzone-label">Arrastra tu PDF o pulsa para examinar</div>
-        <div class="dropzone-sub">Soporta órdenes de servicio BEO en PDF o fotos de la hoja impresa</div>
-        <input type="file" id="fileInput" accept="application/pdf,image/*" style="display: none;">
+      <!-- Selector de Método: PDF o Texto Plano -->
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tabUploadPdfBtn" type="button">📄 Archivo PDF</button>
+        <button class="modal-tab-btn" id="tabUploadTextBtn" type="button">📝 Pegar Texto Plano</button>
       </div>
 
-      <!-- Entrada Rápida de Jerga -->
-      <div class="quick-text-section">
-        <label class="quick-text-label" for="quickTextInput">O escribe los datos en lenguaje de sala (jerga):</label>
-        <textarea id="quickTextInput" class="quick-text-input" placeholder="Ejemplo: Sala Multifuncional montaje en U shape 12 pax CB de 09:00 a 14:00"></textarea>
+      <!-- Panel 1: Subida de PDF -->
+      <div class="upload-panel active" id="panelPdf">
+        <div class="dropzone" id="dropzone">
+          <div class="dropzone-icon">📥</div>
+          <div class="dropzone-label">Arrastra tu PDF o pulsa para examinar</div>
+          <div class="dropzone-sub">Soporta órdenes de servicio (OS) en PDF de Opera Sales & Catering</div>
+          <input type="file" id="fileInput" accept="application/pdf,image/*" style="display: none;">
+        </div>
+
+        <div class="quick-text-section" style="margin-top: 0.85rem;">
+          <label class="quick-text-label" for="pdfAdditionalNotes">Notas adicionales o correcciones manuales (opcional):</label>
+          <textarea id="pdfAdditionalNotes" class="quick-text-input" style="min-height: 55px;" placeholder="Ej: Prever 1 celíaco y Alex Gold alérgico a lácteos grave..."></textarea>
+        </div>
+      </div>
+
+      <!-- Panel 2: Pegar Texto Plano de OS -->
+      <div class="upload-panel" id="panelText" style="display: none;">
+        <div class="quick-text-section" style="margin-top: 0;">
+          <label class="quick-text-label" for="quickTextInput">
+            Pega aquí el texto copiado de Opera o de la OS (Ctrl+A ➔ Ctrl+C):
+          </label>
+          <textarea id="quickTextInput" class="quick-text-input" style="min-height: 180px; font-family: monospace; font-size: 0.8rem; line-height: 1.4;" placeholder="Pega el texto completo de la OS aquí... Incluyendo datos de sala, montaje, horarios, menús o alérgenos."></textarea>
+        </div>
       </div>
 
       <button class="modal-submit-btn" id="processOrderBtn">
         <span>✨</span> Procesar e Integrar en Agenda
       </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: VISOR DE PDF ORIGINAL (OS OPERA) CON LUPA
+       ========================================================================== -->
+  <div class="modal-overlay" id="pdfViewerModal">
+    <div class="modal-box modal-box-pdf">
+      <div class="modal-header">
+        <div class="modal-title" id="pdfViewerTitle">
+          <span>📄🔍</span> Visor de OS Original
+        </div>
+        <div class="modal-header-actions">
+          <a id="pdfOpenNewTabBtn" href="#" target="_blank" rel="noopener noreferrer" class="modal-action-btn" title="Abrir en pestaña completa">
+            <span>↗️</span> Pantalla completa
+          </a>
+          <button class="modal-close-btn" id="closePdfModalBtn" aria-label="Cerrar visor PDF">&times;</button>
+        </div>
+      </div>
+      <div class="pdf-viewer-container">
+        <iframe id="pdfViewerFrame" src="" title="Visor de Orden de Servicio (OS)" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: AVISO DOCUMENTO PDF NO SUBIDO
+       ========================================================================== -->
+  <div class="modal-overlay" id="noPdfNoticeModal">
+    <div class="modal-box modal-box-small">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📄⚠️</span> Documento OS no disponible
+        </div>
+        <button class="modal-close-btn" id="closeNoPdfNoticeBtn" aria-label="Cerrar aviso">&times;</button>
+      </div>
+      <div class="notice-body">
+        <p class="notice-main-text" id="noPdfNoticeText">
+          No se ha subido ningún archivo PDF para esta orden de servicio.
+        </p>
+        <p class="notice-sub-text">
+          Para poder visualizar el documento original de Opera con zoom y navegación en el visor, añade el archivo PDF correspondiente.
+        </p>
+      </div>
+      <div class="modal-actions-footer">
+        <button class="modal-secondary-btn" id="cancelNoPdfNoticeBtn" type="button">Cerrar</button>
+        <button class="modal-primary-btn" id="openUploadFromNoticeBtn" type="button">
+          <span>📥</span> Añadir PDF ahora
+        </button>
+      </div>
     </div>
   </div>
 
@@ -241,13 +308,36 @@
 
   <!-- Footer -->
   <footer class="app-footer">
-    <div class="footer-text">
-      <strong>Me_vents</strong> · Suite Operativa de Banquetes y Montajes · <strong>ME Málaga</strong>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <strong class="footer-app-name">ME·VENTS</strong>
+        <span class="footer-sep">·</span>
+        <span class="footer-tagline">MICE & Events Production</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-hotel">ME Málaga</span>
+      </div>
+      <div class="footer-developer">
+        <span class="dev-label">Desarrollado por <strong>Fernando Vilas Paz</strong></span>
+        <div class="dev-links">
+          <a href="https://fvilpaz.github.io/cv/" target="_blank" rel="noopener noreferrer" class="footer-link" title="Currículum Vitae">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>CV</span>
+          </a>
+          <a href="https://www.linkedin.com/in/fernando-vilas-paz-1626901a9" target="_blank" rel="noopener noreferrer" class="footer-link" title="LinkedIn">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/fvilpaz" target="_blank" rel="noopener noreferrer" class="footer-link" title="GitHub">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- Modular Scripts (ES Modules) -->
-  <script type="module" src="./js/app.js?v=2.0"></script>
+  <script type="module" src="./js/app.js?v=2.2"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
