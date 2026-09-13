@@ -241,22 +241,3 @@ export async function clearAllEvents() {
   }
 }
 
-export async function restoreDemoEvents() {
-  localStorage.removeItem('me_vents_cleared_by_user');
-  try {
-    const staticRes = await fetch(`./data/events.json?t=${Date.now()}`, { cache: 'no-store' });
-    if (staticRes.ok) {
-      const staticEvents = await staticRes.json();
-      if (Array.isArray(staticEvents) && staticEvents.length > 0) {
-        state.events = staticEvents;
-        saveEventsToStorage();
-        initDate();
-        return true;
-      }
-    }
-  } catch (err) {
-    console.error('Error restaurando eventos demo:', err);
-  }
-  return false;
-}
-

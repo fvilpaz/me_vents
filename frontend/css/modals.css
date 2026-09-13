@@ -181,7 +181,7 @@
   box-shadow: 0 4px 20px var(--me-blue-glow);
 }
 
-/* Floating Action Button (Mobile) */
+/* Floating Action Button (Solo Mobile) */
 .fab-btn {
   position: fixed;
   bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
@@ -204,6 +204,13 @@
 
 .fab-btn:hover {
   transform: scale(1.08) rotate(90deg);
+}
+
+/* En Desktop, ocultar FAB ya que existe el botón principal en el header */
+@media (min-width: 769px) {
+  .fab-btn {
+    display: none !important;
+  }
 }
 
 /* Adaptación para Landscape de poca altura */
