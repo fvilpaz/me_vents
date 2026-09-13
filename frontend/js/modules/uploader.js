@@ -207,6 +207,22 @@ export function setupUploaderListeners() {
       pdfUrl = `./data/beos/${encodeURIComponent(filename)}`;
     }
 
+    // Detección de dispositivo móvil:
+    // En móviles/tablets (iOS/Android) es mucho más ágil abrirlo de forma directa:
+    // el sistema operativo lo abre con su visor nativo, Drive o la app que tenga el usuario configurada.
+    const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      return;
+    }
+
+    // En ordenadores de escritorio (pantalla grande), abrir el visor modal integrado con lupa
     openPdfViewer(pdfUrl, filename);
   });
 }
