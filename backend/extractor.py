@@ -469,19 +469,32 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
             "day_label": f"Día {day_idx + 1} de {total_event_days}"
         }
 
-        # Extraer menús y gastronomía del día
-        day_menus = []
+        # Extraer bloques individuales de menús y gastronomía del día
+        day_menu_blocks = []
         menu_splits = re.split(r'(?:Servicio Comida|Servicio Bebida)', combined_day_text, flags=re.I)
         for ms in menu_splits[1:]:
             clean_lines = []
             for l in ms.split("\n"):
                 l_s = l.strip()
-                if l_s and not any(k in l_s for k in ["ME Malaga", "C. Victoria", "Distrito Centro", "Cuenta", "Block ID", "Total Habs", "Viernes,", "Sábado,", "Domingo,", "Lunes,", "Martes,", "Miércoles,", "Jueves,", "Date Last", "Page "]):
+                if l_s and not any(k in l_s for k in ["ME Malaga", "C. Victoria", "Distrito Centro", "Cuenta", "Block ID", "Total Habs", "Viernes,", "Sábado,", "Domingo,", "Lunes,", "Martes,", "Miércoles,", "Jueves,", "Date Last", "Page ", "Teléfono:", "Email:", "PM:"]):
                     clean_lines.append(l_s)
-            if clean_lines:
-                day_menus.append("\n".join(clean_lines[:30]))
-
-        menu_text = "\n\n".join([f"🍴 {m}" for m in day_menus]) if day_menus else None
+            clean_text = "\n".join(clean_lines)
+            raw_blocks = re.split(r'(?=\b\d{1,2}[:.]\d{2}\s*(?:-|a)\s*\d{1,2}[:.]\d{2})', clean_text)
+            for b in raw_blocks:
+                b_s = b.strip()
+                if not b_s:
+                    continue
+                b_lines = [l for l in b_s.split("\n") if l.strip()]
+                header = b_lines[0]
+                sp = match_space(header)
+                pax_m = re.search(r'(\d+)\s*Pax', header, re.I)
+                pax_num = int(pax_m.group(1)) if pax_m else None
+                day_menu_blocks.append({
+                    "header": header,
+                    "space": sp,
+                    "pax": pax_num,
+                    "text": "\n".join(b_lines[:25])
+                })
 
         # Separar partes operativas
         ops_texts = []
@@ -610,6 +623,26 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
             elif "imperial" in setup_obj["key"]:
                 furniture_sum = f"Mesa Imperial única ({pax_val} pax)"
 
+            # Asignación de menús estrictamente aislada por salón y comensales
+            session_menus = []
+            for mb in day_menu_blocks:
+                mb_sp = mb.get("space")
+                mb_pax = mb.get("pax")
+                
+                # 1. Coincidencia directa de salón
+                if mb_sp and space_obj and mb_sp.get("id") == space_obj.get("id"):
+                    session_menus.append(mb["text"])
+                # 2. Comedores y anexos gastronómicos (Foyer, Cañitas al Fresco, Restaurante, Pérgola)
+                elif mb_sp and mb_sp.get("id") in ["foyer", "canitas-al-fresco", "restaurante", "pergola", "rooftop"]:
+                    # Asignar a la sesión cuyos comensales coinciden (ej: 15 pax vs 5 pax)
+                    if mb_pax and pax_val and abs(mb_pax - pax_val) <= 3:
+                        session_menus.append(mb["text"])
+                # 3. Si solo hay 1 sesión en todo el día, recibe los menús de la jornada
+                elif len(session_matches) == 1:
+                    session_menus.append(mb["text"])
+                    
+            session_menu_text = "\n\n".join([f"🍴 {m}" for m in session_menus]) if session_menus else None
+
             events.append({
                 "id": f"evt-{len(events)+1}",
                 "title": f"{client_name} · {space_obj['name']}",
@@ -625,7 +658,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                     "montaje_notes": "\n".join(montaje_lines) if montaje_lines else f"Montaje {setup_obj['label']} para {pax_val} pax según BEO",
                     "sstt_notes": "\n".join(sstt_lines) if sstt_lines else "AC, conectividad y soporte técnico de sala",
                     "fb_notes": "\n".join(fb_lines) if fb_lines else None,
-                    "menu_notes": menu_text,
+                    "menu_notes": session_menu_text,
                     "pisos_notes": "\n".join(pisos_lines) if pisos_lines else "Revisar y perfumar sala (Protocolo AURA)",
                     "times": { "setup_minutes": 30, "breakdown_minutes": 20 }
                 },

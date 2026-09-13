@@ -97,6 +97,7 @@ export async function processAndAddOrder(file, rawText) {
     newEvents = [single];
   }
 
+  localStorage.removeItem('me_vents_cleared_by_user');
   state.events.push(...newEvents);
   if (newEvents[0]?.date) {
     state.selectedDate = newEvents[0].date;

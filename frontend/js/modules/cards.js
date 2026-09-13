@@ -33,6 +33,30 @@ export function renderCards() {
   if (paxCountEl) paxCountEl.textContent = totalPax;
 
   if (filtered.length === 0) {
+    if (state.events.length === 0) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">✨</div>
+          <div class="empty-title">Agenda Limpia & Despejada</div>
+          <div class="empty-desc">No hay órdenes de servicio activas en este momento. Puedes procesar un nuevo BEO en PDF o cargar la orden de demostración oficial de ME Málaga.</div>
+          <div style="display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+            <button id="emptyUploadBtn" class="btn btn-primary" style="padding: 10px 18px; border-radius: 8px; font-weight: 600; cursor: pointer;">📂 Subir Orden (BEO)</button>
+            <button id="emptyRestoreDemoBtn" class="btn btn-outline" style="padding: 10px 18px; border-radius: 8px; font-weight: 600; cursor: pointer;">📋 Cargar Demo (Kevin Murphy)</button>
+          </div>
+        </div>
+      `;
+      document.getElementById('emptyUploadBtn')?.addEventListener('click', () => {
+        document.getElementById('uploadModal')?.classList.add('open');
+      });
+      document.getElementById('emptyRestoreDemoBtn')?.addEventListener('click', async () => {
+        const { restoreDemoEvents } = await import('./state.js');
+        await restoreDemoEvents();
+        renderTimeline();
+        renderCards();
+      });
+      return;
+    }
+
     container.innerHTML = `
       <div class="empty-state">
         <div class="empty-icon">🛋️</div>

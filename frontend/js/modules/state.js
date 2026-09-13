@@ -186,6 +186,12 @@ export function saveEventsToStorage() {
 }
 
 export async function syncWithBackend() {
+  // Si el usuario ha vaciado intencionadamente la agenda, respetamos su decisión y no forzamos la demo
+  if (localStorage.getItem('me_vents_cleared_by_user') === 'true') {
+    state.events = [];
+    return;
+  }
+
   try {
     const res = await fetch('/api/events');
     if (res.ok) {
@@ -204,7 +210,7 @@ export async function syncWithBackend() {
     // Backend no disponible (ej. GitHub Pages estático)
   }
 
-  // Sincronización fresca para GitHub Pages o modo estático con cache-buster
+  // Sincronización para GitHub Pages con cache-buster si no fue limpiado por el usuario
   try {
     const cacheBuster = `t=${Date.now()}`;
     const staticRes = await fetch(`./data/events.json?${cacheBuster}`, { cache: 'no-store' });
@@ -227,10 +233,30 @@ export async function syncWithBackend() {
 export async function clearAllEvents() {
   state.events = [];
   saveEventsToStorage();
+  localStorage.setItem('me_vents_cleared_by_user', 'true');
   try {
     await fetch('/api/events', { method: 'DELETE' });
   } catch (err) {
     console.log('Limpiado en local');
   }
+}
+
+export async function restoreDemoEvents() {
+  localStorage.removeItem('me_vents_cleared_by_user');
+  try {
+    const staticRes = await fetch(`./data/events.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (staticRes.ok) {
+      const staticEvents = await staticRes.json();
+      if (Array.isArray(staticEvents) && staticEvents.length > 0) {
+        state.events = staticEvents;
+        saveEventsToStorage();
+        initDate();
+        return true;
+      }
+    }
+  } catch (err) {
+    console.error('Error restaurando eventos demo:', err);
+  }
+  return false;
 }
 
