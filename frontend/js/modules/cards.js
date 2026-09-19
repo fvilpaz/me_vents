@@ -1,12 +1,23 @@
-import { state, saveEventsToStorage } from './state.js';
+import { state, saveEventsToStorage, countPastEvents, setShowPast, groupEndInfo, todayKey } from './state.js';
 import { renderTimeline } from './timeline.js';
 import { escapeHTML } from './security.js';
+
+// Botón "Ver pasados (N)": solo aparece si hay órdenes con fecha anterior a hoy
+function updatePastToggle() {
+  const btn = document.getElementById('togglePastBtn');
+  if (!btn) return;
+  const pastCount = countPastEvents();
+  btn.style.display = pastCount > 0 ? '' : 'none';
+  btn.classList.toggle('active', state.showPast);
+  btn.textContent = state.showPast ? '🕘 Ocultar pasados' : `🕘 Ver pasados (${pastCount})`;
+}
 
 export function renderCards() {
   const container = document.getElementById('cardsContainer');
   const totalCountEl = document.getElementById('todayTotalCount');
   const paxCountEl = document.getElementById('todayPaxCount');
   if (!container) return;
+  updatePastToggle();
 
   // Filtrar eventos por fecha seleccionada
   let filtered = state.events.filter(e => e.date === state.selectedDate);
@@ -44,11 +55,13 @@ export function renderCards() {
       return;
     }
 
+    const hiddenPast = !state.showPast ? countPastEvents() : 0;
+    const pastHint = hiddenPast > 0 ? ` Hay ${hiddenPast} órdenes pasadas ocultas: pulsa <strong>Ver pasados</strong> para consultarlas.` : '';
     container.innerHTML = `
       <div class="empty-state">
         <div class="empty-icon">🛋️</div>
         <div class="empty-title">Sin montajes para este día</div>
-        <div class="empty-desc">No hay eventos programados en los salones para esta fecha.</div>
+        <div class="empty-desc">No hay eventos programados en los salones para esta fecha.${pastHint}</div>
       </div>
     `;
     return;
@@ -84,6 +97,7 @@ export function createEventCardHTML(evt) {
   const pax = parseInt(evt.pax, 10) || 0;
   const time = escapeHTML(`${evt.time_start || '09:00'} - ${evt.time_end || '14:00'}`);
   const title = escapeHTML(evt.title || 'Evento');
+  const groupEnd = groupEndInfo(evt);
 
   const servicesHTML = (evt.services || []).map(s => {
     const isFb = s.type === 'fb';
@@ -136,6 +150,13 @@ export function createEventCardHTML(evt) {
             <span class="multiday-name">${escapeHTML(evt.multi_day.group_name)}</span>
             <span class="multiday-dates">(${escapeHTML(evt.multi_day.date_start)} al ${escapeHTML(evt.multi_day.date_end)})</span>
           </span>
+        </div>
+      ` : ''}
+
+      ${groupEnd ? `
+        <div class="group-end-badge" role="status">
+          <span class="group-end-icon" aria-hidden="true">🏁</span>
+          <span>${evt.date === todayKey() ? 'Hoy finalizan los servicios' : 'Último día de servicios'}${groupEnd.endTime ? ` · hasta las ${escapeHTML(groupEnd.endTime)}` : ''}</span>
         </div>
       ` : ''}
 
@@ -255,6 +276,15 @@ export function setupFilterControls() {
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       state.searchQuery = e.target.value;
+      renderCards();
+    });
+  }
+
+  const togglePastBtn = document.getElementById('togglePastBtn');
+  if (togglePastBtn) {
+    togglePastBtn.addEventListener('click', () => {
+      setShowPast(!state.showPast);
+      renderTimeline();
       renderCards();
     });
   }

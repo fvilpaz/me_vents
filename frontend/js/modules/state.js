@@ -2,9 +2,14 @@
  * ME_VENTS - Global State & Data Store Module
  */
 
+function readShowPast() {
+  try { return localStorage.getItem('me_vents_show_past') === 'true'; } catch (e) { return false; }
+}
+
 export const state = {
   events: [],
   selectedDate: null,
+  showPast: readShowPast(),
   activeFilterSpace: 'all',
   activeFilterSetup: 'all',
   searchQuery: '',
@@ -32,14 +37,61 @@ export function formatDateKey(dateObj) {
   return `${y}-${m}-${d}`;
 }
 
+export function todayKey() {
+  return formatDateKey(new Date());
+}
+
+// Un evento es "pasado" cuando su fecha es anterior a hoy; el que acaba hoy sigue visible.
+export function isPastEvent(evt) {
+  return !!evt.date && evt.date < todayKey();
+}
+
+export function countPastEvents() {
+  return state.events.filter(isPastEvent).length;
+}
+
+export function getVisibleEvents() {
+  return state.showPast ? state.events : state.events.filter(e => !isPastEvent(e));
+}
+
+// Un grupo = mismo block_id (o, sin él, mismo nombre de grupo).
+function groupKey(e) {
+  return e.block_id || (e.multi_day && e.multi_day.group_name) || e.title;
+}
+
+// Si evt está en el ÚLTIMO día de su grupo devuelve { endTime } (hora a la que acaba su última sesión); si no, null.
+export function groupEndInfo(evt) {
+  if (!evt.date) return null;
+  const group = state.events.filter(e => e.date && groupKey(e) === groupKey(evt));
+  const lastDate = group.map(e => e.date).sort().pop();
+  if (evt.date !== lastDate) return null;
+  const ends = group
+    .filter(e => e.date === lastDate)
+    .map(e => e.time_end)
+    .filter(t => /^\d{1,2}:\d{2}$/.test(t || ''))
+    .sort();
+  return { endTime: ends.length ? ends[ends.length - 1] : null };
+}
+
+export function setShowPast(value) {
+  state.showPast = value;
+  try { localStorage.setItem('me_vents_show_past', String(value)); } catch (e) { /* sin storage: solo esta sesión */ }
+}
+
+// Fecha por defecto: hoy si tiene eventos; si no, el próximo día con eventos; si no, el último que hubo.
+export function pickDefaultDate(sortedDates) {
+  const today = todayKey();
+  if (sortedDates.length === 0) return today;
+  if (sortedDates.includes(today)) return today;
+  return sortedDates.find(d => d > today) || sortedDates[sortedDates.length - 1];
+}
+
+function visibleDates() {
+  return [...new Set(getVisibleEvents().map(e => e.date).filter(Boolean))].sort();
+}
+
 export function initDate() {
-  const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
-  if (dates.length > 0) {
-    state.selectedDate = dates[0];
-  } else {
-    const now = new Date();
-    state.selectedDate = formatDateKey(now);
-  }
+  state.selectedDate = pickDefaultDate(visibleDates());
 }
 
 const DATA_VERSION = 'v2.0-clean';
@@ -94,9 +146,9 @@ export async function syncWithBackend() {
       if (Array.isArray(serverEvents) && serverEvents.length > 0) {
         state.events = serverEvents;
         saveEventsToStorage();
-        const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+        const dates = visibleDates();
         if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
-          state.selectedDate = dates[0];
+          state.selectedDate = pickDefaultDate(dates);
         }
         return;
       }
@@ -114,9 +166,9 @@ export async function syncWithBackend() {
       if (Array.isArray(staticEvents) && staticEvents.length > 0) {
         state.events = staticEvents;
         saveEventsToStorage();
-        const dates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+        const dates = visibleDates();
         if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
-          state.selectedDate = dates[0];
+          state.selectedDate = pickDefaultDate(dates);
         }
       }
     }

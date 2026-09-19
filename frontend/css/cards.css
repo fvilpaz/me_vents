@@ -452,6 +452,28 @@
   white-space: nowrap;
 }
 
+/* Fin de servicios del grupo: misma forma que .multiday-badge pero en dorado Meliá (tokens: vale en claro y oscuro) */
+.group-end-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--melia-gold-soft);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--melia-gold);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.55rem;
+  width: 100%;
+}
+
+.group-end-icon {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
 .op-menu-content {
   font-size: 0.73rem;
   line-height: 1.5;

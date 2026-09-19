@@ -2,7 +2,7 @@
  * ME_VENTS - Day Timeline Module (Multi-day & Adaptive Calendar)
  */
 
-import { state, formatDateKey } from './state.js';
+import { state, formatDateKey, getVisibleEvents, pickDefaultDate } from './state.js';
 import { renderCards } from './cards.js';
 
 export function renderTimeline() {
@@ -13,13 +13,13 @@ export function renderTimeline() {
   const dayNames = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
   const daysToShow = [];
 
-  // Recoger todas las fechas de eventos registrados
-  const eventDates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
+  // Recoger las fechas de los eventos visibles (los pasados solo si "Ver pasados" está activo)
+  const eventDates = [...new Set(getVisibleEvents().map(e => e.date).filter(Boolean))].sort();
 
   if (eventDates.length > 0) {
-    // Si no hay fecha seleccionada o no existe en los eventos, seleccionar la primera
+    // Si no hay fecha seleccionada o no existe en los eventos, seleccionar hoy / el próximo día con eventos
     if (!state.selectedDate || !eventDates.includes(state.selectedDate)) {
-      state.selectedDate = eventDates[0];
+      state.selectedDate = pickDefaultDate(eventDates);
     }
 
     // Calcular rango abarcando desde el primer hasta el último día del evento/grupo (+ 1 día de margen a cada lado)
