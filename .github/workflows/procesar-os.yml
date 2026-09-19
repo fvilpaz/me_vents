@@ -1,0 +1,57 @@
+name: Procesar OS
+
+# Sube un PDF a la carpeta inbox/ (desde github.com, incluso en el móvil) y esta Action:
+# extrae los eventos, sustituye la versión anterior del grupo, actualiza los events.json,
+# guarda el PDF en data/beos y publica. Si el PDF falla, la Action queda en rojo y GitHub te avisa.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'inbox/*.pdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Una sola ejecución a la vez, para que dos subidas seguidas no se pisen
+concurrency:
+  group: procesar-os
+  cancel-in-progress: false
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias del extractor
+        run: pip install pypdf pdfplumber
+
+      - name: Procesar los PDF de inbox/
+        id: proc
+        continue-on-error: true
+        run: python -m backend.procesar_os --aplicar --consumir
+
+      # Se guardan los PDF que sí funcionaron aunque otro haya fallado
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data frontend/data inbox
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+          else
+            git commit -m "chore(events): procesar OS subidas a inbox"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Fallar si algún PDF no se pudo procesar
+        if: steps.proc.outcome == 'failure'
+        run: |
+          echo "::error::Algún PDF de inbox/ no se pudo procesar. Míralo en el paso 'Procesar los PDF de inbox/'."
+          exit 1

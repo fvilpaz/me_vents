@@ -28,34 +28,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-DATA_DIR.mkdir(exist_ok=True)
-BEOS_DIR = DATA_DIR / "beos"
-BEOS_DIR.mkdir(exist_ok=True)
-FRONTEND_BEOS_DIR = Path(__file__).resolve().parent.parent / "frontend" / "data" / "beos"
-FRONTEND_BEOS_DIR.mkdir(parents=True, exist_ok=True)
-EVENTS_FILE = DATA_DIR / "events.json"
-
-def get_stored_events() -> List[Dict[str, Any]]:
-    if EVENTS_FILE.exists():
-        try:
-            with open(EVENTS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return []
-    return []
-
-def save_stored_events(events: List[Dict[str, Any]]) -> None:
-    with open(EVENTS_FILE, "w", encoding="utf-8") as f:
-        json.dump(events, f, ensure_ascii=False, indent=2)
-    # Sincronizar automáticamente con frontend/data/events.json para GitHub Pages
-    frontend_events = Path(__file__).resolve().parent.parent / "frontend" / "data" / "events.json"
-    if frontend_events.parent.exists():
-        try:
-            with open(frontend_events, "w", encoding="utf-8") as f:
-                json.dump(events, f, ensure_ascii=False, indent=2)
-        except Exception:
-            pass
+from backend.store import (
+    BEOS_DIR,
+    FRONTEND_BEOS_DIR,
+    get_stored_events,
+    save_stored_events,
+    merge_events,
+)
 
 @app.get("/api/config")
 def get_config():
@@ -186,30 +165,8 @@ async def upload_order(
     # Procesar con el motor multi-sesión de Opera
     new_events = parse_multi_session_opera(text_content, filename=filename)
     
-    # Deduplicación inteligente:
-    existing_events = get_stored_events()
-    
-    # Si la orden entrante es un evento multi-día o de un grupo específico,
-    # sustituimos cualquier versión anterior de ese mismo grupo o fechas para evitar duplicados
-    new_block_id = new_events[0].get("block_id") if new_events else None
-    new_group = new_events[0].get("multi_day", {}).get("group_name") if new_events else None
-    new_dates = set(ne.get("date") for ne in new_events if ne.get("date"))
-    
-    kept_events = []
-    for e in existing_events:
-        e_block = e.get("block_id")
-        e_group = e.get("multi_day", {}).get("group_name")
-        e_date = e.get("date")
-        
-        # Si es del mismo Block ID o del mismo grupo en las mismas fechas, se sustituye
-        if new_block_id and e_block and e_block == new_block_id:
-            continue
-        if new_group and e_group and e_group.lower() == new_group.lower() and e_date in new_dates:
-            continue
-        kept_events.append(e)
-
-    all_events = kept_events + new_events
-    all_events = sorted(all_events, key=lambda x: (x.get("date", ""), x.get("time_start", "")))
+    # Deduplicación inteligente: una versión nueva de un grupo sustituye a la anterior
+    all_events = merge_events(get_stored_events(), new_events)
     save_stored_events(all_events)
     
     return {

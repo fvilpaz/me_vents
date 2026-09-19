@@ -29,6 +29,8 @@ sources/
 !frontend/data/beos/**
 !data/beos/*.pdf
 !data/beos/**
+# Bandeja de entrada de la Action "Procesar OS"
+!inbox/*.pdf
 
 backend/test_*.py
 backend/get_melia_logo.py
