@@ -158,16 +158,15 @@
   line-height: 1.2;
 }
 
+/* Aviso justo debajo del botón de la OS y antes de los datos: hay que leerlo antes de fiarse del resumen.
+   La barra dorada lo une visualmente al botón. */
 .os-source-note {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.4rem;
-  font-size: 0.68rem;
-  line-height: 1.35;
-  color: var(--text-muted);
-  margin-top: 0.6rem;
-  padding-top: 0.55rem;
-  border-top: 1px dashed var(--border-subtle);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0.2rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--melia-gold);
 }
 
 .os-source-note strong {

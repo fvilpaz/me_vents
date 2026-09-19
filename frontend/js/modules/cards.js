@@ -129,6 +129,12 @@ export function createEventCardHTML(evt) {
         </div>
       </div>
 
+      ${hasPdf ? `
+        <div class="os-source-note">
+          Resumen automático. Ante cualquier duda, <strong>manda la OS oficial</strong>.
+        </div>
+      ` : ''}
+
       ${evt.multi_day && evt.multi_day.is_multi_day ? `
         <div class="multiday-badge">
           <span class="multiday-pill">
@@ -235,13 +241,6 @@ export function createEventCardHTML(evt) {
           ` : ''}
         </div>
       </div>
-
-      ${hasPdf ? `
-        <div class="os-source-note">
-          <span aria-hidden="true">ℹ️</span>
-          <span>Resumen extraído automáticamente de la OS. Ante cualquier diferencia, <strong>manda la OS oficial</strong>.</span>
-        </div>
-      ` : ''}
 
       <div class="card-actions">
         <label class="setup-check-label">
