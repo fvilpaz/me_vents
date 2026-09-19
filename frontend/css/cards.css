@@ -92,6 +92,17 @@
   flex-wrap: wrap;
 }
 
+/* Móvil: hora y botón de la OS en columna. Uno junto al otro se veían descompensados (chip pequeño al lado de un
+   botón grande). width:100% además los baja de la etiqueta del salón, que queda sola en su fila. */
+@media (max-width: 600px) {
+  .card-top-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
 .btn-view-pdf {
   background: rgba(0, 128, 255, 0.08);
   border: 1px solid rgba(0, 128, 255, 0.28);
