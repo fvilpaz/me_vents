@@ -131,7 +131,7 @@ export function createEventCardHTML(evt) {
 
       ${hasPdf ? `
         <div class="os-source-note">
-          Resumen automático. Ante cualquier duda, <strong>manda la OS oficial</strong>.
+          Vista rápida. Ante la duda, <strong>mira la OS oficial</strong>.
         </div>
       ` : ''}
 
