@@ -1208,7 +1208,7 @@
     },
     "operational": {
       "furniture_summary": "Montaje oficial según OS para 30 pax",
-      "montaje_notes": "Montaje Montaje Estándar para 30 pax según OS",
+      "montaje_notes": "Montaje Estándar para 30 pax según OS",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": "Facturación:",
       "menu_notes": "🍴 17:30-18:30 - Site inspection - Clásica -    30 Pax\nEUR 20.00\nCafé con leche entera, desnatada y de soja\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nMini mollete ibérico\nBrocheta de fruta fresca\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Site Inspection\nBlock Name: VISTA VATEL 24_09_2026\nStatus/Catering Status: PRO/PRO",
@@ -1308,7 +1308,7 @@
   },
   {
     "id": "evt-757948-2026-09-25-1300-canitas-al-fresco",
-    "title": "Fam Trip Sakkara 25 09 2026 · Cañitas al Fresco",
+    "title": "Fam Trip Sakkara · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "13:00",
     "time_end": "14:00",
@@ -1345,30 +1345,16 @@
     "pax": 13,
     "services": [
       {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
         "type": "protocolo_hotel",
         "key": "protocolo-aura",
         "label": "Protocolo AURA (Perfumar Sala)",
         "icon": "✨",
         "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
       }
     ],
     "multi_day": {
       "is_multi_day": false,
-      "group_name": "Fam Trip Sakkara 25 09 2026",
+      "group_name": "Fam Trip Sakkara",
       "date_start": "2026-09-25",
       "date_end": "2026-09-25",
       "day_index": 1,
@@ -1377,10 +1363,10 @@
     },
     "operational": {
       "furniture_summary": "Montaje oficial según OS para 13 pax",
-      "montaje_notes": "Montaje Montaje Estándar para 13 pax según OS",
+      "montaje_notes": "Montaje Estándar para 13 pax según OS",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - Restaurante -    13 Pax\nEUR 105.00\nEntrantes para compartir (cada 4 personas)\n- Torta de aceite\n- La mejor Croqueta del Mundo 21 x Cañitas\n- Setas silvestres de temporada com patata cremosa, yema de campo y\ndemi-glace de carne\n- Navaja de buceo a la parrilla con escabeche de limón\n- Calamar de anzuelo en despiece con meunière de jabugo\nPrincipales para compartir (cada 2 personas)\n- Lubina de estero a la parrilla con pil-pil de su colágeno\n- Txuleta vasca madurada, asada y trinchada\nGuarnición\n- Patatas chips crujientes o lechuga viva aliñada\nPara terminar\n-      Tarta de queso Cañitas Maite\n-      Flan de nata Cañitas Maite\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Fam Trip\nBlock Name: FAM TRIP SAKKARA 25_09_2026\nStatus/Catering Status: PRO/PRO",
+      "menu_notes": null,
       "dietary_notes": "1 persona alérgica a la trufa",
       "pisos_notes": "AURA Revisar la sala antes de la visita",
       "times": {
@@ -1395,8 +1381,71 @@
     "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
   },
   {
+    "id": "evt-758400-2026-09-25-1400-terraza-pool-bar",
+    "title": "Almuerzo Agm · Terraza Pool Bar / Rooftop",
+    "date": "2026-09-25",
+    "time_start": "14:00",
+    "time_end": "14:30",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 20,
+    "services": [],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Agm",
+      "date_start": "2026-09-25",
+      "date_end": "2026-09-25",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (20 pax)",
+      "montaje_notes": "F&B Despejar primera fila de mesas de Cañitas al Fresco para aprovecha las vistas y colocar 5 mesas de cóctel",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 14:30 - TERRAZA POOL BAR   20 Pax\nEn esta primera parte del evento se bandejeará:\n- Copa de La casa Madre Chardonnay 2022\n- La mejor croqueta del mundo 2021",
+      "dietary_notes": "Pendiente recibir alergias e intolerancias",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Marta Delange Fernandez",
+    "block_id": "758400",
+    "pm": null,
+    "source_file": "OS ALMUERZO AGM 25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
+  },
+  {
     "id": "evt-757948-2026-09-25-1400-canitas-al-fresco",
-    "title": "Fam Trip Sakkara 25 09 2026 · Cañitas al Fresco",
+    "title": "Fam Trip Sakkara · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "14:00",
     "time_end": "16:00",
@@ -1456,7 +1505,7 @@
     ],
     "multi_day": {
       "is_multi_day": false,
-      "group_name": "Fam Trip Sakkara 25 09 2026",
+      "group_name": "Fam Trip Sakkara",
       "date_start": "2026-09-25",
       "date_end": "2026-09-25",
       "day_index": 1,
@@ -1465,7 +1514,7 @@
     },
     "operational": {
       "furniture_summary": "Montaje oficial según OS para 13 pax",
-      "montaje_notes": "Montaje Montaje Estándar para 13 pax según OS",
+      "montaje_notes": "Montaje Estándar para 13 pax según OS",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": "Minutas\nFacturación:",
       "menu_notes": "🍴 14:00 a 16:00 - Lunch - Restaurante -    13 Pax\nEUR 105.00\nEntrantes para compartir (cada 4 personas)\n- Torta de aceite\n- La mejor Croqueta del Mundo 21 x Cañitas\n- Setas silvestres de temporada com patata cremosa, yema de campo y\ndemi-glace de carne\n- Navaja de buceo a la parrilla con escabeche de limón\n- Calamar de anzuelo en despiece con meunière de jabugo\nPrincipales para compartir (cada 2 personas)\n- Lubina de estero a la parrilla con pil-pil de su colágeno\n- Txuleta vasca madurada, asada y trinchada\nGuarnición\n- Patatas chips crujientes o lechuga viva aliñada\nPara terminar\n-      Tarta de queso Cañitas Maite\n-      Flan de nata Cañitas Maite\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Fam Trip\nBlock Name: FAM TRIP SAKKARA 25_09_2026\nStatus/Catering Status: PRO/PRO",
@@ -1483,71 +1532,8 @@
     "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
   },
   {
-    "id": "evt-758400-2026-09-25-1400-terraza-pool-bar",
-    "title": "Almuerzo Agm 25 09 2026 · Terraza Pool Bar / Rooftop",
-    "date": "2026-09-25",
-    "time_start": "14:00",
-    "time_end": "14:30",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 20,
-    "services": [],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Agm 25 09 2026",
-      "date_start": "2026-09-25",
-      "date_end": "2026-09-25",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (20 pax)",
-      "montaje_notes": "F&B Despejar primera fila de mesas de Cañitas al Fresco para aprovecha las vistas y colocar 5 mesas de cóctel",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 14:30 - TERRAZA POOL BAR   20 Pax\nEn esta primera parte del evento se bandejeará:\n- Copa de La casa Madre Chardonnay 2022\n- La mejor croqueta del mundo 2021\n\n🍴 14:30 a 16:30 - TERRAZA RESTAURANTE CAÑITAS   20 Pax\n-Ensaladilla de gambita blanca con jugo de piparras y manzanilla\nDoña Maruja Blanc de Noirs 2025\n-Carabinero de Málaga en parrilla con sabayón de manteca colorá\nDoña Maruja Blanc de Noirs 2025\n-Lubina de estero con pil pil de su colágeno y aceite de hierbas frescas\nAlma de Bohemia Rosé 2024\n-Setas silvestres de temporada con patata ahumada y butifarra blanca\nDon Juanito Bobal 2023\n-Molleja de ternera de leche con coliflor tostada y hongos en crudo.\nDon Juanito Bobal 2023\n•POSTRE\n-El flan de nata fresca de Cañitas con chantilly cítrica de yogur de oveja\nMoscatel Victoria N°2",
-      "dietary_notes": "Pendiente recibir alergias e intolerancias",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Marta Delange Fernandez",
-    "block_id": "758400",
-    "pm": null,
-    "source_file": "OS ALMUERZO AGM 25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
-  },
-  {
     "id": "evt-758400-2026-09-25-1430-canitas-al-fresco",
-    "title": "Almuerzo Agm 25 09 2026 · Cañitas al Fresco",
+    "title": "Almuerzo Agm · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "14:30",
     "time_end": "16:30",
@@ -1607,7 +1593,7 @@
     ],
     "multi_day": {
       "is_multi_day": false,
-      "group_name": "Almuerzo Agm 25 09 2026",
+      "group_name": "Almuerzo Agm",
       "date_start": "2026-09-25",
       "date_end": "2026-09-25",
       "day_index": 1,

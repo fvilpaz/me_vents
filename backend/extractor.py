@@ -438,6 +438,36 @@ def extract_dietary_notes(text: str) -> Optional[str]:
 
     return "\n\n".join(dietary_blocks) if dietary_blocks else None
 
+def parse_time_range(text: str) -> Optional[tuple]:
+    """Primer rango horario del texto ('14:00 a 16:00', '08:30 - 17:00') como (minutos_inicio, minutos_fin), o None."""
+    m = re.search(r'(\d{1,2})[:.](\d{2})\s*(?:-|a)\s*(\d{1,2})[:.](\d{2})', text or "")
+    if not m:
+        return None
+    start = int(m.group(1)) * 60 + int(m.group(2))
+    end = int(m.group(3)) * 60 + int(m.group(4))
+    if end <= start:            # p. ej. 22:00 - 00:30
+        end += 24 * 60
+    return (start, end)
+
+
+def ranges_overlap(a: tuple, b: tuple) -> bool:
+    """Dos rangos solapan si comparten algún minuto; 13:00-14:00 y 14:00-16:00 solo se tocan, no solapan."""
+    return a[0] < b[1] and b[0] < a[1]
+
+
+def default_montaje_note(label: str, pax: int) -> str:
+    """'Montaje Estándar para 13 pax según OS', sin repetir 'Montaje' cuando la etiqueta ya empieza por esa palabra."""
+    prefix = "" if label.lower().startswith("montaje") else "Montaje "
+    return f"{prefix}{label} para {pax} pax según OS"
+
+
+def strip_dates_from_name(name: str) -> str:
+    """Quita del nombre de la orden las fechas ('19-25_09_2026' o '25_09_2026'): ya van en su propio campo."""
+    name = re.sub(r'\s*\d{1,2}\s*[-–_]\s*\d{1,2}[_/\.-]\d{2}[_/\.-]\d{2,4}', '', name)   # rangos
+    name = re.sub(r'\s*\d{1,2}[_/\.-]\d{1,2}[_/\.-]\d{2,4}\s*$', '', name)             # fecha suelta al final
+    return name.strip()
+
+
 def make_event_id(evt: Dict[str, Any]) -> str:
     """
     Id único y estable de un evento: orden (block_id o nombre del grupo) + fecha + hora + sala.
@@ -468,12 +498,12 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
         block_match = re.search(r'Block Name:\s*([^\n\r]+)', raw_text)
         if block_match:
             clean_bn = re.sub(r'^\d+\s*[-_]\s*', '', block_match.group(1).strip())
-            clean_bn = re.sub(r'\s*\d{1,2}\s*[-–]\s*\d{1,2}[_/\.-]\d{2}[_/\.-]\d{2,4}', '', clean_bn).strip()
+            clean_bn = strip_dates_from_name(clean_bn)
             client_name = clean_bn.replace("_", " ").strip().title()
         elif filename:
             clean_fn = re.sub(r'^(?:V\.\d+\s+)?(?:OS\s+)?', '', filename, flags=re.IGNORECASE)
             clean_fn = re.sub(r'\.(pdf|png|jpg|jpeg)$', '', clean_fn, flags=re.IGNORECASE)
-            clean_fn = re.sub(r'\s*\d{1,2}\s*[-–_]\s*\d{1,2}[_/\.-]\d{2}[_/\.-]\d{2,4}', '', clean_fn).strip()
+            clean_fn = strip_dates_from_name(clean_fn)
             client_name = clean_fn.replace("_", " ").strip().title()
 
     cat_mgr_match = re.search(r'Catering Manager:\s*([^\n\r]+)', raw_text)
@@ -596,6 +626,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                     "header": header,
                     "space": sp,
                     "pax": pax_num,
+                    "range": parse_time_range(header),
                     "text": "\n".join(b_lines[:25])
                 })
 
@@ -631,7 +662,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 t_end = time_m.group(2).replace(".", ":").zfill(5) if time_m else "13:00"
                 setup_obj = match_setup(combined_day_text) or {"key": "reunion", "label": "Reunión MICE", "icon": "💼", "description": "Montaje de sala para reunión ejecutiva"}
                 
-                m_notes = gen_montaje or f"Montaje {setup_obj['label']} para {pax_val} pax según OS"
+                m_notes = gen_montaje or default_montaje_note(setup_obj['label'], pax_val)
                 s_notes = gen_sstt or "AC, conectividad y soporte técnico de sala"
                 p_notes = gen_pisos or "Revisar y perfumar sala (Protocolo AURA)"
                 all_day_menus = "\n\n".join([f"🍴 {mb['text']}" for mb in day_menu_blocks]) if day_menu_blocks else None
@@ -711,6 +742,9 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                     "source_pdf_url": f"./data/beos/{filename}" if (filename and filename.lower().endswith(".pdf")) else None
                 })
             continue
+
+        # Horario de cada sesión del día, para asignar cada menú a la sesión que coincide con su hora
+        session_ranges = [parse_time_range(sm.group(1)) for sm in session_matches]
 
         # Procesar sesiones operativas con resolución GENÉRICA de espacios y montajes
         for s_idx, sm in enumerate(session_matches):
@@ -823,7 +857,16 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
             for mb in day_menu_blocks:
                 mb_sp = mb.get("space")
                 mb_pax = mb.get("pax")
-                
+
+                # 0. Horario: si el menú tiene hora y otra sesión del día coincide con ella, esta sesión no lo recibe
+                #    (evita que una reunión de 13:00-14:00 lleve el almuerzo de 14:00-16:00 solo por estar en la misma sala).
+                #    Si ninguna sesión solapa con la hora del menú, se sigue con las reglas de siempre.
+                mb_range = mb.get("range")
+                my_range = session_ranges[s_idx]
+                if mb_range and any(r and ranges_overlap(mb_range, r) for r in session_ranges):
+                    if not (my_range and ranges_overlap(mb_range, my_range)):
+                        continue
+
                 # 1. Coincidencia directa de salón
                 if mb_sp and space_obj and mb_sp.get("id") == space_obj.get("id"):
                     session_menus.append(mb["text"])
@@ -865,7 +908,7 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 "multi_day": multi_day_info,
                 "operational": {
                     "furniture_summary": furniture_sum,
-                    "montaje_notes": "\n".join(montaje_lines) if montaje_lines else f"Montaje {setup_obj['label']} para {pax_val} pax según OS",
+                    "montaje_notes": "\n".join(montaje_lines) if montaje_lines else default_montaje_note(setup_obj['label'], pax_val),
                     "sstt_notes": "\n".join(sstt_lines) if sstt_lines else "AC, conectividad y soporte técnico de sala",
                     "fb_notes": "\n".join(fb_lines) if fb_lines else None,
                     "menu_notes": session_menu_text,
@@ -976,7 +1019,7 @@ def parse_event_order(raw_text: str, filename: Optional[str] = None) -> Dict[str
     elif filename:
         clean_fn = re.sub(r'^(?:V\.\d+\s+)?(?:OS\s+)?', '', filename, flags=re.IGNORECASE)
         clean_fn = re.sub(r'\.(pdf|png|jpg|jpeg)$', '', clean_fn, flags=re.IGNORECASE)
-        event_name = clean_fn.replace("_", " ").title()
+        event_name = strip_dates_from_name(clean_fn).replace("_", " ").title()
 
     operational = calculate_operational_setup(space, setup, pax, notes)
     operational["montaje_notes"] = notes["montaje_notes"]
