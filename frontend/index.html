@@ -2,14 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- viewport-fit=cover: deja que env(safe-area-inset-*) respete la muesca del móvil (el CSS ya lo usa) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>ME·VENTS — ME Málaga MICE & Events Production</title>
-  
+
   <!-- SEO & Social Meta -->
-  <meta name="description" content="Plataforma operativa y de montaje para eventos MICE en ME by Meliá Málaga.">
+  <meta name="description" content="Agenda operativa de montajes y órdenes de servicio (OS) para eventos MICE en ME by Meliá Málaga: salones, montajes, F&B y servicios técnicos.">
+  <meta name="author" content="Fernando Vilas Paz">
+  <link rel="canonical" href="https://fvilpaz.github.io/me_vents/frontend/">
+  <!-- Herramienta interna con datos de clientes: que los buscadores no la indexen (las vistas previas al compartir siguen funcionando) -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Telegram, redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ME·VENTS">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="ME·VENTS — ME Málaga MICE & Events Production">
+  <meta property="og:description" content="Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.">
+  <meta property="og:url" content="https://fvilpaz.github.io/me_vents/frontend/">
+  <meta property="og:image" content="https://fvilpaz.github.io/me_vents/frontend/assets/images/Logo_Me_dark.png">
+  <meta property="og:image:alt" content="Logo de ME Málaga">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ME·VENTS — ME Málaga MICE & Events Production">
+  <meta name="twitter:description" content="Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.">
+  <meta name="twitter:image" content="https://fvilpaz.github.io/me_vents/frontend/assets/images/Logo_Me_dark.png">
+
+  <!-- Color de la barra del navegador: se ajusta al tema (oscuro / claro) con el script de más abajo y con el botón de tema -->
   <meta name="theme-color" content="#080b11">
+
+  <!-- App instalable (PWA) en Android / iOS -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ME·VENTS">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" type="image/png" href="./assets/images/Logo_Me_dark.png">
+  <link rel="apple-touch-icon" href="./assets/images/Logo_Me_dark.png">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ME·VENTS",
+    "description": "Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.",
+    "url": "https://fvilpaz.github.io/me_vents/frontend/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "es"
+  }
+  </script>
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +59,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="./css/style.css?v=2.7">
+  <link rel="stylesheet" href="./css/style.css?v=2.8">
   <script>
     (function() {
       var saved = localStorage.getItem('me_vents_theme') || 'dark';
       document.documentElement.setAttribute('data-theme', saved);
+      var tc = document.querySelector('meta[name="theme-color"]');
+      if (tc) tc.setAttribute('content', saved === 'light' ? '#0284c7' : '#080b11');
     })();
   </script>
 </head>

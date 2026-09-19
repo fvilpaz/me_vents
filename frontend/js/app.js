@@ -56,5 +56,8 @@ function setupThemeToggle() {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('me_vents_theme', newTheme);
+    // La barra del navegador del móvil sigue el color del cabecero (oscuro / azul del tema claro)
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.setAttribute('content', newTheme === 'light' ? '#0284c7' : '#080b11');
   });
 }
