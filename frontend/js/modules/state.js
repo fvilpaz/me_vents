@@ -2,14 +2,9 @@
  * ME_VENTS - Global State & Data Store Module
  */
 
-function readShowPast() {
-  try { return localStorage.getItem('me_vents_show_past') === 'true'; } catch (e) { return false; }
-}
-
 export const state = {
   events: [],
   selectedDate: null,
-  showPast: readShowPast(),
   activeFilterSpace: 'all',
   activeFilterSetup: 'all',
   searchQuery: '',
@@ -41,19 +36,6 @@ export function todayKey() {
   return formatDateKey(new Date());
 }
 
-// Un evento es "pasado" cuando su fecha es anterior a hoy; el que acaba hoy sigue visible.
-export function isPastEvent(evt) {
-  return !!evt.date && evt.date < todayKey();
-}
-
-export function countPastEvents() {
-  return state.events.filter(isPastEvent).length;
-}
-
-export function getVisibleEvents() {
-  return state.showPast ? state.events : state.events.filter(e => !isPastEvent(e));
-}
-
 // Un grupo = mismo block_id (o, sin él, mismo nombre de grupo).
 function groupKey(e) {
   return e.block_id || (e.multi_day && e.multi_day.group_name) || e.title;
@@ -73,11 +55,6 @@ export function groupEndInfo(evt) {
   return { endTime: ends.length ? ends[ends.length - 1] : null };
 }
 
-export function setShowPast(value) {
-  state.showPast = value;
-  try { localStorage.setItem('me_vents_show_past', String(value)); } catch (e) { /* sin storage: solo esta sesión */ }
-}
-
 // Fecha por defecto: hoy si tiene eventos; si no, el próximo día con eventos; si no, el último que hubo.
 export function pickDefaultDate(sortedDates) {
   const today = todayKey();
@@ -86,12 +63,12 @@ export function pickDefaultDate(sortedDates) {
   return sortedDates.find(d => d > today) || sortedDates[sortedDates.length - 1];
 }
 
-function visibleDates() {
-  return [...new Set(getVisibleEvents().map(e => e.date).filter(Boolean))].sort();
+function eventDates() {
+  return [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
 }
 
 export function initDate() {
-  state.selectedDate = pickDefaultDate(visibleDates());
+  state.selectedDate = pickDefaultDate(eventDates());
 }
 
 const DATA_VERSION = 'v2.0-clean';
@@ -146,7 +123,7 @@ export async function syncWithBackend() {
       if (Array.isArray(serverEvents) && serverEvents.length > 0) {
         state.events = serverEvents;
         saveEventsToStorage();
-        const dates = visibleDates();
+        const dates = eventDates();
         if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
           state.selectedDate = pickDefaultDate(dates);
         }
@@ -166,7 +143,7 @@ export async function syncWithBackend() {
       if (Array.isArray(staticEvents) && staticEvents.length > 0) {
         state.events = staticEvents;
         saveEventsToStorage();
-        const dates = visibleDates();
+        const dates = eventDates();
         if (dates.length > 0 && (!state.selectedDate || !dates.includes(state.selectedDate))) {
           state.selectedDate = pickDefaultDate(dates);
         }
