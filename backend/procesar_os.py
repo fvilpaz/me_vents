@@ -36,15 +36,34 @@ def procesar(pdf: Path, eventos: list):
         raise ValueError("el extractor no ha encontrado ningún evento")
 
     resultado = merge_events(eventos, nuevos)
-    ids_antes = {e["id"] for e in eventos}
+    antes = {e["id"]: e for e in eventos}
     ids_despues = {e["id"] for e in resultado}
+    modificados = []
+    for e in nuevos:
+        if e["id"] in antes:
+            campos = campos_distintos(antes[e["id"]], e)
+            if campos:
+                modificados.append((e, campos))
     resumen = {
         "chars": len(texto),
         "nuevos": nuevos,
         "quitados": [e for e in eventos if e["id"] not in ids_despues],
-        "anadidos": [e for e in nuevos if e["id"] not in ids_antes],
+        "anadidos": [e for e in nuevos if e["id"] not in antes],
+        "modificados": modificados,
     }
     return resultado, resumen
+
+
+def campos_distintos(viejo: dict, nuevo: dict, prefijo: str = "") -> list:
+    """Nombres de los campos cuyo valor cambia entre dos versiones del mismo evento (entra en 'operational')."""
+    campos = []
+    for k in sorted(set(viejo) | set(nuevo)):
+        a, b = viejo.get(k), nuevo.get(k)
+        if isinstance(a, dict) and isinstance(b, dict):
+            campos += campos_distintos(a, b, f"{prefijo}{k}.")
+        elif a != b:
+            campos.append(f"{prefijo}{k}")
+    return campos
 
 
 def main() -> int:
@@ -82,7 +101,9 @@ def main() -> int:
             print(f"  - SUSTITUYE {e['date']} {e['time_start']} {e['space'].get('name')}  ({e['id']})")
         for e in r["anadidos"]:
             print(f"  + NUEVO     {e['date']} {e['time_start']} {e['space'].get('name')}  ({e['id']})")
-        if not r["quitados"] and not r["anadidos"]:
+        for e, campos in r["modificados"]:
+            print(f"  ~ MODIFICA  {e['date']} {e['time_start']} {e['space'].get('name')}: {', '.join(campos)}")
+        if not r["quitados"] and not r["anadidos"] and not r["modificados"]:
             print("  = sin cambios: ya estaba guardada exactamente esta versión")
 
     print(f"\nEventos tras procesar: {len(eventos)}")
