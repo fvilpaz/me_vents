@@ -438,6 +438,20 @@ def extract_dietary_notes(text: str) -> Optional[str]:
 
     return "\n\n".join(dietary_blocks) if dietary_blocks else None
 
+def make_event_id(evt: Dict[str, Any]) -> str:
+    """
+    Id único y estable de un evento: orden (block_id o nombre del grupo) + fecha + hora + sala.
+    Antes era 'evt-N' y se reiniciaba en cada PDF, así que órdenes distintas compartían id
+    y al borrar una se borraban las demás.
+    """
+    def slug(s: str) -> str:
+        return re.sub(r'[^a-z0-9]+', '-', (s or '').lower()).strip('-')
+
+    order = evt.get("block_id") or slug((evt.get("multi_day") or {}).get("group_name") or evt.get("title") or "os")
+    time_s = (evt.get("time_start") or "").replace(":", "")
+    space_id = (evt.get("space") or {}).get("id") or "sala"
+    return f"evt-{order}-{evt.get('date', '')}-{time_s}-{space_id}"
+
 def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Parsea órdenes completas de Opera Sales & Catering extrayendo sesiones múltiples
@@ -898,8 +912,8 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
                 if not any(ex_s.get("key") == s.get("key") for ex_s in existing.get("services", [])):
                     existing.setdefault("services", []).append(s)
 
-    for idx, e in enumerate(unique_events):
-        e["id"] = f"evt-{idx+1}"
+    for e in unique_events:
+        e["id"] = make_event_id(e)
 
     return unique_events
 

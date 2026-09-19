@@ -1,299 +1,6 @@
 [
   {
-    "id": "evt-1",
-    "title": "Br Presencial 16 09 2026 · Sala Multifuncional",
-    "date": "2026-09-16",
-    "time_start": "09:00",
-    "time_end": "18:00",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "estandar",
-      "label": "Montaje Estándar",
-      "icon": "📋",
-      "description": "Distribución a confirmar según orden de servicio"
-    },
-    "pax": 10,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "av_equipamiento",
-        "key": "sstt-pantallas",
-        "label": "SSTT: Pantallas TV & Videoconferencia",
-        "icon": "📺",
-        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
-      },
-      {
-        "type": "av_equipamiento",
-        "key": "sstt-sonido",
-        "label": "SSTT: Megafonía & Microfonía Inalámbrica",
-        "icon": "🎙️",
-        "details": "Comprobar pilas nuevas en micrófonos de mano y diadema. Ajustar ganancia para evitar acoples."
-      },
-      {
-        "type": "av_equipamiento",
-        "key": "sstt-climatizacion",
-        "label": "SSTT: Climatización / AC Previo (22ºC)",
-        "icon": "❄️",
-        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "protocolo-aura",
-        "label": "Protocolo AURA (Perfumar Sala)",
-        "icon": "✨",
-        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Br Presencial 16 09 2026",
-      "date_start": "2026-09-16",
-      "date_end": "2026-09-16",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 10 pax",
-      "montaje_notes": "Colocar blocs de notas, bolígrafos y agua",
-      "sstt_notes": "Revisar AC\nTV\nHDMI inalámbrico\nAltavoz",
-      "fb_notes": null,
-      "menu_notes": "🍴 09:00 a 18:00 - Meeting - Non Stop - Salon Multifuncional   10 Pax\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nAgua con gas",
-      "dietary_notes": null,
-      "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "757333",
-    "pm": null,
-    "source_file": "OS BR PRESENCIAL 16_06_2026.pdf",
-    "source_pdf_url": "./data/beos/OS BR PRESENCIAL 16_06_2026.pdf"
-  },
-  {
-    "id": "evt-1",
-    "title": "Juliet And Paul Taplin · Llegadas & Alojamiento",
-    "date": "2026-09-16",
-    "time_start": "12:00",
-    "time_end": "20:00",
-    "space": {
-      "id": "foyer",
-      "name": "Recepción / AURA",
-      "color_tag": "#d4af37",
-      "location": "Planta Baja"
-    },
-    "setup": {
-      "key": "hospitality_desk",
-      "label": "Llegadas & Check-in",
-      "icon": "🏨",
-      "description": "Recepción escalonada del grupo y gestión de habitaciones"
-    },
-    "pax": 12,
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Juliet And Paul Taplin",
-      "date_start": "2026-09-16",
-      "date_end": "2026-09-18",
-      "day_index": 1,
-      "total_days": 3,
-      "day_label": "Día 1 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
-      "montaje_notes": "Se alojarán con nosotros 12 habitaciones de 16-20.09.\nRECEPCIÓN Este grupo tiene contratadas 12 habitaciones\nSe alojan del 16-20.09\nSe les ha solicitado los datos para el express check in\nHorario de llegadas:\nFacturación hab DUI con desayuno:\n285,95€",
-      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-      "fb_notes": "Facturación y régimen según OS",
-      "menu_notes": null,
-      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
-      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
-      "times": {
-        "setup_minutes": 15,
-        "breakdown_minutes": 0
-      }
-    },
-    "manager": "Marta Delange Fernandez",
-    "block_id": "743363",
-    "pm": null,
-    "source_file": "V.2 OS PAUL TAPLIN 16-20_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS PAUL TAPLIN 16-20_09_2026.pdf"
-  },
-  {
-    "id": "evt-2",
-    "title": "Juliet And Paul Taplin · Sala Multifuncional",
-    "date": "2026-09-17",
-    "time_start": "09:00",
-    "time_end": "13:00",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "estandar",
-      "label": "Montaje Estándar",
-      "icon": "📋",
-      "description": "Distribución a confirmar según orden de servicio"
-    },
-    "pax": 12,
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Juliet And Paul Taplin",
-      "date_start": "2026-09-16",
-      "date_end": "2026-09-18",
-      "day_index": 2,
-      "total_days": 3,
-      "day_label": "Día 2 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala para 12 pax",
-      "montaje_notes": "Colocar blocs de notas, bolígrafos y agua",
-      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
-      "fb_notes": "Servicio F&B según desglose OS",
-      "menu_notes": "🍴 09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nPain au chocolat\nCroissant de mantequilla\n\n🍴 12:00 a 13:00 - Meeting - Premium - Salon Multifuncional   10 Pax\nEUR 39.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nBanana bread\nBrocheta de fruta fresca\nYogurt con fruta de temporada\nRoll de salmón ahumado y aguacate\nMollete máximo de Coppa Joselito y tomate\nTarta cremosa de queso payoyo\nTorrija tostada de mantequilla y nata fresca\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Marta Delange Fernandez\nDirección:  Sales Manager: Marta Delange Fernandez\nTipo Reserva: Meeting\nBlock Name: Juliet and Paul Taplin 17 - 18_09_2026\nStatus/Catering Status: DEF/DEF",
-      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
-      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión\n---",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Marta Delange Fernandez",
-    "block_id": "743363",
-    "pm": null,
-    "source_file": "V.2 OS PAUL TAPLIN 16-20_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS PAUL TAPLIN 16-20_09_2026.pdf"
-  },
-  {
-    "id": "evt-3",
-    "title": "Juliet And Paul Taplin · Sala Multifuncional",
-    "date": "2026-09-18",
-    "time_start": "09:00",
-    "time_end": "13:00",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "estandar",
-      "label": "Montaje Estándar",
-      "icon": "📋",
-      "description": "Distribución a confirmar según orden de servicio"
-    },
-    "pax": 12,
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Juliet And Paul Taplin",
-      "date_start": "2026-09-16",
-      "date_end": "2026-09-18",
-      "day_index": 3,
-      "total_days": 3,
-      "day_label": "Día 3 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala para 12 pax",
-      "montaje_notes": "Colocar blocs de notas, bolígrafos y agua",
-      "sstt_notes": "TV 86 pulgadas\nAire acondicionado\nAltavoz\nHDMI inalámbrico",
-      "fb_notes": "Servicio F&B según desglose OS",
-      "menu_notes": "🍴 09:00 a 13:00 - Meeting - Simple - Salon Multifuncional   12 Pax\nEUR 15.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nAgua mineral\nPain au chocolat\nCroissant de mantequilla\n\n🍴 12:00 a 13:00 - Meeting - Premium - Salon Multifuncional   10 Pax\nEUR 39.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nBizcocho de manzana\nBrocheta de fruta fresca\nAçai\nBikini trufado\nBagel vegetal\nTarta cremosa de queso payoyo\nPancakes de frutos rojos y sirope de arce",
-      "dietary_notes": "1 persona vegetariana y 1 persona vegana",
-      "pisos_notes": "Revisar y perfumar la sala antes del inicio de la reunión\n---",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Marta Delange Fernandez",
-    "block_id": "743363",
-    "pm": null,
-    "source_file": "V.2 OS PAUL TAPLIN 16-20_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS PAUL TAPLIN 16-20_09_2026.pdf"
-  },
-  {
-    "id": "evt-1",
+    "id": "evt-697386-2026-09-18-1200-foyer",
     "title": "Kevin Murphy · Llegadas & Alojamiento",
     "date": "2026-09-18",
     "time_start": "12:00",
@@ -336,77 +43,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-1",
-    "title": "Aperitivo Islandica 18 09 2026 · Cañitas al Fresco",
-    "date": "2026-09-18",
-    "time_start": "18:30",
-    "time_end": "19:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 29,
-    "services": [],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Aperitivo Islandica 18 09 2026",
-      "date_start": "2026-09-18",
-      "date_end": "2026-09-18",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (29 pax)",
-      "montaje_notes": "Reservar las mesas 2 y 3 de la zona de los sofás de la Pérgola a las 18:30",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Facturación:",
-      "menu_notes": null,
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "758308",
-    "pm": null,
-    "source_file": "OS APERITIVO ISLANDICA 18_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS APERITIVO ISLANDICA 18_09_2026.pdf"
-  },
-  {
-    "id": "evt-2",
+    "id": "evt-697386-2026-09-19-1830-pergola",
     "title": "Kevin Murphy · Pérgola Terraza",
     "date": "2026-09-19",
     "time_start": "18:30",
@@ -479,36 +120,38 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-3",
-    "title": "Kevin Murphy · Estudio 2 + 3",
+    "id": "evt-697386-2026-09-20-0800-multifuncional",
+    "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-20",
     "time_start": "08:00",
     "time_end": "17:30",
     "space": {
-      "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
       "aliases": [
-        "estudio 2 + 3",
-        "estudios 2 + 3",
-        "estudio 2+3",
-        "estudios 2+3",
-        "estudio 2 y 3"
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
       ],
-      "area_m2": 90,
+      "area_m2": 160,
       "max_capacities": {
-        "u_shape": 26,
-        "escuela": 45,
-        "teatro": 65,
-        "banquete": 40,
-        "coctel": 65,
-        "imperial": 24
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
       },
-      "color_tag": "#0284c7",
-      "location": "Planta 1 (Panelable)"
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
       "key": "forma_u",
@@ -593,11 +236,11 @@
     },
     "operational": {
       "furniture_summary": "Montaje en U (U-Shape) para 13 pax",
-      "montaje_notes": "Colocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart",
+      "montaje_notes": "Colocar bolígrafos, carpetas y blocs de notas",
       "sstt_notes": "AC\nHDMI inalámbrico\nTV\nAltavoces",
       "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h. Prever servicio lo más rápido posible.\nReservar una mesa en la zona de la terraza del restaurante para 15 personas.\nMinutas",
       "menu_notes": "🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado.\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Alcachofas confitadas y fritas en carbonara ibérica, pimienta fresca y lascasde\nqueso Payoyo curado\n- Langostino del sur a la parrilla con jugo de pollo asado\nPLATO PRINCIPAL\n- Corvina en adobo y salsa de tomate encominao\n- Falda de cordero de leche con su jugo a la hierbabuena\nPOSTRE\n- El flan de nata de oveja Cañitas Maite\n*Bodega de la casa\n\n🍴 08:00 a 17:30 - MEETING ROOM - Clásico- Estudio 2 + 3   13 Pax\nEUR 25.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nSnecken\nBrocheta de fruta fresca\nMini mollete ibérico\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
-      "dietary_notes": "F&B                                    No hay alergias ni intolerancias\n\nFrutos secos\nPatatas fritas\n\nPendiente recibir alérgenos e intolerancias\n\nPendiente recibir alergias e intolerancias\n\n08:30 a 18:00h  Pendiente recibir alérgenos e intolerancias",
+      "dietary_notes": "F&B                                    No hay alergias ni intolerancias\n\nFrutos secos\nPatatas fritas\n\nPendiente recibir alergias e intolerancias\n\nPendiente recibir alérgenos e intolerancias\n\n08:30 a 18:00h  Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "Reservar una mesa en la zona de la terraza del restaurante para 15 personas.\nPISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -607,36 +250,38 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-4",
-    "title": "Kevin Murphy · Estudio 2 + 3",
+    "id": "evt-697386-2026-09-21-0800-multifuncional",
+    "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-21",
     "time_start": "08:00",
     "time_end": "17:30",
     "space": {
-      "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
       "aliases": [
-        "estudio 2 + 3",
-        "estudios 2 + 3",
-        "estudio 2+3",
-        "estudios 2+3",
-        "estudio 2 y 3"
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
       ],
-      "area_m2": 90,
+      "area_m2": 160,
       "max_capacities": {
-        "u_shape": 26,
-        "escuela": 45,
-        "teatro": 65,
-        "banquete": 40,
-        "coctel": 65,
-        "imperial": 24
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
       },
-      "color_tag": "#0284c7",
-      "location": "Planta 1 (Panelable)"
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
     },
     "setup": {
       "key": "forma_u",
@@ -721,11 +366,11 @@
     },
     "operational": {
       "furniture_summary": "Montaje en U (U-Shape) para 13 pax",
-      "montaje_notes": "Colocar una mesa con dos sillas enfrente de la sala junto con 2 taburetes de Eñe\nColocar una U-shape para 13 personas\nFlip chart",
-      "sstt_notes": "AC\nHDMI inalámbrico\nAltavoz\nTV\nC. Victoria, 6, Distrito Centro\nMalaga, MA 29012, ES\n912764747\nCuenta KEVIN MURPHY  Block ID: 697386\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nPM: 9008\nTeléfono:  Contacto del Grupo:",
-      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h\nReservar una mesa en la zona de la terraza para 15 personas.\nMinutas\nPendiente recibir alérgenos e intolerancias",
-      "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Clásico - Estudio 2 + 3   13 Pax\nEUR 25.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nAgua con gas\nCroissant de mantequilla\nSnecken\nBrocheta de fruta fresca\nMini mollete ibérico\n\n🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Ceviche\n- Torta de aceite\n- Berenjena asada con burrata aliñada\n- Atun rojo salvaje aliñado como si fuera una gilda\n- Navajas\nPRINCIPALES\n- Luvina a la brasa con su pil pil\n- Solomillo Joselito y salsa pimiento verde\nPOSTRE\n- Corte de tarta de queso\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN",
-      "dietary_notes": "Pendiente recibir alérgenos e intolerancias",
+      "montaje_notes": "Colocar bolígrafos, carpetas y blocs de notas",
+      "sstt_notes": "AC\nHDMI inalámbrico\nAltavoz\nTV",
+      "fb_notes": "Coffee break permanente en sala desde el inicio de la reunión\nFacturación:\nAlmuerzo en Cañitas Maite de 13-14:00h\nReservar una mesa en la zona de la terraza para 15 personas.\nMinutas",
+      "menu_notes": "🍴 08:00 a 17:30 - MEETING ROOM - Clásico - Estudio 2 + 3   13 Pax\nEUR 25.00\nCafé con leche entera, desnatada y de soja\nInfusiones\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nAgua con gas\nCroissant de mantequilla\nSnecken\nBrocheta de fruta fresca\nMini mollete ibérico\n\n🍴 13:00 a 14:00 - Restaurante – Cañitas Maite   13 Pax\nEUR 79.00\nENTRANTES\n- Ceviche\n- Torta de aceite\n- Berenjena asada con burrata aliñada\n- Atun rojo salvaje aliñado como si fuera una gilda\n- Navajas\nPRINCIPALES\n- Luvina a la brasa con su pil pil\n- Solomillo Joselito y salsa pimiento verde\nPOSTRE\n- Corte de tarta de queso\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Meeting\nBlock Name: KEVINMURPHY_ELT\nMEETING_MALAGA_SEP_15PAX\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": "F&B                                    No hay alergias ni intolerancias\n\nFrutos secos\nPatatas fritas\n\nPendiente recibir alergias e intolerancias\n\nPendiente recibir alérgenos e intolerancias\n\n08:30 a 18:00h  Pendiente recibir alérgenos e intolerancias",
       "pisos_notes": "PISOS Revisar y perfumar la sala antes del inicio de la reunión",
       "times": {
         "setup_minutes": 30,
@@ -735,11 +380,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-5",
+    "id": "evt-697386-2026-09-22-0800-estudio-2-3",
     "title": "Kevin Murphy · Estudio 2 + 3",
     "date": "2026-09-22",
     "time_start": "08:00",
@@ -856,11 +501,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-6",
+    "id": "evt-697386-2026-09-22-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-22",
     "time_start": "08:30",
@@ -979,11 +624,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-1",
+    "id": "evt-status-catering-status-2026-09-22-1200-foyer",
     "title": "Status/Catering Status: · Llegadas & Alojamiento",
     "date": "2026-09-22",
     "time_start": "12:00",
@@ -1030,7 +675,7 @@
     "source_pdf_url": "./data/beos/OS. MELIA ESCUCHA 22_09_2026.pdf"
   },
   {
-    "id": "evt-7",
+    "id": "evt-697386-2026-09-23-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-23",
     "time_start": "08:30",
@@ -1142,11 +787,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-8",
+    "id": "evt-697386-2026-09-23-0830-estudio-2-3",
     "title": "Kevin Murphy · Estudio 2 + 3",
     "date": "2026-09-23",
     "time_start": "08:30",
@@ -1263,11 +908,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-9",
+    "id": "evt-697386-2026-09-24-0800-estudio-2-3",
     "title": "Kevin Murphy · Estudio 2 + 3",
     "date": "2026-09-24",
     "time_start": "08:00",
@@ -1384,11 +1029,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-10",
+    "id": "evt-697386-2026-09-24-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-24",
     "time_start": "08:30",
@@ -1500,11 +1145,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-1",
+    "id": "evt-758425-2026-09-24-1630-multifuncional",
     "title": "Casa Rrhh · Sala Multifuncional",
     "date": "2026-09-24",
     "time_start": "16:30",
@@ -1581,7 +1226,7 @@
     "source_pdf_url": "./data/beos/OS VISITA VATEL 24_09_2026.pdf"
   },
   {
-    "id": "evt-11",
+    "id": "evt-697386-2026-09-25-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-25",
     "time_start": "08:30",
@@ -1658,11 +1303,11 @@
     "manager": "Default Owner SPAIN",
     "block_id": "697386",
     "pm": "9008",
-    "source_file": "V.2 OS KEVIN MURPHY 19-25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/V.2 OS KEVIN MURPHY 19-25_09_2026.pdf"
+    "source_file": "V.3 OS KEVIN MURPHY 19-25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-1",
+    "id": "evt-757948-2026-09-25-1300-canitas-al-fresco",
     "title": "Fam Trip Sakkara 25 09 2026 · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "13:00",
@@ -1750,7 +1395,7 @@
     "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
   },
   {
-    "id": "evt-2",
+    "id": "evt-757948-2026-09-25-1400-canitas-al-fresco",
     "title": "Fam Trip Sakkara 25 09 2026 · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "14:00",
@@ -1838,7 +1483,7 @@
     "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
   },
   {
-    "id": "evt-1",
+    "id": "evt-758400-2026-09-25-1400-terraza-pool-bar",
     "title": "Almuerzo Agm 25 09 2026 · Terraza Pool Bar / Rooftop",
     "date": "2026-09-25",
     "time_start": "14:00",
@@ -1901,7 +1546,7 @@
     "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
   },
   {
-    "id": "evt-2",
+    "id": "evt-758400-2026-09-25-1430-canitas-al-fresco",
     "title": "Almuerzo Agm 25 09 2026 · Cañitas al Fresco",
     "date": "2026-09-25",
     "time_start": "14:30",
