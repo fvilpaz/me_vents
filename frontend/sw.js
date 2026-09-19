@@ -1,4 +1,4 @@
-const CACHE_NAME = 'me-vents-v32';
+const CACHE_NAME = 'me-vents-v33';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -54,9 +54,10 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // 2. Todos los recursos: Network-First con fallback a Caché offline
+  // 2. Todos los recursos: Network-First con fallback a Caché offline.
+  // cache:'no-cache' revalida con el servidor: sin él, GitHub Pages servía el JS/CSS viejo hasta 10 min tras cada despliegue
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: 'no-cache' })
       .then((networkRes) => {
         if (networkRes && networkRes.status === 200) {
           const clone = networkRes.clone();
