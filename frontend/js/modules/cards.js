@@ -104,6 +104,8 @@ export function createEventCardHTML(evt) {
   const pdfFileName = evt.source_file || (evt.source_pdf_url ? evt.source_pdf_url.split('/').pop() : '');
   const hasPdf = Boolean(pdfFileName || evt.source_pdf_url);
   const pdfUrl = evt.source_pdf_url || (pdfFileName ? `./data/beos/${encodeURIComponent(pdfFileName)}` : '');
+  // Los PDF de Opera llevan la versión en el nombre ("V.3 OS KEVIN…"): se muestra para saber qué revisión es
+  const osVersion = (pdfFileName.match(/^V\.?\s*(\d+)\b/i) || [])[1];
 
   return `
     <div class="event-card">
@@ -120,8 +122,9 @@ export function createEventCardHTML(evt) {
                   data-pdf="${escapeHTML(pdfUrl)}" 
                   data-filename="${escapeHTML(pdfFileName)}" 
                   data-title="${escapeHTML(title)}"
-                  title="${hasPdf ? 'Ver documento PDF original en visor' : 'Sin PDF adjunto'}">
-            <span>📄🔍</span> Ver OS
+                  aria-label="${hasPdf ? 'Abrir la OS oficial de Opera' + (osVersion ? ', versión ' + escapeHTML(osVersion) : '') : 'Sin OS adjunta'}"
+                  title="${hasPdf ? 'Abrir la orden de servicio original de Opera (documento oficial)' : 'Sin PDF adjunto'}">
+            <span>📄</span> ${hasPdf ? 'OS oficial' : 'Sin OS'}${hasPdf && osVersion ? ` <span class="os-ver">V.${escapeHTML(osVersion)}</span>` : ''}
           </button>
         </div>
       </div>
@@ -232,6 +235,13 @@ export function createEventCardHTML(evt) {
           ` : ''}
         </div>
       </div>
+
+      ${hasPdf ? `
+        <div class="os-source-note">
+          <span aria-hidden="true">ℹ️</span>
+          <span>Resumen extraído automáticamente de la OS. Ante cualquier diferencia, <strong>manda la OS oficial</strong>.</span>
+        </div>
+      ` : ''}
 
       <div class="card-actions">
         <label class="setup-check-label">

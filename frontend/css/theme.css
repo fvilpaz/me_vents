@@ -316,6 +316,26 @@
   border-color: rgba(139, 92, 246, 0.22);
 }
 
+/* Tema claro: el dorado de los tokens sobre fondo blanco tiene poco contraste; se oscurece el texto */
+[data-theme="light"] .btn-view-pdf.has-pdf {
+  background: rgba(180, 140, 38, 0.12);
+  border-color: rgba(180, 140, 38, 0.65);
+  color: #7a5a0c;
+  box-shadow: 0 1px 6px rgba(180, 140, 38, 0.18);
+}
+
+@media (hover: hover) {
+  [data-theme="light"] .btn-view-pdf.has-pdf:hover {
+    background: #b48c26;
+    border-color: #b48c26;
+    color: #ffffff;
+  }
+}
+
+[data-theme="light"] .os-source-note strong {
+  color: #8a6a12;
+}
+
 [data-theme="light"] .btn-view-pdf.no-pdf {
   background: rgba(15, 23, 42, 0.04);
   border-color: rgba(15, 23, 42, 0.12);

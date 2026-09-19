@@ -116,6 +116,65 @@
   box-shadow: 0 2px 8px rgba(0, 128, 255, 0.35);
 }
 
+/* Botón de la OS oficial: es el documento de referencia (los datos de la tarjeta son un resumen automático),
+   así que va en dorado Meliá y con más peso que el resto de etiquetas de la fila */
+.btn-view-pdf.has-pdf {
+  background: var(--melia-gold-soft);
+  border: 1px solid var(--melia-gold);
+  color: var(--melia-gold);
+  font-size: 0.76rem;
+  padding: 0.28rem 0.7rem;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.12), 0 2px 10px rgba(212, 175, 55, 0.12);
+}
+
+/* El efecto al pasar el ratón solo en dispositivos con ratón: en táctil el :hover se queda "pegado" tras tocar */
+@media (hover: hover) {
+  .btn-view-pdf.has-pdf:hover {
+    background: var(--melia-gold);
+    border-color: var(--melia-gold);
+    color: #1a1408;
+    box-shadow: 0 3px 12px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Táctil (pointer: coarse): objetivo de toque cómodo (~40 px de alto; las guías de Apple y Material piden 44-48) */
+@media (pointer: coarse) {
+  .btn-view-pdf,
+  .btn-view-pdf.has-pdf {
+    min-height: 40px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Revisión de la OS (V.1, V.2, V.3…): chip con borde, hereda el color del botón */
+.os-ver {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.04rem 0.32rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  line-height: 1.2;
+}
+
+.os-source-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+  padding-top: 0.55rem;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.os-source-note strong {
+  color: var(--melia-gold);
+  font-weight: 700;
+}
+
 .btn-view-pdf.no-pdf {
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.16);
