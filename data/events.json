@@ -1780,5 +1780,52 @@
     "pm": null,
     "source_file": "OS LES ROCHES 25_06_2026.pdf",
     "source_pdf_url": "./data/beos/OS LES ROCHES 25_06_2026.pdf"
+  },
+  {
+    "id": "evt-751464-2026-09-30-1200-foyer",
+    "title": "Never Enough · Llegadas & Alojamiento",
+    "date": "2026-09-30",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Never Enough",
+      "date_start": "2026-09-30",
+      "date_end": "2026-09-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
+      "montaje_notes": "Never enough es una empresa formada por amigos que organiza eventos aportando conocimientos sobre\ngastronomía, enología, turismo, marketing y comunicación\nRECEPCIÓN Se hospedan con nosotros del 30.09-02.10\nTienen contratadas con nosotros 12 habitaciones\nPendiente recibir datos para express check in\nPendiente recibir info acerca de los 100€por noche\nPendiente recibir horarios de entrada\nPendiente recibir info acerca de early check in y late check out\nFacturación:\n340€ habitación DUI con desayuno",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": null,
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "751464",
+    "pm": null,
+    "source_file": "OS NEVER ENOUGH 30.09-02-10_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS NEVER ENOUGH 30.09-02-10_09_2026.pdf"
   }
 ]
