@@ -1618,5 +1618,167 @@
     "pm": null,
     "source_file": "OS ALMUERZO AGM 25_09_2026.pdf",
     "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
+  },
+  {
+    "id": "evt-756158-2026-09-25-1430-canitas-al-fresco",
+    "title": "Les Roches China · Cañitas al Fresco",
+    "date": "2026-09-25",
+    "time_start": "14:30",
+    "time_end": "16:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 9,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Les Roches China",
+      "date_start": "2026-09-25",
+      "date_end": "2026-09-25",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 9 pax",
+      "montaje_notes": "Montaje Estándar para 9 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "No tenemos información acerca de alergias e intolerancias. Prever diferentes opciones para vegetarianos,\nFacturación:\nMinutas en inglés con el logo",
+      "menu_notes": "🍴 14:30 a 16:30 - Lunch - Menú Hits - RESTAURANTE CAÑITAS MAITE   9 Pax\nEUR 50.00\nENTRANTES\n- Torta de aceite y alioli de ajos asados\n- Aperitivos de bienvenida según temporada\n- La mejor croqueta delmundo 2021 X Cañitas\n- Ensaladilla de gamba blanca malagueña al ajillo\n- Alcachofas en carbonara ibérica de papada curada\n- Navajas de buceo a la parrilla con escabeche y rayadura de lima\n- Calamar de anzuelo a la brasa con velouté de Jabugo, ajito frito y encurtidos\nPRINICPAL A ELEGIR Y A COMPARTIR (CADA 2 PAX)\n- Lubina de esteroa la parrilla al pil pil de su colágeno y aceite de perejil\n- Txuleta vasca asada con 25 días de maduración en parrilla abierta\n*Acompañado de guarnición del día\nPOSTRE PARA TERMINAR\n- El flan de nata de Cañitas Maite\nNo tenemos información acerca de alergias e intolerancias. Prever diferentes\nopciones para vegetarianos, veganos, sin gluten y sin lactosa.",
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever diferentes opciones para vegetarianos,\nveganos, sin gluten y sin lactosa.",
+      "pisos_notes": "14:30 - 16:30 RESTAURANTE CAÑITAS MAITE Lunch  9 Pax\nReservar mesa azul (mesa 10) en el interior del restaurante para 9 personas el viernes 25.09",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "756158",
+    "pm": null,
+    "source_file": "OS LES ROCHES 25_06_2026.pdf",
+    "source_pdf_url": "./data/beos/OS LES ROCHES 25_06_2026.pdf"
+  },
+  {
+    "id": "evt-756158-2026-09-25-1700-multifuncional",
+    "title": "Les Roches China · Sala Multifuncional",
+    "date": "2026-09-25",
+    "time_start": "17:00",
+    "time_end": "18:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 9,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Les Roches China",
+      "date_start": "2026-09-25",
+      "date_end": "2026-09-25",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 9 pax",
+      "montaje_notes": "Montaje Estándar para 9 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": null,
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever diferentes opciones para vegetarianos,\nveganos, sin gluten y sin lactosa.\n\nNo tenemos información acerca de alergias e intolerancias. Prever diferentes\nopciones para vegetarianos, veganos, sin gluten y sin lactosa.",
+      "pisos_notes": "AURA Revisar habitaciones bloqueadas para la visita\nPISOS Revisar y perfumar zonas comunes y salones para la visita\nATT F&B / PISOS / AURA",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "756158",
+    "pm": null,
+    "source_file": "OS LES ROCHES 25_06_2026.pdf",
+    "source_pdf_url": "./data/beos/OS LES ROCHES 25_06_2026.pdf"
   }
 ]
