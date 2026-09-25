@@ -4,6 +4,7 @@
 
 import { state, formatDateKey, pickDefaultDate, todayKey } from './state.js';
 import { renderCards } from './cards.js';
+import { escapeHTML } from './security.js';
 
 // La tira empieza en hoy; los días pasados solo se ven con el botón. No se guarda: cada vez que se abre, hoy.
 let showPast = false;
@@ -96,14 +97,18 @@ export function renderTimeline() {
     const dayName = dayNames[dateObj.getDay()];
     const dayNum = dateObj.getDate();
     
-    const count = state.events.filter(e => e.date === key).length;
+    const dayEvents = state.events.filter(e => e.date === key);
+    const count = dayEvents.length;
     const isActive = key === state.selectedDate;
 
-    // Detectar si este día pertenece a un evento multi-día
-    const multiEvt = state.events.find(e => e.date === key && e.multi_day && e.multi_day.is_multi_day);
+    // "Día x de y" solo si TODO el día es de un mismo grupo de varios días; con varios grupos no significa nada
+    // (cada tarjeta ya lleva el suyo)
+    const groups = new Set(dayEvents.map(e => e.block_id || (e.multi_day && e.multi_day.group_name) || e.id));
+    const multiEvt = groups.size === 1 && dayEvents[0].multi_day && dayEvents[0].multi_day.is_multi_day
+      ? dayEvents[0] : null;
     const multiBadge = multiEvt ? `
-      <span class="pill-multiday-badge" title="${multiEvt.multi_day.group_name} (${multiEvt.multi_day.day_label})">
-        ${multiEvt.multi_day.day_label}
+      <span class="pill-multiday-badge" title="${escapeHTML(multiEvt.multi_day.group_name)} (${escapeHTML(multiEvt.multi_day.day_label)})">
+        ${escapeHTML(multiEvt.multi_day.day_label)}
       </span>
     ` : '';
 
