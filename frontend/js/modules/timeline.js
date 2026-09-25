@@ -4,7 +4,6 @@
 
 import { state, formatDateKey, pickDefaultDate, todayKey } from './state.js';
 import { renderCards } from './cards.js';
-import { escapeHTML } from './security.js';
 
 // La tira empieza en hoy; los días pasados solo se ven con el botón. No se guarda: cada vez que se abre, hoy.
 let showPast = false;
@@ -97,28 +96,16 @@ export function renderTimeline() {
     const dayName = dayNames[dateObj.getDay()];
     const dayNum = dateObj.getDate();
     
-    const dayEvents = state.events.filter(e => e.date === key);
-    const count = dayEvents.length;
+    // El "Día x de y" de los grupos va solo en las tarjetas: en la tira no tiene sentido con varios grupos
+    const count = state.events.filter(e => e.date === key).length;
     const isActive = key === state.selectedDate;
 
-    // "Día x de y" solo si TODO el día es de un mismo grupo de varios días; con varios grupos no significa nada
-    // (cada tarjeta ya lleva el suyo)
-    const groups = new Set(dayEvents.map(e => e.block_id || (e.multi_day && e.multi_day.group_name) || e.id));
-    const multiEvt = groups.size === 1 && dayEvents[0].multi_day && dayEvents[0].multi_day.is_multi_day
-      ? dayEvents[0] : null;
-    const multiBadge = multiEvt ? `
-      <span class="pill-multiday-badge" title="${escapeHTML(multiEvt.multi_day.group_name)} (${escapeHTML(multiEvt.multi_day.day_label)})">
-        ${escapeHTML(multiEvt.multi_day.day_label)}
-      </span>
-    ` : '';
-
     const pill = document.createElement('div');
-    pill.className = `day-pill ${isActive ? 'active' : ''} ${multiEvt ? 'has-multiday' : ''}`;
+    pill.className = `day-pill ${isActive ? 'active' : ''}`;
     pill.innerHTML = `
       <span class="day-name">${dayName}</span>
       <span class="day-number">${dayNum}</span>
       <span class="event-indicator">${count} ${count === 1 ? 'evento' : 'eventos'}</span>
-      ${multiBadge}
     `;
 
     pill.addEventListener('click', () => {

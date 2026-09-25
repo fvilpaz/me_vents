@@ -207,11 +207,6 @@
   color: #ffffff;
 }
 
-[data-theme="light"] .pill-multiday-badge {
-  background: rgba(2, 132, 199, 0.1);
-  border-color: rgba(2, 132, 199, 0.3);
-  color: #0284c7;
-}
 
 [data-theme="light"] .search-input {
   background: #ffffff;
