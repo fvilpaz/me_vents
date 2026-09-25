@@ -2,6 +2,15 @@ import { state, saveEventsToStorage, groupEndInfo, todayKey } from './state.js';
 import { renderTimeline } from './timeline.js';
 import { escapeHTML } from './security.js';
 
+const COMBINED_SPACES = {
+  'estudio-2-3': ['estudio-2', 'estudio-3'],
+  'estudio-all': ['estudio-1', 'estudio-2', 'estudio-3', 'estudio-4', 'estudio-5'],
+};
+
+function spaceParts(spaceId) {
+  return [spaceId, ...(COMBINED_SPACES[spaceId] || [])];
+}
+
 export function renderCards() {
   const container = document.getElementById('cardsContainer');
   const totalCountEl = document.getElementById('todayTotalCount');
@@ -11,9 +20,9 @@ export function renderCards() {
   // Filtrar eventos por fecha seleccionada
   let filtered = state.events.filter(e => e.date === state.selectedDate);
 
-  // Filtro por salón
+  // Filtro por espacio (un salón combinado sale en cada uno de los salones que lo forman)
   if (state.activeFilterSpace !== 'all') {
-    filtered = filtered.filter(e => e.space && e.space.id === state.activeFilterSpace);
+    filtered = filtered.filter(e => e.space && spaceParts(e.space.id).includes(state.activeFilterSpace));
   }
 
   // Filtro por búsqueda de texto

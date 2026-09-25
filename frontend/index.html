@@ -59,7 +59,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="./css/style.css?v=3.2">
+  <link rel="stylesheet" href="./css/style.css?v=3.3">
   <script>
     (function() {
       var saved = localStorage.getItem('me_vents_theme') || 'dark';
@@ -174,15 +174,19 @@
       </div>
 
       <div class="filter-pills" id="spaceFilterPills">
-        <button class="filter-chip active" data-space="all">Todos los Salones</button>
-        <button class="filter-chip" data-space="estudio-1">Estudio 1</button>
-        <button class="filter-chip" data-space="estudio-2">Estudio 2</button>
-        <button class="filter-chip" data-space="estudio-3">Estudio 3</button>
-        <button class="filter-chip" data-space="estudio-4">Estudio 4</button>
-        <button class="filter-chip" data-space="estudio-5">Estudio 5</button>
-        <button class="filter-chip" data-space="foyer">Foyer</button>
-        <button class="filter-chip" data-space="multifuncional">Multifuncional</button>
-        <button class="filter-chip" data-space="ene">Eñe</button>
+        <!-- Colores = color_tag de config/hotel_spaces.json (los mismos que las tarjetas) -->
+        <button class="filter-chip active" data-space="all">Todos los espacios</button>
+        <button class="filter-chip" data-space="multifuncional" style="--chip-color:#7b2cbf">Multifuncional</button>
+        <button class="filter-chip" data-space="estudio-1" style="--chip-color:#0080ff">Estudio 1</button>
+        <button class="filter-chip" data-space="estudio-2" style="--chip-color:#00b4d8">Estudio 2</button>
+        <button class="filter-chip" data-space="estudio-3" style="--chip-color:#48cae4">Estudio 3</button>
+        <button class="filter-chip" data-space="estudio-4" style="--chip-color:#90e0ef">Estudio 4</button>
+        <button class="filter-chip" data-space="estudio-5" style="--chip-color:#0077b6">Estudio 5</button>
+        <button class="filter-chip" data-space="foyer" style="--chip-color:#d4af37">Foyer</button>
+        <button class="filter-chip" data-space="canitas-al-fresco" style="--chip-color:#2ec4b6">Cañitas al Fresco</button>
+        <button class="filter-chip" data-space="terraza-pool-bar" style="--chip-color:#e76f51">Terraza / Rooftop</button>
+        <button class="filter-chip" data-space="pergola" style="--chip-color:#ff9f1c">Pérgola</button>
+        <button class="filter-chip" data-space="ene" style="--chip-color:#f59e0b">Eñe</button>
       </div>
     </section>
 

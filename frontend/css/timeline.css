@@ -275,3 +275,29 @@
   line-height: 1.2;
   max-width: 80px;
 }
+
+/* Cada espacio con su color (--chip-color en index.html): punto siempre, chip teñido si está activo */
+.filter-chip[style*="--chip-color"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-chip[style*="--chip-color"]::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--chip-color);
+  flex: 0 0 auto;
+}
+
+.filter-chip[style*="--chip-color"]:hover {
+  border-color: var(--chip-color);
+}
+
+.filter-chip[style*="--chip-color"].active {
+  background: color-mix(in srgb, var(--chip-color) 18%, transparent);
+  border-color: var(--chip-color);
+  color: var(--text-primary);
+}
