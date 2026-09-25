@@ -628,53 +628,6 @@
     "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-status-catering-status-2026-09-22-1200-foyer",
-    "title": "Status/Catering Status: · Llegadas & Alojamiento",
-    "date": "2026-09-22",
-    "time_start": "12:00",
-    "time_end": "20:00",
-    "space": {
-      "id": "foyer",
-      "name": "Recepción / AURA",
-      "color_tag": "#d4af37",
-      "location": "Planta Baja"
-    },
-    "setup": {
-      "key": "hospitality_desk",
-      "label": "Llegadas & Check-in",
-      "icon": "🏨",
-      "description": "Recepción escalonada del grupo y gestión de habitaciones"
-    },
-    "pax": 12,
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Status/Catering Status:",
-      "date_start": "2026-09-22",
-      "date_end": "2026-09-22",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
-      "montaje_notes": "Presentación resultados Melia Escucha\nLos salones de al lado estarán ocupados por lo que habrá que tener cuidado con el ruido\n09:30 – 10:30 Estudio 4 U-shape 15 Pax",
-      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
-      "fb_notes": "Facturación y régimen según OS",
-      "menu_notes": null,
-      "dietary_notes": null,
-      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
-      "times": {
-        "setup_minutes": 15,
-        "breakdown_minutes": 0
-      }
-    },
-    "manager": "Sales Manager:",
-    "block_id": null,
-    "pm": null,
-    "source_file": "OS. MELIA ESCUCHA 22_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS. MELIA ESCUCHA 22_09_2026.pdf"
-  },
-  {
     "id": "evt-697386-2026-09-23-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-23",
@@ -1149,93 +1102,6 @@
     "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-758425-2026-09-24-1630-ene",
-    "title": "Casa Rrhh · Eñe",
-    "date": "2026-09-24",
-    "time_start": "16:30",
-    "time_end": "17:30",
-    "space": {
-      "id": "ene",
-      "name": "Eñe",
-      "aliases": [
-        "eñe",
-        "ñ",
-        "ene",
-        "evento en eñe",
-        "evento en ñ",
-        "punto de venta eñe",
-        "punto de venta ñ"
-      ],
-      "max_capacities": {},
-      "color_tag": "#f59e0b",
-      "location": "Punto de venta"
-    },
-    "setup": {
-      "key": "estandar",
-      "label": "Montaje Estándar",
-      "icon": "📋",
-      "description": "Distribución a confirmar según orden de servicio"
-    },
-    "pax": 30,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "protocolo-aura",
-        "label": "Protocolo AURA (Perfumar Sala)",
-        "icon": "✨",
-        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Casa Rrhh",
-      "date_start": "2026-09-24",
-      "date_end": "2026-09-24",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 30 pax",
-      "montaje_notes": "Montaje Estándar para 30 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Facturación:",
-      "menu_notes": "🍴 17:30-18:30 - Site inspection - Clásica -    30 Pax\nEUR 20.00\nCafé con leche entera, desnatada y de soja\nZumo natural de naranja\nZumo verde (manzana, apio y ginger)\nAgua mineral\nCroissant de mantequilla\nMini mollete ibérico\nBrocheta de fruta fresca\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Site Inspection\nBlock Name: VISTA VATEL 24_09_2026\nStatus/Catering Status: PRO/PRO",
-      "dietary_notes": null,
-      "pisos_notes": "AURA Revisar habitaciones asignadas para la visita\nPISOS Revisar y perfumar Eñe antes del inicio del coffee break",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "758425",
-    "pm": null,
-    "source_file": "OS VISITA VATEL 24_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS VISITA VATEL 24_09_2026.pdf"
-  },
-  {
     "id": "evt-697386-2026-09-25-0830-multifuncional",
     "title": "Kevin Murphy · Sala Multifuncional",
     "date": "2026-09-25",
@@ -1352,7 +1218,7 @@
       "icon": "📋",
       "description": "Distribución a confirmar según orden de servicio"
     },
-    "pax": 13,
+    "pax": 14,
     "services": [
       {
         "type": "protocolo_hotel",
@@ -1372,8 +1238,8 @@
       "day_label": "Día 1 de 1"
     },
     "operational": {
-      "furniture_summary": "Montaje oficial según OS para 13 pax",
-      "montaje_notes": "Montaje Estándar para 13 pax según OS",
+      "furniture_summary": "Montaje oficial según OS para 14 pax",
+      "montaje_notes": "Montaje Estándar para 14 pax según OS",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": null,
       "menu_notes": null,
@@ -1387,71 +1253,8 @@
     "manager": "Default Owner SPAIN",
     "block_id": "757948",
     "pm": null,
-    "source_file": "OS FAM TRIP SAKKARA 25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
-  },
-  {
-    "id": "evt-758400-2026-09-25-1400-terraza-pool-bar",
-    "title": "Almuerzo Agm · Terraza Pool Bar / Rooftop",
-    "date": "2026-09-25",
-    "time_start": "14:00",
-    "time_end": "14:30",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 20,
-    "services": [],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Agm",
-      "date_start": "2026-09-25",
-      "date_end": "2026-09-25",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (20 pax)",
-      "montaje_notes": "F&B Despejar primera fila de mesas de Cañitas al Fresco para aprovecha las vistas y colocar 5 mesas de cóctel",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 14:30 - TERRAZA POOL BAR   20 Pax\nEn esta primera parte del evento se bandejeará:\n- Copa de La casa Madre Chardonnay 2022\n- La mejor croqueta del mundo 2021",
-      "dietary_notes": "Pendiente recibir alergias e intolerancias",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Marta Delange Fernandez",
-    "block_id": "758400",
-    "pm": null,
-    "source_file": "OS ALMUERZO AGM 25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
+    "source_file": "V.1 OS FAM TRIP SAKKARA 25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS FAM TRIP SAKKARA 25_09_2026.pdf"
   },
   {
     "id": "evt-757948-2026-09-25-1400-canitas-al-fresco",
@@ -1489,7 +1292,7 @@
       "icon": "📋",
       "description": "Distribución a confirmar según orden de servicio"
     },
-    "pax": 13,
+    "pax": 14,
     "services": [
       {
         "type": "fb",
@@ -1523,13 +1326,13 @@
       "day_label": "Día 1 de 1"
     },
     "operational": {
-      "furniture_summary": "Montaje oficial según OS para 13 pax",
-      "montaje_notes": "Montaje Estándar para 13 pax según OS",
+      "furniture_summary": "Montaje oficial según OS para 14 pax",
+      "montaje_notes": "Montaje Estándar para 14 pax según OS",
       "sstt_notes": "AC, conectividad y soporte técnico de sala",
       "fb_notes": "Minutas\nFacturación:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - Restaurante -    13 Pax\nEUR 105.00\nEntrantes para compartir (cada 4 personas)\n- Torta de aceite\n- La mejor Croqueta del Mundo 21 x Cañitas\n- Setas silvestres de temporada com patata cremosa, yema de campo y\ndemi-glace de carne\n- Navaja de buceo a la parrilla con escabeche de limón\n- Calamar de anzuelo en despiece con meunière de jabugo\nPrincipales para compartir (cada 2 personas)\n- Lubina de estero a la parrilla con pil-pil de su colágeno\n- Txuleta vasca madurada, asada y trinchada\nGuarnición\n- Patatas chips crujientes o lechuga viva aliñada\nPara terminar\n-      Tarta de queso Cañitas Maite\n-      Flan de nata Cañitas Maite\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Fam Trip\nBlock Name: FAM TRIP SAKKARA 25_09_2026\nStatus/Catering Status: PRO/PRO",
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - Restaurante -    14 Pax\nEUR 105.00\nEntrantes para compartir (cada 4 personas)\n- Torta de aceite\n- La mejor Croqueta del Mundo 21 x Cañitas\n- Setas silvestres de temporada com patata cremosa, yema de campo y\ndemi-glace de carne\n- Navaja de buceo a la parrilla con escabeche de limón\n- Calamar de anzuelo en despiece con meunière de jabugo\nPrincipales para compartir (cada 2 personas)\n- Lubina de estero a la parrilla con pil-pil de su colágeno\n- Txuleta vasca madurada, asada y trinchada\nGuarnición\n- Patatas chips crujientes o lechuga viva aliñada\nPara terminar\n-      Tarta de queso Cañitas Maite\n-      Flan de nata Cañitas Maite\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Fam Trip\nBlock Name: FAM TRIP SAKKARA 25_09_2026\nStatus/Catering Status: PRO/PRO",
       "dietary_notes": "1 persona alérgica a la trufa",
-      "pisos_notes": "Prever mesa en la terraza del restaurante para 10 pax",
+      "pisos_notes": "Prever mesa en la terraza del restaurante para 14 pax",
       "times": {
         "setup_minutes": 30,
         "breakdown_minutes": 20
@@ -1538,8 +1341,71 @@
     "manager": "Default Owner SPAIN",
     "block_id": "757948",
     "pm": null,
-    "source_file": "OS FAM TRIP SAKKARA 25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS FAM TRIP SAKKARA 25_09_2026.pdf"
+    "source_file": "V.1 OS FAM TRIP SAKKARA 25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS FAM TRIP SAKKARA 25_09_2026.pdf"
+  },
+  {
+    "id": "evt-758400-2026-09-25-1400-terraza-pool-bar",
+    "title": "Almuerzo Agm · Terraza Pool Bar / Rooftop",
+    "date": "2026-09-25",
+    "time_start": "14:00",
+    "time_end": "14:30",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 23,
+    "services": [],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Agm",
+      "date_start": "2026-09-25",
+      "date_end": "2026-09-25",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (23 pax)",
+      "montaje_notes": "F&B Despejar primera fila de mesas de Cañitas al Fresco para aprovecha las vistas y colocar 5 mesas de cóctel",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 14:30 - TERRAZA POOL BAR   23 Pax\nEn esta primera parte del evento se bandejeará:\n- Copa de La casa Madre Chardonnay 2022\n- La mejor croqueta del mundo 2021",
+      "dietary_notes": "Alergias e intolerancias\nTrinidad Fernández-Baca gluten y lactosa\nChelo Simón diabetes\nRafa Luque Mostaza\nPepe Simón y Manuel Tejero Ostra\n\nPendiente recibir alergias e intolerancias\n\nAlergias e intolerancias compartidas en al siguiente página\n--- Page 3 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Marta Delange Fernandez",
+    "block_id": "758400",
+    "pm": null,
+    "source_file": "V.1 OS ALMUERZO AGM 25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS ALMUERZO AGM 25_09_2026.pdf"
   },
   {
     "id": "evt-758400-2026-09-25-1430-canitas-al-fresco",
@@ -1577,7 +1443,7 @@
       "icon": "🍽️",
       "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
     },
-    "pax": 20,
+    "pax": 23,
     "services": [
       {
         "type": "fb",
@@ -1592,6 +1458,13 @@
         "label": "Minutas Impresas de Menú",
         "icon": "📜",
         "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
       },
       {
         "type": "protocolo_hotel",
@@ -1611,13 +1484,13 @@
       "day_label": "Día 1 de 1"
     },
     "operational": {
-      "furniture_summary": "Montaje oficial según OS para 20 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 20 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "furniture_summary": "Montaje oficial según OS para 23 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 23 pax según OS",
+      "sstt_notes": "Diseño de la minuta con logo\nHan pedido una TV arriba con HDMI inalámbrico para reproducir un video. Necesitarán un portatil\nViernes, 25/09/26\nTrinidad Fernández-Baca gluten y lactosa\nChelo Simón diabetes\nRafa Luque Mostaza\nPepe Simón y Manuel Tejero Ostra",
       "fb_notes": "Pendiente recibir alergias e intolerancias",
-      "menu_notes": "🍴 14:30 a 16:30 - TERRAZA RESTAURANTE CAÑITAS   20 Pax\n-Ensaladilla de gambita blanca con jugo de piparras y manzanilla\nDoña Maruja Blanc de Noirs 2025\n-Carabinero de Málaga en parrilla con sabayón de manteca colorá\nDoña Maruja Blanc de Noirs 2025\n-Lubina de estero con pil pil de su colágeno y aceite de hierbas frescas\nAlma de Bohemia Rosé 2024\n-Setas silvestres de temporada con patata ahumada y butifarra blanca\nDon Juanito Bobal 2023\n-Molleja de ternera de leche con coliflor tostada y hongos en crudo.\nDon Juanito Bobal 2023\n•POSTRE\n-El flan de nata fresca de Cañitas con chantilly cítrica de yogur de oveja\nMoscatel Victoria N°2",
+      "menu_notes": "🍴 14:30 a 16:30 - TERRAZA RESTAURANTE CAÑITAS   23 Pax\n-Ensaladilla de gambita blanca con jugo de piparras y manzanilla\nDoña Maruja Blanc de Noirs 2025\n-Carabinero de Málaga en parrilla con sabayón de manteca colorá\nDoña Maruja Blanc de Noirs 2025\n-Lubina de estero con pil pil de su colágeno y aceite de hierbas frescas\nAlma de Bohemia Rosé 2024\n-Setas silvestres de temporada con patata ahumada y butifarra blanca\nDon Juanito Bobal 2023\n-Molleja de ternera de leche con coliflor tostada y hongos en crudo.\nDon Juanito Bobal 2023\n•POSTRE\n-El flan de nata fresca de Cañitas con chantilly cítrica de yogur de oveja\nMoscatel Victoria N°2\nAlergias e intolerancias compartidas en al siguiente página\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Marta Delange Fernandez\nDirección:  Sales Manager: Marta Delange Fernandez\nTipo Reserva: Special Events\nBlock Name: ALMUERZO AGM 25_09_2026\nStatus/Catering Status: DEF/DEF\nTrinidad Fernández-Baca gluten y lactosa\nChelo Simón diabetes\nRafa Luque Mostaza",
       "dietary_notes": "Pendiente recibir alergias e intolerancias",
-      "pisos_notes": "14:30 - 16:30 TERRAZA RESTAURANTE CAÑITAS Lunch Banquete 20 Pax\nColocar dos mesas imperiales para 10 pax en la terraza justo al salir de restaurante.",
+      "pisos_notes": "14:30 - 16:30 TERRAZA RESTAURANTE CAÑITAS Lunch Banquete 23 Pax\nColocar dos mesas imperiales para 10 pax en la terraza justo al salir de restaurante.",
       "times": {
         "setup_minutes": 30,
         "breakdown_minutes": 20
@@ -1626,7 +1499,744 @@
     "manager": "Marta Delange Fernandez",
     "block_id": "758400",
     "pm": null,
-    "source_file": "OS ALMUERZO AGM 25_09_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO AGM 25_09_2026.pdf"
+    "source_file": "V.1 OS ALMUERZO AGM 25_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS ALMUERZO AGM 25_09_2026.pdf"
+  },
+  {
+    "id": "evt-721707-2026-09-27-1200-foyer",
+    "title": "Voyage Haute Couture · Llegadas & Alojamiento",
+    "date": "2026-09-27",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 7,
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Voyage Haute Couture",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-28",
+      "day_index": 1,
+      "total_days": 2,
+      "day_label": "Día 1 de 2"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (7 habs contratadas)",
+      "montaje_notes": "FAM TRIP VOYAGE COUTURE es un DMC francés de lujo que trabaja para mercado ruso parlante (Georgia)\nMercado francés/ruso parlante\nRECEPCIÓN Se alojan con nosotros del 27-29.09\nSe hospedarán 7 habitaciones\nElena Laseeva (2604306019) llega el día 27.09. El resto del grupo llega el 28.09\nHorario de llegada:\n- Elena Laseeva a las 15:30hrs\n- Resto del grupo a las 13hrs\nHorario de salida:\n- 10 hrs todo el grupo\nNo pedir depósito",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever opciones vegetarianas, veganas, sin\ngluten y sin lactosa.\nHorario:",
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "721707",
+    "pm": null,
+    "source_file": "OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf"
+  },
+  {
+    "id": "evt-752436-2026-09-27-1200-foyer",
+    "title": "Rabagast Films · Llegadas & Alojamiento",
+    "date": "2026-09-27",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 8,
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Rabagast Films",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-27",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (8 habs contratadas)",
+      "montaje_notes": "Grupo de habitaciones pertenecientes a la productora RABAGAST FILMS SLU\nRECEPCION Categorias: Always ME\nEn cuanto a la asignación de habitaciones, quieren tener mejor habitación en este orden:\n- Charlie\n- Susanne\n- Steffan\n- Magnus\n- Eloi\n- Per\nTarifa:\nDUI con IVA: 295,00 €\nHoras de llegada:",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": null,
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "752436",
+    "pm": null,
+    "source_file": "OS PRODUCTORA RABAGAST 27 - 28_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS PRODUCTORA RABAGAST 27 - 28_09_2026.pdf"
+  },
+  {
+    "id": "evt-752129-2026-09-27-1200-foyer",
+    "title": "Qsrp Services Ag 9Pax · Llegadas & Alojamiento",
+    "date": "2026-09-27",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 8,
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Qsrp Services Ag 9Pax",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-27",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (8 habs contratadas)",
+      "montaje_notes": "Se alojan con nosotros 8 habitaciones\nRECEPCIÓN Se hospedan con nosotros 8 habitaciones.\nMirza Zeehsan reservó individualmente por lo que su habitación no está incluida en el block\nEn el block solo hay 7 habitaciones\nLlegan de manera escalonada: 4 habitaciones el domingo 27.09 y 4 habitaciones el lunes 28.09\nHorarios de llegada Domingo 27.09:\nZeeshan Mirza 14:00h\nChristelle Russak 18:00h\nGiorgia Agosta 22:00h\nBenedetta Begui 22:00h\nHorario llegada Lunes 28.09:\nAlain Sethi 10:00h",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": null,
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "752129",
+    "pm": null,
+    "source_file": "V.1 OS ZEEHSAN QSRP 27-29_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS ZEEHSAN QSRP 27-29_09_2026.pdf"
+  },
+  {
+    "id": "evt-562710-2026-09-28-1200-foyer",
+    "title": "Melia Hablemos · Llegadas & Alojamiento",
+    "date": "2026-09-28",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Melia Hablemos",
+      "date_start": "2026-09-28",
+      "date_end": "2026-09-28",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
+      "montaje_notes": "Melia Hablemos mensual\n15:30 – 16:30 Multifuncional 7 pax",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": null,
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Marta Delange",
+    "block_id": "562710",
+    "pm": null,
+    "source_file": "V.1 OS MELIA HABLEMOS 28_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS MELIA HABLEMOS 28_09_2026.pdf"
+  },
+  {
+    "id": "evt-721707-2026-09-28-1900-multifuncional",
+    "title": "Voyage Haute Couture · Sala Multifuncional",
+    "date": "2026-09-28",
+    "time_start": "19:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Voyage Haute Couture",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-28",
+      "day_index": 2,
+      "total_days": 2,
+      "day_label": "Día 2 de 2"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 8 pax",
+      "montaje_notes": "Montaje Estándar para 8 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": null,
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever opciones vegetarianas, veganas, sin\ngluten y sin lactosa.\nHorario:",
+      "pisos_notes": "AURA Revisar las habitaciones asignadas para la visita\nPISOS Revisar y perfumar las salas y zonas comunes del hotel\nATT F&B / PISOS / AURA",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "721707",
+    "pm": null,
+    "source_file": "OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf"
+  },
+  {
+    "id": "evt-721707-2026-09-28-2000-canitas-al-fresco",
+    "title": "Voyage Haute Couture · Cañitas al Fresco",
+    "date": "2026-09-28",
+    "time_start": "20:00",
+    "time_end": "22:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Voyage Haute Couture",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-28",
+      "day_index": 2,
+      "total_days": 2,
+      "day_label": "Día 2 de 2"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 8 pax",
+      "montaje_notes": "Montaje Estándar para 8 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "F&B Reservar una mesa para 8 personas en la terraza del restaurante\nNo tenemos información acerca de alergias e intolerancias. Prever opciones vegetarianas, veganas, sin\nMinutas",
+      "menu_notes": "🍴 20:00 a 22:00 - Dinner - RESTAURANTE CAÑITAS MAITE   8 Pax\nEUR 64.00\nENTRANTES A COMPARTIR (CADA 4)\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Los mejores tomates del momento\n- Langostino del sur a la parrilla con jugo de pollo asado\nPRINCIPAL INDIVIDUAL A ELEGIR\n- ½ Corvina en adobo y salsa de tomate encominao\n- ½ Txuleta vasca con sus acompañantes\nPOSTRE PARA TERMINAR\n- El flan de nata de oveja Cañitas Maite\n\n🍴 20:00 a 22:00Dinner - Top - RESTAURANTE CAÑITAS MAITE  8 Pax  EUR 15.00\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco",
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever opciones vegetarianas, veganas, sin\ngluten y sin lactosa.\nHorario:",
+      "pisos_notes": "20:00 - 22:00 RESTAURANTE CAÑITAS MAITE Dinner  8 Pax\nF&B Reservar una mesa para 8 personas en la terraza del restaurante",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "721707",
+    "pm": null,
+    "source_file": "OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf"
+  },
+  {
+    "id": "evt-721707-2026-09-28-2000-terraza-pool-bar",
+    "title": "Voyage Haute Couture · Terraza Pool Bar / Rooftop",
+    "date": "2026-09-28",
+    "time_start": "20:00",
+    "time_end": "20:15",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "estandar",
+      "label": "Montaje Estándar",
+      "icon": "📋",
+      "description": "Distribución a confirmar según orden de servicio"
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "fb",
+        "key": "welcome-drink",
+        "label": "Welcome Drink / Copa de Bienvenida",
+        "icon": "🥂",
+        "details": "Tener bandejas listas 15 minutos antes de la hora de convocatoria."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Voyage Haute Couture",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-28",
+      "day_index": 2,
+      "total_days": 2,
+      "day_label": "Día 2 de 2"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 8 pax",
+      "montaje_notes": "Montaje Estándar para 8 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Facturación:",
+      "menu_notes": "🍴 20:00 a 22:00 - Dinner - RESTAURANTE CAÑITAS MAITE   8 Pax\nEUR 64.00\nENTRANTES A COMPARTIR (CADA 4)\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Los mejores tomates del momento\n- Langostino del sur a la parrilla con jugo de pollo asado\nPRINCIPAL INDIVIDUAL A ELEGIR\n- ½ Corvina en adobo y salsa de tomate encominao\n- ½ Txuleta vasca con sus acompañantes\nPOSTRE PARA TERMINAR\n- El flan de nata de oveja Cañitas Maite\n\n🍴 20:00 a 22:00Dinner - Top - RESTAURANTE CAÑITAS MAITE  8 Pax  EUR 15.00\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco",
+      "dietary_notes": "No tenemos información acerca de alergias e intolerancias. Prever opciones vegetarianas, veganas, sin\ngluten y sin lactosa.\nHorario:",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "721707",
+    "pm": null,
+    "source_file": "OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS FAM TRIP VOYAGE COUTURE 27-29_09_2026.pdf"
+  },
+  {
+    "id": "evt-751464-2026-09-30-1200-foyer",
+    "title": "Never Enough · Llegadas & Alojamiento",
+    "date": "2026-09-30",
+    "time_start": "12:00",
+    "time_end": "20:00",
+    "space": {
+      "id": "foyer",
+      "name": "Recepción / AURA",
+      "color_tag": "#d4af37",
+      "location": "Planta Baja"
+    },
+    "setup": {
+      "key": "hospitality_desk",
+      "label": "Llegadas & Check-in",
+      "icon": "🏨",
+      "description": "Recepción escalonada del grupo y gestión de habitaciones"
+    },
+    "pax": 12,
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Never Enough",
+      "date_start": "2026-09-30",
+      "date_end": "2026-09-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Llegada de grupo (12 habs contratadas)",
+      "montaje_notes": "Never enough es una empresa formada por amigos que organiza eventos aportando\nconocimientos sobre gastronomía, enología, turismo, marketing y comunicación\nAGENDA DEL GRUPO:\nMIÉRCOLES 30\n15:00-18:30. Llegada a málaga\n20:30-22:30. Cena fuera del hotel  JUEVES 01.10\n09:00-13:00. Reuniones y encuentros fuera del hotel\n13:30-15:30. Almuerzo fuera del hotel\n15:30-18:30. Actividad fuera del hotel\n18:30-20:00. Descanso\n20:30-22:30. Cena fuera del hotel VIERNES 02.10\n09:00-13:00. Jornada de trabajo fuera del hotel",
+      "sstt_notes": "Soporte de recepción y terminales Opera PMS",
+      "fb_notes": "Facturación y régimen según OS",
+      "menu_notes": null,
+      "dietary_notes": null,
+      "pisos_notes": "AURA / PISOS: Revisar habitaciones y atenciones VIP.",
+      "times": {
+        "setup_minutes": 15,
+        "breakdown_minutes": 0
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "751464",
+    "pm": null,
+    "source_file": "V.1 OS NEVER ENOUGH 30.09-02-10_09_2026.pdf",
+    "source_pdf_url": "./data/beos/V.1 OS NEVER ENOUGH 30.09-02-10_09_2026.pdf"
+  },
+  {
+    "id": "evt-741782-2026-09-30-2000-canitas-al-fresco",
+    "title": "A.E.H.C.O.S. · Cañitas al Fresco",
+    "date": "2026-09-30",
+    "time_start": "20:00",
+    "time_end": "20:35",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 50,
+    "services": [
+      {
+        "type": "fb",
+        "key": "welcome-drink",
+        "label": "Welcome Drink / Copa de Bienvenida",
+        "icon": "🥂",
+        "details": "Tener bandejas listas 15 minutos antes de la hora de convocatoria."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "A.E.H.C.O.S.",
+      "date_start": "2026-09-30",
+      "date_end": "2026-09-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (50 pax)",
+      "montaje_notes": "Colocar 8 mesas de cóctel",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 20:00 a 20:35 - Cañitas al Fresco – Welcome drink  50 Pax\nCóctel pasado (3 referencias)\n• Gilda doble de boquerón\n• La mejor croqueta del mundo 21\n• Buñuelo de queso de cabra payoya\n\n🍴 20:00 a 20:35 - Cañitas al Fresco – Welcome drink  50 Pax\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Special Events\nBlock Name: Cena Empresarios AEHCOS-CAJAMAR\n08_05_20\nStatus/Catering Status: DEF/DEF",
+      "dietary_notes": null,
+      "pisos_notes": "siendo un espacio de paso para los clientes que accedan al restaurante.",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "741782",
+    "pm": null,
+    "source_file": "OS CENA EMPRESARIOS AEHCOS - CAJAMAR 30_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA EMPRESARIOS AEHCOS - CAJAMAR 30_09_2026.pdf"
+  },
+  {
+    "id": "evt-741782-2026-09-30-2035-estudio-2-3",
+    "title": "A.E.H.C.O.S. · Estudio 2 + 3",
+    "date": "2026-09-30",
+    "time_start": "20:35",
+    "time_end": "22:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 50,
+    "services": [
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-pantallas",
+        "label": "SSTT: Pantallas TV & Videoconferencia",
+        "icon": "📺",
+        "details": "Dejar carrusel de slides preparado o conexión HDMI comprobada. Probar con audio."
+      },
+      {
+        "type": "av_equipamiento",
+        "key": "sstt-climatizacion",
+        "label": "SSTT: Climatización / AC Previo (22ºC)",
+        "icon": "❄️",
+        "details": "Encender AC o calefacción a 22ºC varias horas antes del evento para estabilizar la sala."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "protocolo-aura",
+        "label": "Protocolo AURA (Perfumar Sala)",
+        "icon": "✨",
+        "details": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      },
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕",
+        "details": "Estación continua de café, leche, infusiones y zumos en sala"
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "A.E.H.C.O.S.",
+      "date_start": "2026-09-30",
+      "date_end": "2026-09-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 50 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 50 pax según OS",
+      "sstt_notes": "Ver con Marta el panelado de la sala\nTV con conectividad inalámbrica\nAC revisado y a 22ºC\nLuces revisadas\nComercial Diseño de las minutas\nEllos traerán el seating plan",
+      "fb_notes": "Comercial Diseño de las minutas",
+      "menu_notes": "🍴 20:35 a 22:30 - Estudio 2 + 3 – Menú de gala  50 Pax\nMenú de gala\nEntrante\nPuerro asado en ascuas con burrata fresca, tomate seco y praliné de almendras\nPrincipales\n½ Solomillo Joselito con salsa de pimienta verde\n½ Lubina a la brasa y escabeche de limón asado\nPostre\nEl flan de cañitas maite de leche de oveja\nCafé e infusiones\n\n🍴 20:35 a 22:30 - Estudio 2 + 3 – Menú de gala  50 Pax\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco",
+      "dietary_notes": null,
+      "pisos_notes": "PISOS Baños salones en perfecto estado\nPerfumar la sala",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "741782",
+    "pm": null,
+    "source_file": "OS CENA EMPRESARIOS AEHCOS - CAJAMAR 30_09_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA EMPRESARIOS AEHCOS - CAJAMAR 30_09_2026.pdf"
+  },
+  {
+    "id": "evt-761495-2026-10-02-2100-canitas-al-fresco",
+    "title": "Cena Doctores Lopez · Cañitas al Fresco",
+    "date": "2026-10-02",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 13,
+    "services": [
+      {
+        "type": "fb",
+        "key": "minutas",
+        "label": "Minutas Impresas de Menú",
+        "icon": "📜",
+        "details": "Revisar ortografía de platos y alérgenos destacados antes de colocarlas."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Doctores Lopez",
+      "date_start": "2026-10-02",
+      "date_end": "2026-10-02",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 13 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 13 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "F&B Reservar una mesa en la terraza del restaurante para 13 personas\nAlergias e intolerancias:\nFacturación:",
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner – Menú de grupos - Cañitas Maite - TERRAZA CAÑA BY CAÑITAS   13 Pax\nEUR 64.00\nENTRANTES A COMPARTIR (CADA 4)\n- Torta de aceite con AOVE Castillo de Canena y alioli de ajo asado.\n- La mejor croqueta del mundo 21 X Cañitas\n- Ensaladilla con gamba blanca de Málaga\n- Alcachofas confitadas y fritas en carbonara ibérica, pimienta fresca y lascas de queso Payoyo curado\n- Langostino del sur a la parrilla con jugo de pollo asado\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Social\nBlock Name: CENA DOCTORES LOPEZ 02_10_2026\nStatus/Catering Status: DEF/DEF\nPRINCIPAL INDIVIDUAL A ELEGIR\n- Corvina en adobo y salsa de tomate encominao\n- Falda de cordero de leche con su jugo a la hierbabuena\nPOSTRE PARA TERMINAR\n- El flan de nata de oveja Cañitas Maite\n1x intolerancia a la lactosa\n1x intolerancia al gluten\n1x alergia frutos secos\n\n🍴 21:00 a 23:00Dinner - Top - TERRAZA CAÑA BY CAÑITAS  13 Pax  EUR 15.00\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco\nMalaga, MA 29012, ES\n912764747\nNombre Contacto  Catering Manager: Default Owner SPAIN\nDirección:  Sales Manager: Default Owner SPAIN\nTipo Reserva: Social\nBlock Name: CENA DOCTORES LOPEZ 02_10_2026\nStatus/Catering Status: DEF/DEF\n\n🍴 21:00 a 23:00Dinner - Top - TERRAZA CAÑA BY CAÑITAS  13 Pax  EUR 15.00\nVerdejo. Tiro al plato (Blanco)\nGraciano. Tiro al plato (Tinto)\nCerveza local\nAgua mineral\nAgua con gas\nRefresco",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n1x alergia frutos secos\n\n1x intolerancia a la lactosa\n1x intolerancia al gluten\n1x alergia frutos secos",
+      "pisos_notes": "F&B Reservar una mesa en la terraza del restaurante para 13 personas",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "761495",
+    "pm": null,
+    "source_file": "OS CENA DOCTORES LÓPEZ 02_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA DOCTORES LÓPEZ 02_10_2026.pdf"
   }
 ]

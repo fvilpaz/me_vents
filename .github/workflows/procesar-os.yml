@@ -3,11 +3,14 @@ name: Procesar OS
 # Sube un PDF a la carpeta inbox/ (desde github.com, incluso en el móvil) y esta Action:
 # extrae los eventos, sustituye la versión anterior del grupo, actualiza los events.json,
 # guarda el PDF en data/beos y publica. Si el PDF falla, la Action queda en rojo y GitHub te avisa.
+# Además retira los grupos ya terminados (y sus PDF): en cada subida y cada madrugada.
 on:
   push:
     branches: [main]
     paths:
       - 'inbox/*.pdf'
+  schedule:
+    - cron: '0 3 * * *'   # 05:00 en Málaga (04:00 en invierno)
   workflow_dispatch:
 
 permissions:
@@ -34,7 +37,7 @@ jobs:
       - name: Procesar los PDF de inbox/
         id: proc
         continue-on-error: true
-        run: python -m backend.procesar_os --aplicar --consumir
+        run: python -m backend.procesar_os --aplicar --consumir --limpiar-terminados
 
       # Se guardan los PDF que sí funcionaron aunque otro haya fallado
       - name: Guardar cambios
