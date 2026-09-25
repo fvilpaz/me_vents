@@ -2,8 +2,28 @@
  * ME_VENTS - Day Timeline Module (Multi-day & Adaptive Calendar)
  */
 
-import { state, formatDateKey, pickDefaultDate } from './state.js';
+import { state, formatDateKey, pickDefaultDate, todayKey } from './state.js';
 import { renderCards } from './cards.js';
+
+// La tira empieza en hoy; los días pasados solo se ven con el botón. No se guarda: cada vez que se abre, hoy.
+let showPast = false;
+let scrollToStart = false;
+
+function keyToDate(key) {
+  const [y, m, d] = key.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function pastToggle(label, onClick) {
+  const pill = document.createElement('div');
+  pill.className = 'day-pill past-toggle';
+  pill.innerHTML = `<span class="past-toggle-icon">🕘</span><span class="past-toggle-label">${label}</span>`;
+  pill.addEventListener('click', () => {
+    onClick();
+    renderTimeline();
+  });
+  return pill;
+}
 
 export function renderTimeline() {
   const slider = document.getElementById('daysSlider');
@@ -12,6 +32,8 @@ export function renderTimeline() {
 
   const dayNames = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
   const daysToShow = [];
+  let hiddenPastDays = 0;
+  let pastEventDays = 0;
 
   // Recoger todas las fechas de eventos registrados
   const eventDates = [...new Set(state.events.map(e => e.date).filter(Boolean))].sort();
@@ -22,15 +44,22 @@ export function renderTimeline() {
       state.selectedDate = pickDefaultDate(eventDates);
     }
 
-    // Calcular rango abarcando desde el primer hasta el último día del evento/grupo (+ 1 día de margen a cada lado)
-    const [minY, minM, minD] = eventDates[0].split('-').map(Number);
-    const [maxY, maxM, maxD] = eventDates[eventDates.length - 1].split('-').map(Number);
+    // Rango: del primer al último día con eventos (+ 1 día de margen a cada lado). Sin el botón, desde hoy
+    // (o desde el día elegido, si se ha ido hacia atrás con las flechas).
+    const today = todayKey();
+    const from = state.selectedDate < today ? state.selectedDate : today;
+    pastEventDays = eventDates.filter(d => d < today).length;
 
-    const startObj = new Date(minY, minM - 1, minD);
+    const startObj = keyToDate(eventDates[0]);
     startObj.setDate(startObj.getDate() - 1);
+    if (!showPast && formatDateKey(startObj) < from) {
+      startObj.setTime(keyToDate(from).getTime());
+      hiddenPastDays = eventDates.filter(d => d < from).length;
+    }
 
-    const endObj = new Date(maxY, maxM - 1, maxD);
+    const endObj = keyToDate(eventDates[eventDates.length - 1]);
     endObj.setDate(endObj.getDate() + 1);
+    if (endObj < startObj) endObj.setTime(startObj.getTime());
 
     const curObj = new Date(startObj);
     while (curObj <= endObj) {
@@ -45,6 +74,21 @@ export function renderTimeline() {
       d.setDate(today.getDate() + i);
       daysToShow.push(d);
     }
+  }
+
+  if (hiddenPastDays > 0) {
+    slider.appendChild(pastToggle(
+      `Ver ${hiddenPastDays} ${hiddenPastDays === 1 ? 'día pasado' : 'días pasados'}`,
+      () => { showPast = true; scrollToStart = true; }
+    ));
+  } else if (showPast && pastEventDays > 0) {
+    slider.appendChild(pastToggle('Ocultar pasados', () => {
+      showPast = false;
+      if (state.selectedDate < todayKey()) {
+        state.selectedDate = pickDefaultDate([...new Set(state.events.map(e => e.date).filter(Boolean))].sort());
+        renderCards();
+      }
+    }));
   }
 
   daysToShow.forEach(dateObj => {
@@ -80,13 +124,18 @@ export function renderTimeline() {
 
     slider.appendChild(pill);
 
-    // Si es la píldora activa, centrarla en la vista del slider
-    if (isActive) {
+    // Si es la píldora activa, centrarla en la vista del slider (salvo recién abiertos los pasados: se ve el principio)
+    if (isActive && !scrollToStart) {
       setTimeout(() => {
         pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       }, 50);
     }
   });
+
+  if (scrollToStart) {
+    scrollToStart = false;
+    setTimeout(() => slider.scrollTo({ left: 0, behavior: 'smooth' }), 50);
+  }
 }
 
 export function changeDay(delta) {

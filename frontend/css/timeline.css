@@ -253,3 +253,25 @@
     font-size: 1.25rem;
   }
 }
+
+/* Botón para ver / ocultar los días pasados (la tira empieza en hoy) */
+.day-pill.past-toggle {
+  min-width: 96px;
+  justify-content: center;
+  gap: 0.3rem;
+  border-style: dashed;
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.day-pill.past-toggle .past-toggle-icon {
+  font-size: 1.1rem;
+}
+
+.day-pill.past-toggle .past-toggle-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 80px;
+}
