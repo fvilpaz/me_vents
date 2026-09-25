@@ -60,8 +60,17 @@ def match_space(text: str) -> Optional[Dict[str, Any]]:
     # De este modo, combinados largos (ej: 'estudio 2 + 3', 'pérgola terraza')
     # SIEMPRE se evalúan antes que componentes cortos ('estudio 2', 'terraza')
     all_alias_pairs = []
+    space_terms = {
+        t.get("id"): t
+        for t in JARGON_CONFIG.get("terms", [])
+        if t.get("category") == "espacios" and t.get("id")
+    }
     for space in spaces:
-        for alias in space.get("aliases", []):
+        aliases = set(space.get("aliases", []))
+        space_term = space_terms.get(space.get("id"))
+        if space_term:
+            aliases.update(space_term.get("aliases", []))
+        for alias in aliases:
             all_alias_pairs.append((alias.lower().strip(), space))
             
     all_alias_pairs.sort(key=lambda x: len(x[0]), reverse=True)
@@ -106,7 +115,7 @@ def match_services(text: str) -> List[Dict[str, Any]]:
     terms = JARGON_CONFIG.get("terms", [])
     
     for t in terms:
-        if t.get("category") == "montajes":
+        if t.get("category") in ("montajes", "espacios"):
             continue
         for alias in sorted(t.get("aliases", []), key=len, reverse=True):
             pattern = r'(?:^|\W)' + re.escape(alias) + r'(?:\W|$)'
@@ -514,6 +523,14 @@ def parse_multi_session_opera(raw_text: str, filename: Optional[str] = None) -> 
 
     block_id_match = re.search(r'Block ID:\s*([0-9]+)', raw_text)
     block_id = block_id_match.group(1).strip() if block_id_match else None
+    if block_id is None:
+        block_label = re.search(r'Block ID:\s*(?:\r?\n|$)', raw_text)
+        if block_label:
+            for line in raw_text[block_label.end():].splitlines()[:20]:
+                block_value = re.fullmatch(r'\s*([0-9]{3,})\s*', line)
+                if block_value:
+                    block_id = block_value.group(1)
+                    break
 
     pm_match = re.search(r'PM:\s*([0-9]+)', raw_text)
     pm = pm_match.group(1).strip() if pm_match else None

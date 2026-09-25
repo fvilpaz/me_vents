@@ -94,6 +94,14 @@
       "location": "Planta Baja Exterior"
     },
     {
+      "id": "ene",
+      "name": "Eñe",
+      "aliases": ["eñe", "ñ", "ene", "evento en eñe", "evento en ñ", "punto de venta eñe", "punto de venta ñ"],
+      "max_capacities": {},
+      "color_tag": "#f59e0b",
+      "location": "Punto de venta"
+    },
+    {
       "id": "terraza-pool-bar",
       "name": "Terraza Pool Bar / Rooftop",
       "aliases": ["terraza pool bar", "pool bar", "terraza", "rooftop", "zona pool bar", "sky bar", "ático"],

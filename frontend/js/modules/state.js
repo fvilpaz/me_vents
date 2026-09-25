@@ -22,6 +22,7 @@ export const DEFAULT_SPACES = [
   { id: "foyer", name: "Foyer", color_tag: "#d4af37", max_capacities: { coctel: 100, banquete: 50 } },
   { id: "multifuncional", name: "Multifuncional", color_tag: "#7b2cbf", max_capacities: { u_shape: 36, escuela: 90, teatro: 140, banquete: 100, coctel: 150 } },
   { id: "canitas-al-fresco", name: "Cañitas al Fresco", color_tag: "#2ec4b6", max_capacities: { coctel: 90, banquete: 60 } },
+  { id: "ene", name: "Eñe", color_tag: "#f59e0b", max_capacities: {} },
   { id: "terraza-rooftop", name: "Terraza / Rooftop", color_tag: "#e76f51", max_capacities: { coctel: 140, banquete: 70 } }
 ];
 

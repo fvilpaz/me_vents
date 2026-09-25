@@ -1,6 +1,7 @@
 {
   "categories": [
     { "id": "montajes", "label": "Montajes de Sala", "icon": "🏛️" },
+    { "id": "espacios", "label": "Salas y Espacios" },
     { "id": "fb", "label": "Alimentos & Bebidas (F&B)", "icon": "☕" },
     { "id": "av_equipamiento", "label": "Audiovisuales & Técnica (SSTT)", "icon": "📺" },
     { "id": "mobiliario_menaje", "label": "Mobiliario & Material", "icon": "🪑" },
@@ -15,6 +16,14 @@
       "definition": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas.",
       "operational_tip": "Sillas mirando al centro/frente. Dejar pasillo central despejado de al menos 1.5m. Regletas de corriente y cables ocultos de forma discreta.",
       "icon": "🏛️"
+    },
+    {
+      "id": "ene",
+      "term": "Eñe / Ñ",
+      "category": "espacios",
+      "aliases": ["eñe", "ñ", "ene", "evento en eñe", "evento en ñ", "punto de venta eñe", "punto de venta ñ"],
+      "definition": "Punto de venta Eñe de ME Málaga.",
+      "operational_tip": "Si una orden indica Eñe o Ñ, asignar el evento al espacio Eñe."
     },
     {
       "id": "workshop",

@@ -311,6 +311,7 @@ export function parseOrderClientSide(text, filename) {
     if (tLower.includes('multi') || tLower.includes('multifuncional')) matchedSpace = DEFAULT_SPACES.find(s => s.id === 'multifuncional');
     else if (tLower.includes('foyer')) matchedSpace = DEFAULT_SPACES.find(s => s.id === 'foyer');
     else if (tLower.includes('cañitas') || tLower.includes('canitas')) matchedSpace = DEFAULT_SPACES.find(s => s.id === 'canitas-al-fresco');
+    else if (tLower.includes('eñe') || tLower.includes('ene') || /(?:^|[\s:;,()\-])ñ(?:$|[\s:;,()\-])/.test(tLower)) matchedSpace = DEFAULT_SPACES.find(s => s.id === 'ene');
     else if (tLower.includes('terraza') || tLower.includes('rooftop')) matchedSpace = DEFAULT_SPACES.find(s => s.id === 'terraza-rooftop');
     else matchedSpace = DEFAULT_SPACES[0];
   }

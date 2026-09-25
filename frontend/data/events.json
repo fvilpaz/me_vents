@@ -1149,16 +1149,26 @@
     "source_pdf_url": "./data/beos/V.3 OS KEVIN MURPHY 19-25_09_2026.pdf"
   },
   {
-    "id": "evt-758425-2026-09-24-1630-multifuncional",
-    "title": "Casa Rrhh · Sala Multifuncional",
+    "id": "evt-758425-2026-09-24-1630-ene",
+    "title": "Casa Rrhh · Eñe",
     "date": "2026-09-24",
     "time_start": "16:30",
     "time_end": "17:30",
     "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja"
+      "id": "ene",
+      "name": "Eñe",
+      "aliases": [
+        "eñe",
+        "ñ",
+        "ene",
+        "evento en eñe",
+        "evento en ñ",
+        "punto de venta eñe",
+        "punto de venta ñ"
+      ],
+      "max_capacities": {},
+      "color_tag": "#f59e0b",
+      "location": "Punto de venta"
     },
     "setup": {
       "key": "estandar",

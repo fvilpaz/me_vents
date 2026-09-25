@@ -158,6 +158,7 @@ export function renderGlossaryTerms() {
 
   const categoryLabels = {
     montajes: "🧲 Montajes de Sala",
+    espacios: "Salas y Espacios",
     fb: "☕ Alimentos & Bebidas (F&B)",
     av_equipamiento: "📺 Audiovisuales & Técnica",
     mobiliario_menaje: "🪑 Mobiliario & Material",
