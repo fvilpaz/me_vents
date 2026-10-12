@@ -109,3 +109,29 @@ Una vez desacoplado el backend, las siguientes mejoras potenciarán el día a d�
 
 1. **Paso 1**: Probar con el equipo la versión actual en GitHub Pages (`https://fvilpaz.github.io/me_vents/`) para recoger su feedback de diseño, tamaño de letra y legibilidad en su teléfono real.
 2. **Paso 2**: Implementar la **Opción 1 (Render + Supabase)** o la **Opción 2 (Bot de Telegram)** para que no tengas que levantar localhost nunca más.
+
+---
+
+## 📎 Anexo: Operativa local (archivada, oct-2026)
+
+> Retirada por **protección de datos de clientes**: la app real ya no se ejecuta en este PC. El flujo
+> diario es la PWA de GitHub Pages con la demo, que se regenera sola vía la Action `procesar-os.yml`.
+> Se conserva aquí como referencia por si algún día se quiere recuperar la operativa 100% local.
+
+El antiguo acceso directo del Escritorio (`ME_VENTS.bat`) hacía exactamente esto:
+
+```bat
+@echo off
+title ME·VENTS - Servidor Local
+cd /d D:\Fernando\Coding\github\Me_vents
+start "" http://localhost:8000
+uvicorn backend.main:app --reload --port 8000
+```
+
+- **Requisitos**: `pip install -r backend/requirements.txt`
+- **Levanta** el backend FastAPI en `http://127.0.0.1:8000` (equivalente a la "Opción B" del README).
+- **OS de demo en local**:
+  ```bash
+  python -m backend.generar_demo --salida inbox
+  python -m backend.procesar_os --aplicar --consumir
+  ```

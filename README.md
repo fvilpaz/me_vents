@@ -43,28 +43,26 @@ Diseñada para el equipo de operaciones MICE de ME Málaga para procesar con pre
 
 ---
 
-## 🚀 Puesta en Marcha Rápida
+## 🚀 Puesta en Marcha
 
-### Opción A: Probar la PWA directamente en el navegador
-Puedes abrir directamente el archivo `frontend/index.html` en cualquier navegador web moderno o servir la carpeta `frontend/` con cualquier servidor HTTP ligero:
+La app está publicada como **PWA en GitHub Pages** y se actualiza sola:
+
+👉 **https://fvilpaz.github.io/me_vents/**
+
+No hace falta servidor ni instalación. La demo (órdenes de servicio **ficticias** de hoy a hoy+4) la regenera
+cada noche la GitHub Action [`procesar-os.yml`](.github/workflows/procesar-os.yml) y los datos viven en
+[`data/events.json`](data/events.json), que consume la PWA.
+
+Para verla solo en local, sin backend, sirve la carpeta `frontend/`:
 
 ```bash
-# Con Python
 python -m http.server 8000 --directory frontend
 ```
 
 Abre en tu navegador: [http://localhost:8000](http://localhost:8000)
 
-### Opción B: Ejecutar con el Backend FastAPI
-1. Instalar dependencias de Python:
-```bash
-pip install -r backend/requirements.txt
-```
-
-2. Arrancar el servidor Uvicorn:
-```bash
-uvicorn backend.main:app --reload --port 8000
-```
+> ⚠️ El servidor **local** con FastAPI y la ingesta de PDF reales está retirado por protección de datos de
+> clientes. Si algún día hiciera falta recuperarlo, está documentado en el anexo del [ROADMAP](ROADMAP.md).
 
 ---
 
