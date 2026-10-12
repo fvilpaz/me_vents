@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node / Web
+node_modules/
+dist/
+.cache/
+
+# Uploads temporales y PDFs de fuentes crudas
+uploads/
+temp/
+sources/
+
+# Ignorar PDFs generales pero permitir los PDFs de muestra de la app en data/beos y frontend/data/beos
+*.pdf
+!frontend/data/beos/*.pdf
+!frontend/data/beos/**
+!data/beos/*.pdf
+!data/beos/**
+# Bandeja de entrada de la Action "Procesar OS"
+!inbox/*.pdf
+
+backend/test_*.py
+backend/get_melia_logo.py
+frontend/assets/images/*_raw.*

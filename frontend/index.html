@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport-fit=cover: deja que env(safe-area-inset-*) respete la muesca del móvil (el CSS ya lo usa) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>ME·VENTS — ME Málaga MICE & Events Production</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Agenda operativa de montajes y órdenes de servicio (OS) para eventos MICE en ME by Meliá Málaga: salones, montajes, F&B y servicios técnicos.">
+  <meta name="author" content="Fernando Vilas Paz">
+  <link rel="canonical" href="https://fvilpaz.github.io/me_vents/frontend/">
+  <!-- Herramienta interna con datos de clientes: que los buscadores no la indexen (las vistas previas al compartir siguen funcionando) -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Telegram, redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ME·VENTS">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="ME·VENTS — ME Málaga MICE & Events Production">
+  <meta property="og:description" content="Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.">
+  <meta property="og:url" content="https://fvilpaz.github.io/me_vents/frontend/">
+  <meta property="og:image" content="https://fvilpaz.github.io/me_vents/frontend/assets/images/Logo_Me_dark.png">
+  <meta property="og:image:alt" content="Logo de ME Málaga">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ME·VENTS — ME Málaga MICE & Events Production">
+  <meta name="twitter:description" content="Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.">
+  <meta name="twitter:image" content="https://fvilpaz.github.io/me_vents/frontend/assets/images/Logo_Me_dark.png">
+
+  <!-- Color de la barra del navegador: se ajusta al tema (oscuro / claro) con el script de más abajo y con el botón de tema -->
+  <meta name="theme-color" content="#080b11">
+
+  <!-- App instalable (PWA) en Android / iOS -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ME·VENTS">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" href="./assets/images/Logo_Me_dark.png">
+  <link rel="apple-touch-icon" href="./assets/images/Logo_Me_dark.png">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ME·VENTS",
+    "description": "Agenda operativa de montajes y órdenes de servicio para eventos MICE en ME by Meliá Málaga.",
+    "url": "https://fvilpaz.github.io/me_vents/frontend/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "es"
+  }
+  </script>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css?v=3.4">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('me_vents_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      var tc = document.querySelector('meta[name="theme-color"]');
+      if (tc) tc.setAttribute('content', saved === 'light' ? '#0284c7' : '#080b11');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       APP HEADER & BRANDING
+       ========================================================================== -->
+  <header class="app-header">
+    <div class="header-container">
+      <!-- Izquierda (Arriba en retrato): Logo ME Málaga & ME·VENTS -->
+      <div class="brand-wrapper">
+        <img src="./assets/images/Logo_Me_dark.png" alt="ME Málaga" class="me-logo" id="brandLogo">
+        <div class="brand-divider" aria-hidden="true"></div>
+        <div class="brand-title-group">
+          <h1 class="brand-app-title">ME·VENTS</h1>
+          <div class="brand-tagline">MICE & Events Production</div>
+        </div>
+      </div>
+
+      <!-- Derecha: Logo Oficial Meliá Hotels International + Control Tema Executive ME -->
+      <div class="header-right-brand">
+        <img src="./assets/images/melia_hotels_international.svg" alt="Meliá Hotels International" class="melia-corp-logo">
+        <div class="header-brand-divider" aria-hidden="true"></div>
+        <button id="themeToggleBtn" class="theme-toggle-pill" type="button" aria-label="Cambiar tema Claro / Oscuro" title="Alternar entre modo oscuro y claro">
+          <span class="theme-pill-slider" aria-hidden="true"></span>
+          <span class="theme-pill-opt opt-dark" title="Modo Oscuro">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-pill-opt opt-light" title="Modo Claro">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- Overview Bar & Stats -->
+    <section class="overview-bar">
+      <div class="stats-summary">
+        <div class="stat-item">
+          <div class="stat-val" id="todayTotalCount">0 <span>montajes</span></div>
+          <div class="stat-label">Programados hoy</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="todayPaxCount">0 <span>pax</span></div>
+          <div class="stat-label">Asistentes totales</div>
+        </div>
+      </div>
+
+      <div class="overview-actions">
+        <button class="header-secondary-btn btn-clear-agenda" id="clearAllBtn" title="Limpiar todos los eventos de la agenda">
+          <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18m-2 0v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6m3 0V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+            <line x1="10" y1="11" x2="10" y2="17"/>
+            <line x1="14" y1="11" x2="14" y2="17"/>
+          </svg>
+          <span>Limpiar</span>
+        </button>
+        <button class="header-secondary-btn" id="openGlossaryBtn" title="Glosario operativo">
+          <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+            <path d="M6 6h10"/>
+            <path d="M6 10h7"/>
+          </svg>
+          <span>Glosario</span>
+        </button>
+        <button class="header-action-btn" id="openModalBtn">
+          <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          <span>Nueva Orden (OS)</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Day Timeline & Touch Navigation -->
+    <section class="day-timeline-section">
+      <div class="timeline-nav-header">
+        <div class="timeline-title">
+          <span>📅</span> Agenda de Montajes
+        </div>
+        <div class="timeline-arrows">
+          <button class="nav-arrow-btn" id="prevDayBtn" title="Día anterior" aria-label="Día anterior">◀</button>
+          <button class="nav-arrow-btn" id="nextDayBtn" title="Día siguiente" aria-label="Día siguiente">▶</button>
+        </div>
+      </div>
+
+      <!-- Horizontal Days Slider -->
+      <div class="days-slider" id="daysSlider">
+        <!-- Renderizado dinámico desde app.js -->
+      </div>
+    </section>
+
+    <!-- Filter & Search Bar -->
+    <section class="controls-bar">
+      <div class="search-box-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Buscar cliente, salón o tipo de montaje...">
+      </div>
+
+      <div class="filter-pills" id="spaceFilterPills">
+        <!-- Colores = color_tag de config/hotel_spaces.json (los mismos que las tarjetas) -->
+        <button class="filter-chip active" data-space="all">Todos los espacios</button>
+        <button class="filter-chip" data-space="multifuncional" style="--chip-color:#7b2cbf">Multifuncional</button>
+        <button class="filter-chip" data-space="estudio-1" style="--chip-color:#0080ff">Estudio 1</button>
+        <button class="filter-chip" data-space="estudio-2" style="--chip-color:#00b4d8">Estudio 2</button>
+        <button class="filter-chip" data-space="estudio-3" style="--chip-color:#48cae4">Estudio 3</button>
+        <button class="filter-chip" data-space="estudio-4" style="--chip-color:#90e0ef">Estudio 4</button>
+        <button class="filter-chip" data-space="estudio-5" style="--chip-color:#0077b6">Estudio 5</button>
+        <button class="filter-chip" data-space="foyer" style="--chip-color:#d4af37">Foyer</button>
+        <button class="filter-chip" data-space="canitas-al-fresco" style="--chip-color:#2ec4b6">Cañitas al Fresco</button>
+        <button class="filter-chip" data-space="terraza-pool-bar" style="--chip-color:#e76f51">Terraza / Rooftop</button>
+        <button class="filter-chip" data-space="pergola" style="--chip-color:#ff9f1c">Pérgola</button>
+        <button class="filter-chip" data-space="ene" style="--chip-color:#f59e0b">Eñe</button>
+      </div>
+    </section>
+
+
+    <section class="swipe-container" id="swipeContainer">
+      <div class="cards-grid" id="cardsContainer">
+        <!-- Cards inyectadas por app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Action Button (Mobile) -->
+  <button class="fab-btn" id="fabBtn" title="Añadir Orden de Servicio (OS)" aria-label="Añadir Orden de Servicio (OS)">+</button>
+
+  <!-- ==========================================================================
+       MODAL: SUBIR OS / PROCESAR CON INTELIGENCIA ARTIFICIAL (DUAL: PDF + TEXTO)
+       ========================================================================== -->
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal-box modal-box-medium">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>⚡</span> Cargar Orden de Servicio (OS)
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Cerrar modal">&times;</button>
+      </div>
+
+      <!-- Selector de Método: PDF o Texto Plano -->
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tabUploadPdfBtn" type="button">📄 Archivo PDF</button>
+        <button class="modal-tab-btn" id="tabUploadTextBtn" type="button">📝 Pegar Texto Plano</button>
+      </div>
+
+      <!-- Panel 1: Subida de PDF -->
+      <div class="upload-panel active" id="panelPdf">
+        <div class="dropzone" id="dropzone">
+          <div class="dropzone-icon">📥</div>
+          <div class="dropzone-label">Arrastra tu PDF o pulsa para examinar</div>
+          <div class="dropzone-sub">Soporta órdenes de servicio (OS) en PDF de Opera Sales & Catering</div>
+          <input type="file" id="fileInput" accept="application/pdf,image/*" style="display: none;">
+        </div>
+
+        <div class="quick-text-section" style="margin-top: 0.85rem;">
+          <label class="quick-text-label" for="pdfAdditionalNotes">Notas adicionales o correcciones manuales (opcional):</label>
+          <textarea id="pdfAdditionalNotes" class="quick-text-input" style="min-height: 55px;" placeholder="Ej: Prever 1 celíaco y Alex Gold alérgico a lácteos grave..."></textarea>
+        </div>
+      </div>
+
+      <!-- Panel 2: Pegar Texto Plano de OS -->
+      <div class="upload-panel" id="panelText" style="display: none;">
+        <div class="quick-text-section" style="margin-top: 0;">
+          <label class="quick-text-label" for="quickTextInput">
+            Pega aquí el texto copiado de Opera o de la OS (Ctrl+A ➔ Ctrl+C):
+          </label>
+          <textarea id="quickTextInput" class="quick-text-input" style="min-height: 180px; font-family: monospace; font-size: 0.8rem; line-height: 1.4;" placeholder="Pega el texto completo de la OS aquí... Incluyendo datos de sala, montaje, horarios, menús o alérgenos."></textarea>
+        </div>
+      </div>
+
+      <button class="modal-submit-btn" id="processOrderBtn">
+        <span>✨</span> Procesar e Integrar en Agenda
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: VISOR DE PDF ORIGINAL (OS OPERA) CON LUPA
+       ========================================================================== -->
+  <div class="modal-overlay" id="pdfViewerModal">
+    <div class="modal-box modal-box-pdf">
+      <div class="modal-header">
+        <div class="modal-title" id="pdfViewerTitle">
+          <span>📄🔍</span> Visor de OS Original
+        </div>
+        <div class="modal-header-actions">
+          <a id="pdfOpenNewTabBtn" href="#" target="_blank" rel="noopener noreferrer" class="modal-action-btn" title="Abrir en pestaña completa">
+            <span>↗️</span> Pantalla completa
+          </a>
+          <button class="modal-close-btn" id="closePdfModalBtn" aria-label="Cerrar visor PDF">&times;</button>
+        </div>
+      </div>
+      <div class="pdf-viewer-container">
+        <div class="pdf-mobile-hint">
+          <span>📱 En dispositivos móviles:</span>
+          <a id="pdfMobileOpenBtn" href="#" target="_blank" rel="noopener noreferrer" class="pdf-mobile-link">
+            <span>↗️</span> Abrir PDF original a pantalla completa
+          </a>
+        </div>
+        <iframe id="pdfViewerFrame" src="" title="Visor de Orden de Servicio (OS)" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: AVISO DOCUMENTO PDF NO SUBIDO
+       ========================================================================== -->
+  <div class="modal-overlay" id="noPdfNoticeModal">
+    <div class="modal-box modal-box-small">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📄⚠️</span> Documento OS no disponible
+        </div>
+        <button class="modal-close-btn" id="closeNoPdfNoticeBtn" aria-label="Cerrar aviso">&times;</button>
+      </div>
+      <div class="notice-body">
+        <p class="notice-main-text" id="noPdfNoticeText">
+          No se ha subido ningún archivo PDF para esta orden de servicio.
+        </p>
+        <p class="notice-sub-text">
+          Para poder visualizar el documento original de Opera con zoom y navegación en el visor, añade el archivo PDF correspondiente.
+        </p>
+      </div>
+      <div class="modal-actions-footer">
+        <button class="modal-secondary-btn" id="cancelNoPdfNoticeBtn" type="button">Cerrar</button>
+        <button class="modal-primary-btn" id="openUploadFromNoticeBtn" type="button">
+          <span>📥</span> Añadir PDF ahora
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: GLOSARIO Y DICCIONARIO OPERATIVO DE SALA
+       ========================================================================== -->
+  <div class="modal-overlay" id="glossaryModal">
+    <div class="modal-box modal-box-large">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📖</span> Glosario & Jerga de Eventos (ME Málaga)
+        </div>
+        <button class="modal-close-btn" id="closeGlossaryBtn" aria-label="Cerrar glosario">&times;</button>
+      </div>
+
+      <!-- Buscador interno del Glosario -->
+      <div class="search-box-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="glossarySearchInput" placeholder="Buscar término (ej: U-Shape, CB, AURA, Taburete, Flipchart...)">
+      </div>
+
+      <!-- Píldoras de Categoría del Glosario -->
+      <div class="filter-pills" id="glossaryCategoryPills">
+        <button class="filter-chip active" data-cat="all">Todos</button>
+        <button class="filter-chip" data-cat="montajes">🏛️ Montajes de Sala</button>
+        <button class="filter-chip" data-cat="espacios">Salas y Espacios</button>
+        <button class="filter-chip" data-cat="fb">☕ F&B (Alimentos y Bebidas)</button>
+        <button class="filter-chip" data-cat="av_equipamiento">📺 Audiovisuales (SSTT)</button>
+        <button class="filter-chip" data-cat="mobiliario_menaje">🪑 Mobiliario</button>
+        <button class="filter-chip" data-cat="protocolo_hotel">🏨 Protocolo Opera</button>
+      </div>
+
+      <!-- Lista de Términos -->
+      <div class="glossary-terms-container" id="glossaryTermsContainer">
+        <!-- Inyectado dinámicamente -->
+      </div>
+
+      <!-- Formulario para Añadir Nuevo Término -->
+      <div class="add-term-accordion">
+        <button class="accordion-toggle" id="toggleAddTermForm">
+          <span>➕ ¿Falta una palabra o abreviatura? Añadir nuevo término</span>
+          <span class="acc-icon">▼</span>
+        </button>
+        <form class="accordion-body add-term-form" id="newTermForm">
+          <div class="form-row">
+            <input type="text" id="newTermName" class="modal-input" placeholder="Nombre del término (ej: Coffee Break VIP)" required>
+            <select id="newTermCategory" class="modal-select" required>
+              <option value="montajes">🏛️ Montajes de Sala</option>
+              <option value="espacios">Salas y Espacios</option>
+              <option value="fb">☕ F&B</option>
+              <option value="av_equipamiento">📺 Audiovisuales</option>
+              <option value="mobiliario_menaje">🪑 Mobiliario</option>
+              <option value="protocolo_hotel">🏨 Protocolo</option>
+            </select>
+          </div>
+          <input type="text" id="newTermAliases" class="modal-input" placeholder="Abreviaturas o sinónimos separados por coma (ej: cb vip, coffee vip, cbv)">
+          <textarea id="newTermDefinition" class="modal-input" placeholder="Definición o descripción de qué es..." rows="2" required></textarea>
+          <input type="text" id="newTermTip" class="modal-input" placeholder="Consejo operativo de montaje o regla de sala (opcional)">
+          <button type="submit" class="modal-submit-btn">💾 Guardar en el Glosario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-tagline">MICE & Events Production</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-hotel">ME Málaga</span>
+      </div>
+      <div class="footer-developer">
+        <a href="https://fvilpaz.github.io/cv/" target="_blank" rel="noopener noreferrer" class="footer-author-pill" title="Fernando Vilas Paz — Software Architecture & Engineering">
+          <span class="author-spark">✦</span>
+          <span class="author-name">Fernando Vilas Paz</span>
+        </a>
+        <div class="dev-links">
+          <a href="https://fvilpaz.github.io/cv/" target="_blank" rel="noopener noreferrer" class="footer-link" title="Currículum Vitae">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>CV</span>
+          </a>
+          <a href="https://www.linkedin.com/in/fernando-vilas-paz-1626901a9" target="_blank" rel="noopener noreferrer" class="footer-link" title="LinkedIn">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/fvilpaz" target="_blank" rel="noopener noreferrer" class="footer-link" title="GitHub">
+            <svg class="footer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modular Scripts (ES Modules) -->
+  <script type="module" src="./js/app.js?v=2.2"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+          reg.update();
+        }).catch(err => console.log('SW no registrado:', err));
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,686 @@
+/* ==========================================================================
+   ME_VENTS - CARDS & OPERATIONAL BREAKDOWN (OVERFLOW-PROOF)
+   ========================================================================== */
+
+.swipe-container {
+  touch-action: pan-y;
+  position: relative;
+  min-height: 320px;
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  align-items: start;
+}
+
+/* Event Card */
+.event-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.event-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0, 128, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.salon-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid currentColor;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.time-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+/* Móvil: hora y botón de la OS en columna. Uno junto al otro se veían descompensados (chip pequeño al lado de un
+   botón grande). width:100% además los baja de la etiqueta del salón, que queda sola en su fila. */
+@media (max-width: 600px) {
+  .card-top-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+.btn-view-pdf {
+  background: rgba(0, 128, 255, 0.08);
+  border: 1px solid rgba(0, 128, 255, 0.28);
+  border-radius: var(--radius-sm);
+  color: #60a5fa;
+  font-size: 0.73rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-view-pdf:hover {
+  background: rgba(0, 128, 255, 0.2);
+  border-color: #3b82f6;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 128, 255, 0.35);
+}
+
+/* Botón de la OS oficial: es el documento de referencia (los datos de la tarjeta son un resumen automático),
+   así que va en dorado Meliá y con más peso que el resto de etiquetas de la fila */
+.btn-view-pdf.has-pdf {
+  background: var(--melia-gold-soft);
+  border: 1px solid var(--melia-gold);
+  color: var(--melia-gold);
+  font-size: 0.76rem;
+  padding: 0.28rem 0.7rem;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.12), 0 2px 10px rgba(212, 175, 55, 0.12);
+}
+
+/* El efecto al pasar el ratón solo en dispositivos con ratón: en táctil el :hover se queda "pegado" tras tocar */
+@media (hover: hover) {
+  .btn-view-pdf.has-pdf:hover {
+    background: var(--melia-gold);
+    border-color: var(--melia-gold);
+    color: #1a1408;
+    box-shadow: 0 3px 12px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Táctil (pointer: coarse): objetivo de toque cómodo (~40 px de alto; las guías de Apple y Material piden 44-48) */
+@media (pointer: coarse) {
+  .btn-view-pdf,
+  .btn-view-pdf.has-pdf {
+    min-height: 40px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Revisión de la OS (V.1, V.2, V.3…): chip con borde, hereda el color del botón */
+.os-ver {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.04rem 0.32rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  line-height: 1.2;
+}
+
+/* Aviso justo debajo del botón de la OS y antes de los datos: hay que leerlo antes de fiarse del resumen.
+   La barra dorada lo une visualmente al botón. */
+.os-source-note {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0.2rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--melia-gold);
+}
+
+.os-source-note strong {
+  color: var(--melia-gold);
+  font-weight: 700;
+}
+
+.btn-view-pdf.no-pdf {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: var(--text-secondary);
+}
+
+.btn-view-pdf.no-pdf:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Banner Destacado de Alérgenos & Intolerancias */
+.dietary-alert-banner {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(239, 68, 68, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  border-left: 4px solid #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.08);
+}
+
+.dietary-alert-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dietary-alert-icon {
+  font-size: 0.95rem;
+}
+
+.dietary-alert-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fbbf24;
+}
+
+.dietary-alert-content {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #fef3c7;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.event-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Badges Row */
+.badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.badge-setup {
+  background: rgba(0, 128, 255, 0.12);
+  color: var(--me-cyan);
+  border: 1px solid rgba(0, 128, 255, 0.3);
+}
+
+.badge-pax {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: 1px solid var(--border-subtle);
+}
+
+.badge-fb {
+  background: var(--melia-gold-soft);
+  color: #e5c982;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.badge-eq {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Accordion Operational Breakdown */
+.operational-accordion {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.85rem;
+  width: 100%;
+}
+
+.accordion-toggle {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 0.65rem 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-toggle:hover {
+  background: rgba(0, 128, 255, 0.08);
+  border-color: rgba(0, 128, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.accordion-toggle.open {
+  background: rgba(0, 128, 255, 0.14);
+  border-color: rgba(0, 128, 255, 0.45);
+  color: #38bdf8;
+  box-shadow: 0 0 14px rgba(0, 128, 255, 0.2);
+}
+
+.acc-icon {
+  font-size: 0.72rem;
+  opacity: 0.85;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-toggle.open .acc-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  display: none;
+  padding-top: 0.65rem;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.accordion-body.open {
+  display: flex;
+}
+
+.furniture-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+@media (max-width: 340px) {
+  .furniture-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.metric-label {
+  font-size: 0.66rem;
+  color: var(--text-secondary);
+}
+
+.timing-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.timing-row span strong {
+  color: var(--text-primary);
+}
+
+/* Rich Operational Breakdown Blocks */
+.op-layout-summary {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 128, 255, 0.15);
+  border: 1px solid rgba(0, 128, 255, 0.35);
+  padding: 0.4rem 0.65rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.op-detail-block {
+  background: rgba(10, 14, 22, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.op-detail-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+}
+
+.op-montaje::before { background: var(--me-blue, #0080ff); }
+.op-sstt::before { background: #a855f7; }
+.op-fb::before { background: #d4af37; }
+.op-pisos::before { background: #10b981; }
+.op-menu::before { background: #f59e0b; }
+
+.op-detail-header {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.op-montaje .op-detail-header { color: #38bdf8; }
+.op-sstt .op-detail-header { color: #c084fc; }
+.op-fb .op-detail-header { color: #facc15; }
+.op-pisos .op-detail-header { color: #34d399; }
+.op-menu .op-detail-header { color: #fbbf24; }
+
+.multiday-badge {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.55rem;
+  font-size: 0.72rem;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.55rem;
+  width: 100%;
+}
+
+.multiday-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #38bdf8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.multiday-icon {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.multiday-day {
+  white-space: nowrap;
+}
+
+.multiday-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  color: #bae6fd;
+  font-weight: 500;
+}
+
+.multiday-sep {
+  color: rgba(56, 189, 248, 0.6);
+  font-weight: 700;
+}
+
+.multiday-name {
+  font-weight: 600;
+  color: #e0f2fe;
+}
+
+.multiday-dates {
+  color: #7dd3fc;
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+/* Fin de servicios del grupo: misma forma que .multiday-badge pero en dorado Meliá (tokens: vale en claro y oscuro) */
+.group-end-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--melia-gold-soft);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--melia-gold);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.55rem;
+  width: 100%;
+}
+
+.group-end-icon {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.op-menu-content {
+  font-size: 0.73rem;
+  line-height: 1.5;
+  color: #f1f5f9;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.op-detail-content {
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: #e2e8f0;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.op-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 0.25rem;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.op-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-xs, 4px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.op-tag strong {
+  color: #f1f5f9;
+}
+
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.setup-check-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  min-height: 38px;
+  user-select: none;
+  touch-action: manipulation;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.setup-check-label:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.setup-check-input {
+  accent-color: var(--me-blue);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.del-card-btn {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  touch-action: manipulation;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.del-card-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+  transform: translateY(-1px);
+}
+
+/* Empty State */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3.5rem 1.25rem;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  opacity: 0.6;
+}
+
+.empty-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.empty-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  max-width: 380px;
+  line-height: 1.45;
+}

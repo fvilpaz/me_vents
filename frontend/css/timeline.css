@@ -1,0 +1,283 @@
+/* ==========================================================================
+   ME_VENTS - DAY TIMELINE, SEARCH & FILTERS (TOUCH & SNAP OPTIMIZED)
+   ========================================================================== */
+
+.day-timeline-section {
+  position: relative;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.timeline-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.timeline-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.timeline-arrows {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav-arrow-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-arrow-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--me-blue);
+  background: rgba(0, 128, 255, 0.1);
+}
+
+/* Horizontal Days Slider */
+.days-slider {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding: 0.5rem;
+  padding: 0.2rem 0.2rem 0.5rem;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.days-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.day-pill {
+  flex: 0 0 auto;
+  min-width: 112px;
+  scroll-snap-align: start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  user-select: none;
+}
+
+.day-pill:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.day-pill.active {
+  background: linear-gradient(180deg, rgba(0, 128, 255, 0.25) 0%, rgba(15, 20, 32, 0.9) 100%);
+  border-color: var(--me-blue);
+  box-shadow: 0 0 16px var(--me-blue-glow);
+}
+
+.day-pill .day-name {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.day-pill.active .day-name {
+  color: var(--me-cyan);
+}
+
+.day-pill .day-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0.2rem 0;
+  color: var(--text-primary);
+}
+
+.day-pill .event-indicator {
+  font-size: 0.62rem;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.day-pill.active .event-indicator {
+  background: var(--me-blue);
+  color: white;
+}
+
+/* Controls Bar (Search & Filter) */
+.controls-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.search-box-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 16px; /* Previene auto-zoom molesto en iOS Safari */
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    font-size: 0.9rem;
+  }
+}
+
+.search-input:focus {
+  border-color: var(--me-blue);
+  box-shadow: 0 0 14px var(--me-blue-glow);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  padding: 0.1rem 0.2rem 0.35rem;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.filter-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  flex: 0 0 auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.filter-chip:hover {
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-chip.active {
+  background: rgba(0, 128, 255, 0.15);
+  border-color: var(--me-blue);
+  color: var(--me-cyan);
+}
+
+@media (max-width: 480px) {
+  .day-pill {
+    min-width: 92px;
+    padding: 0.6rem 0.5rem;
+  }
+  .day-pill .day-name {
+    font-size: 0.68rem;
+  }
+  .day-pill .day-number {
+    font-size: 1.25rem;
+  }
+}
+
+/* Botón para ver / ocultar los días pasados (la tira empieza en hoy) */
+.day-pill.past-toggle {
+  min-width: 96px;
+  justify-content: center;
+  gap: 0.3rem;
+  border-style: dashed;
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.day-pill.past-toggle .past-toggle-icon {
+  font-size: 1.1rem;
+}
+
+.day-pill.past-toggle .past-toggle-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 80px;
+}
+
+/* Cada espacio con su color (--chip-color en index.html): punto siempre, chip teñido si está activo */
+.filter-chip[style*="--chip-color"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-chip[style*="--chip-color"]::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--chip-color);
+  flex: 0 0 auto;
+}
+
+.filter-chip[style*="--chip-color"]:hover {
+  border-color: var(--chip-color);
+}
+
+.filter-chip[style*="--chip-color"].active {
+  background: color-mix(in srgb, var(--chip-color) 18%, transparent);
+  border-color: var(--chip-color);
+  color: var(--text-primary);
+}
