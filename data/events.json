@@ -1,93 +1,5 @@
 [
   {
-    "id": "evt-92610130-2026-10-13-0930-multifuncional",
-    "title": "Reunion Pinar Alto Editorial · Sala Multifuncional",
-    "date": "2026-10-13",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 14,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Pinar Alto Editorial",
-      "date_start": "2026-10-13",
-      "date_end": "2026-10-13",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 14 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 14 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 14 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610130",
-    "pm": null,
-    "source_file": "OS REUNION PINAR ALTO EDITORIAL 13_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION PINAR ALTO EDITORIAL 13_10_2026.pdf"
-  },
-  {
     "id": "evt-92610139-2026-10-13-0930-estudio-2-3",
     "title": "Grupo Norte Sur Seguros · Estudio 2 + 3",
     "date": "2026-10-13",
@@ -165,84 +77,6 @@
     "pm": null,
     "source_file": "OS GRUPO NORTE SUR SEGUROS 13-15_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 13-15_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610132-2026-10-13-1400-terraza-pool-bar",
-    "title": "Almuerzo Casa Jazmín Eventos · Terraza Pool Bar / Rooftop",
-    "date": "2026-10-13",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Casa Jazmín Eventos",
-      "date_start": "2026-10-13",
-      "date_end": "2026-10-13",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 38 Pax\n- Tarta de queso con mermelada de higos\n- Crema fría de melón con jamón\n- Presa a la brasa con verduras asadas\n- Tosta de salmorejo y bonito",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610132",
-    "pm": null,
-    "source_file": "OS ALMUERZO CASA JAZMÍN EVENTOS 13_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO CASA JAZMÍN EVENTOS 13_10_2026.pdf"
   },
   {
     "id": "evt-92610139-2026-10-13-1400-canitas-al-fresco",
@@ -324,80 +158,6 @@
     "pm": null,
     "source_file": "OS GRUPO NORTE SUR SEGUROS 13-15_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 13-15_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610131-2026-10-13-2100-canitas-al-fresco",
-    "title": "Cena Cobalto Energía · Cañitas al Fresco",
-    "date": "2026-10-13",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 26,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Cobalto Energía",
-      "date_start": "2026-10-13",
-      "date_end": "2026-10-13",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 26 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 26 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 26 Pax\n- Tarta de queso con mermelada de higos\n- Gazpacho de tomate rosa\n- Tosta de salmorejo y bonito\n- Arroz meloso de verduras de temporada\n- Crema fría de melón con jamón",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610131",
-    "pm": null,
-    "source_file": "OS CENA COBALTO ENERGÍA 13_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA COBALTO ENERGÍA 13_10_2026.pdf"
   },
   {
     "id": "evt-92610140-2026-10-14-0930-estudio-2-3",
@@ -1972,6 +1732,92 @@
     "source_pdf_url": "./data/beos/OS CENA PINAR ALTO EDITORIAL 17_10_2026.pdf"
   },
   {
+    "id": "evt-92610182-2026-10-18-0930-estudio-2",
+    "title": "Reunion Estrella Polar Viajes · Estudio 2",
+    "date": "2026-10-18",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 31,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Estrella Polar Viajes",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 31 pax",
+      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 31 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610182",
+    "pm": null,
+    "source_file": "OS REUNION ESTRELLA POLAR VIAJES 18_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION ESTRELLA POLAR VIAJES 18_10_2026.pdf"
+  },
+  {
     "id": "evt-92610169-2026-10-18-0930-multifuncional",
     "title": "Grupo Estrella Polar Viajes · Sala Multifuncional",
     "date": "2026-10-18",
@@ -2132,5 +1978,147 @@
     "pm": null,
     "source_file": "OS GRUPO ESTRELLA POLAR VIAJES 16-18_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO ESTRELLA POLAR VIAJES 16-18_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610180-2026-10-18-1930-terraza-pool-bar",
+    "title": "Coctel Fundación Horizonte · Terraza Pool Bar / Rooftop",
+    "date": "2026-10-18",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 17,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Fundación Horizonte",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (17 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 17 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 17 Pax\n- Presa a la brasa con verduras asadas\n- Arroz meloso de verduras de temporada\n- Lubina a la plancha con verduras",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610180",
+    "pm": null,
+    "source_file": "OS COCTEL FUNDACIÓN HORIZONTE 18_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL FUNDACIÓN HORIZONTE 18_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610181-2026-10-18-2100-terraza-pool-bar",
+    "title": "Cena Faro Nuevo Medios · Terraza Pool Bar / Rooftop",
+    "date": "2026-10-18",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 28,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Faro Nuevo Medios",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 28 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 28 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 28 Pax\n- Crema fría de melón con jamón\n- Merluza al horno con salsa verde\n- Croquetas caseras de puchero\n- Tosta de salmorejo y bonito\n- Gazpacho de tomate rosa",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610181",
+    "pm": null,
+    "source_file": "OS CENA FARO NUEVO MEDIOS 18_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA FARO NUEVO MEDIOS 18_10_2026.pdf"
   }
 ]
