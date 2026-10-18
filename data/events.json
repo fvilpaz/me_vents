@@ -162,92 +162,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO ESTRELLA POLAR VIAJES 16-18_10_2026.pdf"
   },
   {
-    "id": "evt-92610171-2026-10-17-0930-estudio-2-3",
-    "title": "Reunion Delta Sur Motor · Estudio 2 + 3",
-    "date": "2026-10-17",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
-      "aliases": [
-        "estudio 2 + 3",
-        "estudios 2 + 3",
-        "estudio 2+3",
-        "estudios 2+3",
-        "estudio 2 y 3"
-      ],
-      "area_m2": 90,
-      "max_capacities": {
-        "u_shape": 26,
-        "escuela": 45,
-        "teatro": 65,
-        "banquete": 40,
-        "coctel": 65,
-        "imperial": 24
-      },
-      "color_tag": "#0284c7",
-      "location": "Planta 1 (Panelable)"
-    },
-    "setup": {
-      "key": "teatro",
-      "label": "Teatro (Auditorio)",
-      "icon": "🎭",
-      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
-    },
-    "pax": 14,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Delta Sur Motor",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-17",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 14 pax",
-      "montaje_notes": "Montaje Teatro (Auditorio) para 14 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 14 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610171",
-    "pm": null,
-    "source_file": "OS REUNION DELTA SUR MOTOR 17_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION DELTA SUR MOTOR 17_10_2026.pdf"
-  },
-  {
     "id": "evt-92610169-2026-10-17-0930-estudio-3",
     "title": "Grupo Estrella Polar Viajes · Estudio 3",
     "date": "2026-10-17",
@@ -406,151 +320,6 @@
     "pm": null,
     "source_file": "OS GRUPO ESTRELLA POLAR VIAJES 16-18_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO ESTRELLA POLAR VIAJES 16-18_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610172-2026-10-17-1930-terraza-pool-bar",
-    "title": "Coctel Delta Sur Motor · Terraza Pool Bar / Rooftop",
-    "date": "2026-10-17",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "reunion",
-      "label": "Reunión MICE",
-      "icon": "💼",
-      "description": "Montaje de sala ejecutiva para reunión de trabajo"
-    },
-    "pax": 37,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Delta Sur Motor",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-17",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala ejecutiva (37 pax)",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 37 Pax\n- Tosta de salmorejo y bonito\n- Arroz meloso de verduras de temporada\n- Presa a la brasa con verduras asadas",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610172",
-    "pm": null,
-    "source_file": "OS COCTEL DELTA SUR MOTOR 17_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL DELTA SUR MOTOR 17_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610170-2026-10-17-2100-canitas-al-fresco",
-    "title": "Cena Pinar Alto Editorial · Cañitas al Fresco",
-    "date": "2026-10-17",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 14,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Pinar Alto Editorial",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-17",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 14 pax",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 14 Pax\n- Croquetas caseras de puchero\n- Merluza al horno con salsa verde\n- Ensalada templada de queso de cabra y frutos rojos\n- Solomillo ibérico con puré de patata\n- Gazpacho de tomate rosa",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610170",
-    "pm": null,
-    "source_file": "OS CENA PINAR ALTO EDITORIAL 17_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA PINAR ALTO EDITORIAL 17_10_2026.pdf"
   },
   {
     "id": "evt-92610182-2026-10-18-0930-estudio-2",
@@ -2132,5 +1901,717 @@
     "pm": null,
     "source_file": "OS CENA COBALTO ENERGÍA 21_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS CENA COBALTO ENERGÍA 21_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610222-2026-10-22-0930-multifuncional",
+    "title": "Reunion Bahía Azul Congresos · Sala Multifuncional",
+    "date": "2026-10-22",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 9,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-22",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 9 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 9 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 9 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610222",
+    "pm": null,
+    "source_file": "OS REUNION BAHÍA AZUL CONGRESOS 22_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION BAHÍA AZUL CONGRESOS 22_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-22-0930-estudio-2-3",
+    "title": "Grupo Bahía Azul Congresos · Estudio 2 + 3",
+    "date": "2026-10-22",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "Montaje Teatro (Auditorio) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 25 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-22-1400-canitas-al-fresco",
+    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "date": "2026-10-22",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 25 Pax\n- Tarta de queso con mermelada de higos\n- Merluza al horno con salsa verde\n- Arroz meloso de verduras de temporada\n- Croquetas caseras de puchero\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92610229\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610221-2026-10-22-1930-terraza-pool-bar",
+    "title": "Coctel Bahía Azul Congresos · Terraza Pool Bar / Rooftop",
+    "date": "2026-10-22",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 27,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-22",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (27 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 27 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 27 Pax\n- Tosta de salmorejo y bonito\n- Crema fría de melón con jamón\n- Arroz meloso de verduras de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610221",
+    "pm": null,
+    "source_file": "OS COCTEL BAHÍA AZUL CONGRESOS 22_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL BAHÍA AZUL CONGRESOS 22_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610220-2026-10-22-2100-terraza-pool-bar",
+    "title": "Cena Bahía Azul Congresos · Terraza Pool Bar / Rooftop",
+    "date": "2026-10-22",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 38,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-22",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 38 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 38 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 38 Pax\n- Croquetas caseras de puchero\n- Ensalada templada de queso de cabra y frutos rojos\n- Helado de yogur con fruta fresca\n- Solomillo ibérico con puré de patata\n- Tosta de salmorejo y bonito",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610220",
+    "pm": null,
+    "source_file": "OS CENA BAHÍA AZUL CONGRESOS 22_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA BAHÍA AZUL CONGRESOS 22_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-23-0930-multifuncional",
+    "title": "Grupo Bahía Azul Congresos · Sala Multifuncional",
+    "date": "2026-10-23",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 25 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-23-1400-canitas-al-fresco",
+    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "date": "2026-10-23",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 25 Pax\n- Croquetas caseras de puchero\n- Arroz meloso de verduras de temporada\n- Helado de yogur con fruta fresca\n- Solomillo ibérico con puré de patata\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92610229\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-24-0930-estudio-3",
+    "title": "Grupo Bahía Azul Congresos · Estudio 3",
+    "date": "2026-10-24",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "aliases": [
+        "estudio 3",
+        "estudio3",
+        "study 3",
+        "sala estudio 3",
+        "e3"
+      ],
+      "area_m2": 50,
+      "max_capacities": {
+        "u_shape": 18,
+        "escuela": 28,
+        "teatro": 40,
+        "banquete": 24,
+        "coctel": 40,
+        "imperial": 16
+      },
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 25 pax",
+      "montaje_notes": "Montaje Forma U (U-Shape) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 25 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
+  },
+  {
+    "id": "evt-92610229-2026-10-24-1400-canitas-al-fresco",
+    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "date": "2026-10-24",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Bahía Azul Congresos",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-24",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 25 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 25 Pax\n- Lubina a la plancha con verduras\n- Arroz meloso de verduras de temporada\n- Helado de yogur con fruta fresca\n- Croquetas caseras de puchero",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 4 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92610229",
+    "pm": null,
+    "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 22-24_10_2026.pdf"
   }
 ]
