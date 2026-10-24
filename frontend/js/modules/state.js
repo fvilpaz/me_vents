@@ -13,17 +13,17 @@ export const state = {
 };
 
 export const DEFAULT_SPACES = [
-  { id: "estudio-1", name: "Estudio 1", color_tag: "#0080ff", max_capacities: { u_shape: 16, escuela: 24, teatro: 35, banquete: 20, coctel: 35, imperial: 14 } },
-  { id: "estudio-2", name: "Estudio 2", color_tag: "#00b4d8", max_capacities: { u_shape: 14, escuela: 20, teatro: 30, banquete: 18, coctel: 30, imperial: 12 } },
-  { id: "estudio-3", name: "Estudio 3", color_tag: "#48cae4", max_capacities: { u_shape: 18, escuela: 28, teatro: 40, banquete: 24, coctel: 40, imperial: 16 } },
-  { id: "estudio-2-3", name: "Estudio 2 + 3", color_tag: "#0284c7", max_capacities: { u_shape: 26, escuela: 45, teatro: 65, banquete: 40, coctel: 65, imperial: 24 } },
-  { id: "estudio-4", name: "Estudio 4", color_tag: "#90e0ef", max_capacities: { u_shape: 12, escuela: 16, teatro: 25, banquete: 16, coctel: 25, imperial: 10 } },
-  { id: "estudio-5", name: "Estudio 5", color_tag: "#0077b6", max_capacities: { u_shape: 20, escuela: 32, teatro: 45, banquete: 30, coctel: 50, imperial: 18 } },
-  { id: "foyer", name: "Foyer", color_tag: "#d4af37", max_capacities: { coctel: 100, banquete: 50 } },
-  { id: "multifuncional", name: "Multifuncional", color_tag: "#7b2cbf", max_capacities: { u_shape: 36, escuela: 90, teatro: 140, banquete: 100, coctel: 150 } },
-  { id: "canitas-al-fresco", name: "Cañitas al Fresco", color_tag: "#2ec4b6", max_capacities: { coctel: 90, banquete: 60 } },
-  { id: "ene", name: "Eñe", color_tag: "#f59e0b", max_capacities: {} },
-  { id: "terraza-rooftop", name: "Terraza / Rooftop", color_tag: "#e76f51", max_capacities: { coctel: 140, banquete: 70 } }
+  { id: "estudio-1", name: "Sala Levante", color_tag: "#0080ff", max_capacities: { u_shape: 16, escuela: 24, teatro: 35, banquete: 20, coctel: 35, imperial: 14 } },
+  { id: "estudio-2", name: "Sala Poniente", color_tag: "#00b4d8", max_capacities: { u_shape: 14, escuela: 20, teatro: 30, banquete: 18, coctel: 30, imperial: 12 } },
+  { id: "estudio-3", name: "Sala Alborán", color_tag: "#48cae4", max_capacities: { u_shape: 18, escuela: 28, teatro: 40, banquete: 24, coctel: 40, imperial: 16 } },
+  { id: "estudio-2-3", name: "Sala Poniente + Alborán", color_tag: "#0284c7", max_capacities: { u_shape: 26, escuela: 45, teatro: 65, banquete: 40, coctel: 65, imperial: 24 } },
+  { id: "estudio-4", name: "Sala Gaviota", color_tag: "#90e0ef", max_capacities: { u_shape: 12, escuela: 16, teatro: 25, banquete: 16, coctel: 25, imperial: 10 } },
+  { id: "estudio-5", name: "Sala Faro", color_tag: "#0077b6", max_capacities: { u_shape: 20, escuela: 32, teatro: 45, banquete: 30, coctel: 50, imperial: 18 } },
+  { id: "foyer", name: "Foyer Mirador", color_tag: "#d4af37", max_capacities: { coctel: 100, banquete: 50 } },
+  { id: "multifuncional", name: "Sala Atlántico", color_tag: "#7b2cbf", max_capacities: { u_shape: 36, escuela: 90, teatro: 140, banquete: 100, coctel: 150 } },
+  { id: "canitas-al-fresco", name: "Terraza Brisa", color_tag: "#2ec4b6", max_capacities: { coctel: 90, banquete: 60 } },
+  { id: "ene", name: "Bar Marea", color_tag: "#f59e0b", max_capacities: {} },
+  { id: "terraza-rooftop", name: "Rooftop Horizonte", color_tag: "#e76f51", max_capacities: { coctel: 140, banquete: 70 } }
 ];
 
 export function formatDateKey(dateObj) {

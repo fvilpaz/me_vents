@@ -1,13 +1,13 @@
 [
   {
     "id": "evt-92610229-2026-10-22-0930-estudio-2-3",
-    "title": "Grupo Bahía Azul Congresos · Estudio 2 + 3",
+    "title": "Grupo Bahía Azul Congresos · Sala Poniente + Alborán",
     "date": "2026-10-22",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
+      "name": "Sala Poniente + Alborán",
       "aliases": [
         "estudio 2 + 3",
         "estudios 2 + 3",
@@ -80,13 +80,13 @@
   },
   {
     "id": "evt-92610229-2026-10-22-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-22",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -161,13 +161,13 @@
   },
   {
     "id": "evt-92610229-2026-10-23-0930-multifuncional",
-    "title": "Grupo Bahía Azul Congresos · Sala Multifuncional",
+    "title": "Grupo Bahía Azul Congresos · Sala Sala Atlántico",
     "date": "2026-10-23",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "multifuncional",
-      "name": "Sala Multifuncional",
+      "name": "Sala Atlántico",
       "aliases": [
         "multifuncional",
         "sala multifuncional",
@@ -242,13 +242,13 @@
   },
   {
     "id": "evt-92610229-2026-10-23-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-23",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -323,13 +323,13 @@
   },
   {
     "id": "evt-92610240-2026-10-24-0930-estudio-2-3",
-    "title": "Reunion Faro Nuevo Medios · Estudio 2 + 3",
+    "title": "Reunion Faro Nuevo Medios · Sala Poniente + Alborán",
     "date": "2026-10-24",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
+      "name": "Sala Poniente + Alborán",
       "aliases": [
         "estudio 2 + 3",
         "estudios 2 + 3",
@@ -409,13 +409,13 @@
   },
   {
     "id": "evt-92610229-2026-10-24-0930-estudio-3",
-    "title": "Grupo Bahía Azul Congresos · Estudio 3",
+    "title": "Grupo Bahía Azul Congresos · Sala Alborán",
     "date": "2026-10-24",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-3",
-      "name": "Estudio 3",
+      "name": "Sala Alborán",
       "aliases": [
         "estudio 3",
         "estudio3",
@@ -494,7 +494,7 @@
     "time_end": "16:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -566,13 +566,13 @@
   },
   {
     "id": "evt-92610229-2026-10-24-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-24",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -653,7 +653,7 @@
     "time_end": "23:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -718,13 +718,13 @@
   },
   {
     "id": "evt-92610259-2026-10-25-0930-multifuncional",
-    "title": "Grupo Bahía Azul Congresos · Sala Multifuncional",
+    "title": "Grupo Bahía Azul Congresos · Sala Sala Atlántico",
     "date": "2026-10-25",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "multifuncional",
-      "name": "Sala Multifuncional",
+      "name": "Sala Atlántico",
       "aliases": [
         "multifuncional",
         "sala multifuncional",
@@ -805,7 +805,7 @@
     "time_end": "16:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -877,13 +877,13 @@
   },
   {
     "id": "evt-92610259-2026-10-25-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-25",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -964,7 +964,7 @@
     "time_end": "21:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -1029,13 +1029,13 @@
   },
   {
     "id": "evt-92610252-2026-10-25-2100-canitas-al-fresco",
-    "title": "Cena Órbita Software · Cañitas al Fresco",
+    "title": "Cena Órbita Software · Terraza Brisa",
     "date": "2026-10-25",
     "time_start": "21:00",
     "time_end": "23:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1103,13 +1103,13 @@
   },
   {
     "id": "evt-92610259-2026-10-26-0930-estudio-3",
-    "title": "Grupo Bahía Azul Congresos · Estudio 3",
+    "title": "Grupo Bahía Azul Congresos · Sala Alborán",
     "date": "2026-10-26",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-3",
-      "name": "Estudio 3",
+      "name": "Sala Alborán",
       "aliases": [
         "estudio 3",
         "estudio3",
@@ -1182,13 +1182,13 @@
   },
   {
     "id": "evt-92610261-2026-10-26-1400-canitas-al-fresco",
-    "title": "Almuerzo Delta Sur Motor · Cañitas al Fresco",
+    "title": "Almuerzo Delta Sur Motor · Terraza Brisa",
     "date": "2026-10-26",
     "time_start": "14:00",
     "time_end": "16:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1263,13 +1263,13 @@
   },
   {
     "id": "evt-92610259-2026-10-26-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-26",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1350,7 +1350,7 @@
     "time_end": "21:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -1421,7 +1421,7 @@
     "time_end": "23:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -1486,13 +1486,13 @@
   },
   {
     "id": "evt-92610259-2026-10-27-0930-multifuncional",
-    "title": "Grupo Bahía Azul Congresos · Sala Multifuncional",
+    "title": "Grupo Bahía Azul Congresos · Sala Sala Atlántico",
     "date": "2026-10-27",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "multifuncional",
-      "name": "Sala Multifuncional",
+      "name": "Sala Atlántico",
       "aliases": [
         "multifuncional",
         "sala multifuncional",
@@ -1567,13 +1567,13 @@
   },
   {
     "id": "evt-92610271-2026-10-27-1400-canitas-al-fresco",
-    "title": "Almuerzo Casa Jazmín Eventos · Cañitas al Fresco",
+    "title": "Almuerzo Casa Jazmín Eventos · Terraza Brisa",
     "date": "2026-10-27",
     "time_start": "14:00",
     "time_end": "16:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1648,13 +1648,13 @@
   },
   {
     "id": "evt-92610259-2026-10-27-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-27",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1735,7 +1735,7 @@
     "time_end": "21:00",
     "space": {
       "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
+      "name": "Rooftop Horizonte / Pool Bar",
       "aliases": [
         "terraza pool bar",
         "pool bar",
@@ -1800,13 +1800,13 @@
   },
   {
     "id": "evt-92610270-2026-10-27-2100-canitas-al-fresco",
-    "title": "Cena Alameda Consultores · Cañitas al Fresco",
+    "title": "Cena Alameda Consultores · Terraza Brisa",
     "date": "2026-10-27",
     "time_start": "21:00",
     "time_end": "23:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -1874,13 +1874,13 @@
   },
   {
     "id": "evt-92610280-2026-10-28-0930-estudio-3",
-    "title": "Reunion Casa Jazmín Eventos · Estudio 3",
+    "title": "Reunion Casa Jazmín Eventos · Sala Alborán",
     "date": "2026-10-28",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-3",
-      "name": "Estudio 3",
+      "name": "Sala Alborán",
       "aliases": [
         "estudio 3",
         "estudio3",
@@ -1960,13 +1960,13 @@
   },
   {
     "id": "evt-92610289-2026-10-28-0930-estudio-2-3",
-    "title": "Grupo Bahía Azul Congresos · Estudio 2 + 3",
+    "title": "Grupo Bahía Azul Congresos · Sala Poniente + Alborán",
     "date": "2026-10-28",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
+      "name": "Sala Poniente + Alborán",
       "aliases": [
         "estudio 2 + 3",
         "estudios 2 + 3",
@@ -2039,13 +2039,13 @@
   },
   {
     "id": "evt-92610282-2026-10-28-1400-canitas-al-fresco",
-    "title": "Almuerzo Estrella Polar Viajes · Cañitas al Fresco",
+    "title": "Almuerzo Estrella Polar Viajes · Terraza Brisa",
     "date": "2026-10-28",
     "time_start": "14:00",
     "time_end": "16:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -2120,13 +2120,13 @@
   },
   {
     "id": "evt-92610289-2026-10-28-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-28",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -2201,13 +2201,13 @@
   },
   {
     "id": "evt-92610281-2026-10-28-2100-canitas-al-fresco",
-    "title": "Cena Delta Sur Motor · Cañitas al Fresco",
+    "title": "Cena Delta Sur Motor · Terraza Brisa",
     "date": "2026-10-28",
     "time_start": "21:00",
     "time_end": "23:00",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -2275,13 +2275,13 @@
   },
   {
     "id": "evt-92610289-2026-10-29-0930-estudio-3",
-    "title": "Grupo Bahía Azul Congresos · Estudio 3",
+    "title": "Grupo Bahía Azul Congresos · Sala Alborán",
     "date": "2026-10-29",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "estudio-3",
-      "name": "Estudio 3",
+      "name": "Sala Alborán",
       "aliases": [
         "estudio 3",
         "estudio3",
@@ -2354,13 +2354,13 @@
   },
   {
     "id": "evt-92610289-2026-10-29-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-29",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",
@@ -2435,13 +2435,13 @@
   },
   {
     "id": "evt-92610289-2026-10-30-0930-multifuncional",
-    "title": "Grupo Bahía Azul Congresos · Sala Multifuncional",
+    "title": "Grupo Bahía Azul Congresos · Sala Sala Atlántico",
     "date": "2026-10-30",
     "time_start": "09:30",
     "time_end": "13:30",
     "space": {
       "id": "multifuncional",
-      "name": "Sala Multifuncional",
+      "name": "Sala Atlántico",
       "aliases": [
         "multifuncional",
         "sala multifuncional",
@@ -2516,13 +2516,13 @@
   },
   {
     "id": "evt-92610289-2026-10-30-1400-canitas-al-fresco",
-    "title": "Grupo Bahía Azul Congresos · Cañitas al Fresco",
+    "title": "Grupo Bahía Azul Congresos · Terraza Brisa",
     "date": "2026-10-30",
     "time_start": "14:00",
     "time_end": "15:30",
     "space": {
       "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
+      "name": "Terraza Brisa",
       "aliases": [
         "cañitas al fresco",
         "canitas al fresco",

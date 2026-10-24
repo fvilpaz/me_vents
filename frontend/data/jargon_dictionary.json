@@ -120,7 +120,7 @@
       "term": "Welcome Drink / Copa de Bienvenida",
       "category": "fb",
       "aliases": ["welcome drink", "copa bienvenida", "trago bienvenida", "bienvenida cava", "vino bienvenida", "cañitas splitz"],
-      "definition": "Pase de copas de cava, cóctel o Cañitas Splitz a la llegada de los invitados.",
+      "definition": "Pase de copas de cava, cóctel o Spritz de la casa a la llegada de los invitados.",
       "operational_tip": "Tener bandejas listas 15 minutos antes de la hora de convocatoria.",
       "icon": "🥂"
     },
@@ -129,7 +129,7 @@
       "term": "Almuerzo de Trabajo / Finger Buffet",
       "category": "fb",
       "aliases": ["finger buffet", "lunch", "almuerzo de trabajo", "almuerzo", "buffet de trabajo"],
-      "definition": "Almuerzo tipo buffet o platos al centro servido en Cañitas al Fresco o en terraza.",
+      "definition": "Almuerzo tipo buffet o platos al centro servido en Terraza Brisa o en terraza.",
       "operational_tip": "Coordinar con cocina el timing exacto de pase de calientes.",
       "icon": "🥪"
     },
@@ -174,7 +174,7 @@
       "term": "Protocolo AURA (Perfumar Sala)",
       "category": "protocolo_hotel",
       "aliases": ["perfumar", "perfumar la sala", "aura", "ambientar sala", "fragancia me", "pisos"],
-      "definition": "Estándar sensorial de ME by Meliá: salas ventiladas, impecables y perfumadas con la fragancia icónica de la marca.",
+      "definition": "Estándar sensorial de Costa Azul: salas ventiladas, impecables y perfumadas con la fragancia icónica de la marca.",
       "operational_tip": "Aplicar 15-20 minutos antes de la llegada del cliente. Sala revisada por Pisos.",
       "icon": "✨"
     },

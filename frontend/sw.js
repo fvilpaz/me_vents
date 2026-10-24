@@ -1,4 +1,4 @@
-const CACHE_NAME = 'me-vents-v42';
+const CACHE_NAME = 'me-vents-demo-v1';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -22,8 +22,8 @@ const STATIC_ASSETS = [
   './data/hotel_spaces.json',
   './data/jargon_dictionary.json',
   './manifest.json',
-  './assets/images/Logo_Me_dark.png',
-  './assets/images/melia_hotels_international.svg'
+  './assets/images/costa_azul_logo.png',
+  './assets/images/costa_azul_hotels.svg'
 ];
 
 self.addEventListener('install', (e) => {
