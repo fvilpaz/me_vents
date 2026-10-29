@@ -1,91 +1,5 @@
 [
   {
-    "id": "evt-92610280-2026-10-28-0930-estudio-3",
-    "title": "Reunion Casa Jazmín Eventos · Estudio 3",
-    "date": "2026-10-28",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-3",
-      "name": "Estudio 3",
-      "aliases": [
-        "estudio 3",
-        "estudio3",
-        "study 3",
-        "sala estudio 3",
-        "e3"
-      ],
-      "area_m2": 50,
-      "max_capacities": {
-        "u_shape": 18,
-        "escuela": 28,
-        "teatro": 40,
-        "banquete": 24,
-        "coctel": 40,
-        "imperial": 16
-      },
-      "color_tag": "#48cae4",
-      "location": "Planta 1"
-    },
-    "setup": {
-      "key": "forma_u",
-      "label": "Forma U (U-Shape)",
-      "icon": "🏛️",
-      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
-    },
-    "pax": 34,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Casa Jazmín Eventos",
-      "date_start": "2026-10-28",
-      "date_end": "2026-10-28",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje en U (U-Shape) para 34 pax",
-      "montaje_notes": "Montaje Forma U (U-Shape) para 34 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 34 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610280",
-    "pm": null,
-    "source_file": "OS REUNION CASA JAZMÍN EVENTOS 28_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION CASA JAZMÍN EVENTOS 28_10_2026.pdf"
-  },
-  {
     "id": "evt-92610289-2026-10-28-0930-estudio-2-3",
     "title": "Grupo Bahía Azul Congresos · Estudio 2 + 3",
     "date": "2026-10-28",
@@ -163,87 +77,6 @@
     "pm": null,
     "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 28-30_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 28-30_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610282-2026-10-28-1400-canitas-al-fresco",
-    "title": "Almuerzo Estrella Polar Viajes · Cañitas al Fresco",
-    "date": "2026-10-28",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 29,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Estrella Polar Viajes",
-      "date_start": "2026-10-28",
-      "date_end": "2026-10-28",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 29 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 29 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 29 Pax\n- Solomillo ibérico con puré de patata\n- Presa a la brasa con verduras asadas\n- Tosta de salmorejo y bonito\n- Arroz meloso de verduras de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610282",
-    "pm": null,
-    "source_file": "OS ALMUERZO ESTRELLA POLAR VIAJES 28_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO ESTRELLA POLAR VIAJES 28_10_2026.pdf"
   },
   {
     "id": "evt-92610289-2026-10-28-1400-canitas-al-fresco",
@@ -325,80 +158,6 @@
     "pm": null,
     "source_file": "OS GRUPO BAHÍA AZUL CONGRESOS 28-30_10_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO BAHÍA AZUL CONGRESOS 28-30_10_2026.pdf"
-  },
-  {
-    "id": "evt-92610281-2026-10-28-2100-canitas-al-fresco",
-    "title": "Cena Delta Sur Motor · Cañitas al Fresco",
-    "date": "2026-10-28",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 12,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Delta Sur Motor",
-      "date_start": "2026-10-28",
-      "date_end": "2026-10-28",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 12 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 12 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 12 Pax\n- Croquetas caseras de puchero\n- Solomillo ibérico con puré de patata\n- Crema fría de melón con jamón\n- Lubina a la plancha con verduras\n- Arroz meloso de verduras de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92610281",
-    "pm": null,
-    "source_file": "OS CENA DELTA SUR MOTOR 28_10_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA DELTA SUR MOTOR 28_10_2026.pdf"
   },
   {
     "id": "evt-92610291-2026-10-29-0930-estudio-2",
@@ -2041,6 +1800,84 @@
     "source_pdf_url": "./data/beos/OS GRUPO FUNDACIÓN HORIZONTE 31-02_11_2026.pdf"
   },
   {
+    "id": "evt-92611021-2026-11-02-1400-terraza-pool-bar",
+    "title": "Almuerzo Pinar Alto Editorial · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-02",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 14,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Pinar Alto Editorial",
+      "date_start": "2026-11-02",
+      "date_end": "2026-11-02",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 14 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 14 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 14 Pax\n- Croquetas caseras de puchero\n- Tarta de queso con mermelada de higos\n- Lubina a la plancha con verduras\n- Gazpacho de tomate rosa",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611021",
+    "pm": null,
+    "source_file": "OS ALMUERZO PINAR ALTO EDITORIAL 02_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO PINAR ALTO EDITORIAL 02_11_2026.pdf"
+  },
+  {
     "id": "evt-92610319-2026-11-02-1400-canitas-al-fresco",
     "title": "Grupo Fundación Horizonte · Cañitas al Fresco",
     "date": "2026-11-02",
@@ -2120,5 +1957,150 @@
     "pm": null,
     "source_file": "OS GRUPO FUNDACIÓN HORIZONTE 31-02_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO FUNDACIÓN HORIZONTE 31-02_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611022-2026-11-02-1930-terraza-pool-bar",
+    "title": "Coctel Tramontana Capital · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-02",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "reunion",
+      "label": "Reunión MICE",
+      "icon": "💼",
+      "description": "Montaje de sala ejecutiva para reunión de trabajo"
+    },
+    "pax": 24,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Tramontana Capital",
+      "date_start": "2026-11-02",
+      "date_end": "2026-11-02",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje de sala ejecutiva (24 pax)",
+      "montaje_notes": "Montaje Reunión MICE para 24 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 24 Pax\n- Arroz meloso de verduras de temporada\n- Croquetas caseras de puchero\n- Tosta de salmorejo y bonito",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611022",
+    "pm": null,
+    "source_file": "OS COCTEL TRAMONTANA CAPITAL 02_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL TRAMONTANA CAPITAL 02_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611020-2026-11-02-2100-canitas-al-fresco",
+    "title": "Cena Norte Sur Seguros · Cañitas al Fresco",
+    "date": "2026-11-02",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 39,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Norte Sur Seguros",
+      "date_start": "2026-11-02",
+      "date_end": "2026-11-02",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 39 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 39 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 39 Pax\n- Lubina a la plancha con verduras\n- Merluza al horno con salsa verde\n- Tarta de queso con mermelada de higos\n- Ensalada templada de queso de cabra y frutos rojos\n- Tosta de salmorejo y bonito",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611020",
+    "pm": null,
+    "source_file": "OS CENA NORTE SUR SEGUROS 02_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA NORTE SUR SEGUROS 02_11_2026.pdf"
   }
 ]
