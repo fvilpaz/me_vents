@@ -1,726 +1,5 @@
 [
   {
-    "id": "evt-92611069-2026-11-06-0930-estudio-2",
-    "title": "Grupo Cobalto Energía · Estudio 2",
-    "date": "2026-11-06",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-2",
-      "name": "Estudio 2",
-      "aliases": [
-        "estudio 2",
-        "estudio2",
-        "study 2",
-        "sala estudio 2",
-        "e2"
-      ],
-      "area_m2": 40,
-      "max_capacities": {
-        "u_shape": 14,
-        "escuela": 20,
-        "teatro": 30,
-        "banquete": 18,
-        "coctel": 30,
-        "imperial": 12
-      },
-      "color_tag": "#00b4d8",
-      "location": "Planta 1"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 1,
-      "total_days": 3,
-      "day_label": "Día 1 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 38 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 38 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611069-2026-11-06-1400-canitas-al-fresco",
-    "title": "Grupo Cobalto Energía · Cañitas al Fresco",
-    "date": "2026-11-06",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 1,
-      "total_days": 3,
-      "day_label": "Día 1 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 38 Pax\n- Tosta de salmorejo y bonito\n- Arroz meloso de verduras de temporada\n- Gazpacho de tomate rosa\n- Lubina a la plancha con verduras\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611069\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO COBALTO ENERGÍA 06-08_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611069-2026-11-07-0930-multifuncional",
-    "title": "Grupo Cobalto Energía · Sala Multifuncional",
-    "date": "2026-11-07",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 2,
-      "total_days": 3,
-      "day_label": "Día 2 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 38 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 38 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---\n\nAlergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 6 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611069-2026-11-07-1400-canitas-al-fresco",
-    "title": "Grupo Cobalto Energía · Cañitas al Fresco",
-    "date": "2026-11-07",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 2,
-      "total_days": 3,
-      "day_label": "Día 2 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 38 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 38 Pax\n- Croquetas caseras de puchero\n- Lubina a la plancha con verduras\n- Tarta de queso con mermelada de higos\n- Presa a la brasa con verduras asadas\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611069\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO COBALTO ENERGÍA 06-08_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---\n\nAlergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 6 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611081-2026-11-08-0930-multifuncional",
-    "title": "Reunion Estrella Polar Viajes · Sala Multifuncional",
-    "date": "2026-11-08",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 16,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Estrella Polar Viajes",
-      "date_start": "2026-11-08",
-      "date_end": "2026-11-08",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 16 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 16 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 16 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611081",
-    "pm": null,
-    "source_file": "OS REUNION ESTRELLA POLAR VIAJES 08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION ESTRELLA POLAR VIAJES 08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611069-2026-11-08-0930-multifuncional",
-    "title": "Grupo Cobalto Energía · Sala Multifuncional",
-    "date": "2026-11-08",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 3,
-      "total_days": 3,
-      "day_label": "Día 3 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 38 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 38 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 6 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611082-2026-11-08-1400-terraza-pool-bar",
-    "title": "Almuerzo Delta Sur Motor · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-08",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 22,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Delta Sur Motor",
-      "date_start": "2026-11-08",
-      "date_end": "2026-11-08",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 22 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 22 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 22 Pax\n- Merluza al horno con salsa verde\n- Ensalada templada de queso de cabra y frutos rojos\n- Croquetas caseras de puchero\n- Lubina a la plancha con verduras",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611082",
-    "pm": null,
-    "source_file": "OS ALMUERZO DELTA SUR MOTOR 08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO DELTA SUR MOTOR 08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611069-2026-11-08-1400-canitas-al-fresco",
-    "title": "Grupo Cobalto Energía · Cañitas al Fresco",
-    "date": "2026-11-08",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 38,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Cobalto Energía",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "day_index": 3,
-      "total_days": 3,
-      "day_label": "Día 3 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 38 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 38 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 38 Pax\n- Tarta de queso con mermelada de higos\n- Presa a la brasa con verduras asadas\n- Croquetas caseras de puchero\n- Solomillo ibérico con puré de patata",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 6 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611069",
-    "pm": null,
-    "source_file": "OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 06-08_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611080-2026-11-08-1930-terraza-pool-bar",
-    "title": "Coctel Mirador Farma · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-08",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "reunion",
-      "label": "Reunión MICE",
-      "icon": "💼",
-      "description": "Montaje de sala ejecutiva para reunión de trabajo"
-    },
-    "pax": 26,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Mirador Farma",
-      "date_start": "2026-11-08",
-      "date_end": "2026-11-08",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala ejecutiva (26 pax)",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 26 Pax\n- Merluza al horno con salsa verde\n- Gazpacho de tomate rosa\n- Arroz meloso de verduras de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611080",
-    "pm": null,
-    "source_file": "OS COCTEL MIRADOR FARMA 08_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL MIRADOR FARMA 08_11_2026.pdf"
-  },
-  {
     "id": "evt-92611091-2026-11-09-0930-multifuncional",
     "title": "Reunion Vértice Logística · Sala Multifuncional",
     "date": "2026-11-09",
@@ -2303,6 +1582,92 @@
     "source_pdf_url": "./data/beos/OS CENA ÓRBITA SOFTWARE 12_11_2026.pdf"
   },
   {
+    "id": "evt-92611130-2026-11-13-0930-estudio-2",
+    "title": "Reunion Altamira Biotech · Estudio 2",
+    "date": "2026-11-13",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2",
+      "name": "Estudio 2",
+      "aliases": [
+        "estudio 2",
+        "estudio2",
+        "study 2",
+        "sala estudio 2",
+        "e2"
+      ],
+      "area_m2": 40,
+      "max_capacities": {
+        "u_shape": 14,
+        "escuela": 20,
+        "teatro": 30,
+        "banquete": 18,
+        "coctel": 30,
+        "imperial": 12
+      },
+      "color_tag": "#00b4d8",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 20,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Altamira Biotech",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-13",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 20 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 20 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 20 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611130",
+    "pm": null,
+    "source_file": "OS REUNION ALTAMIRA BIOTECH 13_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION ALTAMIRA BIOTECH 13_11_2026.pdf"
+  },
+  {
     "id": "evt-92611129-2026-11-13-0930-estudio-2",
     "title": "Grupo Vértice Logística · Estudio 2",
     "date": "2026-11-13",
@@ -2380,6 +1745,84 @@
     "pm": null,
     "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 12-14_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 12-14_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611131-2026-11-13-1400-terraza-pool-bar",
+    "title": "Almuerzo Tramontana Capital · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-13",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Tramontana Capital",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-13",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 8 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 8 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 8 Pax\n- Arroz meloso de verduras de temporada\n- Tosta de salmorejo y bonito\n- Tarta de queso con mermelada de higos\n- Ensalada templada de queso de cabra y frutos rojos",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611131",
+    "pm": null,
+    "source_file": "OS ALMUERZO TRAMONTANA CAPITAL 13_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO TRAMONTANA CAPITAL 13_11_2026.pdf"
   },
   {
     "id": "evt-92611129-2026-11-13-1400-canitas-al-fresco",
@@ -2461,6 +1904,77 @@
     "pm": null,
     "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 12-14_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 12-14_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611132-2026-11-13-1930-terraza-pool-bar",
+    "title": "Coctel Tramontana Capital · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-13",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "reunion",
+      "label": "Reunión MICE",
+      "icon": "💼",
+      "description": "Montaje de sala ejecutiva para reunión de trabajo"
+    },
+    "pax": 40,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Tramontana Capital",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-13",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje de sala ejecutiva (40 pax)",
+      "montaje_notes": "Montaje Reunión MICE para 40 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 40 Pax\n- Helado de yogur con fruta fresca\n- Merluza al horno con salsa verde\n- Crema fría de melón con jamón",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611132",
+    "pm": null,
+    "source_file": "OS COCTEL TRAMONTANA CAPITAL 13_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL TRAMONTANA CAPITAL 13_11_2026.pdf"
   },
   {
     "id": "evt-92611129-2026-11-14-0930-estudio-2-3",
