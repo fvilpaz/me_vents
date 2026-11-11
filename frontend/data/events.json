@@ -160,92 +160,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
   },
   {
-    "id": "evt-92611100-2026-11-10-0930-estudio-2-3",
-    "title": "Reunion Faro Nuevo Medios · Estudio 2 + 3",
-    "date": "2026-11-10",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-2-3",
-      "name": "Estudio 2 + 3",
-      "aliases": [
-        "estudio 2 + 3",
-        "estudios 2 + 3",
-        "estudio 2+3",
-        "estudios 2+3",
-        "estudio 2 y 3"
-      ],
-      "area_m2": 90,
-      "max_capacities": {
-        "u_shape": 26,
-        "escuela": 45,
-        "teatro": 65,
-        "banquete": 40,
-        "coctel": 65,
-        "imperial": 24
-      },
-      "color_tag": "#0284c7",
-      "location": "Planta 1 (Panelable)"
-    },
-    "setup": {
-      "key": "teatro",
-      "label": "Teatro (Auditorio)",
-      "icon": "🎭",
-      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
-    },
-    "pax": 29,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Faro Nuevo Medios",
-      "date_start": "2026-11-10",
-      "date_end": "2026-11-10",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 29 pax",
-      "montaje_notes": "Montaje Teatro (Auditorio) para 29 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 29 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611100",
-    "pm": null,
-    "source_file": "OS REUNION FARO NUEVO MEDIOS 10_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION FARO NUEVO MEDIOS 10_11_2026.pdf"
-  },
-  {
     "id": "evt-92611099-2026-11-10-0930-multifuncional",
     "title": "Grupo Vértice Logística · Sala Multifuncional",
     "date": "2026-11-10",
@@ -406,151 +320,6 @@
     "pm": null,
     "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611102-2026-11-10-1930-terraza-pool-bar",
-    "title": "Coctel Cobalto Energía · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-10",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 13,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Cobalto Energía",
-      "date_start": "2026-11-10",
-      "date_end": "2026-11-10",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (13 pax)",
-      "montaje_notes": "Montaje Cóctel (Cocktail) para 13 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 13 Pax\n- Helado de yogur con fruta fresca\n- Solomillo ibérico con puré de patata\n- Presa a la brasa con verduras asadas",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611102",
-    "pm": null,
-    "source_file": "OS COCTEL COBALTO ENERGÍA 10_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL COBALTO ENERGÍA 10_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611101-2026-11-10-2100-canitas-al-fresco",
-    "title": "Cena Norte Sur Seguros · Cañitas al Fresco",
-    "date": "2026-11-10",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 21,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Norte Sur Seguros",
-      "date_start": "2026-11-10",
-      "date_end": "2026-11-10",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 21 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 21 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 21 Pax\n- Presa a la brasa con verduras asadas\n- Merluza al horno con salsa verde\n- Solomillo ibérico con puré de patata\n- Helado de yogur con fruta fresca\n- Ensalada templada de queso de cabra y frutos rojos",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611101",
-    "pm": null,
-    "source_file": "OS CENA NORTE SUR SEGUROS 10_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA NORTE SUR SEGUROS 10_11_2026.pdf"
   },
   {
     "id": "evt-92611111-2026-11-11-0930-estudio-3",
@@ -2130,5 +1899,715 @@
     "pm": null,
     "source_file": "OS CENA VÉRTICE LOGÍSTICA 14_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS CENA VÉRTICE LOGÍSTICA 14_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611150-2026-11-15-0930-estudio-3",
+    "title": "Reunion Lumen Studio · Estudio 3",
+    "date": "2026-11-15",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "aliases": [
+        "estudio 3",
+        "estudio3",
+        "study 3",
+        "sala estudio 3",
+        "e3"
+      ],
+      "area_m2": 50,
+      "max_capacities": {
+        "u_shape": 18,
+        "escuela": 28,
+        "teatro": 40,
+        "banquete": 24,
+        "coctel": 40,
+        "imperial": 16
+      },
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 14,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Lumen Studio",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-15",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 14 pax",
+      "montaje_notes": "Montaje Forma U (U-Shape) para 14 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 14 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611150",
+    "pm": null,
+    "source_file": "OS REUNION LUMEN STUDIO 15_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION LUMEN STUDIO 15_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-15-0930-multifuncional",
+    "title": "Grupo Norte Sur Seguros · Sala Multifuncional",
+    "date": "2026-11-15",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 22 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-15-1400-canitas-al-fresco",
+    "title": "Grupo Norte Sur Seguros · Cañitas al Fresco",
+    "date": "2026-11-15",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 22 Pax\n- Ensalada templada de queso de cabra y frutos rojos\n- Gazpacho de tomate rosa\n- Lubina a la plancha con verduras\n- Helado de yogur con fruta fresca\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611159\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO NORTE SUR SEGUROS 15-17_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611151-2026-11-15-1930-terraza-pool-bar",
+    "title": "Coctel Fundación Horizonte · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-15",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "imperial",
+      "label": "Mesa de Reunión (Imperial)",
+      "icon": "🏛️",
+      "description": "Mesa ejecutiva única con papelería, conectividad y medios audiovisuales"
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Fundación Horizonte",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-15",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Mesa Imperial única (8 pax) con soporte AV y papelería",
+      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 8 Pax\n- Presa a la brasa con verduras asadas\n- Tosta de salmorejo y bonito\n- Lubina a la plancha con verduras",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611151",
+    "pm": null,
+    "source_file": "OS COCTEL FUNDACIÓN HORIZONTE 15_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL FUNDACIÓN HORIZONTE 15_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611152-2026-11-15-2100-terraza-pool-bar",
+    "title": "Cena Tramontana Capital · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-15",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 30,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Tramontana Capital",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-15",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 30 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 30 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 30 Pax\n- Ensalada templada de queso de cabra y frutos rojos\n- Solomillo ibérico con puré de patata\n- Tarta de queso con mermelada de higos\n- Gazpacho de tomate rosa\n- Helado de yogur con fruta fresca",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611152",
+    "pm": null,
+    "source_file": "OS CENA TRAMONTANA CAPITAL 15_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA TRAMONTANA CAPITAL 15_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-16-0930-estudio-3",
+    "title": "Grupo Norte Sur Seguros · Estudio 3",
+    "date": "2026-11-16",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "aliases": [
+        "estudio 3",
+        "estudio3",
+        "study 3",
+        "sala estudio 3",
+        "e3"
+      ],
+      "area_m2": 50,
+      "max_capacities": {
+        "u_shape": 18,
+        "escuela": 28,
+        "teatro": 40,
+        "banquete": 24,
+        "coctel": 40,
+        "imperial": 16
+      },
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 22 pax",
+      "montaje_notes": "Montaje Forma U (U-Shape) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 22 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---\n\nAlergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 6 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-16-1400-canitas-al-fresco",
+    "title": "Grupo Norte Sur Seguros · Cañitas al Fresco",
+    "date": "2026-11-16",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 22 Pax\n- Merluza al horno con salsa verde\n- Lubina a la plancha con verduras\n- Crema fría de melón con jamón\n- Helado de yogur con fruta fresca\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611159\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO NORTE SUR SEGUROS 15-17_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---\n\nAlergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 6 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-17-0930-estudio-2-3",
+    "title": "Grupo Norte Sur Seguros · Estudio 2 + 3",
+    "date": "2026-11-17",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "Montaje Teatro (Auditorio) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 22 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 6 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611159-2026-11-17-1400-canitas-al-fresco",
+    "title": "Grupo Norte Sur Seguros · Cañitas al Fresco",
+    "date": "2026-11-17",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Norte Sur Seguros",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-17",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 22 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 22 Pax\n- Presa a la brasa con verduras asadas\n- Lubina a la plancha con verduras\n- Ensalada templada de queso de cabra y frutos rojos\n- Solomillo ibérico con puré de patata",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 6 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611159",
+    "pm": null,
+    "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
   }
 ]
