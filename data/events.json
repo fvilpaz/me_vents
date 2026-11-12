@@ -1,725 +1,5 @@
 [
   {
-    "id": "evt-92611099-2026-11-09-0930-estudio-2",
-    "title": "Grupo Vértice Logística · Estudio 2",
-    "date": "2026-11-09",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-2",
-      "name": "Estudio 2",
-      "aliases": [
-        "estudio 2",
-        "estudio2",
-        "study 2",
-        "sala estudio 2",
-        "e2"
-      ],
-      "area_m2": 40,
-      "max_capacities": {
-        "u_shape": 14,
-        "escuela": 20,
-        "teatro": 30,
-        "banquete": 18,
-        "coctel": 30,
-        "imperial": 12
-      },
-      "color_tag": "#00b4d8",
-      "location": "Planta 1"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 1,
-      "total_days": 3,
-      "day_label": "Día 1 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 28 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611099-2026-11-09-1400-canitas-al-fresco",
-    "title": "Grupo Vértice Logística · Cañitas al Fresco",
-    "date": "2026-11-09",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 1,
-      "total_days": 3,
-      "day_label": "Día 1 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 28 Pax\n- Lubina a la plancha con verduras\n- Gazpacho de tomate rosa\n- Crema fría de melón con jamón\n- Arroz meloso de verduras de temporada\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611099\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO VÉRTICE LOGÍSTICA 09-11_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611099-2026-11-10-0930-multifuncional",
-    "title": "Grupo Vértice Logística · Sala Multifuncional",
-    "date": "2026-11-10",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 2,
-      "total_days": 3,
-      "day_label": "Día 2 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 28 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611099-2026-11-10-1400-canitas-al-fresco",
-    "title": "Grupo Vértice Logística · Cañitas al Fresco",
-    "date": "2026-11-10",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 2,
-      "total_days": 3,
-      "day_label": "Día 2 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 28 Pax\n- Presa a la brasa con verduras asadas\n- Gazpacho de tomate rosa\n- Croquetas caseras de puchero\n- Crema fría de melón con jamón\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611099\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO VÉRTICE LOGÍSTICA 09-11_11_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611111-2026-11-11-0930-estudio-3",
-    "title": "Reunion Vértice Logística · Estudio 3",
-    "date": "2026-11-11",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-3",
-      "name": "Estudio 3",
-      "aliases": [
-        "estudio 3",
-        "estudio3",
-        "study 3",
-        "sala estudio 3",
-        "e3"
-      ],
-      "area_m2": 50,
-      "max_capacities": {
-        "u_shape": 18,
-        "escuela": 28,
-        "teatro": 40,
-        "banquete": 24,
-        "coctel": 40,
-        "imperial": 16
-      },
-      "color_tag": "#48cae4",
-      "location": "Planta 1"
-    },
-    "setup": {
-      "key": "forma_u",
-      "label": "Forma U (U-Shape)",
-      "icon": "🏛️",
-      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
-    },
-    "pax": 40,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Vértice Logística",
-      "date_start": "2026-11-11",
-      "date_end": "2026-11-11",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje en U (U-Shape) para 40 pax",
-      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 40 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611111",
-    "pm": null,
-    "source_file": "OS REUNION VÉRTICE LOGÍSTICA 11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION VÉRTICE LOGÍSTICA 11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611099-2026-11-11-0930-estudio-2",
-    "title": "Grupo Vértice Logística · Estudio 2",
-    "date": "2026-11-11",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "estudio-2",
-      "name": "Estudio 2",
-      "aliases": [
-        "estudio 2",
-        "estudio2",
-        "study 2",
-        "sala estudio 2",
-        "e2"
-      ],
-      "area_m2": 40,
-      "max_capacities": {
-        "u_shape": 14,
-        "escuela": 20,
-        "teatro": 30,
-        "banquete": 18,
-        "coctel": 30,
-        "imperial": 12
-      },
-      "color_tag": "#00b4d8",
-      "location": "Planta 1"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 3,
-      "total_days": 3,
-      "day_label": "Día 3 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 28 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611112-2026-11-11-1400-canitas-al-fresco",
-    "title": "Almuerzo Tramontana Capital · Cañitas al Fresco",
-    "date": "2026-11-11",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 40,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Tramontana Capital",
-      "date_start": "2026-11-11",
-      "date_end": "2026-11-11",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 40 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 40 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 40 Pax\n- Helado de yogur con fruta fresca\n- Crema fría de melón con jamón\n- Merluza al horno con salsa verde\n- Croquetas caseras de puchero",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611112",
-    "pm": null,
-    "source_file": "OS ALMUERZO TRAMONTANA CAPITAL 11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO TRAMONTANA CAPITAL 11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611099-2026-11-11-1400-canitas-al-fresco",
-    "title": "Grupo Vértice Logística · Cañitas al Fresco",
-    "date": "2026-11-11",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 28,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": true,
-      "group_name": "Grupo Vértice Logística",
-      "date_start": "2026-11-09",
-      "date_end": "2026-11-11",
-      "day_index": 3,
-      "total_days": 3,
-      "day_label": "Día 3 de 3"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 28 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 28 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 28 Pax\n- Solomillo ibérico con puré de patata\n- Arroz meloso de verduras de temporada\n- Merluza al horno con salsa verde\n- Crema fría de melón con jamón",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 4 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611099",
-    "pm": null,
-    "source_file": "OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS GRUPO VÉRTICE LOGÍSTICA 09-11_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611110-2026-11-11-1930-terraza-pool-bar",
-    "title": "Coctel Bahía Azul Congresos · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-11",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 26,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Bahía Azul Congresos",
-      "date_start": "2026-11-11",
-      "date_end": "2026-11-11",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (26 pax)",
-      "montaje_notes": "Montaje Cóctel (Cocktail) para 26 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 26 Pax\n- Merluza al horno con salsa verde\n- Crema fría de melón con jamón\n- Croquetas caseras de puchero",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611110",
-    "pm": null,
-    "source_file": "OS COCTEL BAHÍA AZUL CONGRESOS 11_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL BAHÍA AZUL CONGRESOS 11_11_2026.pdf"
-  },
-  {
     "id": "evt-92611122-2026-11-12-0930-estudio-3",
     "title": "Reunion Estrella Polar Viajes · Estudio 3",
     "date": "2026-11-12",
@@ -2370,6 +1650,84 @@
     "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
   },
   {
+    "id": "evt-92611160-2026-11-16-1400-terraza-pool-bar",
+    "title": "Almuerzo Órbita Software · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-16",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 23,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Órbita Software",
+      "date_start": "2026-11-16",
+      "date_end": "2026-11-16",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 23 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 23 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 23 Pax\n- Tarta de queso con mermelada de higos\n- Croquetas caseras de puchero\n- Lubina a la plancha con verduras\n- Tosta de salmorejo y bonito",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611160",
+    "pm": null,
+    "source_file": "OS ALMUERZO ÓRBITA SOFTWARE 16_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO ÓRBITA SOFTWARE 16_11_2026.pdf"
+  },
+  {
     "id": "evt-92611159-2026-11-16-1400-canitas-al-fresco",
     "title": "Grupo Norte Sur Seguros · Cañitas al Fresco",
     "date": "2026-11-16",
@@ -2449,6 +1807,151 @@
     "pm": null,
     "source_file": "OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO NORTE SUR SEGUROS 15-17_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611162-2026-11-16-1930-terraza-pool-bar",
+    "title": "Coctel Mirador Farma · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-16",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 10,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Mirador Farma",
+      "date_start": "2026-11-16",
+      "date_end": "2026-11-16",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (10 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 10 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 10 Pax\n- Ensalada templada de queso de cabra y frutos rojos\n- Arroz meloso de verduras de temporada\n- Crema fría de melón con jamón",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611162",
+    "pm": null,
+    "source_file": "OS COCTEL MIRADOR FARMA 16_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL MIRADOR FARMA 16_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611161-2026-11-16-2100-canitas-al-fresco",
+    "title": "Cena Casa Jazmín Eventos · Cañitas al Fresco",
+    "date": "2026-11-16",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 22,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Casa Jazmín Eventos",
+      "date_start": "2026-11-16",
+      "date_end": "2026-11-16",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 22 pax",
+      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 22 Pax\n- Crema fría de melón con jamón\n- Tarta de queso con mermelada de higos\n- Solomillo ibérico con puré de patata\n- Merluza al horno con salsa verde\n- Helado de yogur con fruta fresca",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611161",
+    "pm": null,
+    "source_file": "OS CENA CASA JAZMÍN EVENTOS 16_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA CASA JAZMÍN EVENTOS 16_11_2026.pdf"
   },
   {
     "id": "evt-92611159-2026-11-17-0930-estudio-2-3",
