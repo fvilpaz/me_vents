@@ -81,87 +81,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO ESTRELLA POLAR VIAJES 18-20_11_2026.pdf"
   },
   {
-    "id": "evt-92611182-2026-11-18-1400-canitas-al-fresco",
-    "title": "Almuerzo Mirador Farma · Cañitas al Fresco",
-    "date": "2026-11-18",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 24,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Mirador Farma",
-      "date_start": "2026-11-18",
-      "date_end": "2026-11-18",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 24 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 24 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 24 Pax\n- Tarta de queso con mermelada de higos\n- Gazpacho de tomate rosa\n- Tosta de salmorejo y bonito\n- Helado de yogur con fruta fresca",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611182",
-    "pm": null,
-    "source_file": "OS ALMUERZO MIRADOR FARMA 18_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO MIRADOR FARMA 18_11_2026.pdf"
-  },
-  {
     "id": "evt-92611189-2026-11-18-1400-canitas-al-fresco",
     "title": "Grupo Estrella Polar Viajes · Cañitas al Fresco",
     "date": "2026-11-18",
@@ -241,148 +160,6 @@
     "pm": null,
     "source_file": "OS GRUPO ESTRELLA POLAR VIAJES 18-20_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO ESTRELLA POLAR VIAJES 18-20_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611180-2026-11-18-1930-terraza-pool-bar",
-    "title": "Coctel Delta Sur Motor · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-18",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 14,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Delta Sur Motor",
-      "date_start": "2026-11-18",
-      "date_end": "2026-11-18",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (14 pax)",
-      "montaje_notes": "Montaje Cóctel (Cocktail) para 14 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 14 Pax\n- Lubina a la plancha con verduras\n- Merluza al horno con salsa verde\n- Solomillo ibérico con puré de patata",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611180",
-    "pm": null,
-    "source_file": "OS COCTEL DELTA SUR MOTOR 18_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL DELTA SUR MOTOR 18_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611181-2026-11-18-2100-terraza-pool-bar",
-    "title": "Cena Lumen Studio · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-18",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 19,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Lumen Studio",
-      "date_start": "2026-11-18",
-      "date_end": "2026-11-18",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 19 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 19 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 19 Pax\n- Crema fría de melón con jamón\n- Solomillo ibérico con puré de patata\n- Lubina a la plancha con verduras\n- Merluza al horno con salsa verde\n- Croquetas caseras de puchero",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611181",
-    "pm": null,
-    "source_file": "OS CENA LUMEN STUDIO 18_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA LUMEN STUDIO 18_11_2026.pdf"
   },
   {
     "id": "evt-92611191-2026-11-19-0930-multifuncional",
@@ -1945,6 +1722,94 @@
     "source_pdf_url": "./data/beos/OS CENA CASA JAZMÍN EVENTOS 22_11_2026.pdf"
   },
   {
+    "id": "evt-92611231-2026-11-23-0930-multifuncional",
+    "title": "Reunion Pinar Alto Editorial · Sala Multifuncional",
+    "date": "2026-11-23",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 38,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Pinar Alto Editorial",
+      "date_start": "2026-11-23",
+      "date_end": "2026-11-23",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 38 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 38 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 38 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611231",
+    "pm": null,
+    "source_file": "OS REUNION PINAR ALTO EDITORIAL 23_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION PINAR ALTO EDITORIAL 23_11_2026.pdf"
+  },
+  {
     "id": "evt-92611219-2026-11-23-0930-estudio-2",
     "title": "Grupo Cobalto Energía · Estudio 2",
     "date": "2026-11-23",
@@ -2022,6 +1887,87 @@
     "pm": null,
     "source_file": "OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611230-2026-11-23-1400-canitas-al-fresco",
+    "title": "Almuerzo Lumen Studio · Cañitas al Fresco",
+    "date": "2026-11-23",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 8,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Lumen Studio",
+      "date_start": "2026-11-23",
+      "date_end": "2026-11-23",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 8 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 8 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 8 Pax\n- Crema fría de melón con jamón\n- Merluza al horno con salsa verde\n- Ensalada templada de queso de cabra y frutos rojos\n- Solomillo ibérico con puré de patata",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611230",
+    "pm": null,
+    "source_file": "OS ALMUERZO LUMEN STUDIO 23_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO LUMEN STUDIO 23_11_2026.pdf"
   },
   {
     "id": "evt-92611219-2026-11-23-1400-canitas-al-fresco",
@@ -2103,5 +2049,76 @@
     "pm": null,
     "source_file": "OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611232-2026-11-23-1930-terraza-pool-bar",
+    "title": "Coctel Alameda Consultores · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-23",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 20,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Alameda Consultores",
+      "date_start": "2026-11-23",
+      "date_end": "2026-11-23",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (20 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 20 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 20 Pax\n- Tosta de salmorejo y bonito\n- Merluza al horno con salsa verde\n- Crema fría de melón con jamón",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611232",
+    "pm": null,
+    "source_file": "OS COCTEL ALAMEDA CONSULTORES 23_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL ALAMEDA CONSULTORES 23_11_2026.pdf"
   }
 ]
