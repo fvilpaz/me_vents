@@ -81,87 +81,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf"
   },
   {
-    "id": "evt-92611210-2026-11-21-1400-canitas-al-fresco",
-    "title": "Almuerzo Bahía Azul Congresos · Cañitas al Fresco",
-    "date": "2026-11-21",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 22,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Bahía Azul Congresos",
-      "date_start": "2026-11-21",
-      "date_end": "2026-11-21",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 22 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 22 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 22 Pax\n- Arroz meloso de verduras de temporada\n- Gazpacho de tomate rosa\n- Presa a la brasa con verduras asadas\n- Crema fría de melón con jamón",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611210",
-    "pm": null,
-    "source_file": "OS ALMUERZO BAHÍA AZUL CONGRESOS 21_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO BAHÍA AZUL CONGRESOS 21_11_2026.pdf"
-  },
-  {
     "id": "evt-92611219-2026-11-21-1400-canitas-al-fresco",
     "title": "Grupo Cobalto Energía · Cañitas al Fresco",
     "date": "2026-11-21",
@@ -241,148 +160,6 @@
     "pm": null,
     "source_file": "OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO COBALTO ENERGÍA 21-23_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611212-2026-11-21-1930-terraza-pool-bar",
-    "title": "Coctel Fundación Horizonte · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-21",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "reunion",
-      "label": "Reunión MICE",
-      "icon": "💼",
-      "description": "Montaje de sala ejecutiva para reunión de trabajo"
-    },
-    "pax": 34,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Fundación Horizonte",
-      "date_start": "2026-11-21",
-      "date_end": "2026-11-21",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala ejecutiva (34 pax)",
-      "montaje_notes": "Montaje Reunión MICE para 34 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 34 Pax\n- Crema fría de melón con jamón\n- Merluza al horno con salsa verde\n- Tosta de salmorejo y bonito",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611212",
-    "pm": null,
-    "source_file": "OS COCTEL FUNDACIÓN HORIZONTE 21_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL FUNDACIÓN HORIZONTE 21_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611211-2026-11-21-2100-terraza-pool-bar",
-    "title": "Cena Bahía Azul Congresos · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-21",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 24,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Bahía Azul Congresos",
-      "date_start": "2026-11-21",
-      "date_end": "2026-11-21",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 24 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 24 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 24 Pax\n- Tosta de salmorejo y bonito\n- Arroz meloso de verduras de temporada\n- Ensalada templada de queso de cabra y frutos rojos\n- Crema fría de melón con jamón\n- Presa a la brasa con verduras asadas",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611211",
-    "pm": null,
-    "source_file": "OS CENA BAHÍA AZUL CONGRESOS 21_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA BAHÍA AZUL CONGRESOS 21_11_2026.pdf"
   },
   {
     "id": "evt-92611219-2026-11-22-0930-estudio-2-3",
@@ -2037,6 +1814,87 @@
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
   },
   {
+    "id": "evt-92611260-2026-11-26-1400-canitas-al-fresco",
+    "title": "Almuerzo Fundación Horizonte · Cañitas al Fresco",
+    "date": "2026-11-26",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 16,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Fundación Horizonte",
+      "date_start": "2026-11-26",
+      "date_end": "2026-11-26",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 16 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 16 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 16 Pax\n- Merluza al horno con salsa verde\n- Crema fría de melón con jamón\n- Solomillo ibérico con puré de patata\n- Croquetas caseras de puchero",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611260",
+    "pm": null,
+    "source_file": "OS ALMUERZO FUNDACIÓN HORIZONTE 26_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO FUNDACIÓN HORIZONTE 26_11_2026.pdf"
+  },
+  {
     "id": "evt-92611249-2026-11-26-1400-canitas-al-fresco",
     "title": "Grupo Casa Jazmín Eventos · Cañitas al Fresco",
     "date": "2026-11-26",
@@ -2116,5 +1974,150 @@
     "pm": null,
     "source_file": "OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611262-2026-11-26-1930-terraza-pool-bar",
+    "title": "Coctel Mirador Farma · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-26",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 33,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Mirador Farma",
+      "date_start": "2026-11-26",
+      "date_end": "2026-11-26",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (33 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 33 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 33 Pax\n- Croquetas caseras de puchero\n- Solomillo ibérico con puré de patata\n- Ensalada templada de queso de cabra y frutos rojos",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611262",
+    "pm": null,
+    "source_file": "OS COCTEL MIRADOR FARMA 26_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL MIRADOR FARMA 26_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611261-2026-11-26-2100-canitas-al-fresco",
+    "title": "Cena Mirador Farma · Cañitas al Fresco",
+    "date": "2026-11-26",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 30,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Mirador Farma",
+      "date_start": "2026-11-26",
+      "date_end": "2026-11-26",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 30 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 30 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - CAÑITAS AL FRESCO 30 Pax\n- Lubina a la plancha con verduras\n- Tosta de salmorejo y bonito\n- Gazpacho de tomate rosa\n- Croquetas caseras de puchero\n- Arroz meloso de verduras de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611261",
+    "pm": null,
+    "source_file": "OS CENA MIRADOR FARMA 26_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA MIRADOR FARMA 26_11_2026.pdf"
   }
 ]
