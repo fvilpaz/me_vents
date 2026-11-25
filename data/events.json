@@ -160,148 +160,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
   },
   {
-    "id": "evt-92611241-2026-11-24-1930-terraza-pool-bar",
-    "title": "Coctel Norte Sur Seguros · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-24",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "coctel",
-      "label": "Cóctel (Cocktail)",
-      "icon": "🍸",
-      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
-    },
-    "pax": 37,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Norte Sur Seguros",
-      "date_start": "2026-11-24",
-      "date_end": "2026-11-24",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Formato Cóctel / Welcome Drink (37 pax)",
-      "montaje_notes": "Montaje Cóctel (Cocktail) para 37 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 37 Pax\n- Solomillo ibérico con puré de patata\n- Gazpacho de tomate rosa\n- Presa a la brasa con verduras asadas",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611241",
-    "pm": null,
-    "source_file": "OS COCTEL NORTE SUR SEGUROS 24_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL NORTE SUR SEGUROS 24_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611242-2026-11-24-2100-terraza-pool-bar",
-    "title": "Cena Delta Sur Motor · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-24",
-    "time_start": "21:00",
-    "time_end": "23:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 17,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Cena Delta Sur Motor",
-      "date_start": "2026-11-24",
-      "date_end": "2026-11-24",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 17 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 17 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 17 Pax\n- Merluza al horno con salsa verde\n- Tosta de salmorejo y bonito\n- Gazpacho de tomate rosa\n- Ensalada templada de queso de cabra y frutos rojos\n- Arroz meloso de verduras de temporada",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611242",
-    "pm": null,
-    "source_file": "OS CENA DELTA SUR MOTOR 24_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS CENA DELTA SUR MOTOR 24_11_2026.pdf"
-  },
-  {
     "id": "evt-92611250-2026-11-25-0930-multifuncional",
     "title": "Reunion Cobalto Energía · Sala Multifuncional",
     "date": "2026-11-25",
@@ -1859,6 +1717,92 @@
     "source_pdf_url": "./data/beos/OS CENA ÓRBITA SOFTWARE 28_11_2026.pdf"
   },
   {
+    "id": "evt-92611292-2026-11-29-0930-estudio-2-3",
+    "title": "Reunion Pinar Alto Editorial · Estudio 2 + 3",
+    "date": "2026-11-29",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
+    },
+    "pax": 25,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Pinar Alto Editorial",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 25 pax",
+      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 25 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611292",
+    "pm": null,
+    "source_file": "OS REUNION PINAR ALTO EDITORIAL 29_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION PINAR ALTO EDITORIAL 29_11_2026.pdf"
+  },
+  {
     "id": "evt-92611279-2026-11-29-0930-estudio-2-3",
     "title": "Grupo Tramontana Capital · Estudio 2 + 3",
     "date": "2026-11-29",
@@ -2017,5 +1961,147 @@
     "pm": null,
     "source_file": "OS GRUPO TRAMONTANA CAPITAL 27-29_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO TRAMONTANA CAPITAL 27-29_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611291-2026-11-29-1930-terraza-pool-bar",
+    "title": "Coctel Bahía Azul Congresos · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-29",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "reunion",
+      "label": "Reunión MICE",
+      "icon": "💼",
+      "description": "Montaje de sala ejecutiva para reunión de trabajo"
+    },
+    "pax": 27,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Bahía Azul Congresos",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje de sala ejecutiva (27 pax)",
+      "montaje_notes": "F&B Preparar blocs de notas y bolígrafos en cada puesto",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 27 Pax\n- Tosta de salmorejo y bonito\n- Tarta de queso con mermelada de higos\n- Solomillo ibérico con puré de patata",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611291",
+    "pm": null,
+    "source_file": "OS COCTEL BAHÍA AZUL CONGRESOS 29_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL BAHÍA AZUL CONGRESOS 29_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611290-2026-11-29-2100-terraza-pool-bar",
+    "title": "Cena Fundación Horizonte · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-29",
+    "time_start": "21:00",
+    "time_end": "23:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 37,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Cena Fundación Horizonte",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 37 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 37 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 21:00 a 23:00 - Dinner - TERRAZA POOL BAR 37 Pax\n- Croquetas caseras de puchero\n- Tosta de salmorejo y bonito\n- Crema fría de melón con jamón\n- Merluza al horno con salsa verde\n- Presa a la brasa con verduras asadas",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611290",
+    "pm": null,
+    "source_file": "OS CENA FUNDACIÓN HORIZONTE 29_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS CENA FUNDACIÓN HORIZONTE 29_11_2026.pdf"
   }
 ]
