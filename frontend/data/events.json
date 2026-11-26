@@ -160,94 +160,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
   },
   {
-    "id": "evt-92611250-2026-11-25-0930-multifuncional",
-    "title": "Reunion Cobalto Energía · Sala Multifuncional",
-    "date": "2026-11-25",
-    "time_start": "09:30",
-    "time_end": "13:30",
-    "space": {
-      "id": "multifuncional",
-      "name": "Sala Multifuncional",
-      "aliases": [
-        "multifuncional",
-        "sala multifuncional",
-        "salon multifuncional",
-        "multi",
-        "gran salon",
-        "multifuntional"
-      ],
-      "area_m2": 160,
-      "max_capacities": {
-        "u_shape": 36,
-        "escuela": 90,
-        "teatro": 140,
-        "banquete": 100,
-        "coctel": 150,
-        "cabaret": 60,
-        "imperial": 30
-      },
-      "color_tag": "#7b2cbf",
-      "location": "Planta Baja / Salón Principal"
-    },
-    "setup": {
-      "key": "escuela",
-      "label": "Escuela (Classroom)",
-      "icon": "🎓",
-      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
-    },
-    "pax": 36,
-    "services": [
-      {
-        "type": "fb",
-        "key": "cb-permanente",
-        "label": "Coffee Break Permanente (Non-Stop)",
-        "icon": "☕⚡",
-        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
-      },
-      {
-        "type": "fb",
-        "key": "cb-simple",
-        "label": "Coffee Break Estándar",
-        "icon": "☕",
-        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Reunion Cobalto Energía",
-      "date_start": "2026-11-25",
-      "date_end": "2026-11-25",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 36 pax",
-      "montaje_notes": "Montaje Escuela (Classroom) para 36 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": null,
-      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 36 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
-      "dietary_notes": null,
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611250",
-    "pm": null,
-    "source_file": "OS REUNION COBALTO ENERGÍA 25_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS REUNION COBALTO ENERGÍA 25_11_2026.pdf"
-  },
-  {
     "id": "evt-92611249-2026-11-25-0930-multifuncional",
     "title": "Grupo Casa Jazmín Eventos · Sala Multifuncional",
     "date": "2026-11-25",
@@ -329,87 +241,6 @@
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
   },
   {
-    "id": "evt-92611252-2026-11-25-1400-canitas-al-fresco",
-    "title": "Almuerzo Fundación Horizonte · Cañitas al Fresco",
-    "date": "2026-11-25",
-    "time_start": "14:00",
-    "time_end": "16:00",
-    "space": {
-      "id": "canitas-al-fresco",
-      "name": "Cañitas al Fresco",
-      "aliases": [
-        "cañitas al fresco",
-        "canitas al fresco",
-        "cañitas maite",
-        "canitas maite",
-        "cañitas",
-        "canitas",
-        "terraza caña by cañitas",
-        "caña by cañitas",
-        "restaurante cañitas",
-        "restaurante"
-      ],
-      "area_m2": 110,
-      "max_capacities": {
-        "coctel": 90,
-        "banquete": 60,
-        "imperial": 22
-      },
-      "color_tag": "#2ec4b6",
-      "location": "Planta Baja Exterior"
-    },
-    "setup": {
-      "key": "banquete",
-      "label": "Banquete (Mesas Redondas)",
-      "icon": "🍽️",
-      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
-    },
-    "pax": 13,
-    "services": [
-      {
-        "type": "fb",
-        "key": "finger-buffet",
-        "label": "Almuerzo de Trabajo / Finger Buffet",
-        "icon": "🥪",
-        "details": "Coordinar con cocina el timing exacto de pase de calientes."
-      },
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Almuerzo Fundación Horizonte",
-      "date_start": "2026-11-25",
-      "date_end": "2026-11-25",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje oficial según OS para 13 pax",
-      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 13 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 14:00 a 16:00 - Lunch - CAÑITAS AL FRESCO 13 Pax\n- Arroz meloso de verduras de temporada\n- Presa a la brasa con verduras asadas\n- Lubina a la plancha con verduras\n- Tosta de salmorejo y bonito",
-      "dietary_notes": "Alergias e intolerancias:\n1x intolerancia gluten\n2x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611252",
-    "pm": null,
-    "source_file": "OS ALMUERZO FUNDACIÓN HORIZONTE 25_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS ALMUERZO FUNDACIÓN HORIZONTE 25_11_2026.pdf"
-  },
-  {
     "id": "evt-92611249-2026-11-25-1400-canitas-al-fresco",
     "title": "Grupo Casa Jazmín Eventos · Cañitas al Fresco",
     "date": "2026-11-25",
@@ -489,77 +320,6 @@
     "pm": null,
     "source_file": "OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS GRUPO CASA JAZMÍN EVENTOS 24-26_11_2026.pdf"
-  },
-  {
-    "id": "evt-92611251-2026-11-25-1930-terraza-pool-bar",
-    "title": "Coctel Cobalto Energía · Terraza Pool Bar / Rooftop",
-    "date": "2026-11-25",
-    "time_start": "19:30",
-    "time_end": "21:00",
-    "space": {
-      "id": "terraza-pool-bar",
-      "name": "Terraza Pool Bar / Rooftop",
-      "aliases": [
-        "terraza pool bar",
-        "pool bar",
-        "terraza",
-        "rooftop",
-        "zona pool bar",
-        "sky bar",
-        "ático"
-      ],
-      "area_m2": 180,
-      "max_capacities": {
-        "coctel": 140,
-        "banquete": 70,
-        "imperial": 20
-      },
-      "color_tag": "#e76f51",
-      "location": "Rooftop / Terraza Panorámica"
-    },
-    "setup": {
-      "key": "reunion",
-      "label": "Reunión MICE",
-      "icon": "💼",
-      "description": "Montaje de sala ejecutiva para reunión de trabajo"
-    },
-    "pax": 26,
-    "services": [
-      {
-        "type": "protocolo_hotel",
-        "key": "beo-control",
-        "label": "Catering Manager & Ficha OS",
-        "icon": "📋",
-        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
-      }
-    ],
-    "multi_day": {
-      "is_multi_day": false,
-      "group_name": "Coctel Cobalto Energía",
-      "date_start": "2026-11-25",
-      "date_end": "2026-11-25",
-      "day_index": 1,
-      "total_days": 1,
-      "day_label": "Día 1 de 1"
-    },
-    "operational": {
-      "furniture_summary": "Montaje de sala ejecutiva (26 pax)",
-      "montaje_notes": "Montaje Reunión MICE para 26 pax según OS",
-      "sstt_notes": "AC, conectividad y soporte técnico de sala",
-      "fb_notes": "Alergias e intolerancias:",
-      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 26 Pax\n- Croquetas caseras de puchero\n- Tarta de queso con mermelada de higos\n- Lubina a la plancha con verduras",
-      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
-      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
-      "times": {
-        "setup_minutes": 30,
-        "breakdown_minutes": 20
-      }
-    },
-    "manager": "Default Owner SPAIN",
-    "block_id": "92611251",
-    "pm": null,
-    "source_file": "OS COCTEL COBALTO ENERGÍA 25_11_2026.pdf",
-    "source_pdf_url": "./data/beos/OS COCTEL COBALTO ENERGÍA 25_11_2026.pdf"
   },
   {
     "id": "evt-92611249-2026-11-26-0930-estudio-2-3",
@@ -2103,5 +1863,722 @@
     "pm": null,
     "source_file": "OS CENA FUNDACIÓN HORIZONTE 29_11_2026.pdf",
     "source_pdf_url": "./data/beos/OS CENA FUNDACIÓN HORIZONTE 29_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611302-2026-11-30-0930-estudio-3",
+    "title": "Reunion Fundación Horizonte · Estudio 3",
+    "date": "2026-11-30",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-3",
+      "name": "Estudio 3",
+      "aliases": [
+        "estudio 3",
+        "estudio3",
+        "study 3",
+        "sala estudio 3",
+        "e3"
+      ],
+      "area_m2": 50,
+      "max_capacities": {
+        "u_shape": 18,
+        "escuela": 28,
+        "teatro": 40,
+        "banquete": 24,
+        "coctel": 40,
+        "imperial": 16
+      },
+      "color_tag": "#48cae4",
+      "location": "Planta 1"
+    },
+    "setup": {
+      "key": "forma_u",
+      "label": "Forma U (U-Shape)",
+      "icon": "🏛️",
+      "description": "Distribución en U abierta hacia la pantalla, atril o pared frontal. Formato ejecutivo para reuniones interactivas y presentaciones directivas."
+    },
+    "pax": 26,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Reunion Fundación Horizonte",
+      "date_start": "2026-11-30",
+      "date_end": "2026-11-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje en U (U-Shape) para 26 pax",
+      "montaje_notes": "Montaje Forma U (U-Shape) para 26 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 3 26 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611302",
+    "pm": null,
+    "source_file": "OS REUNION FUNDACIÓN HORIZONTE 30_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS REUNION FUNDACIÓN HORIZONTE 30_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-11-30-0930-multifuncional",
+    "title": "Grupo Pinar Alto Editorial · Sala Multifuncional",
+    "date": "2026-11-30",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "multifuncional",
+      "name": "Sala Multifuncional",
+      "aliases": [
+        "multifuncional",
+        "sala multifuncional",
+        "salon multifuncional",
+        "multi",
+        "gran salon",
+        "multifuntional"
+      ],
+      "area_m2": 160,
+      "max_capacities": {
+        "u_shape": 36,
+        "escuela": 90,
+        "teatro": 140,
+        "banquete": 100,
+        "coctel": 150,
+        "cabaret": 60,
+        "imperial": 30
+      },
+      "color_tag": "#7b2cbf",
+      "location": "Planta Baja / Salón Principal"
+    },
+    "setup": {
+      "key": "escuela",
+      "label": "Escuela (Classroom)",
+      "icon": "🎓",
+      "description": "Filas de mesas rectangulares orientadas al frente con 2 sillas por mesa y espacio para tomar notas."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Escuela (Classroom) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - SALA MULTIFUNCIONAL 29 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
+  },
+  {
+    "id": "evt-92611301-2026-11-30-1400-terraza-pool-bar",
+    "title": "Almuerzo Altamira Biotech · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-30",
+    "time_start": "14:00",
+    "time_end": "16:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 23,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Almuerzo Altamira Biotech",
+      "date_start": "2026-11-30",
+      "date_end": "2026-11-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 23 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 23 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 16:00 - Lunch - TERRAZA POOL BAR 23 Pax\n- Tarta de queso con mermelada de higos\n- Presa a la brasa con verduras asadas\n- Solomillo ibérico con puré de patata\n- Ensalada templada de queso de cabra y frutos rojos",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611301",
+    "pm": null,
+    "source_file": "OS ALMUERZO ALTAMIRA BIOTECH 30_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS ALMUERZO ALTAMIRA BIOTECH 30_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-11-30-1400-canitas-al-fresco",
+    "title": "Grupo Pinar Alto Editorial · Cañitas al Fresco",
+    "date": "2026-11-30",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 1,
+      "total_days": 3,
+      "day_label": "Día 1 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 29 Pax\n- Tarta de queso con mermelada de higos\n- Gazpacho de tomate rosa\n- Crema fría de melón con jamón\n- Ensalada templada de queso de cabra y frutos rojos\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611309\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO PINAR ALTO EDITORIAL 30-02_12_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
+  },
+  {
+    "id": "evt-92611300-2026-11-30-1930-terraza-pool-bar",
+    "title": "Coctel Tramontana Capital · Terraza Pool Bar / Rooftop",
+    "date": "2026-11-30",
+    "time_start": "19:30",
+    "time_end": "21:00",
+    "space": {
+      "id": "terraza-pool-bar",
+      "name": "Terraza Pool Bar / Rooftop",
+      "aliases": [
+        "terraza pool bar",
+        "pool bar",
+        "terraza",
+        "rooftop",
+        "zona pool bar",
+        "sky bar",
+        "ático"
+      ],
+      "area_m2": 180,
+      "max_capacities": {
+        "coctel": 140,
+        "banquete": 70,
+        "imperial": 20
+      },
+      "color_tag": "#e76f51",
+      "location": "Rooftop / Terraza Panorámica"
+    },
+    "setup": {
+      "key": "coctel",
+      "label": "Cóctel (Cocktail)",
+      "icon": "🍸",
+      "description": "Evento social de pie con mesas altas tipo bistró de apoyo y circulación fluida."
+    },
+    "pax": 11,
+    "services": [
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": false,
+      "group_name": "Coctel Tramontana Capital",
+      "date_start": "2026-11-30",
+      "date_end": "2026-11-30",
+      "day_index": 1,
+      "total_days": 1,
+      "day_label": "Día 1 de 1"
+    },
+    "operational": {
+      "furniture_summary": "Formato Cóctel / Welcome Drink (11 pax)",
+      "montaje_notes": "Montaje Cóctel (Cocktail) para 11 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": "Alergias e intolerancias:",
+      "menu_notes": "🍴 19:30 a 21:00 - Cóctel - TERRAZA POOL BAR 11 Pax\n- Arroz meloso de verduras de temporada\n- Crema fría de melón con jamón\n- Ensalada templada de queso de cabra y frutos rojos",
+      "dietary_notes": "Alergias e intolerancias:\n2x intolerancia gluten\n1x intolerancia lactosa\n--- Page 2 ---",
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611300",
+    "pm": null,
+    "source_file": "OS COCTEL TRAMONTANA CAPITAL 30_11_2026.pdf",
+    "source_pdf_url": "./data/beos/OS COCTEL TRAMONTANA CAPITAL 30_11_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-12-01-0930-estudio-2-3",
+    "title": "Grupo Pinar Alto Editorial · Estudio 2 + 3",
+    "date": "2026-12-01",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Teatro (Auditorio) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 29 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-12-01-1400-canitas-al-fresco",
+    "title": "Grupo Pinar Alto Editorial · Cañitas al Fresco",
+    "date": "2026-12-01",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 2,
+      "total_days": 3,
+      "day_label": "Día 2 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 29 Pax\n- Solomillo ibérico con puré de patata\n- Arroz meloso de verduras de temporada\n- Crema fría de melón con jamón\n- Tosta de salmorejo y bonito\nME\nMALAGA\nMalaga, MA 29012, ES\n000 000 000\nNombre Contacto\nDirección:\n92611309\nCatering Manager:\nDefault Owner SPAIN\nSales Manager:\nDefault Owner SPAIN\nTipo Reserva:\nCorporate\nBlock Name:\nGRUPO PINAR ALTO EDITORIAL 30-02_12_2026\nStatus/Catering Status:\nDEF/DEF\nContacto del Grupo:\n0",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-12-02-0930-estudio-2-3",
+    "title": "Grupo Pinar Alto Editorial · Estudio 2 + 3",
+    "date": "2026-12-02",
+    "time_start": "09:30",
+    "time_end": "13:30",
+    "space": {
+      "id": "estudio-2-3",
+      "name": "Estudio 2 + 3",
+      "aliases": [
+        "estudio 2 + 3",
+        "estudios 2 + 3",
+        "estudio 2+3",
+        "estudios 2+3",
+        "estudio 2 y 3"
+      ],
+      "area_m2": 90,
+      "max_capacities": {
+        "u_shape": 26,
+        "escuela": 45,
+        "teatro": 65,
+        "banquete": 40,
+        "coctel": 65,
+        "imperial": 24
+      },
+      "color_tag": "#0284c7",
+      "location": "Planta 1 (Panelable)"
+    },
+    "setup": {
+      "key": "teatro",
+      "label": "Teatro (Auditorio)",
+      "icon": "🎭",
+      "description": "Filas de sillas alineadas orientadas al escenario o pantalla, sin mesas. Máxima capacidad de sala."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "cb-permanente",
+        "label": "Coffee Break Permanente (Non-Stop)",
+        "icon": "☕⚡",
+        "details": "Revisar y reponer termos de leche, hielo, fruta fresca y cápsulas cada 2 horas."
+      },
+      {
+        "type": "fb",
+        "key": "cb-simple",
+        "label": "Coffee Break Estándar",
+        "icon": "☕",
+        "details": "Tener listo y montado exactamente 30 minutos antes del horario pactado en la OS."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Teatro (Auditorio) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 11:00 a 11:30 - Coffee Break - ESTUDIO 2 + 3 29 Pax\n- Café, infusiones y zumos\n- Bollería y fruta de temporada",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
+  },
+  {
+    "id": "evt-92611309-2026-12-02-1400-canitas-al-fresco",
+    "title": "Grupo Pinar Alto Editorial · Cañitas al Fresco",
+    "date": "2026-12-02",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "space": {
+      "id": "canitas-al-fresco",
+      "name": "Cañitas al Fresco",
+      "aliases": [
+        "cañitas al fresco",
+        "canitas al fresco",
+        "cañitas maite",
+        "canitas maite",
+        "cañitas",
+        "canitas",
+        "terraza caña by cañitas",
+        "caña by cañitas",
+        "restaurante cañitas",
+        "restaurante"
+      ],
+      "area_m2": 110,
+      "max_capacities": {
+        "coctel": 90,
+        "banquete": 60,
+        "imperial": 22
+      },
+      "color_tag": "#2ec4b6",
+      "location": "Planta Baja Exterior"
+    },
+    "setup": {
+      "key": "banquete",
+      "label": "Banquete (Mesas Redondas)",
+      "icon": "🍽️",
+      "description": "Mesas redondas vestidas con mantel y lino, con 8 a 10 comensales por mesa."
+    },
+    "pax": 29,
+    "services": [
+      {
+        "type": "fb",
+        "key": "finger-buffet",
+        "label": "Almuerzo de Trabajo / Finger Buffet",
+        "icon": "🥪",
+        "details": "Coordinar con cocina el timing exacto de pase de calientes."
+      },
+      {
+        "type": "protocolo_hotel",
+        "key": "beo-control",
+        "label": "Catering Manager & Ficha OS",
+        "icon": "📋",
+        "details": "Cualquier variación en aforo o timing debe notificarse de inmediato al Catering Manager."
+      }
+    ],
+    "multi_day": {
+      "is_multi_day": true,
+      "group_name": "Grupo Pinar Alto Editorial",
+      "date_start": "2026-11-30",
+      "date_end": "2026-12-02",
+      "day_index": 3,
+      "total_days": 3,
+      "day_label": "Día 3 de 3"
+    },
+    "operational": {
+      "furniture_summary": "Montaje oficial según OS para 29 pax",
+      "montaje_notes": "Montaje Banquete (Mesas Redondas) para 29 pax según OS",
+      "sstt_notes": "AC, conectividad y soporte técnico de sala",
+      "fb_notes": null,
+      "menu_notes": "🍴 14:00 a 15:30 - Lunch - CAÑITAS AL FRESCO 29 Pax\n- Ensalada templada de queso de cabra y frutos rojos\n- Croquetas caseras de puchero\n- Gazpacho de tomate rosa\n- Merluza al horno con salsa verde",
+      "dietary_notes": null,
+      "pisos_notes": "Revisar y perfumar sala (Protocolo AURA)",
+      "times": {
+        "setup_minutes": 30,
+        "breakdown_minutes": 20
+      }
+    },
+    "manager": "Default Owner SPAIN",
+    "block_id": "92611309",
+    "pm": null,
+    "source_file": "OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf",
+    "source_pdf_url": "./data/beos/OS GRUPO PINAR ALTO EDITORIAL 30-02_12_2026.pdf"
   }
 ]
